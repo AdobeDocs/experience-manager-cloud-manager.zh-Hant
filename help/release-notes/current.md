@@ -4,9 +4,9 @@ description: 以下是 Cloud Manager 2024.4.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 4a7c6fbc3fa936ff1470420966823f94fb3a4d7b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '258'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 79%
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2024.4.0 版的發行日期為 2024 年 4 月 10 日。下一個版本計畫於 2024 年 9 月 5 日發行。
+[!UICONTROL Cloud Manager] 2024.4.0 版的發行日期為 2024 年 4 月 10 日。下一個版本計畫於 2024 年 5 月 9 日發行。
 
 ## 新增功能 {#what-is-new}
 
-* 我們引進了僅中繼和生產管道支援，讓您將全棧疊生產部署管道分割成更小的、專業化的部署。
-* 增強程式碼建置問題的錯誤訊息，可更輕鬆識別根本原因，以及後續的可操作步驟。
+* 已引進僅限中繼管道和僅限生產管道的支援，讓您將全端生產部署管道拆分為更小的專門部署。
+* 已增強程式碼建置問題的錯誤訊息，可以更輕鬆地識別根本原因和後續可操作的步驟。
 
 ## 早期採用計劃 {#early-adoption}
 
@@ -40,4 +40,4 @@ ht-degree: 79%
 
 ## 錯誤修正 {#bug-fixes}
 
-* 已解決Cloud Manager重複使用具有錯誤認可雜湊的成品錯誤。
+* 已解決此問題：Cloud Manager 重複使用具有錯誤認可雜湊的成品。
