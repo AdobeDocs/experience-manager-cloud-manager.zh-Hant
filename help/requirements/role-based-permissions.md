@@ -2,10 +2,10 @@
 title: 角色型權限
 description: 了解 Cloud Manager 預先設定的角色型權限以管理對您的雲端資源的存取。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 10297789ac8f905f242ac52bdc6fc4812b989e8a
-workflow-type: ht
-source-wordcount: '602'
-ht-degree: 100%
+source-git-commit: 1c0c3a751ba2023fc2c2dd5d0d54f914373ad95b
+workflow-type: tm+mt
+source-wordcount: '620'
+ht-degree: 97%
 
 ---
 
@@ -66,3 +66,7 @@ ht-degree: 100%
 | 產生個人存取權杖 | 存取 Git |  | x |  | x |  |
 
 若要深入了解如何設定使用者，請參閱文件：[設定使用者和角色。](/help/requirements/users-and-roles.md)
+
+>[!TIP]
+>
+>也可使用具有可設定許可權的自訂許可權設定檔。 請參閱檔案 [自訂許可權](/help/using/custom-permissions.md) 以取得更多詳細資料。
