@@ -2,10 +2,10 @@
 title: 重要概念
 description: 像所有強大的工具一樣，Cloud Manager 包含了許多概念和術語。本文件會概述您開始使用 Cloud Manager 時最重要的一些內容。
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
-source-git-commit: 73e322cf93dc7709b7581860974079c8d94034ba
+source-git-commit: 67621fb2dbb0c32371b2ffc16ec45f47daf04e05
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 100%
+source-wordcount: '413'
+ht-degree: 91%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## 應用程式 {#application}
 
-應用程式是客戶建立的自訂項目和設定組，以便根據他們的特定使用案例和需求來調整基礎的[解決方案](#solution) (例如 AEM Sites 或 AEM Assets)。應用程式是一種邏輯單位，可能包含多個[成品。](#artifact)
+應用程式是客戶建立的自訂專案和設定集，以便調整基礎 [解決方案](#solution) (例如AEM Sites或AEM Assets)提供其特定使用案例和需求。 應用程式是一種邏輯單位，可能包含多個[成品。](#artifact)
 
 一個應用程式範例是虛構的 [WKND 生活方式應用程式。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 

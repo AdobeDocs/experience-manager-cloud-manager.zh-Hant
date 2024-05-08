@@ -2,10 +2,10 @@
 title: Cloud Manager 存放庫
 description: 了解如何為您的 Cloud Manager 方案存取、建立和編輯存放庫。
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: 63cbcf8724a840efa67b8fafc4c321e04a5d70d9
+source-git-commit: 1d4ab9704fdb743b097e24be335fbf069d1e78bd
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 98%
 
 ---
 
@@ -26,11 +26,7 @@ ht-degree: 100%
 
    ![存取存放庫資訊按鈕](/help/assets/access-repo1.png)
 
-1. 如果您切換至&#x200B;**非生產**&#x200B;管道索引標籤，在此也可使用&#x200B;**存取存放庫資訊**&#x200B;選項，[已為該管道設定。](/help/using/non-production-pipelines.md)
-
-   ![非生產管道](/help/assets/access-repo-nonprod.png)
-
-1. 按一下&#x200B;**存取存放庫資訊**&#x200B;按鈕，即可開啟對話框並顯示：
+1. 點選或按一下 **存取存放庫資訊** 按鈕來開啟對話方塊，其中顯示：
 
    * 至 Git 存放庫的 URL
    * 使用者名稱
@@ -68,8 +64,6 @@ ht-degree: 100%
 1. 選取&#x200B;**儲存**。
 
 將隨即顯示您新建的存放庫。
-
-![新存放庫已建立](/help/assets/create-repo3.png)
 
 以下情況下，在 Cloud Manager 中建立的存放庫可供您選取：[建立您的管道時。](/help/overview/ci-cd-pipelines.md)
 

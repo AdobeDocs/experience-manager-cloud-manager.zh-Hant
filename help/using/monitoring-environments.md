@@ -2,10 +2,10 @@
 title: 監視環境
 description: 了解如何在 Cloud Manager 中監視環境。
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 5907ca6337d33c26ff19a14bfeb358cd9f7b935d
+source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 100%
+source-wordcount: '928'
+ht-degree: 89%
 
 ---
 
@@ -24,20 +24,17 @@ ht-degree: 100%
 
 請依照下列步驟存取系統監視。
 
-1. 登入&#x200B;**Managed Services - 方案**&#x200B;登陸頁面。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) 登入 Cloud Manager 並選取適當的組織和方案。
 
-   ![受管理服務的方案](/help/assets/ProgramLanding.png)
-
-1. 按一下計劃卡上的第四個圖示。
+1. 點選或按一下您要監控之程式的省略符號按鈕，然後選取 **顯示監視** 選項。
 
    ![設定](/help/assets/first-timea1.png)
 
-
-或者，您可以透過 [!UICONTROL Cloud Manager] 中的&#x200B;**報告**&#x200B;全域導覽選單項目瀏覽至&#x200B;**系統監視**&#x200B;登陸頁面。
+此 **報表** 頁面會開啟並顯示系統監視資訊。
 
 ## 系統監視概觀 {#system-monitoring-overview}
 
-此系統監視概觀頁面會包含方案中受監視的環境清單，並報告四個不同類別中的高層級健康狀況：
+此 **系統監視** 的區段 **報表** 頁面會列出方案中受監控的環境，並報告四個不同類別中的高層級健康狀況：
 
 * 主機
 * 儲存空間
@@ -54,13 +51,11 @@ ht-degree: 100%
 
 ## 系統監視詳細資訊 {#system-monitoring-detail}
 
-若要檢視特定量度的詳細資訊，您可以按一下左側導覽中的其中一個類別或按一下特定執行個體的其中一個類別指標。每個詳細資訊頁面都會顯示該類別中量度的一系列圖表。您可以檢視環境中所有執行個體或特定執行個體的量度。您可以使用右上角的下拉式方框在環境和執行個體之間進行切換。
+若要檢視特定量度的詳細資訊，請點選或按一下特定執行個體的其中一個類別欄，或左側導覽中的類別標題。 每個詳細資訊頁面都會顯示該類別中量度的一系列圖表。您可以檢視環境中所有執行個體或特定執行個體的量度。您可以使用右上角的下拉式方框在環境和執行個體之間進行切換。
 
 ![選取環境](/help/assets/System_Monitoring1.png)
 
 左側的導覽將顯示目前所選類別中的可用量度，其中包含目前所選環境和執行個體的資料。
-
-![監視量度](/help/assets/System_Monitoring2.png)
 
 個別的圖表將顯示狀態和隨時間變化的資料圖表以及臨界值。如果顯示多個執行個體，則每個執行個體的資料將顯示在單獨的系列上。
 
@@ -103,9 +98,9 @@ ht-degree: 100%
 
 ## SLA 報告 {#sla-reporting}
 
-客戶能夠查看其生產 AEM 環境相對於其簽訂的服務等級協議 (SLA) 的效能。這可透過&#x200B;**報告**&#x200B;畫面上的子選單取得。
+您可以檢視生產AEM環境相對於您簽訂的服務等級協定(SLA)的效能。
 
-下圖會顯示 2018 年每月的 SLA 實現情況。
+下圖會顯示 2019 年每月的 SLA 實現情況。
 
 ![SLA 2018 圖表](/help/assets/SLA-Reports-one.png)
 

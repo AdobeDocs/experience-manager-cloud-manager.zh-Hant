@@ -2,9 +2,9 @@
 title: 程式碼部署
 description: 了解如何部署您的程式碼以及部署時 Cloud Manager 中會發生什麼情況。
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 70e68f8af17b0acf644176c2ed3afaf8fc219063
-workflow-type: ht
-source-wordcount: '1650'
+source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+workflow-type: tm+mt
+source-wordcount: '1648'
 ht-degree: 100%
 
 ---
@@ -55,8 +55,6 @@ ht-degree: 100%
 
 * **安全測試**：此步驟會評估您的程式碼對 AEM 環境的安全影響。如需有關測試流程的詳細資訊，請參閱文件：[了解測試結果](/help/using/code-quality-testing.md)。
    * **效能測試**：此步驟會評估程式碼的效能。如需有關測試流程的詳細資訊，請參閱[了解測試結果](/help/using/code-quality-testing.md)。
-
-  ![中繼測試](/help/assets/Stage_Testing1.png)
 
 ### 生產部署步驟 {#production-deployment}
 

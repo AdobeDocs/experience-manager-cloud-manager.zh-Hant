@@ -2,10 +2,10 @@
 title: 管理管道
 description: 了解如何管理現有管道，包括將其編輯、執行和刪除。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 28ab641ec85335d8330aeb465c07bf0264218fe4
-workflow-type: ht
-source-wordcount: '807'
-ht-degree: 100%
+source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+workflow-type: tm+mt
+source-wordcount: '800'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 100%
 
 1. 在這裡，您可以看到方案所有管道的清單，以及啟動和停止管道執行，就像在&#x200B;**管道卡**&#x200B;中一樣。
 
-如果管道正在執行，將滑鼠懸停在其&#x200B;**狀態**&#x200B;欄上將顯示有關執行的詳細資訊。
+點選或按一下 `i` 圖示會顯示有關管道的上次或目前執行的詳細資訊。
 
 ![管道執行詳細資訊](/help/assets/configure-pipelines/pipeline-status.png)
 
@@ -60,7 +60,7 @@ ht-degree: 100%
 
 1. 在這裡，您可以看到方案所有管道執行的清單，包括目前和歷史執行。
 
-如果管道正在執行，將滑鼠懸停在其&#x200B;**狀態**&#x200B;欄上將顯示有關執行的詳細資訊。
+點選或按一下 `i` 圖示會顯示所選管道執行的執行詳情。
 
 ![管道執行詳細資訊](/help/assets/configure-pipelines/pipeline-activity.png)
 
