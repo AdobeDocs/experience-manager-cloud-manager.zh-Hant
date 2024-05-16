@@ -1,209 +1,208 @@
 ---
-title: 瀏覽Cloud Manager UI
-description: 瞭解Cloud Manager UI的組織方式以及如何導覽以管理您的程式和環境。
-source-git-commit: 95736be8c38488c3f16164784247e160a967ecb7
+title: 導覽 Cloud Manager UI
+description: 了解 Cloud Manager UI 的組織方式以及如何導覽以管理您的程式和環境。
+exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
+source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 6%
+source-wordcount: '1292'
+ht-degree: 100%
 
 ---
 
+# 導覽 Cloud Manager UI {#navigation}
 
-# 瀏覽Cloud Manger UI {#navigation}
+了解 Cloud Manager UI 的組織方式以及如何導覽以管理您的程式和環境。
 
-瞭解Cloud Manager UI的組織方式以及如何導覽以管理您的程式和環境。
+Cloud Manager UI 主要由兩個圖形介面組成：
 
-Cloud Manage UI主要由兩個圖形介面組成：
+* [「我的程式」控制台](#my-programs)，您可以在其中檢視和管理所有程式。
+* [「程式概觀」視窗](#program-overview)，您可以在其中管理個別程式並查看詳細資訊。
 
-* [我的程式控制檯](#my-programs) 您可以在此檢視和管理所有程式。
-* [計畫總覽視窗](#program-overview) 在這裡，您可以檢視詳細資訊並管理個別計畫。
+## 我的程式控制台 {#my-programs}
 
-## 我的程式主控台 {#my-programs}
+當您透過 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織時，您將看到「**我的程式**」控制台。
 
-當您在登入Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 並選取適當的組織，您即會到達 **我的計畫** 主控台。
+![我的程式控制台](assets/my-programs-console.png)
 
-![我的程式主控台](assets/my-programs-console.png)
+「我的程式」控制台提供您在所選組織中有權存取之所有程式的概觀。它由幾個部分組成。
 
-「我的程式」主控台提供在選取組織中您有權存取的所有程式的概觀。 它由幾個部分組成。
-
-1. [工具列](#toolbars-my-programs-toolbars) 組織選擇、警示和帳戶設定
-1. [統計資料和行動號召](#statistics) 以取得您最近活動的概覽
-1. [程式與授權](#programs-license) 瞭解您目前的授權狀態並管理您的程式
-1. [快速連結](#quick-links) 以輕鬆存取相關資源
+1. [工具列](#toolbars-my-programs-toolbars)，提供組織選擇、警示和帳戶設定
+1. [統計資料和行動號召](#statistics)，提供您最近的活動概觀
+1. [程式和授權](#programs-license)，用於了解您目前的授權狀態並管理您的程式
+1. [快速連結](#quick-links)，用於輕鬆存取相關資源
 
 >[!TIP]
 >
->請參閱檔案 [程式和程式型別](/help/getting-started/program-setup.md) 以取得有關計畫的詳細資訊。
+>有關程式的詳細資訊，請參閱文件：[程式和程式類型](/help/getting-started/program-setup.md)。
 
 ### 工具列 {#my-programs-toolbars}
 
-兩個工具列彼此位於頂端。
+有兩個相互重疊的工具列。
 
-#### Cloud Manager標題 {#cloud-manager-header}
+#### Cloud Manager 標頭 {#cloud-manager-header}
 
-第一個是Cloud Manager標題，會在您導覽Cloud Manager時持續保留。 這是一個錨點，可讓您存取套用至Cloud Manager程式的設定和資訊。
+第一個是 Cloud Manager 標頭，當您瀏覽 Cloud Manager 時會持續出現。它是一個錨點，可讓您存取適用於 Cloud Manager 程式的設定和資訊。
 
 ![Experience Cloud 標頭](assets/experience-cloud-header.png)
 
-1. 無論您在Cloud Manager中的哪個位置，此Cloud Manager按鈕都會將您帶回Cloud Manager的「我的程式」主控台。
-1. 點選或按一下「意見回饋」按鈕，向Adobe提供有關Cloud Manager的意見回饋。
-1. 組織選擇器會顯示您目前登入的組織（在此範例中為Foundation Internal）。 如果您的 Adobe ID 與多個組織關聯，可點選或按一下以切換到另一個組織。
+1. 無論您位於 Cloud Manager 中的哪個位置，Cloud Manager 按鈕都會將您帶回 Cloud Manager 的「我的程式」控制台。
+1. 點選或按一下「意見回饋」按鈕，即可向 Adobe 提供有關 Cloud Manager 的意見回饋。
+1. 組織選擇器會顯示您目前登入的組織 (在本例中為 Foundation Internal)。如果您的 Adobe ID 與多個組織關聯，可點選或按一下以切換到另一個組織。
 1. 點選或按一下解決方案切換器可讓您快速跳轉到其他 Experience Cloud 解決方案。
 1. 說明圖示可快速存取學習和支援資源。
-1. 通知圖示會出現標籤，顯示目前未完成指派的數量 [通知。](/help/using/notifications.md)
-1. 選取代表您的使用者的圖示，以存取您的使用者設定。 如果您沒有設定使用者圖片，則會隨機分配圖示。
+1. 通知圖示標有目前已指派之未完成的[通知](/help/using/notifications.md)數量。
+1. 選取代表您使用者的圖示以存取您的使用者設定。如果您沒有設定使用者圖片，則會隨機分配圖示。
 
 #### 程式工具列 {#program-toolbar}
 
-程式工具列提供了在Cloud Manager程式和適合上下文的動作之間切換的連結。
+程式工具列提供了在 Cloud Manager 程式與內容相關的動作之間切換的連結。
 
 ![程式工具列](assets/program-toolbar.png)
 
-1. 方案選擇器會開啟一個下拉式清單，您可以在其中快速選取其他方案或採取適合上下文的動作，例如建立新方案
-1. 快速入門連結可讓您存取 [入門檔案歷程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/overview) 以讓您啟動並執行Cloud Manager。
-   * 請注意，入門歷程是針對AEMas a Cloud Service而設計，非AMSCloud Service，但許多概念是相同的。
-1. 動作按鈕提供適合上下文的動作，例如建立新方案。
+1. 程式選擇器將會開啟一個下拉式選單，您可以在其中快速選取其他程式或採取內容相關動作，例如建立新程式
+1. 透過入門連結，您可以存取[上線文件歷程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/overview)以幫助您順利執行 Cloud Manager。
+   * 請注意，上線歷程是針對 AEM as a Cloud Service 而不是針對 Cloud Service for AMS 而設計的，但許多概念是相同的。
+1. 動作按鈕提供內容相關動作，例如建立新程式。
 
 ### 統計資料 {#statistics}
 
-統計資料區段提供您組織的彙總資料，例如，如果您成功設定方案，可能會顯示過去90天的活動統計資料，包括：
+統計資料區段為您的組織提供彙總資料，例如，如果您已成功設定程式，則可能會顯示過去 90 天內的活動統計資料，包括：
 
-* 數量 [部署](/help/using/code-deployment.md)
-* 數量 [程式碼品質問題](/help/using/code-quality-testing.md) 已識別
-* 組建數目
+* [部署](/help/using/code-deployment.md)數量
+* 已識別的[程式碼品質問題](/help/using/code-quality-testing.md)數量
+* 組建數量
 
-或者，如果您正開始進行組織的設定，可能會有後續步驟或檔案資源的提示。
+或者，如果您剛開始設定您的組織，可能會有關於後續步驟或文件資源的提示。
 
-### 程式與授權 {#programs-license}
+### 程式和授權 {#programs-license}
 
-「我的程式」主控台的主要內容是程式清單和授權狀態。
+「我的程式」控制台的主要內容是程式清單和授權狀態。
 
-#### 程式標籤 {#programs}
+#### 程式索引標籤 {#programs}
 
-此 **計畫** 標籤會列出代表您有權存取之每個程式的卡片。 點選或按一下卡片以存取 **計畫總覽** 計畫的頁面，以取得計畫的詳細資訊。
+「**程式**」索引標籤列出了代表您有權存取之每個程式的卡片。點選或按一下卡片即可存取該程式的「**程式概觀**」頁面，以了解有關該程式的詳細資訊。
 
-使用排序選項以更好地尋找您需要的程式。
+使用排序選項可以進一步找到您需要的程式。
 
 ![排序選項](assets/my-programs-sorting.png)
 
 * 排序依據
-   * 建立日期（預設）
+   * 建立日期 (預設)
    * 程式名稱
    * 狀態
-* 遞增（預設） /遞減
-* 格點檢視（預設）
+* 升序 (預設) / 降序
+* 格點檢視 (預設)
 * 清單檢視
 
-每個方案由卡片（或表格中的列）表示，提供方案的概覽和採取行動的快速連結。
+每個程式都由一張卡片 (或表格中的列) 表示，提供該程式的概觀以及採取行動的快速連結。
 
-![程式卡](assets/program-card.png)
+![程式卡片](assets/program-card.png)
 
-* 程式影像（如果已設定）
+* 程式映像 (若已設定)
 * 程式名稱
-* 服務型別： **Experience Manager雲端** 的 [AEMas a Cloud Service程式](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/home) 或 **Experience Manager** 用於AMS程式
-* [計畫型別](/help/getting-started/program-setup.md)：沙箱或生產
+* 服務類型：**Experience Manager Cloud** (用於 [AEM as a Cloud Service 程式](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/home)) 或 **Experience Manager** (用於 AMS 程式)
 * 狀態
-* 設定的解決方案
+* 設定的解決方案:
 * 建立日期
 
-此資訊圖示也可讓您快速存取關於方案的其他資訊（在清單檢視中很有用）。
+透過資訊圖示，還可以快速存取有關程式的其他資訊 (在清單檢視中很實用)。
 
 ![資訊](assets/information-view.png)
 
-省略符號圖示可讓您存取可以對方案執行的其他動作。
+透過省略符號圖示，您可以存取可對程式執行的其他動作。
 
-![方案的省略符號按鈕](assets/program-ellipsis.png)
+![程式的省略符號按鈕](assets/program-ellipsis.png)
 
-* 導覽至特定 [環境](/help/using/managing-environments.md) 計畫的
-* 開啟 [計畫總覽](#program-overview)
-* [編輯方案](/help/getting-started/program-setup.md)
+* 瀏覽至程式的特定[環境](/help/using/managing-environments.md)
+* 開啟[程式概觀](#program-overview)
+* [編輯程式](/help/getting-started/program-setup.md)
 * 顯示監視
 
-#### 授權標籤 {#license-tab}
+#### 授權索引標籤 {#license-tab}
 
-此 **授權** 索引標籤可讓您快速存取授權儀表板。
+「**授權**」索引標籤可讓您快速存取授權儀表板。
 
 ### 快速連結 {#quick-links}
 
-快速連結區段可讓您存取常用的相關資源。
+透過快速連結區段，您可以存取常用的相關資源。
 
-## 計畫總覽視窗 {#program-overview}
+## 程式概觀視窗 {#program-overview}
 
-一旦您在「我的程式」控制檯中選擇了程式，您就會進入「程式總覽」。
+在「我的程式」控制台中選取程式後，您將進入「程式概觀」。
 
-![計畫概觀](assets/program-overview.png)
+![程式概觀](assets/program-overview.png)
 
-計畫概觀可讓您存取Cloud Manager計畫的所有詳細資訊。 就像「我的程式」主控台一樣，它由幾個部分組成。
+透過程式概觀，您可以存取 Cloud Manager 程式的所有詳細資訊。與「我的程式」控制台一樣，它由多個部分組成。
 
-1. [工具列](#program-overview-toolbar) 快速跳回「我的程式」控制檯並瀏覽程式
-1. [索引標籤](#program-tabs) 在方案的不同方面之間切換
-1. A [行動號召](#cta) 根據計畫的最後動作
-1. 一個 [環境概觀](#environments) 計畫的
-1. 一個 [管道概觀](#pipelines) 計畫的
-1. 連結至 [有用的資源](#useful-resources)
+1. [工具列](#program-overview-toolbar)可快速跳回「我的程式」控制台以及導覽程式
+1. [索引標籤](#program-tabs)可在程式的不同方面之間切換
+1. 根據程式最後動作的[行動號召](#cta) 
+1. 程式的[環境概觀](#environments)
+1. 程式的[管道概觀](#pipelines)
+1. [實用資源](#useful-resources)的連結
 
 ### 工具列 {#program-overview-toolbar}
 
-計畫總覽的工具列與 [我的程式主控台。](#my-programs-toolbars) 此處僅說明差異。
+程式概觀的工具列非常相似於[我的程式控制台。](#my-programs-toolbars)唯一的差別說明如下。
 
-#### Cloud Manager標題 {#cloud-manager-header-2}
+#### Cloud Manager 標頭 {#cloud-manager-header-2}
 
-Cloud Manager標題有一個漢堡選單，會自動開啟以顯示計畫概覽的可導覽標籤。
+Cloud Manager 標頭有一個漢堡選單，會自動開啟以顯示程式概觀的可導覽索引標籤。
 
-![Cloud Manager漢堡功能表](assets/cloud-manager-hamburger.png)
+![Cloud Manager 漢堡選單](assets/cloud-manager-hamburger.png)
 
-點選或按一下漢堡選單圖示，以隱藏標籤。
+點選或按一下漢堡選單圖示即可隱藏索引標籤。
 
 #### 程式工具列 {#program-toolbar-2}
 
-程式工具列仍可讓您快速切換到其他程式，但也可存取與內容相關的動作，例如新增和編輯程式。
+程式工具列仍能讓您快速切換到其他程式，而且還可讓您執行內容相關動作，例如新增和編輯程式。
 
 ![程式工具列](assets/cloud-manager-program-toolbar.png)
 
-此外，如果您選擇使用漢堡選單隱藏標籤，則工具列始終提供您所在的標籤。
+此外，如果您選擇使用漢堡選單來隱藏索引標籤，工具列始終會提供您所在的索引標籤。
 
-### 計畫標籤 {#program-tabs}
+### 程式索引標籤 {#program-tabs}
 
-每個方案都有許多相關的選項和資料。 這些資料會收集到索引標籤中，讓瀏覽程式更簡單。 標籤可讓您存取：
+每個程式都有許多與之相關的選項和資料。這些資料會收集到索引標籤中，以方便導覽程式。這些索引標籤可讓您存取：
 
-* 總覽 — 方案總覽，如目前檔案所述
-* [活動](/help/using/managing-pipelines.md#activity)  — 計畫的管道執行歷史記錄
-* [管道](/help/using/managing-pipelines.md#pipelines)  — 為計畫設定的所有管道
-* [存放庫](/help/managing-code/repositories.md)  — 為方案設定的所有存放庫
-* [報表](/help/using/monitoring-environments.md#system-monitoring-overview) - SLA資料等量度
-* [環境](/help/using/managing-environments.md)  — 為計畫設定的所有環境
-* [內容集](/help/using/content-copy.md)  — 為複製目的而建立的內容集
-* [複製內容活動](/help/using/content-copy.md)  — 內容複製活動
-* 學習路徑 — 有關Cloud Manager的其他學習資源
+* 概觀 - 目前文件中所述的程式概觀
+* [活動](/help/using/managing-pipelines.md#activity) - 程式的管道執行歷史記錄
+* [管道](/help/using/managing-pipelines.md#pipelines) - 為程式設定的所有管道
+* [存放庫](/help/managing-code/repositories.md) - 為程式設定的所有存放庫
+* [報告](/help/using/monitoring-environments.md#system-monitoring-overview) - SLA 資料等量度
+* [環境](/help/using/managing-environments.md) - 為程式設定的所有環境
+* [內容集](/help/using/content-copy.md) - 為複製目的而建立的內容集合
+* [複製內容活動](/help/using/content-copy.md) - 內容複製活動
+* 學習路徑 - 有關 Cloud Manager 的其他學習資源
 
-根據預設，當您開啟程式時，您會到達 **概觀** 標籤。 目前的標籤會反白顯示。 選取其他標籤以顯示其詳細資訊。
+預設情況下，當您開啟程式時，您會到達「**概觀**」索引標籤。會醒目提示目前的索引標籤。選取另一個索引標籤即可顯示其詳細資訊。
 
-使用中的漢堡選單 [Cloud Manager標題](#cloud-manager-header-2) 以隱藏標籤。
+使用 [Cloud Manager 標頭](#cloud-manager-header-2)中的漢堡選單即可隱藏索引標籤。
 
 ### 行動號召 {#cta}
 
-號召性用語區段會根據您的方案狀態，提供您有用的資訊。 若為新計畫，您可能會看到後續步驟以及上線日期提醒， [在建立程式期間設定。](/help/getting-started/program-setup.md)
+行動號召區段將根據您的程式狀態為您提供有用的資訊。對於新程式，您可能會看到提供的後續步驟以及上線日期的提醒，這是[在程式建立期間設定。](/help/getting-started/program-setup.md)
 
-對於即時計畫，您上次部署的狀態，包含詳細資訊的連結和開始新的部署。
+對於即時程式，會看到上次部署的狀態以及詳細資訊和開始新部署的連結。
 
 ![行動號召](assets/info-banner.png)
 
-### 環境卡 {#environments}
+### 環境卡片 {#environments}
 
-此 **環境** 卡片會提供您環境的概觀，以及快速動作的連結。
+「**環境**」卡片為您提供環境的概觀以及快速動作的連結。
 
-新環境列在&#x200B;**環境**&#x200B;卡只會列出三個環境。按一下 **全部顯示** 檢視計畫的所有環境。
+「**環境**」卡片只會列出三個環境。按一下「**全部顯示**」按鈕即可查看程式的所有環境。
 
-請參閱檔案 [管理環境](/help/using/managing-environments.md) 有關如何管理環境的詳細資訊。
+請參閱文件：[管理環境](/help/using/managing-environments.md)，了解有關如何管理環境的詳細資訊。
 
-### 管道卡 {#pipelines}
+### 管道卡片 {#pipelines}
 
-此 **管道** 卡片會提供管道的概觀，以及快速動作的連結。
+「**管道**」卡片為您提供管道的概觀以及快速動作的連結。
 
-此 **管道** 卡片僅列出三個管道。 按一下 **全部顯示** 檢視計畫的所有管道。
+「**管道**」卡片只列出了三個管道。按一下「**全部顯示**」按鈕即可查看程式的所有管道。
 
-請參閱檔案 [管理管道](/help/using/managing-pipelines.md) 有關如何管理管道的詳細資訊。
+請參閱文件：[管理管道](/help/using/managing-pipelines.md)，了解有關如何管理管道的詳細資訊。
 
 ### 實用資源 {#useful-resources}
 
-此 **有用的資源** 區段提供Cloud Manager其他學習資源的連結。
+「**實用資源**」區段提供了 Cloud Manager 的其他學習資源的連結。
