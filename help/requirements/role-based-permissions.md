@@ -3,9 +3,9 @@ title: 角色型權限
 description: 了解 Cloud Manager 預先設定的角色型權限以管理對您的雲端資源的存取。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 source-git-commit: fc1bc626dc18d25ce8c5bbae71396b234b5676db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '620'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 95%
 >
 >本文件旨在說明用於 Adob&#x200B;&#x200B;e Managed Services (AMS) 的 Cloud Manager 以角色為主的權限。
 >
->AEM as a Cloud Service 同等文件可以在 AEM as a Cloud Service 文件中的「[Cloud Manager 簡介](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html#role-based-permissions)」文件找到。
+>AEM as a Cloud Service 同等文件可以在 AEM as a Cloud Service 文件中的「[Cloud Manager 簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html?lang=zh-Hant#role-based-permissions)」文件找到。
 
 ## 使用者角色 {#user-roles}
 
@@ -35,7 +35,7 @@ ht-degree: 95%
 | 部署管理員 | 這類使用者會使用 [!UICONTROL Cloud Manager] 來管理部署操作，以執行中繼和生產部署，必要時可核准重要的 3 層級失敗，並可存取 Git 存放庫。 |
 | 開發人員 | 這類使用者會開發和測試自訂應用程式的程式碼，主要利用  來檢視部署狀態，並擁有對 Git 存放庫的認可存取權。 |
 | 客戶成功工程師 | 一般來說，這類使用者會為 AMS 客戶支援客戶成功，並和 [!UICONTROL Cloud Manager] 互動，以達到執行需要客戶成功工程師 (CSE) 監督的部署的目的。 |
-| 內容作者 | 這類使用者通常不會和Cloud Manager互動，但可能會使用Cloud Manager方案切換器(已經從Experience Cloud進行瀏覽)以存取Adobe Experience Manager (AEM)。 |
+| 內容作者 | 這類使用者通常不會和 Cloud Manager 互動，但可能會使用 Cloud Manager 方案切換器 (已經從 Experience Cloud 進行瀏覽) 以存取 Adobe Experience Manager (AEM)。 |
 
 ## 使用者權限 {#user-permissions}
 
