@@ -7,10 +7,10 @@ user-guide-description: 了解如何使用 Cloud Manager 在雲端自行管理�
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
+source-git-commit: 3beee350dda077c16975ea628bd4c7b80d7d9160
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 99%
+source-wordcount: '530'
+ht-degree: 96%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 99%
    + CI/CD 管道 {#pipelines}
       + [設定生產管道](/help/using/production-pipelines.md)
       + [設定非生產管道](/help/using/non-production-pipelines.md)
-      + [僅限階段和生產配管](/help/using/stage-prod-only.md)
+      + [僅限中繼和僅限生產管道](/help/using/stage-prod-only.md)
       + [管理管道 ](/help/using/managing-pipelines.md)
    + [程式碼部署](/help/using/code-deployment.md)
    + [程式碼品質測試](/help/using/code-quality-testing.md)
@@ -58,17 +58,23 @@ ht-degree: 99%
    + [自訂程式碼品質規則](/help/using/custom-code-quality-rules.md)
    + [內容複製](/help/using/content-copy.md)
 + 管理程式碼 {#managing-code}
+   + [在Cloud Manager中管理存放庫](/help/managing-code/managing-repositories.md)
+   + [存放庫存取資訊](/help/managing-code/accessing-repositories.md)
+   + [新增Adobe存放庫](/help/managing-code/adobe-repositories.md)
+   + [新增私人存放庫](/help/managing-code/private-repositories.md)
+   + [Git 子模組支援](/help/managing-code/git-submodules.md)
+   + [GitHub檢查設定](/help/managing-code/github-check-config.md)
+   + [GitHub檢查附註](/help/managing-code/github-annotations.md)
    + [Maven 專案版本處理](/help/managing-code/maven-project-version.md)
-   + [存放庫](/help/managing-code/repositories.md)
    + [和 Git 整合](/help/managing-code/git-integration.md)
    + [使用多個 Git 存放庫](/help/managing-code/multiple-git-repos.md)
-   + [使用您自己的 GitHub 存放庫](/help/managing-code/byo-github.md)
 + 產品更新精靈 {#product-update-wizard}
    + [概觀](/help/product-update-wizard/overview.md)
    + [評估](/help/product-update-wizard/evaluation.md)
 + 發行說明 {#release-notes}
    + [最新發行說明](/help/release-notes/current.md)
    + 2024 {#2024}
+      + [2024.5.0 版發行說明](/help/release-notes/2024/2024-5-0.md)
       + [2024.4.0 版發行說明](/help/release-notes/2024/2024-4-0.md)
       + [2024.3.0 版發行說明](/help/release-notes/2024/2024-3-0.md)
       + [2024.2.0 版發行說明](/help/release-notes/2024/2024-2-0.md)

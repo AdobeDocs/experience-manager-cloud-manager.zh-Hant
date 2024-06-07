@@ -2,7 +2,7 @@
 title: 導覽 Cloud Manager UI
 description: 了解 Cloud Manager UI 的組織方式以及如何導覽以管理您的程式和環境。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
+source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
 workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 100%
@@ -168,7 +168,7 @@ Cloud Manager 標頭有一個漢堡選單，會自動開啟以顯示程式概觀
 * 概觀 - 目前文件中所述的程式概觀
 * [活動](/help/using/managing-pipelines.md#activity) - 程式的管道執行歷史記錄
 * [管道](/help/using/managing-pipelines.md#pipelines) - 為程式設定的所有管道
-* [存放庫](/help/managing-code/repositories.md) - 為程式設定的所有存放庫
+* [存放庫](/help/managing-code/managing-repositories.md) - 為程式設定的所有存放庫
 * [報告](/help/using/monitoring-environments.md#system-monitoring-overview) - SLA 資料等量度
 * [環境](/help/using/managing-environments.md) - 為程式設定的所有環境
 * [內容集](/help/using/content-copy.md) - 為複製目的而建立的內容集合

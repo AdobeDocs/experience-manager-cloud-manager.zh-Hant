@@ -2,10 +2,10 @@
 title: 管理管道
 description: 了解如何管理現有管道，包括將其編輯、執行和刪除。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+source-git-commit: 4ab4bd416658c55d72228b701c57a1845d2d0f41
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 96%
+source-wordcount: '901'
+ht-degree: 88%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 96%
 
 1. 在這裡，您可以看到方案所有管道的清單，以及啟動和停止管道執行，就像在&#x200B;**管道卡**&#x200B;中一樣。
 
-點選或按一下 `i` 圖示會顯示有關管道的上次或目前執行的詳細資訊。
+點選或按一下 `i` 圖示會顯示有關管道上次或目前執行的詳細資訊。
 
 ![管道執行詳細資訊](/help/assets/configure-pipelines/pipeline-status.png)
 
@@ -60,7 +60,7 @@ ht-degree: 96%
 
 1. 在這裡，您可以看到方案所有管道執行的清單，包括目前和歷史執行。
 
-點選或按一下 `i` 圖示會顯示所選管道執行的執行詳情。
+點選或按一下 `i` 圖示會顯示有關所選管道執行的執行詳細資訊。
 
 ![管道執行詳細資訊](/help/assets/configure-pipelines/pipeline-activity.png)
 
@@ -96,6 +96,10 @@ ht-degree: 96%
 >
 >您無法編輯執行中的管道。
 
+>[!NOTE]
+>
+>私有存放庫不支援Web層和設定管道。 請參閱檔案 [在Cloud Manager中新增私有存放庫](/help/managing-code/private-repositories.md) 以取得詳細資料和完整的限制清單。
+
 ## 刪除管道 {#deleting-pipelines}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
@@ -127,6 +131,15 @@ ht-degree: 96%
 點選或按一下&#x200B;**檢視詳細資訊**&#x200B;連結以顯示&#x200B;**持續時間**&#x200B;區段。這包括基於該方案歷史趨勢的管道平均持續時間。
 
 ![持續時間](/help/assets/configure-pipelines/duration.png)
+
+如果您的管道包含 **程式碼掃描** 步驟會造成問題，您可以點選或按一下 **下載詳細資料** 按鈕以檢視清單 [程式碼品質測試](/help/using/code-quality-testing.md) 未通過。
+
+![程式碼品質問題](assets/managing-pipelines-code-quality-issues.png)
+
+A **專案檔案位置** 欄可在CSV檔案中使用，以指出違規代碼的位置。 此欄是專案相對路徑，而 **檔案位置** 欄是由Maven產生。
+
+![專案程式碼掃描問題詳細資料](assets/managing-pipelines-code-quality-details.png)
+
 
 >[!NOTE]
 >
