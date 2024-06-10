@@ -3,10 +3,10 @@ title: 在Cloud Manager中新增私有存放庫
 description: 瞭解如何設定Cloud Manager以使用您自己的私人GitHub存放庫。
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: 84a6d8b7a44af124eb227999ad1cbd1fe14ab7ee
+source-git-commit: 6f14a8e9ff8e56f9f7b84799733e26b4c0ff8dcb
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 68%
+source-wordcount: '868'
+ht-degree: 70%
 
 ---
 
@@ -124,7 +124,6 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
 
 某些限制適用於搭配Cloud Manager使用私人存放庫。
 
-* 您無法使用私有存放庫作為您管理的管道的直接存放庫來源。
 * 您無法透過Cloud Manager的GitHub檢查暫停提取請求驗證。
    * 如果已在Cloud Manager中驗證GitHub存放庫，Cloud Manager一律會嘗試驗證為該存放庫建立的提取請求。
 * 如果您的 GitHb 組織已移除 Adobe GitHub 應用程式，這將移除所有存放庫的提取要求驗證。

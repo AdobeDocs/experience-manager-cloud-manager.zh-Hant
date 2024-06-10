@@ -2,10 +2,10 @@
 title: 在Cloud Manager中管理存放庫
 description: 瞭解如何在Cloud Manager中建立、檢視和編輯Git存放庫。
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: b15ef71ae24f51811798d2d25c8f75320e21c01f
+source-git-commit: 73add7bee892769d1b3864e3238aff26bf96162d
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 27%
+source-wordcount: '660'
+ht-degree: 25%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 27%
 
 * 存放庫型別
    * **Adobe** 表示Adobe管理的存放庫
-   * **私人** 表示您管理的GitHub存放庫
+   * **GitHub** 表示您管理的私人GitHub存放庫
 * 建立時間
 * 與存放庫關聯的管道
 
@@ -76,6 +76,13 @@ Cloud Manager支援兩個由Adobe(**Adobe存放庫**)以及您自己的自行管
 此 **存放庫資訊** 視窗會開啟，其中包含詳細資訊。 如需有關存取存放庫資訊的詳細資訊，請參閱檔案 [存取存放庫資訊。](accessing-repositories.md)
 
 ## 檢查分支 {#check-branches}
+
+此 **檢查分支/建立專案** 動作會根據存放庫狀態執行兩個功能。
+
+* 如果存放庫是新建立的，動作會根據下列專案建立範例專案 [AEM專案原型。](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview)
+* 如果存放庫已建立範例專案，則會檢查存放庫及其分支的狀態，並報告範例專案是否已存在。
+
+![檢查分支動作](assets/check-branches.png)
 
 ## 複製存放庫 URL {#copy-url}
 

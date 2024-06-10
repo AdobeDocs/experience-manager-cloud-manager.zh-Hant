@@ -2,10 +2,10 @@
 title: 僅限中繼和僅限生產管道
 description: 了解如何使用專用管道分割中繼和生產部署。
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 54da5fd599eced473141ae67242841a8dd833f36
-workflow-type: ht
-source-wordcount: '842'
-ht-degree: 100%
+source-git-commit: c238caa22fdd71ae6aefd098331b626b9b951a0f
+workflow-type: tm+mt
+source-wordcount: '891'
+ht-degree: 92%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 * **僅限生產部署管道**&#x200B;僅部署到生產環境，並可選取在中繼環境已成功完成和經驗證的執行，並將其成品部署到生產環境。
    * 僅限生產管道將重複使用中繼部署中的成品，跳過建置階段。
 
-當全端生產管道執行中，僅限中繼管道和僅限生產管道都不會被執行，反之亦然。
+當完整棧疊生產管道正在執行時，不會執行stage-only或prod-only管道，反之亦然。 如果僅限階段和完整棧疊生產管道具有 **關於Git變更** 觸發器已設定並指向相同分支和存放庫，則只會自動啟動僅限中繼的管道。 僅生產管道未啟動 **關於Git變更** 因為它們未直接連結到存放庫。
 
 這些專用管道提供更大的彈性，但請注意以下操作細節和建議。
 
