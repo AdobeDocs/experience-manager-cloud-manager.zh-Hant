@@ -8,9 +8,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: 3beee350dda077c16975ea628bd4c7b80d7d9160
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '530'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -58,13 +58,13 @@ ht-degree: 96%
    + [自訂程式碼品質規則](/help/using/custom-code-quality-rules.md)
    + [內容複製](/help/using/content-copy.md)
 + 管理程式碼 {#managing-code}
-   + [在Cloud Manager中管理存放庫](/help/managing-code/managing-repositories.md)
+   + [管理 Cloud Manager 中的存放庫](/help/managing-code/managing-repositories.md)
    + [存放庫存取資訊](/help/managing-code/accessing-repositories.md)
-   + [新增Adobe存放庫](/help/managing-code/adobe-repositories.md)
+   + [新增 Adob&#x200B;&#x200B;e 存放庫](/help/managing-code/adobe-repositories.md)
    + [新增私人存放庫](/help/managing-code/private-repositories.md)
    + [Git 子模組支援](/help/managing-code/git-submodules.md)
-   + [GitHub檢查設定](/help/managing-code/github-check-config.md)
-   + [GitHub檢查附註](/help/managing-code/github-annotations.md)
+   + [GitHub 檢查設定](/help/managing-code/github-check-config.md)
+   + [GitHub 檢查附註](/help/managing-code/github-annotations.md)
    + [Maven 專案版本處理](/help/managing-code/maven-project-version.md)
    + [和 Git 整合](/help/managing-code/git-integration.md)
    + [使用多個 Git 存放庫](/help/managing-code/multiple-git-repos.md)

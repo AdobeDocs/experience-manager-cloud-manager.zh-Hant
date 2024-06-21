@@ -1,15 +1,15 @@
 ---
 title: Git 子模組支援
-description: 瞭解如何使用Git子模組，在建置時間時跨越Git存放庫合併多個分支的內容。
+description: 了解如何使用 Git 子模組以便在建置時間時跨越 Git 存放庫合併多個分支的內容。
 source-git-commit: aa30c0024e422c96f0dfbaa2804e75143faf14dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '417'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 
-# Adobe存放庫的Git子模組支援 {#git-submodule-support}
+# Adobe 存放庫的 Git 子模組支援 {#git-submodule-support}
 
 Git 子模組可用於在建置時間時跨越 Git 存放庫合併多個分支的內容。
 
@@ -77,21 +77,21 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
    * 為此，需對每個子模組執行 `git config -f .gitmodules submodule.<submodule path>.shallow true`。
 
 
-## 適用於私人存放庫的Git子模組支援 {#private-repositories}
+## 對私人存放庫的 Git 子模組支援 {#private-repositories}
 
-使用時支援Git子模組 [私人存放庫](private-repositories.md) 與使用Adobe存放庫時大致相同。
+使用[私人存放庫](private-repositories.md)時，對 Git 子模組的支援與使用 Adob&#x200B;&#x200B;e 存放庫時基本相同。
 
-不過，在設定您的 `pom.xml` 檔案並執行 `git submodule` 命令，您必須新增 `.gitmodules` 檔案至彙總器存放庫的根目錄，以供Cloud Manager偵測子模組設定。
+但是，設定完您的 `pom.xml` 檔案並執行 `git submodule` 命令後，您必須新增一個 `.gitmodules` 檔案到彙總器存放庫的根目錄，以便 Cloud Manager 偵測子模組設定。
 
-![.gitmodules檔案](assets/gitmodules.png)
+![.gitmodules 檔案](assets/gitmodules.png)
 
-![彙總](assets/aggregator.png)
+![彙總器](assets/aggregator.png)
 
 ### 限制和建議 {#limitations-recommendations-private-repos}
 
-將Git子模組與私人存放庫搭配使用時，請注意下列限制。
+透過私人存放庫使用 Git 子模組時，請留意以下限制：
 
-* 子模組的Git URL可以是HTTPS或SSH格式，但必須連結至github.com存放庫
-   * 無法將Adobe存放庫子模組新增至GitHub彙總存放庫，反之亦然。
-* AdobeGitHub應用程式必須可存取GitHub子模組。
-* [搭配Adobe管理的存放庫使用Git子模組的限制](#limitations-recommendations) 亦適用。
+* 子模組的 Git URL 可以是 HTTPS 或 SSH 格式，但必須連結到 github.com 存放庫
+   * 將 Adob&#x200B;&#x200B;e 存放庫子模組新增至 GitHub 彙總器存放庫 (反之亦然) 將無法運作。
+* Adobe GitHub 應用程式必須可以存取 GitHub 子模組。
+* [透過 Adob&#x200B;&#x200B;e 託管的存放庫使用 Git 子模組的限制](#limitations-recommendations)也適用。

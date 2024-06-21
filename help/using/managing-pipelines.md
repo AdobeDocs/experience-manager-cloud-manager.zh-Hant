@@ -3,9 +3,9 @@ title: 管理管道
 description: 了解如何管理現有管道，包括將其編輯、執行和刪除。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
 source-git-commit: 4ab4bd416658c55d72228b701c57a1845d2d0f41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '901'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->私有存放庫不支援Web層和設定管道。 請參閱檔案 [在Cloud Manager中新增私有存放庫](/help/managing-code/private-repositories.md) 以取得詳細資料和完整的限制清單。
+>私人存放庫不支援 Web 層和設定管道。請參閱文件「[在 Cloud Manager 中新增私人存放庫](/help/managing-code/private-repositories.md)」，了解詳細資訊和完整的限制清單。
 
 ## 刪除管道 {#deleting-pipelines}
 
@@ -132,13 +132,13 @@ ht-degree: 88%
 
 ![持續時間](/help/assets/configure-pipelines/duration.png)
 
-如果您的管道包含 **程式碼掃描** 步驟會造成問題，您可以點選或按一下 **下載詳細資料** 按鈕以檢視清單 [程式碼品質測試](/help/using/code-quality-testing.md) 未通過。
+如果您的管道包含引發問題的&#x200B;**代碼掃描**&#x200B;步驟，您可以點選或按一下「**下載詳細資訊**」按鈕，以查看未通過的[程式碼品質測試](/help/using/code-quality-testing.md)清單。
 
 ![程式碼品質問題](assets/managing-pipelines-code-quality-issues.png)
 
-A **專案檔案位置** 欄可在CSV檔案中使用，以指出違規代碼的位置。 此欄是專案相對路徑，而 **檔案位置** 欄是由Maven產生。
+CSV 檔案中有「**專案檔案位置**」欄，會指出違規程式碼的位置。此欄是專案相對路徑，而「**檔案位置**」欄是 Maven 產生。
 
-![專案程式碼掃描問題詳細資料](assets/managing-pipelines-code-quality-details.png)
+![專案程式碼掃描問題詳細資訊](assets/managing-pipelines-code-quality-details.png)
 
 
 >[!NOTE]
