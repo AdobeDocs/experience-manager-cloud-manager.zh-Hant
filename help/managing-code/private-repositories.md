@@ -4,7 +4,7 @@ description: 了解如何設定 Cloud Manager 以搭配使用您自己的私人 
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
 source-git-commit: 6f14a8e9ff8e56f9f7b84799733e26b4c0ff8dcb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '868'
 ht-degree: 100%
 
