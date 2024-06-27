@@ -3,10 +3,10 @@ title: 在 Cloud Manager 中新增私人存放庫
 description: 了解如何設定 Cloud Manager 以搭配使用您自己的私人 GitHub 存放庫。
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: 6f14a8e9ff8e56f9f7b84799733e26b4c0ff8dcb
-workflow-type: ht
-source-wordcount: '868'
-ht-degree: 100%
+source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
+workflow-type: tm+mt
+source-wordcount: '855'
+ht-degree: 98%
 
 ---
 
@@ -114,11 +114,7 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
 
 ## 將私人存放庫與管道建立關聯 {#pipelines}
 
-經驗證的私人存放庫可以與[全端和前端管道建立關聯。](/help/overview/ci-cd-pipelines.md)
-
->[!NOTE]
->
->私人存放庫不支援 Web 層和設定管道。
+驗證的私人存放庫可以關聯至 [完整棧疊管道。](/help/overview/ci-cd-pipelines.md)
 
 ## 限制 {#limitations}
 

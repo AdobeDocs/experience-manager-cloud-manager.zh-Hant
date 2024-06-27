@@ -2,9 +2,9 @@
 title: 管理管道
 description: 了解如何管理現有管道，包括將其編輯、執行和刪除。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 4ab4bd416658c55d72228b701c57a1845d2d0f41
-workflow-type: ht
-source-wordcount: '901'
+source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
+workflow-type: tm+mt
+source-wordcount: '872'
 ht-degree: 100%
 
 ---
@@ -95,10 +95,6 @@ ht-degree: 100%
 >[!NOTE]
 >
 >您無法編輯執行中的管道。
-
->[!NOTE]
->
->私人存放庫不支援 Web 層和設定管道。請參閱文件「[在 Cloud Manager 中新增私人存放庫](/help/managing-code/private-repositories.md)」，了解詳細資訊和完整的限制清單。
 
 ## 刪除管道 {#deleting-pipelines}
 
