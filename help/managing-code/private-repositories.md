@@ -4,9 +4,9 @@ description: 了解如何設定 Cloud Manager 以搭配使用您自己的私人 
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
 source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '855'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -114,7 +114,7 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
 
 ## 將私人存放庫與管道建立關聯 {#pipelines}
 
-驗證的私人存放庫可以關聯至 [完整棧疊管道。](/help/overview/ci-cd-pipelines.md)
+經驗證的私人存放庫可以與[全端管道](/help/overview/ci-cd-pipelines.md)建立關聯。
 
 ## 限制 {#limitations}
 

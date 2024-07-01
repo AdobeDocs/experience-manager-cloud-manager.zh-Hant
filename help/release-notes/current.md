@@ -4,9 +4,9 @@ description: 以下是 Cloud Manager 2024.6.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '288'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 95%
 
 ## 新增功能 {#what-is-new}
 
-* 您現在可以 [使用您自己的GitHub存放庫](/help/managing-code/private-repositories.md) 作為完整棧疊管道的來源。
+* 您現在可以[使用自己的 GitHub 存放庫](/help/managing-code/private-repositories.md)，做為全端管道的來源。
    * 此外，您還可以透過有 [Git 子模組](/help/managing-code/git-submodules.md)的 GitHub 存放庫，對用於驗證提取請求的自動產生的管道增強控制，並定義程式碼掃描階段中關鍵指標的行為。
    * [您也可以選擇](/help/managing-code/github-check-config.md) 在 GitHub 上保留報告歷史記錄、命名管道，以及按照您的需求設定管道變數。
 * 新的 OakPal 規則已新增至 [Cloud Manager 程式碼品管掃描](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)。
