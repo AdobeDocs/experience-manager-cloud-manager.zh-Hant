@@ -2,10 +2,10 @@
 title: 管理環境
 description: 了解如何使用 Cloud Manager 來管理您的環境。
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+source-git-commit: 116a930eea08b2bb9d288ec153519699754e0374
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 89%
+source-wordcount: '277'
+ht-degree: 95%
 
 ---
 
@@ -37,9 +37,9 @@ ht-degree: 89%
 
 ## 管理環境 {#managing-environments-with-cloud-manager}
 
-在 **環境** 圖磚、點選或按一下任何環境的列，以顯示 **環境** 畫面。
+在「**環境**」圖磚上，點選或按一下任何環境列即可顯示「**環境**」畫面。
 
-此 **環境** 畫面會顯示您程式中的每個生產和中繼環境。 每張卡片的上方都會顯示環境名稱。卡片會包括環境中的節點表以及 CPU 的 T 恤尺寸、儲存空間、區域和狀態。
+「**環境**」畫面會顯示程式中的各個生產和中繼環境。每張卡片的上方都會顯示環境名稱。卡片會包括環境中的節點表以及 CPU 的 T 恤尺寸、儲存空間、區域和狀態。
 
 >[!NOTE]
 >
@@ -51,6 +51,10 @@ ht-degree: 89%
 * 黃色 - 無法提供
 
 ![「環境」索引標籤](/help/assets/Environments-tab.png)
+
+>[!NOTE]
+>
+>布建後，就無法變更環境詳細資訊（例如名稱）。
 
 >[!NOTE]
 >
