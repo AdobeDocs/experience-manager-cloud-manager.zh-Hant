@@ -3,9 +3,9 @@ title: 管理環境
 description: 了解如何使用 Cloud Manager 來管理您的環境。
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
 source-git-commit: 116a930eea08b2bb9d288ec153519699754e0374
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '277'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->布建後，就無法變更環境詳細資訊（例如名稱）。
+>環境詳細資訊 (例如名稱) 一旦佈建後就無法變更。
 
 >[!NOTE]
 >
