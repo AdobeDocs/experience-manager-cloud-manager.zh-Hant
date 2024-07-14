@@ -4,7 +4,7 @@ description: 了解如何使用 Admin Console 新增使用者和角色，並建�
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 source-git-commit: dd96d773ea3e6b9c45886fe41b28d3dd70cb8a61
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '774'
 ht-degree: 100%
 
 ---
@@ -50,7 +50,7 @@ Admin Console 是在整個組織中管理 Adob&#x200B;&#x200B;e 權益的中心�
 
 為了提供適當的角色型權限給 [!UICONTROL Cloud Manager] 使用者，客戶組織中的管理員必須在 [!UICONTROL AEM Managed Services] 產品內容下建立新產品設定檔，並需對應以下四個 [!UICONTROL Cloud Manager] 角色的每一個：
 
-* 企業所有者
+* 業務負責人
 * 部署管理員
 * 開發人員
 * 方案管理員

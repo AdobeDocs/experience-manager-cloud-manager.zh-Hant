@@ -3,7 +3,7 @@ title: 管理 Cloud Manager 中的存放庫
 description: 了解如何在 Cloud Manager 中建立、檢視和編輯 Git 存放庫。
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 73add7bee892769d1b3864e3238aff26bf96162d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 100%
 

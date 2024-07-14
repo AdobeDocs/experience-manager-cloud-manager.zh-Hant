@@ -1,13 +1,13 @@
 ---
 title: 私人存放庫的 GitHub 檢查設定
 description: 了解如何控制自動建立的管道以驗證對私人存放庫的每個提取請求。
-source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
-workflow-type: ht
+exl-id: 29c9e487-e196-411a-8cda-6751b0a56066
+source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 100%
 
 ---
-
 
 # 私人存放庫的 GitHub 檢查設定 {#github-check-config}
 

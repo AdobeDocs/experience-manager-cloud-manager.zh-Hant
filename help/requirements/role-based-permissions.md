@@ -3,7 +3,7 @@ title: 角色型權限
 description: 了解 Cloud Manager 預先設定的角色型權限以管理對您的雲端資源的存取。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 source-git-commit: fc1bc626dc18d25ce8c5bbae71396b234b5676db
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 100%
 

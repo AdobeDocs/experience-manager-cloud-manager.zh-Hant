@@ -4,8 +4,8 @@ description: 從這裡開始了解用於 Adobe​ Managed Services (AMS) 的 Clo
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: a2cea28061304d109a3c9a48650d01255579443c
 workflow-type: tm+mt
-source-wordcount: '1322'
-ht-degree: 100%
+source-wordcount: '1300'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ Adobe Experience Manager 的 [!UICONTROL Cloud Manager] 使開發人員能夠透
 
 ![CI/CD 流程](/help/assets/screen_shot_2018-05-12at73843pm.png)
 
-## [!UICONTROL  中的重要功能 Cloud Manager] {#key-features-in-cloud-manager}
+## [!UICONTROL Cloud Manager]中的重要功能 {#key-features-in-cloud-manager}
 
 以下是對 Cloud Manager 選定的重要功能的深入探討。
 

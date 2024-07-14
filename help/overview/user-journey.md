@@ -4,8 +4,8 @@ description: 本文件會展示不同的上線案例，並說明您的 Cloud Man
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
 source-git-commit: b0dbb602253939464ff034941ffbad84b7df77df
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 100%
+source-wordcount: '539'
+ht-degree: 97%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 
 在上線流程中，您將收到一封歡迎電子郵件，內容包括：
 
-* 存取 [!UICONTROL  的 URLCloud Manager]
+* 存取[!UICONTROL Cloud Manager]的URL
 * 登入至 [!UICONTROL Experience Cloud] 的說明
 * 使用 Admin Console 來管理您的使用者和他們個別權限的說明，讓他們在需要時能夠存取 [!UICONTROL Cloud Manager]。
 
@@ -48,7 +48,7 @@ ht-degree: 100%
 
 若要取得更多有關升級至 AEM 6.5 的優勢的資訊，請參閱文件：[升級至 AEM 6.5。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade.html)
 
-## 存取 [!UICONTROL Cloud Manager] {#accessing-cloud-manager}
+## 正在存取[!UICONTROL Cloud Manager] {#accessing-cloud-manager}
 
 您將能存取 [!UICONTROL Cloud Manager] 以及您的 AEM 環境，僅需使用您的 Adobe Identity Management 憑證登入至 [!UICONTROL Experience Cloud] 登陸頁面，並從解決方案切換器介面選取 AEM 即可。
 
@@ -58,7 +58,7 @@ ht-degree: 100%
 
 如需更多有關 AEM 的資訊，請參閱文件：[部署和維護。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)
 
-## [!UICONTROL  快速入門Cloud Manager] {#getting-started-with-cloud-manager}
+## 開始使用[!UICONTROL Cloud Manager] {#getting-started-with-cloud-manager}
 
 登入至 [!UICONTROL Cloud Manager] 後，您就可以透過以下步驟開始使用 AEM 專案：
 

@@ -4,7 +4,7 @@ description: 本文件為 AMS 客戶提供有關 Cloud Manager 最常見問題�
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
 source-git-commit: 6be659e02df0657ec7d3dbce8c18c44a327a36f4
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '749'
 ht-degree: 100%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 100%
 
 ## 我是否能將 SNAPSHOT 用於 Maven 專案的版本？ {#snapshot}
 
-可以。 對於開發人員部署，Git 分支 `pom.xml` 檔案在 `<version>` 值的末尾必須包含 `-SNAPSHOT`。
+可以。對於開發人員部署，Git 分支 `pom.xml` 檔案在 `<version>` 值的末尾必須包含 `-SNAPSHOT`。
 
 這容許在版本未變更時仍可安裝後續部署。在開發人員部署中，不會為 Maven 組建新增或產生自動版本。
 

@@ -3,7 +3,7 @@ title: 導覽 Cloud Manager UI
 description: 了解 Cloud Manager UI 的組織方式以及如何導覽以管理您的程式和環境。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
 source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 100%
 

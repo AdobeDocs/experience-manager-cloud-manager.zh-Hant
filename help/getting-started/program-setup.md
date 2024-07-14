@@ -4,8 +4,8 @@ description: 上線後，企業所有者將需要對方案進行一些初始設�
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 100%
+source-wordcount: '586'
+ht-degree: 99%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 上線後，企業所有者完成方案的初始設定，包括設定方案說明並定義用於效能測試的關鍵績效指標 (KPI)。
 
-## 使用 [!UICONTROL  的方案設定Cloud Manager] {#program-setup-cloud-manager}
+## 使用[!UICONTROL Cloud Manager]的方案設定 {#program-setup-cloud-manager}
 
 依照下列步驟設定方案並定義 KPI。
 

@@ -1,13 +1,13 @@
 ---
 title: 在 Cloud Manager 中新增 Adob​​e 存放庫
 description: 了解如何在 Cloud Manager 中建立 Adob​​e 託管的存放庫。
-source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
-workflow-type: ht
+exl-id: 24c6ca97-ea70-41b8-b4c7-b8b0f406a57d
+source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 100%
 
 ---
-
 
 # 在 Cloud Manager 中新增 Adob&#x200B;&#x200B;e 存放庫 {#adobe-repositories}
 
