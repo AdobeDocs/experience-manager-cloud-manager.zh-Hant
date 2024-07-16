@@ -4,7 +4,7 @@ description: 以下是 Cloud Manager 2024.6.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 851b556c0917d9f6d97d958a0c8e8aeff4141079
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '288'
 ht-degree: 100%
 
