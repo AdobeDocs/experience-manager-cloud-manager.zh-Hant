@@ -1,19 +1,19 @@
 ---
-title: 2024.6.0 版發行說明
-description: 以下是 Cloud Manager 2024.6.0 版的發行說明。
+title: 2024.7.0 版發行說明
+description: 以下是 Cloud Manager 2024.7.0 版的發行說明。
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 851b556c0917d9f6d97d958a0c8e8aeff4141079
-workflow-type: ht
-source-wordcount: '288'
-ht-degree: 100%
+source-git-commit: d536cd96d135e48039f94fd01142a63305b6eeae
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 65%
 
 ---
 
 
-# Cloud Manager 2024.6.0 版的發行說明 {#release-notes}
+# Cloud Manager 2024.7.0 版的發行說明 {#release-notes}
 
-本頁記錄 [!UICONTROL Cloud Manager] 2024.6.0 版的發行說明。
+本頁記錄 [!UICONTROL Cloud Manager] 2024.7.0 版的發行說明。
 
 >[!NOTE]
 >
@@ -21,16 +21,13 @@ ht-degree: 100%
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2024.6.0 版的發行日期為 2024 年 6 月 6 日。下一版本預計於 2024 年 7 月 18 日發行。
+[!UICONTROL Cloud Manager] 2024.7.0版的發行日期為2024年7月18日。 下一版本計畫於 2024 年 8 月 8 日發行。
 
 ## 新增功能 {#what-is-new}
 
-* 您現在可以[使用自己的 GitHub 存放庫](/help/managing-code/private-repositories.md)，做為全端管道的來源。
-   * 此外，您還可以透過有 [Git 子模組](/help/managing-code/git-submodules.md)的 GitHub 存放庫，對用於驗證提取請求的自動產生的管道增強控制，並定義程式碼掃描階段中關鍵指標的行為。
-   * [您也可以選擇](/help/managing-code/github-check-config.md) 在 GitHub 上保留報告歷史記錄、命名管道，以及按照您的需求設定管道變數。
-* 新的 OakPal 規則已新增至 [Cloud Manager 程式碼品管掃描](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)。
-   * 截至 2024 年 6 月新增的每項新規則都是非重大變更。
-   * 建議您盡快解決這些問題，因為這些新規則將會導致 Cloud Manager 2024 年 8 月版本無法啟動管道。
+* [生產管道](/help/using/production-pipelines.md#adding-production-pipeline)和[非生產管道](/help/using/non-production-pipelines.md#adding-non-production-pipeline)在Git變更上&#x200B;**觸發**&#x200B;以在認可上啟動管道，現在可供[私人存放庫使用。](/help/managing-code/private-repositories.md)
+* 生產前管道只能手動觸發，並且不能在Git變更&#x200B;**上設定為**。
+* 對於僅限生產的管道，可升級的執行清單包括具有高於在生產環境中部署的成品版本的成品版本。
 
 ## 早期採用計劃 {#early-adoption}
 
