@@ -3,9 +3,9 @@ title: 自訂程式碼品質規則
 description: 根據來自 AEM 工程團隊的最佳做法，了解 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則的詳細資訊。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 8f0f5e819cf312ef25beac815beca92d4e3ac255
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3544'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -865,12 +865,12 @@ AEM Cloud Service 禁止在分析工具中建立名稱不正確的 tokenizer。t
 
 ### 索引定義的設定不應包含空格 {#oakpal-indexing-definitions-spaces}
 
-* **索引鍵**： PathSpacesCheck
+* **索引鍵**：PathSpacesCheck
 * **類型**：改善
 * **嚴重度**：輕微
 * **始自**：2024.7.0 版本
 
-AEM Cloud Service禁止建立包含空格屬性的索引定義。
+AEM Cloud Service 禁止建立包含帶有空格之屬性的索引定義。
 
 ## Dispatcher 最佳化工具 {#dispatcher-optimization-tool-rules}
 
