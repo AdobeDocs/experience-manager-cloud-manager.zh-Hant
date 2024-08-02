@@ -3,9 +3,9 @@ title: 導覽 Cloud Manager UI
 description: 了解 Cloud Manager UI 的組織方式以及如何導覽以管理您的程式和環境。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
 source-git-commit: d4d9a9f38c5a969f276140dca98731c670547a3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1439'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -27,15 +27,15 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 「我的程式」控制台提供您在所選組織中有權存取之所有程式的概觀。它由幾個部分組成。
 
-1. [工具列](#toolbars-my-programs-toolbars)，提供組織選擇、警示和帳戶設定
-1. 允許您切換計畫目前檢視的標籤。
-   * **首頁**&#x200B;檢視（預設），此檢視選取&#x200B;**我的計畫**&#x200B;檢視，並包含所有計畫的概覽
-   * 存取授權儀表板的&#x200B;**授權**。 授權儀表板僅適用於AEM as a Cloud Service計畫，而不適用於AMS計畫。
-      * 若要判斷您的程式具有的服務型別（AMS或AEMaaCS），請參閱本檔案的[程式卡片區段](#program-cards)。
-   * 請注意，索引標籤預設為關閉，並且可以使用[Cloud Manager標題中的漢堡功能表顯示。](#cloud-manager-header)
-1. [行動號召與統計資料](#cta-statistics)，瞭解您最近活動的概觀
-1. [**我的計畫**&#x200B;區段](#my-programs-section)，其中包含您所有計畫的概觀
-1. [快速連結](#quick-links)，用於輕鬆存取相關資源
+1. [工具列](#toolbars-my-programs-toolbars)：提供組織選擇、警示和帳戶設定
+1. 標籤：可讓您切換程式的目前檢視。
+   * **首頁**&#x200B;檢視 (預設)：選取了「**我的程式**」檢視，其中包含所有程式的概觀
+   * **授權**：用於存取授權儀表板授權儀表板僅適用於 AEM as a Cloud Service 程式，不適用於 AMS 程式。
+      * 若要確定您的程式所提供的服務類型 (AMS 或 AEMaaCS)，請參閱本文件的[程式卡章節](#program-cards)。
+   * 請注意，標籤預設為關閉狀態，可使用 [Cloud Manager 標頭](#cloud-manager-header)中的漢堡選單來顯示
+1. [行動號召和統計資料](#cta-statistics)：提供您最近的活動概觀
+1. [**我的程式**&#x200B;區段](#my-programs-section)：包含您所有程式的概觀
+1. [快速連結](#quick-links)：用於輕鬆存取相關資源
 
 >[!TIP]
 >
@@ -51,9 +51,9 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ![Experience Cloud 標頭](assets/experience-cloud-header.png)
 
-1. 漢堡選單可讓您存取標籤，這些標籤可帶您進入個別計畫中的特定部分，或依據內容在[授權儀表板]和&#x200B;**[我的程式](#my-programs-console)**&#x200B;主控台之間切換。
-   * 授權儀表板僅適用於AEM as a Cloud Service計畫，而不適用於AMS計畫。
-   * 若要判斷您的程式具有的服務型別（AMS或AEMaaCS），請參閱本檔案的[程式卡片區段](#program-cards)。
+1. 漢堡選單提供了對標籤的存取，這些標籤可帶您前往個別程式的特定部分，或在「授權儀表板」和「**[我的程式](#my-programs-console)**」控制台之間切換 (視內容而定)。
+   * 授權儀表板僅適用於 AEM as a Cloud Service 程式，不適用於 AMS 程式。
+   * 若要確定您的程式所提供的服務類型 (AMS 或 AEMaaCS)，請參閱本文件的[程式卡章節](#program-cards)。
 1. 無論您位於 Cloud Manager 中的哪個位置，Cloud Manager 按鈕都會將您帶回 Cloud Manager 的「我的程式」控制台。
 1. 點選或按一下「意見回饋」按鈕，即可向 Adobe 提供有關 Cloud Manager 的意見回饋。
 1. 組織選擇器會顯示您目前登入的組織 (在本例中為 Foundation Internal)。如果您的 Adobe ID 與多個組織關聯，可點選或按一下以切換到另一個組織。
@@ -69,13 +69,13 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 ![程式工具列](assets/program-toolbar.png)
 
 1. 程式選擇器將會開啟一個下拉式選單，您可以在其中快速選取其他程式或採取內容相關動作，例如建立新程式
-1. 透過入門連結，您可以存取[上線文件歷程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/overview)以幫助您順利執行 Cloud Manager。
+1. 透過入門連結，您可以存取[上線文件歷程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/journey/overview)以幫助您順利執行 Cloud Manager。
    * 請注意，上線歷程是針對 AEM as a Cloud Service 而不是針對 Cloud Service for AMS 而設計的，但許多概念是相同的。
 1. 動作按鈕提供內容相關動作，例如建立新程式。
 
-### 行動號召與統計資料 {#cta-statistics}
+### 行動號召和統計資料 {#cta-statistics}
 
-號召性用語和統計資料區段提供您組織的彙總資料，例如，如果您已成功設定方案，會顯示過去90天的活動統計資料，包括：
+「行動號召和統計資料」區段為您的組織提供了彙總資料，例如，如果您已成功設定程式，則可能會顯示過去 90 天內的活動統計資料，包括：
 
 * [部署](/help/using/code-deployment.md)數量
 * 已識別的[程式碼品質問題](/help/using/code-quality-testing.md)數量
@@ -83,13 +83,13 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 或者，如果您剛開始設定您的組織，可能會有關於後續步驟或文件資源的提示。
 
-### 我的計畫區段 {#my-programs-section}
+### 我的程式區段 {#my-programs-section}
 
-「我的程式」主控台的主要內容是&#x200B;**我的程式**&#x200B;區段，將您的程式列為個別卡片。 點選或按一下卡片即可存取該程式的「**程式概觀**」頁面，以了解有關該程式的詳細資訊。
+「我的程式」控制台的主要內容是「**我的程式**」區段，該區段會以個別卡片的形式列出您的程式。點選或按一下卡片即可存取該程式的「**程式概觀**」頁面，以了解有關該程式的詳細資訊。
 
 >[!NOTE]
 >
->根據您的許可權，您可能無法選取某些程式。
+>視您的權限而定，您可能無法選取某些程式。
 
 使用排序選項可以進一步找到您需要的程式。
 
@@ -103,7 +103,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 * 格點檢視 (預設)
 * 清單檢視
 
-#### 程式卡 {#program-cards}
+#### 程式卡片 {#program-cards}
 
 每個程式都由一張卡片 (或表格中的列) 表示，提供該程式的概觀以及採取行動的快速連結。
 
@@ -111,9 +111,9 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 * 程式映像 (若已設定)
 * 程式名稱
-* 服務型別：
-   * 用於AMS程式的&#x200B;**Experience Manager**
-   * [AEM as a Cloud Service程式的&#x200B;**Experience Manager雲端**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/home)
+* 服務類型：
+   * 適用於 AMS 程式的 **Experience Manager**
+   * 適用於 [AEM as a Cloud Service 程式](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/home)的 **Experience Manager Cloud**
 * 狀態
 * 設定的解決方案:
 * 建立日期
@@ -137,7 +137,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ## 程式概觀視窗 {#program-overview}
 
-一旦您在&#x200B;[**我的程式**&#x200B;主控台中選取程式，](#my-programs-console)您就會進入程式總覽。
+在&#x200B;[**我的程式**&#x200B;控制台](#my-programs-console)中選取程式後，您將進入「程式概觀」。
 
 ![程式概觀](assets/program-overview.png)
 
