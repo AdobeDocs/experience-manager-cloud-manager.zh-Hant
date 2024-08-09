@@ -2,10 +2,10 @@
 title: 使用新專案精靈
 description: 依照本頁面的說明進行，即可了解如何使用精靈來建立 AEM 應用程式專案。
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
-source-git-commit: cb791a4f148ba394687b5e824b75fe1386d83c18
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 100%
+source-wordcount: '325'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 1. 在 [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com) 登入 Cloud Manager 並選取適當的組織。
 
-1. 如果您尚未建立方案，可[建立您的方案。](program-setup.md)建立方案後，Cloud Manager 將識別尚未設定存放庫，並在&#x200B;**總覽**&#x200B;畫面上顯示特殊的召喚行動卡。
+1. 如果您尚未建立方案，[請建立您的方案](program-setup.md)。 建立方案時，Cloud Manager會辨識尚未設定存放庫，並在&#x200B;**總覽**&#x200B;畫面上顯示特殊的召喚行動卡。
 
    ![建立專案 CTA](/help/assets/image2018-10-3_14-29-44.png)
 

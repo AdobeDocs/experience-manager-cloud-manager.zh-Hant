@@ -2,10 +2,10 @@
 title: 私人存放庫的 GitHub 檢查設定
 description: 了解如何控制自動建立的管道以驗證對私人存放庫的每個提取請求。
 exl-id: 29c9e487-e196-411a-8cda-6751b0a56066
-source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
 source-wordcount: '255'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## GitHub 檢查配定 {#configuration}
 
-使用[私人存放庫時，](private-repositories.md#using)[全端程式碼品質管道](/help/overview/ci-cd-pipelines.md)將自動建立。此管道在每次提取要求更新時啟動。
+使用[私人存放庫](private-repositories.md#using)時，將會自動建立[完整棧疊計畫碼品質管道](/help/overview/ci-cd-pipelines.md)。 此管道在每次提取要求更新時啟動。
 
 您可以透過建立一個 `.cloudmanager/pr_pipelines.yml` 檔案 (位於私有存放庫的預設分支中) 來控制這些檢查。
 

@@ -2,10 +2,10 @@
 title: GitHub 檢查附註
 description: 了解 GitHub 檢查如何為您的私人存放庫加上 PR 附註，以便為您提供有用的意見回饋。
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 210d40a5e12b40fd84efc461c6a1c48559120837
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 100%
+source-wordcount: '251'
+ht-degree: 86%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 ![程式碼問題附註範例](assets/github-check-annotations-example.png)
 
-提供有問題的確切程式碼行，您可以按一下即會顯示相關程式碼。這些附註為了所有程式碼問題所提供，而不僅僅是在提取請求中更改的程式碼問題。
+已提供問題的確切程式碼行，您可以按一下它以顯示相關程式碼。 這些附註為了所有程式碼問題所提供，而不僅僅是在提取請求中更改的程式碼問題。
 
 ![程式碼問題附註範例](assets/github-check-annotations-example-code.png)
 
@@ -40,4 +40,4 @@ ht-degree: 100%
 
 ![附註範例](assets/github-check-annotations-code-quality-2.png)
 
-您也可以在 CSV 表單中以視覺化呈現問題。這可以透過[查看 Cloud Manager 中的管道執行詳細資訊](/help/using/managing-pipelines.md)來擷取。
+您也可以在 CSV 表單中以視覺化呈現問題。[檢視Cloud Manager](/help/using/managing-pipelines.md)中管道執行的詳細資訊，即可擷取此專案。

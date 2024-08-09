@@ -2,10 +2,10 @@
 title: 導覽 Cloud Manager UI
 description: 了解 Cloud Manager UI 的組織方式以及如何導覽以管理您的程式和環境。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: d4d9a9f38c5a969f276140dca98731c670547a3d
-workflow-type: ht
-source-wordcount: '1439'
-ht-degree: 100%
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+workflow-type: tm+mt
+source-wordcount: '1410'
+ht-degree: 80%
 
 ---
 
@@ -31,15 +31,15 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 1. 標籤：可讓您切換程式的目前檢視。
    * **首頁**&#x200B;檢視 (預設)：選取了「**我的程式**」檢視，其中包含所有程式的概觀
    * **授權**：用於存取授權儀表板授權儀表板僅適用於 AEM as a Cloud Service 程式，不適用於 AMS 程式。
-      * 若要確定您的程式所提供的服務類型 (AMS 或 AEMaaCS)，請參閱本文件的[程式卡章節](#program-cards)。
-   * 請注意，標籤預設為關閉狀態，可使用 [Cloud Manager 標頭](#cloud-manager-header)中的漢堡選單來顯示
+      * 若要判斷您的程式具有的服務型別（AMS或AEMaaCS），請參閱本檔案的[程式卡片區段](#program-cards)。
+   * 請注意，索引標籤預設為關閉，並可使用[Cloud Manager標題](#cloud-manager-header)中的漢堡選單顯示。
 1. [行動號召和統計資料](#cta-statistics)：提供您最近的活動概觀
 1. [**我的程式**&#x200B;區段](#my-programs-section)：包含您所有程式的概觀
 1. [快速連結](#quick-links)：用於輕鬆存取相關資源
 
 >[!TIP]
 >
->有關程式的詳細資訊，請參閱文件：[程式和程式類型](/help/getting-started/program-setup.md)。
+>如需有關計畫的詳細資訊，請參閱[計畫和計畫型別](/help/getting-started/program-setup.md)。
 
 ### 工具列 {#my-programs-toolbars}
 
@@ -53,13 +53,13 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 1. 漢堡選單提供了對標籤的存取，這些標籤可帶您前往個別程式的特定部分，或在「授權儀表板」和「**[我的程式](#my-programs-console)**」控制台之間切換 (視內容而定)。
    * 授權儀表板僅適用於 AEM as a Cloud Service 程式，不適用於 AMS 程式。
-   * 若要確定您的程式所提供的服務類型 (AMS 或 AEMaaCS)，請參閱本文件的[程式卡章節](#program-cards)。
+   * 若要判斷您的程式具有的服務型別（AMS或AEMaaCS），請參閱本檔案的[程式卡片區段](#program-cards)。
 1. 無論您位於 Cloud Manager 中的哪個位置，Cloud Manager 按鈕都會將您帶回 Cloud Manager 的「我的程式」控制台。
-1. 點選或按一下「意見回饋」按鈕，即可向 Adobe 提供有關 Cloud Manager 的意見回饋。
-1. 組織選擇器會顯示您目前登入的組織 (在本例中為 Foundation Internal)。如果您的 Adobe ID 與多個組織關聯，可點選或按一下以切換到另一個組織。
-1. 點選或按一下解決方案切換器可讓您快速跳轉到其他 Experience Cloud 解決方案。
+1. 按一下「意見回饋」按鈕，向Adobe提供有關Cloud Manager的意見回饋。
+1. 組織選擇器會顯示您目前登入的組織 (在本例中為 Foundation Internal)。如果您的Adobe ID與多個組織相關聯，請按一下以切換至其他組織。
+1. 按一下解決方案切換器可讓您快速跳至其他Experience Cloud解決方案。
 1. 說明圖示可快速存取學習和支援資源。
-1. 通知圖示標有目前已指派之未完成的[通知](/help/using/notifications.md)數量。
+1. 通知圖示具有目前指派的未完成[通知](/help/using/notifications.md)數目
 1. 選取代表您使用者的圖示以存取您的使用者設定。如果您沒有設定使用者圖片，則會隨機分配圖示。
 
 #### 程式工具列 {#program-toolbar}
@@ -85,7 +85,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ### 我的程式區段 {#my-programs-section}
 
-「我的程式」控制台的主要內容是「**我的程式**」區段，該區段會以個別卡片的形式列出您的程式。點選或按一下卡片即可存取該程式的「**程式概觀**」頁面，以了解有關該程式的詳細資訊。
+「我的程式」控制台的主要內容是「**我的程式**」區段，該區段會以個別卡片的形式列出您的程式。按一下卡片以存取計畫的&#x200B;**計畫總覽**&#x200B;頁面，瞭解有關計畫的詳細資訊。
 
 >[!NOTE]
 >
@@ -137,13 +137,13 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ## 程式概觀視窗 {#program-overview}
 
-在&#x200B;[**我的程式**&#x200B;控制台](#my-programs-console)中選取程式後，您將進入「程式概觀」。
+一旦您在&#x200B;[**我的程式**&#x200B;主控台](#my-programs-console)中選取程式，您就會進入程式總覽。
 
 ![程式概觀](assets/program-overview.png)
 
 透過程式概觀，您可以存取 Cloud Manager 程式的所有詳細資訊。與「我的程式」控制台一樣，它由多個部分組成。
 
-1. [工具列](#program-overview-toolbar)可快速跳回「我的程式」控制台以及導覽程式
+1. [工具列](#program-overview-toolbar)可快速跳回[我的程式]主控台並瀏覽程式
 1. [索引標籤](#program-tabs)可在程式的不同方面之間切換
 1. 根據程式最後動作的[行動號召](#cta) 
 1. 程式的[環境概觀](#environments)
@@ -152,7 +152,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ### 工具列 {#program-overview-toolbar}
 
-程式概觀的工具列非常相似於[我的程式控制台。](#my-programs-toolbars)唯一的差別說明如下。
+程式總覽的工具列與[我的程式主控台](#my-programs-toolbars)的工具列非常類似。 此處僅說明差異。
 
 #### Cloud Manager 標頭 {#cloud-manager-header-2}
 
@@ -160,7 +160,7 @@ Cloud Manager 標頭有一個漢堡選單，會自動開啟以顯示程式概觀
 
 ![Cloud Manager 漢堡選單](assets/cloud-manager-hamburger.png)
 
-點選或按一下漢堡選單圖示即可隱藏索引標籤。
+按一下漢堡選單圖示以隱藏標籤。
 
 #### 程式工具列 {#program-toolbar-2}
 
@@ -190,7 +190,7 @@ Cloud Manager 標頭有一個漢堡選單，會自動開啟以顯示程式概觀
 
 ### 行動號召 {#cta}
 
-行動號召區段將根據您的程式狀態為您提供有用的資訊。對於新程式，您可能會看到提供的後續步驟以及上線日期的提醒，這是[在程式建立期間設定。](/help/getting-started/program-setup.md)
+行動號召區段將根據您的程式狀態為您提供有用的資訊。若是新計畫，您可能會看到提供的後續步驟以及上線日期提醒，[在計畫建立期間設定](/help/getting-started/program-setup.md)。
 
 對於即時程式，會看到上次部署的狀態以及詳細資訊和開始新部署的連結。
 
@@ -198,19 +198,19 @@ Cloud Manager 標頭有一個漢堡選單，會自動開啟以顯示程式概觀
 
 ### 環境卡片 {#environments}
 
-「**環境**」卡片為您提供環境的概觀以及快速動作的連結。
+**環境**&#x200B;卡會提供您環境的概觀，以及快速動作的連結。
 
 「**環境**」卡片只會列出三個環境。按一下「**全部顯示**」按鈕即可查看程式的所有環境。
 
-請參閱文件：[管理環境](/help/using/managing-environments.md)，了解有關如何管理環境的詳細資訊。
+如需有關如何管理環境的詳細資訊，請參閱[管理環境](/help/using/managing-environments.md)。
 
 ### 管道卡片 {#pipelines}
 
-「**管道**」卡片為您提供管道的概觀以及快速動作的連結。
+**管道**&#x200B;卡提供您管道概觀和快速動作連結。
 
 「**管道**」卡片只列出了三個管道。按一下「**全部顯示**」按鈕即可查看程式的所有管道。
 
-請參閱文件：[管理管道](/help/using/managing-pipelines.md)，了解有關如何管理管道的詳細資訊。
+如需有關如何管理管道的詳細資訊，請參閱[管理管道](/help/using/managing-pipelines.md)。
 
 ### 實用資源 {#useful-resources}
 

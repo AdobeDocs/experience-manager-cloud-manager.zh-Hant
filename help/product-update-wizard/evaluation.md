@@ -3,10 +3,10 @@ title: 評估階段
 seo-title: Evaluation Phase
 description: 了解產品更新精靈的評估階段如何使用模式偵測器來評估升級複雜性。
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
-source-git-commit: ce2145da3b9e605e8a41bac28df520f14e255557
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 100%
+source-wordcount: '285'
+ht-degree: 85%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->若要了解有關模式偵測器的詳細資訊，請參閱文件：[使用模式偵測器評估升級複雜性。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=zh-Hant)
+>若要深入瞭解模式偵測器，請參閱[使用模式偵測器評估升級複雜性](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=zh-Hant)。
 
 ## 執行評估 {#running}
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 
 請依照下列步驟產生評估報告：
 
-1. 依照以下文件中的說明啟動精靈：[產品更新精靈。](/help/product-update-wizard/overview.md)
+1. 啟動精靈，如檔案[產品更新精靈](/help/product-update-wizard/overview.md)中所述。
 
 1. 按一下&#x200B;**[!UICONTROL 執行評估]**。
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 1. 精靈會通知您操作狀態。當產生評估時，依適用狀態，您將會注意到&#x200B;**進行中**&#x200B;或&#x200B;**已完成**。
 
-1. 報告產生後，您可按一下&#x200B;**[!UICONTROL 下載報告]**，以儲存副本。
+1. 報告產生後，您可以按一下&#x200B;**[!UICONTROL 下載報告]**&#x200B;以儲存副本。
 
    ![報告已建立](/help/assets/Evaluation-1.png)
 

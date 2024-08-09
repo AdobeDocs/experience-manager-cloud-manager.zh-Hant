@@ -2,10 +2,10 @@
 title: 存放庫存取資訊
 description: 了解如何使用 Cloud Manager 中的自助 Git 帳戶管理存取和管理您的 Adobe 託管 Git 存放庫。
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
-source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 100%
+source-wordcount: '394'
+ht-degree: 82%
 
 ---
 
@@ -23,7 +23,7 @@ Cloud Manager 可以使用管道資訊卡上顯眼的&#x200B;**存取存放庫�
 
    ![環境卡片上的存取存放庫資訊按鈕](assets/pipelines-card.png)
 
-1. 點選或按一下「**存取存放庫資訊**」按鈕，開啟「**存放庫資訊**」對話框並檢視：
+1. 按一下&#x200B;**存取存放庫資訊**&#x200B;按鈕，開啟&#x200B;**存放庫資訊**&#x200B;對話方塊並檢視：
 
    * Git 使用者名稱。
    * Git 密碼。
@@ -32,9 +32,9 @@ Cloud Manager 可以使用管道資訊卡上顯眼的&#x200B;**存取存放庫�
 
    ![存放庫資訊視窗](assets/access-repo-info.png)
 
-1. 若要存取密碼，必須產生新密碼。為此，請點選或按一下「**產生密碼**」按鈕。
+1. 若要存取密碼，必須產生新密碼。若要這麼做，請按一下&#x200B;**產生密碼**&#x200B;按鈕。
 
-1. 點選或按一下「**產生密碼**」，在「**您確定...**」對話框中確認產生密碼。
+1. 按一下&#x200B;**產生密碼**，在&#x200B;**對話方塊中確認產生密碼。**
 
    ![確認產生密碼](assets/confirm-password-generation.png)
 
@@ -55,10 +55,10 @@ Cloud Manager 可以使用管道資訊卡上顯眼的&#x200B;**存取存放庫�
 
 ## 從「存放庫視窗」存取存放庫資訊 {#repositories-window}
 
-「[**存放庫**」視窗的工具列中也有「**存取存放庫資訊**」按鈕。](managing-repositories.md)這會顯示有關存取 Adob&#x200B;&#x200B;e 託管存放庫的相同資訊。
+[**存放庫**&#x200B;視窗](managing-repositories.md)的工具列中也提供&#x200B;**存取存放庫資訊**&#x200B;按鈕，它顯示有關存取Adobe管理的存放庫的相同資訊。
 
 ## 撤銷存取密碼 {#revoke-password}
 
-您可以隨時撤銷存取密碼。若要如此做，請[為此請求建立支援服務單。](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)
+您可以隨時撤銷存取密碼。若要這麼做，[為此要求](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)建立支援票證。
 
 此服務單將會獲得最優先處理，並應該會在一天內撤銷。

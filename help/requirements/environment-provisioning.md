@@ -2,10 +2,10 @@
 title: 環境佈建
 description: 了解如何將您的環境佈建為 Cloud Manager 上線流程的一部分。
 exl-id: eade4255-89b5-4c65-a498-1c6d4e8c73ff
-source-git-commit: d033b7cf53d4d9faf074f1dc09e2958eb91afe3b
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 100%
+source-wordcount: '312'
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 ## 歡迎電子郵件 {#welcome-email}
 
-完成環境佈建流程後，指定的客戶管理員即會收到一封歡迎電子郵件，確認已授予他們對 Adobe [!UICONTROL Experience Cloud] 的存取權。此歡迎電子郵件會包含有關如何開始使用 [!UICONTROL Experience Cloud] 服務、[!UICONTROL AEM Managed Services] 雲端環境以及 [!UICONTROL Cloud Manager] 自助服務入口網站的詳細資訊。此外，該電子郵件還會包含一些重要資訊，例如客戶成功工程師 (CSE) 聯絡資訊、何處可取得支援資源、論壇、常見問題集等。在電子郵件中提供的資源清單中，您還將取得有關如何為您的 AEM 雲端環境存取 [!UICONTROL Cloud Manager] 的詳細資訊。
+完成環境佈建流程後，指定的客戶管理員即會收到一封歡迎電子郵件，確認已授予他們對 Adobe [!UICONTROL Experience Cloud] 的存取權。此歡迎電子郵件包含有關如何開始使用[!UICONTROL Experience Cloud]服務、[!UICONTROL AEM Managed Services]雲端環境和[!UICONTROL Cloud Manager]自助服務入口網站的詳細資訊。 此外，該電子郵件還會包含一些重要資訊，例如客戶成功工程師 (CSE) 聯絡資訊、何處可取得支援資源、論壇、常見問題集等。在電子郵件中提供的資源清單中，您還將取得有關如何為您的 AEM 雲端環境存取 [!UICONTROL Cloud Manager] 的詳細資訊。
 
 ## 後續步驟 {#next-steps}
 

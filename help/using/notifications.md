@@ -2,10 +2,10 @@
 title: 通知
 description: 了解 Cloud Manager 如何通知您重要事件。
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: e767d9ff5e3df0047d2cf47d7b0842854101a01a
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 100%
+source-wordcount: '571'
+ht-degree: 94%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## Cloud Manager 中的通知 {#cloud-manager-notifications}
 
-在以下情況下，[!UICONTROL Cloud Manager] 會傳送通知給您：生產管道開始和完成時 (成功或失敗)、生產部署開始時以及到達&#x200B;**上線核准**&#x200B;和&#x200B;**已排程**&#x200B;步驟時。上述通知會經由 [!UICONTROL Experience Cloud] 通知系統傳送。
+[!UICONTROL Cloud Manager]在以下情況下傳送通知給您：生產管道啟動和完成時（成功或失敗）、生產部署開始時以及到達&#x200B;**上線核准**&#x200B;和&#x200B;**已排程**&#x200B;步驟時。 上述通知會經由 [!UICONTROL Experience Cloud] 通知系統傳送。
 
 >[!NOTE]
 >

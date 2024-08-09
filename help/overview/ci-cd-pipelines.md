@@ -2,10 +2,10 @@
 title: CI/CD 管道
 description: 了解 CI/CD 管道以及這些管道如何在 Cloud Manager 中處理至中繼和生產環境的部署。
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -41,7 +41,7 @@ CI/CD 管道還會自動化單位和效能測試流程，以提高部署效率�
 
 ### 如何設定 CI/CD 管道 {#how-to-setup-a-ci-cd-pipeline}
 
-若要了解有關管道設定的詳細資訊，請參閱文件：[設定生產管道](/help/using/production-pipelines.md)和[設定非生產管道。](/help/using/non-production-pipelines.md)
+若要瞭解有關管道設定的詳細資訊，請參閱檔案[設定生產管道](/help/using/production-pipelines.md)和[設定非生產管道](/help/using/non-production-pipelines.md)。
 
 ## 品質閘道 {#quality-gates}
 

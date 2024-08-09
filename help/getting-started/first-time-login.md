@@ -2,10 +2,10 @@
 title: 首次登入
 description: 如果您已經設定好一般設定，而且準備好要第一次使用 Cloud Manager，依照本頁面的說明進行。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: 1417d3bfa5a844641e0942d1fe1bd7bf84e41997
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 100%
+source-wordcount: '293'
+ht-degree: 75%
 
 ---
 
@@ -24,15 +24,15 @@ ht-degree: 100%
 
    ![Cloud Manager 主控台](/help/assets/cloud-manager-console.png)
 
-1. 點選或按一下您的程式卡片以導覽至 Cloud Manager 的「**概觀**」頁面。
+1. 按一下您程式的卡片，即可導覽至Cloud Manager的&#x200B;**概觀**&#x200B;頁面。
 
 1. Cloud Manager 會開啟至&#x200B;**概觀**&#x200B;頁面。
 
    ![Cloud Manager 概觀頁面](/help/assets/program-overview-page.png)
 
-1. 如果您的程式尚未完成設定，請點選或按一下「**行動號召**」中的「[設定程式](/help/getting-started/navigation.md#cta)」來設定您的程式描述並定義關鍵績效指標 (KPI)。如果您的程式已經完成設定，CTA 可能會提供額外的後續步驟。
+1. 如果您的程式尚未設定，請按一下[行動號召](/help/getting-started/navigation.md#cta)中的&#x200B;**設定程式**，設定您的程式說明並定義關鍵績效指標(KPI)。 如果您的程式已經完成設定，CTA 可能會提供額外的後續步驟。
 
-請繼續參閱文件：[方案設定](/help/getting-started/program-setup.md)，以了解設定方案中的後續步驟。
+您可以繼續參閱檔案[方案設定](/help/getting-started/program-setup.md)，瞭解設定方案中的後續步驟。
 
 ## Cloud Manager 活動 {#activity}
 
@@ -40,7 +40,7 @@ Cloud Manager 會提供方案活動的合併檢視，以及所有 CI/CD 管道�
 
 >[!TIP]
 >
->有關如何使用 Cloud Manager UI 的詳細資訊，請參閱文件：[導覽 Cloud Manager UI。](/help/getting-started/navigation.md)
+>如需如何使用Cloud Manager UI的詳細資訊，請參閱檔案[瀏覽Cloud Manager UI](/help/getting-started/navigation.md)。
 
 >[!NOTE]
 >

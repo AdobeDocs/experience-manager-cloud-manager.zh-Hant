@@ -2,10 +2,10 @@
 title: Git 子模組支援
 description: 了解如何使用 Git 子模組以便在建置時間時跨越 Git 存放庫合併多個分支的內容。
 exl-id: f946d7e7-114a-4e33-bb82-2625d37bba2f
-source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 100%
+source-wordcount: '419'
+ht-degree: 97%
 
 ---
 
@@ -66,7 +66,7 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 ## 限制 {#limitations}
 
-使用 Git 子模組時，請留意：
+使用Git子模組時，請注意下列事項：
 
 * Git URL 必須完全符合上述語法。
 * 由於安全理由，請勿在這些 URL 中嵌入憑證。

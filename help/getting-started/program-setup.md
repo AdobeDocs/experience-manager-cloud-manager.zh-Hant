@@ -2,10 +2,10 @@
 title: 計劃設定
 description: 上線後，企業所有者將需要對方案進行一些初始設定。
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 99%
+source-wordcount: '584'
+ht-degree: 91%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 99%
 
 請注意，變更會立即儲存到 Cloud Manager，但要一直到下一次管道執行時才會反映在您的環境中。
 
-如果您尚未建立管道，請參閱文件：[設定生產管道](/help/using/production-pipelines.md)和[設定非生產管道。](/help/using/non-production-pipelines.md)
+如果您尚未建立管道，請參閱檔案[設定生產管道](/help/using/production-pipelines.md)和[設定非生產管道](/help/using/non-production-pipelines.md)。
 
 ## 在方案之間切換 {#swithing-programs}
 
@@ -86,7 +86,7 @@ ht-degree: 99%
 
 例如，一個使用者若期望在其生產環境中每分鐘平均有 1000 次頁面檢視量，並在生產環境中有四個 Dispatcher/發佈伺服器，應該將其縮小至每分鐘 250 次頁面檢視量。這是假設他們的中繼環境僅包含一個單一 Dispatcher/發佈伺服器的配對。
 
-資產效能測試會透過在 30 分鐘的測試期間重複上傳資產並測量每個資產的處理時間以及各種系統層級量度來完成。
+Assets效能測試會透過在30分鐘的測試期間重複上傳資產並測量每個資產的處理時間及各種系統層級量度來完成。
 
 您的生產環境前面可能有一個內容傳遞網路 (CDN)，例如 Akamai 或 CloudFront。由於直接針對中繼環境進行 [!UICONTROL Cloud Manager] 測試，因此 KPI 應僅反映預期會通過 CDN 的流量，也就是快取遺漏。通常，這將是總生產流量的一個相對較小的子集。
 

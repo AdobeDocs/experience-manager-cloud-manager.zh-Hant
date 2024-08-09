@@ -2,10 +2,10 @@
 title: 角色型權限
 description: 了解 Cloud Manager 預先設定的角色型權限以管理對您的雲端資源的存取。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: fc1bc626dc18d25ce8c5bbae71396b234b5676db
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 100%
+source-wordcount: '617'
+ht-degree: 88%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 100%
 
 ## 使用者角色 {#user-roles}
 
-[!UICONTROL Cloud Manager] 的角色管理可使用 [Admin Console 完成。](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)[!UICONTROL Cloud Manager] 的任何使用者都必須是客戶的 IMS 組織的成員，並擁有 Adobe Managed Services 產品內容。透過在 Admin Console 中將使用者新增到 [!UICONTROL Cloud Manager] 產品設定檔，可提供特定的角色會籍。
+[!UICONTROL Cloud Manager]的角色管理已使用[Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)完成。 [!UICONTROL Cloud Manager]的任何使用者都必須是客戶的IMS組織的成員，並擁有Adobe的Managed Services產品內容。 透過在 Admin Console 中將使用者新增到 [!UICONTROL Cloud Manager] 產品設定檔，可提供特定的角色會籍。
 
-若要深入了解如何設定角色，請參閱文件：[設定使用者和角色。](/help/requirements/users-and-roles.md)
+若要深入瞭解如何設定角色，請參閱檔案[設定使用者和角色](/help/requirements/users-and-roles.md)。
 
 這張表會包含您可以在 Admin Console 中指派的角色清單。
 
@@ -65,8 +65,8 @@ ht-degree: 100%
 | 步驟讀取 | 查看步驟品質量度結果 | x | x | x | x | x |
 | 產生個人存取權杖 | 存取 Git |  | x |  | x |  |
 
-若要深入了解如何設定使用者，請參閱文件：[設定使用者和角色。](/help/requirements/users-and-roles.md)
+若要深入瞭解如何設定使用者，請參閱檔案[設定使用者和角色](/help/requirements/users-and-roles.md)。
 
 >[!TIP]
 >
->也可以使用具有可設定權限的自訂權限設定檔。如需更多詳細資訊，請參閱文件[自訂權限](/help/using/custom-permissions.md)。
+>也可以使用具有可設定設權限的自訂權限設定檔。如需詳細資訊，請參閱[自訂許可權](/help/using/custom-permissions.md)。

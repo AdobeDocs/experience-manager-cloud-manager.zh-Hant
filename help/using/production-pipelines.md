@@ -2,17 +2,17 @@
 title: 設定生產管道
 description: 了解如何使用 Cloud Manager 建立和設定生產管道，以部署程式碼。
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 33ccb0f2139162845cc1b72505b6a5bfc7cf43e7
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1302'
-ht-degree: 100%
+source-wordcount: '1286'
+ht-degree: 91%
 
 ---
 
 
 # 設定生產管道 {#configuring-production-pipelines}
 
-了解如何使用 Cloud Manager 建立和設定生產管道，以部署程式碼。 如果您想先了解有關在 Cloud Manager 中管道如何運作的更多概念性概觀，請參閱文件：[CI/CD 管道。](/help/overview/ci-cd-pipelines.md)
+了解如何使用 Cloud Manager 建立和設定生產管道，以部署程式碼。 如果您想先瞭解有關在Cloud Manager中管道如何運作的更多概念性概觀，請參閱[CI/CD管道](/help/overview/ci-cd-pipelines.md)。
 
 ## 概觀 {#overview}
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 * **生產管道** - 生產管道是一個專門建置的管道，由一系列精心安排的步驟組成，以將原始程式碼從您的 Git 存放庫一路帶入生產環境。
 * **非生產管道** - 非生產管道主要用於執行程式碼品質掃描或將原始程式碼部署到開發環境中。
 
-本文件會專注於生產管道。如需有關如何設定非生產管道的詳細資訊，請參閱文件：[設定非生產管道](/help/using/non-production-pipelines.md)。
+本文件會專注於生產管道。如需有關如何設定非生產管道的詳細資訊，請參閱檔案[設定非生產管道](/help/using/non-production-pipelines.md)。
 
 **部署管理員**&#x200B;的角色即負責設定管道。管道設定包括：
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 瀏覽至&#x200B;**管道**&#x200B;卡 (從&#x200B;**方案概觀**&#x200B;頁面) 並按一下 **+新增**，然後選取&#x200B;**新增生產管道**。
+1. 從&#x200B;**方案總覽**&#x200B;頁面瀏覽至&#x200B;**管道**&#x200B;卡，然後按一下&#x200B;**+新增**&#x200B;並選取&#x200B;**新增生產管道**。
 
    ![新增生產管道](/help/assets/configure-pipelines/add-prod1.png)
 
@@ -113,7 +113,7 @@ ht-degree: 100%
 
            >[!TIP]
            >
-           >請參閱文件：[程式碼部署，](/help/using/code-deployment.md)以了解如何設定程式碼排程或立即執行管道。
+           >請參閱[程式碼部署](/help/using/code-deployment.md)，瞭解如何設定部署排程或立即執行管道。
 
             * **使用 CSE 監督** - 如果選取此選項，則 CSE 會參與以實際開始部署。在啟用此選項的情況下建立或編輯管道時，**部署管理員**&#x200B;角色會有以下選項。
 
@@ -128,7 +128,7 @@ ht-degree: 100%
 
    >[!TIP]
    >
-   >請參閱文件：[程式碼品質測試](/help/using/code-quality-testing.md#performance-testing)，以了解更多有關&#x200B;**中繼測試**&#x200B;索引標籤上可用選項的詳細資訊。
+   >請參閱[程式碼品質測試](/help/using/code-quality-testing.md#performance-testing)，以瞭解&#x200B;**中繼測試**&#x200B;索引標籤上可用選項的詳細資訊。
 
    1. 在&#x200B;**網站內容傳遞/分散式負載權數**&#x200B;區段，您可以根據三個頁面集之間的頁面請求權重來定義網站效能測試的設定方式，可將其啟用或停用。
 
@@ -138,7 +138,7 @@ ht-degree: 100%
 
       ![網站負載權數](/help/assets/configure-pipelines/add-prod5.png)
 
-   1. 在&#x200B;**資產效能測試分佈**&#x200B;區段下，您可以定義影像和 PDF 的測試分佈並定義您自己的測試資產。
+   1. 在&#x200B;**Assets效能測試分佈**&#x200B;區段下，您可以定義影像和PDF的測試分佈並定義您自己的測試資產。
 
       * **影像** - 調整滑桿即可調整影像和 PDF 之間的測試劃分。
       * **PDF** - 調整滑桿即可調整影像和 PDF 之間的測試劃分。
@@ -155,7 +155,7 @@ ht-degree: 100%
 
 ## 後續步驟 {#the-next-steps}
 
-設定好管道後，您需要部署程式碼。如需更多詳細資訊，請參閱文件[程式碼部署](/help/using/code-deployment.md)。
+設定好管道後，您需要部署程式碼。如需詳細資訊，請參閱[程式碼部署](/help/using/code-deployment.md)。
 
 ## 教學課程影片 {#video-tutorial-one}
 

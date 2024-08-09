@@ -2,10 +2,10 @@
 title: 監視環境
 description: 了解如何在 Cloud Manager 中監視環境。
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 100%
+source-wordcount: '922'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 點選或按一下您要監視的程式的省略符號按鈕，然後選取「**顯示監視**」選項。
+1. 按一下您要監視之程式的省略符號按鈕，並選取&#x200B;**顯示監視**&#x200B;選項。
 
    ![設定](/help/assets/first-timea1.png)
 
@@ -51,7 +51,7 @@ ht-degree: 100%
 
 ## 系統監視詳細資訊 {#system-monitoring-detail}
 
-要檢視特定量度的詳細資訊，請點選或按一下特定實例的其中一個類別欄或左側導覽中的類別標題。每個詳細資訊頁面都會顯示該類別中量度的一系列圖表。您可以檢視環境中所有執行個體或特定執行個體的量度。您可以使用右上角的下拉式方框在環境和執行個體之間進行切換。
+若要檢視特定量度的詳細資訊，請按一下特定執行個體的其中一個類別欄，或按一下左側導覽中的類別標題。 每個詳細資訊頁面都會顯示該類別中量度的一系列圖表。您可以檢視環境中所有執行個體或特定執行個體的量度。您可以使用右上角的下拉式方框在環境和執行個體之間進行切換。
 
 ![選取環境](/help/assets/System_Monitoring1.png)
 
@@ -62,7 +62,7 @@ ht-degree: 100%
 ![量度圖表](/help/assets/Monitoring_Graphs1.png)
 
 按一下圖例中的系列，即可將圖表上的個別系列隱藏。
-例如，如果您按一下警告臨界值系列，您將只能看到關鍵臨界值。
+例如，如果按一下警告臨界值系列，您只會看到關鍵臨界值。
 
 ![修改圖表](/help/assets/Monitoring_Graphs2.png)
 

@@ -2,10 +2,10 @@
 title: 設定專案
 description: 了解如何設定您的專案，以便您可以使用 Cloud Manager 對其進行管理和部署。
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 100%
+source-wordcount: '1426'
+ht-degree: 98%
 
 ---
 
@@ -110,7 +110,7 @@ ht-degree: 100%
 
 ## 密碼保護的 Maven 存放庫支援 {#password-protected-maven-repositories}
 
-對於來自受密碼保護的 Maven 存放庫的成品，應極為謹慎地使用，因為透過此機制部署的程式碼不會通過 Cloud Manager 品質閘道中實作的所有品質規則。建議同時部署 Java 原始程式碼以及整個專案的原始程式碼還有二進位。
+對於來自受密碼保護的 Maven 存放庫的成品，應極為謹慎地使用，因為透過此機制部署的程式碼不會通過 Cloud Manager 品質閘道中實作的所有品質規則。建議同時部署 Java 原始程式碼和整個專案的原始程式碼還有二進位。
 
 >[!TIP]
 >
@@ -343,4 +343,4 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 
 ## 依照最佳做法來開發程式碼 {#develop-your-code-based-on-best-practices}
 
-Adobe 工程和顧問團隊已經為 AEM 開發人員發展出[一組完整的最佳做法。](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html)
+Adobe工程和諮詢團隊已為AEM開發人員開發一組[完整的最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html)。

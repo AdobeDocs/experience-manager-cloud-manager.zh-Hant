@@ -2,10 +2,10 @@
 title: 原始程式碼存放庫
 description: 了解為您在 Cloud Manager 中擁有的每個方案佈建的 Git 存放庫。
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 100%
+source-wordcount: '261'
+ht-degree: 83%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 100%
 
 依照最佳做法的要求，您應該一直使用 Cloud Manager 的 Git 存放庫，該存放庫會是空白的，沒有設定任何分支或範例專案。為了使用 Cloud Manager 的 Git 存放庫，您將獲得一個私人的存取權杖，讓您能夠使用任何 Git 用戶端來建立分支、儲存和擷取您的程式碼、製作認可歷史記錄的清單等。
 
-如需有關如何在 Git 中設定分支的詳細資訊，請參閱[設定版本分支。](/help/getting-started/configuring-branches.md)
+如需有關如何在Git中設定分支的詳細資訊，請參閱[設定版本分支](/help/getting-started/configuring-branches.md)。
 
-如需有關如何將 Cloud Manager 的 Git 存放庫和 CI/CD 管道一起使用的詳細資訊，請參閱文件：[設定生產管道](/help/using/production-pipelines.md)和[設定非生產管道](/help/using/non-production-pipelines.md)，以深入了解。
+如需有關如何將Cloud Manager的Git存放庫與CI/CD管道搭配使用的詳細資訊，請參閱[設定生產管道](/help/using/production-pipelines.md)和[設定非生產管道](/help/using/non-production-pipelines.md)以瞭解更多資訊。
 
 ## 內部部署存放庫 {#on-premise-repository}
 

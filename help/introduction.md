@@ -2,10 +2,10 @@
 title: 用於 AMS 的 Cloud Manager 的簡介
 description: 從這裡開始了解用於 Adobe​ Managed Services (AMS) 的 Cloud Manager 以及它如何讓組織能夠在雲端中自助管理 Adobe​ Experience Manager。
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: a2cea28061304d109a3c9a48650d01255579443c
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1300'
-ht-degree: 99%
+source-wordcount: '1295'
+ht-degree: 88%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Manager 的 [!UICONTROL Cloud Manager] 使開發人員能夠透
 >
 >本文件專門說明用於 Adob&#x200B;&#x200B;e Managed Services (AMS) 的 Cloud Manager 的特性和功能。
 >
->AEM as a Cloud Service 的同等文件可在以下連結中找到：[AEM as a Cloud Service 文件。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html)
+>您可以在[AEM as a Cloud Service檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html)中找到AEM as a Cloud Service的同等檔案。
 
 藉由 Cloud Manager，您的開發團隊將受益於以下功能：
 
@@ -55,7 +55,7 @@ Adobe Experience Manager 的 [!UICONTROL Cloud Manager] 使開發人員能夠透
 
 您可定義應用程式專用的關鍵績效指標 (KPI) (例如每分鐘尖峰頁面檢視次數，以及頁面載入的預期回應時間)，而這些最終可構成衡量成功部署的基礎。您可以輕鬆定義不同團隊成員的角色和權限。自助服務介面可讓您取得掌控，而且也提供最佳做法連結以及對 Adobe 內部專家的存取權限，這些專家可提供您所需的指引。
 
-若要探索並開始使用 [!UICONTROL Cloud Manager] 的 UI，請參閱文件：[首次登入。](/help/getting-started/first-time-login.md)
+若要探索並開始使用[!UICONTROL Cloud Manager]的UI，請參閱檔案[首次登入](/help/getting-started/first-time-login.md)。
 
 ### CI/CD 管道 {#ci-cd-pipeline}
 
@@ -63,7 +63,7 @@ Adobe Experience Manager 的 [!UICONTROL Cloud Manager] 使開發人員能夠透
 
 透過 [!UICONTROL Cloud Manager] UI，您可以設定並啟動您的 CI/CD 管道。此管道的部分作業會執行完整的程式碼掃描，以確保只有高品質的應用程式才能傳遞至生產環境。
 
-若要了解有關來自 [!UICONTROL Cloud Manager] 的 UI 設定管道的詳細資訊，請參閱文件：[設定生產管道](/help/using/production-pipelines.md)和[設定非生產管道。](/help/using/non-production-pipelines.md)
+若要深入瞭解如何從[!UICONTROL Cloud Manager]的UI設定管道，請參閱檔案[設定生產管道](/help/using/production-pipelines.md)和[設定非生產管道](/help/using/non-production-pipelines.md)。
 
 ### 靈活的部署模式 {#flexible-deployment-modes}
 
@@ -73,11 +73,11 @@ Adobe Experience Manager 的 [!UICONTROL Cloud Manager] 使開發人員能夠透
 
 與部署觸發無關，每次觸發部署時都一定會執行品質檢查，這是 CI/CD 管道執行的一部分。品質檢查包括程式碼檢查、安全性測試和效能測試，全都是現成可用的功能，您或您的合作夥伴無需執行任何設定。
 
-若要進一步瞭解部署程式碼和品質檢查，請參閱文件：[部署程式碼。](/help/using/code-deployment.md)
+若要進一步瞭解部署程式碼和品質檢查，請參閱檔案[部署程式碼](/help/using/code-deployment.md)。
 
 ## Cloud Manager 中的選用功能 {#optional-features-in-cloud-manager}
 
-Cloud Manager 提供額外的進階功能，依據您的特定環境設定和需求，這些功能可能對您的專案會有助益。如果您對這些功能感興趣，請和您的客戶成功工程師 (CSE) 或 Adob&#x200B;&#x200B;e 代表聯絡，以進一步討論。
+Cloud Manager 提供額外的進階功能，依據您的特定環境設定和需求，這些功能可能對您的專案會有助益。如果您對這些功能感興趣，請聯絡您的客戶成功工程師(CSE)或Adobe代表以進一步討論。
 
 ### 自動縮放 {#autoscaling}
 
@@ -89,7 +89,7 @@ Cloud Manager 提供額外的進階功能，依據您的特定環境設定和需
 
 >[!NOTE]
 >
->如果您有興趣探索自動縮放是否適合您的應用程式，請和您的 CSE 或 Adob&#x200B;&#x200B;e 代表聯絡。
+>如果您想探索自動縮放是否適合您的應用程式，請聯絡您的CSE或Adobe代表。
 
 ### 藍綠色部署 {#blue-green}
 
@@ -123,7 +123,7 @@ Cloud Manager 提供額外的進階功能，依據您的特定環境設定和需
 
 所有使用 Cloud Manager 進行生產部署的 AMS 使用者都有資格使用藍綠色部署。但是，使用藍綠色部署會要求對您的環境進行額外驗證並由 Adob&#x200B;&#x200B;e CSE 進行設定。
 
-如果您對藍綠色部署感興趣，請考慮以下要求和限制並和您的 CSE 聯絡。
+如果您對藍綠色部署感興趣，請考慮以下要求和限制並聯絡您的CSE。
 
 #### 要求和限制 {#limitations}
 
@@ -131,5 +131,5 @@ Cloud Manager 提供額外的進階功能，依據您的特定環境設定和需
 * 預覽 Dispatcher/發佈配對不屬於藍綠色部署的一部分。
 * 每個 Dispatcher/發佈配對都和其他所有的 Dispatcher/發佈配對相同。
 * 藍綠色只在生產環境中提供。
-* 藍綠色在 AWS 以及 Azure 中都可供使用。
+* 藍綠色在AWS和Azure中可用。
 * 藍綠色不適用於僅限資產的客戶。

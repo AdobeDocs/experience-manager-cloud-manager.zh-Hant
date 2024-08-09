@@ -2,17 +2,17 @@
 title: 自訂程式碼品質規則
 description: 探索 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則的具體細節。這些規則以 AEM Engineering 的最佳實務為基礎。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 2a25b0482800d4c5428a5595c9699dceed327043
-workflow-type: ht
-source-wordcount: '3483'
-ht-degree: 100%
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+workflow-type: tm+mt
+source-wordcount: '3482'
+ht-degree: 93%
 
 ---
 
 
 # 自訂程式碼品質規則 {#custom-code-quality-rules}
 
-根據來自 AEM 工程團隊的最佳做法，了解 Cloud Manager 在[程式碼品質測試過程](/help/using/code-quality-testing.md)中執行的自訂程式碼品質規則的詳細資訊。
+根據來自AEM工程團隊的最佳實務，瞭解Cloud Manager在[程式碼品質測試](/help/using/code-quality-testing.md)過程中執行的自訂程式碼品質規則的詳細資訊。
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->由於 Adobe 專屬資訊，完整的 SonarQube 規則無法下載。若要下載完整的規則清單，可[使用此連結。](/help/assets/CodeQuality-rules-latest-AMS.xlsx)繼續閱讀本文件以取得規則的說明和範例。
+>由於 Adobe 專屬資訊，完整的 SonarQube 規則無法下載。若要下載完整的規則清單，可[使用此連結](/help/assets/CodeQuality-rules-latest-AMS.xlsx)。繼續閱讀本文件以取得規則的說明和範例。
 
 ## SonarQube 規則 {#sonarqube-rules}
 
@@ -500,7 +500,7 @@ public void doThis(Resource resource) {
 
 請勿將 Sling 排程器用於要求保證執行的任務。Sling 已排程的作業可保證執行並更適合叢集和非叢集環境。
 
-若要了解如何在叢集環境中處理 Sling 作業的詳細資訊，請參閱 [Apache Sling 事件和作業處理文件](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)。
+請參閱[Apache Sling事件和作業處理檔案](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)，深入瞭解如何在叢集環境中處理Sling作業。
 
 ### 不應使用 AEM 已過時的 API {#sonarqube-aem-deprecated}
 
@@ -655,7 +655,7 @@ AEM 現代化工具文件提供了有關如何將元件從 Classic UI 轉換為 
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
-雲端服務部署中不支援反向複寫，如下所述：[發行說明：移除複寫代理程式。](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes#replication-agents)
+Cloud Service部署中不支援反向復寫，如[發行說明：移除復寫代理程式](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes#replication-agents)中所述。
 
 使用反向複寫的客戶應和 Adobe 聯絡，以取得替代解決方案。
 
@@ -666,7 +666,7 @@ AEM 現代化工具文件提供了有關如何將元件從 Classic UI 轉換為 
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
-AEM 用戶端資料庫可能包含影像和字體之類的靜態資源如[使用用戶端資料庫文件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors)所述，使用經 Proxy 處理的用戶端資料庫時，這些靜態資源必須包含在名為 `resources` 的子檔案夾中，以便在發布實例上有效地參考。
+AEM 用戶端資料庫可能包含影像和字體之類的靜態資源如[使用使用者端程式庫檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors)中所述，在使用代理的使用者端程式庫時，這些靜態資源必須包含在名為`resources`的子資料夾中，才能在發佈執行個體上有效參考。
 
 #### 不符合規範的程式碼 {#non-compliant-proxy-enabled}
 
@@ -708,9 +708,9 @@ AEM 用戶端資料庫可能包含影像和字體之類的靜態資源如[使用
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
-雖然靜態範本的使用歷來常見於 AEM 專案，但強烈建議使用可編輯範本，因為它們可提供最大的靈活度並支援靜態範本中不存在的附加功能。在以下連結中可找到更多資訊：[頁面範本 - 可編輯文件。](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable)
+雖然靜態範本的使用歷來常見於 AEM 專案，但強烈建議使用可編輯範本，因為它們可提供最大的靈活度並支援靜態範本中不存在的附加功能。如需詳細資訊，請參閱[頁面範本 — 可編輯檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable)。
 
-使用 [AEM 現代化工具](https://opensource.adobe.com/aem-modernize-tools/)可將從靜態範本到可編輯範本的遷移大幅自動化。
+使用[AEM現代化工具](https://opensource.adobe.com/aem-modernize-tools/)可將從靜態範本到可編輯範本的移轉大幅自動化。
 
 ### 不建議使用舊版基礎元件 {#oakpal-usage-legacy}
 
@@ -719,7 +719,7 @@ AEM 用戶端資料庫可能包含影像和字體之類的靜態資源如[使用
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
-舊版基礎元件 (即 `/libs/foundation` 下的元件) 已在多個 AEM 版本中被取代，改為採用[核心元件。](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/introduction)無論透過覆蓋或繼承，皆不建議使用舊版基礎元件做為自訂元件的基礎，並應轉換為相對應的核心元件。
+舊版基礎元件（即`/libs/foundation`下的元件）已在多個AEM版本中被取代，以支援[核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/introduction)。 不建議使用舊版基礎元件作為自訂元件的基礎（無論是透過覆蓋還是繼承），並應轉換為相對應的核心元件。
 
 [AEM 現代化工具](https://opensource.adobe.com/aem-modernize-tools/)可促進這種轉換。
 
@@ -730,7 +730,7 @@ AEM 用戶端資料庫可能包含影像和字體之類的靜態資源如[使用
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
-AEM Cloud Service 要求自訂搜尋索引定義 (即類型 `oak:QueryIndexDefinition` 的節點) 是 `/oak:index` 的直接下層節點。必須移動其他位置中的索引才能和 AEM Cloud Service 相容。有關搜尋索引的更多資訊可在以下連結中找到：[內容搜尋和索引文件。](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/indexing)
+AEM Cloud Service 要求自訂搜尋索引定義 (即類型 `oak:QueryIndexDefinition` 的節點) 是 `/oak:index` 的直接下層節點。必須移動其他位置中的索引才能和 AEM Cloud Service 相容。有關搜尋索引的更多資訊可在[內容搜尋和索引檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/indexing)中找到。
 
 ### 自訂搜尋索引定義節點的 compatVersion 必須為 2 {#oakpal-custom-search-compatVersion}
 
@@ -739,7 +739,7 @@ AEM Cloud Service 要求自訂搜尋索引定義 (即類型 `oak:QueryIndexDefin
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
-AEM Cloud Service 要求自訂搜尋索引定義 (即類型 `oak:QueryIndexDefinition` 的節點) 必須將 `compatVersion` 屬性設定為 `2`。AEM Cloud Service 不支援其他值。有關搜尋索引的更多資訊可在以下連結中找到：[內容搜尋和索引文件。](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/indexing)
+AEM Cloud Service 要求自訂搜尋索引定義 (即類型 `oak:QueryIndexDefinition` 的節點) 必須將 `compatVersion` 屬性設定為 `2`。AEM Cloud Service 不支援其他值。有關搜尋索引的更多資訊可在[內容搜尋和索引檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/indexing)中找到。
 
 ### 自訂搜尋索引定義節點的子孫節點必須屬於 `nt:unstructured` 類型 {#oakpal-descendent-nodes}
 
@@ -757,7 +757,7 @@ AEM Cloud Service 要求自訂搜尋索引定義 (即類型 `oak:QueryIndexDefin
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
-正確定義的自訂搜尋索引定義節點必須包含一個名為 `indexRules` 的下層節點，且這個子節點必須至少有一個下層。在以下連結中可找到更多資訊：[Oak 文件。](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+正確定義的自訂搜尋索引定義節點必須包含一個名為 `indexRules` 的下層節點，且這個子節點必須至少有一個下層。如需詳細資訊，請參閱[Oak檔案](https://jackrabbit.apache.org/oak/docs/query/lucene.html)。
 
 ### 自訂搜尋索引定義節點必須遵循命名慣例 {#oakpal-custom-search-definitions}
 
