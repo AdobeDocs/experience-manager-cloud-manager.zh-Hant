@@ -2,10 +2,10 @@
 title: 內容複製工具
 description: Cloud Manager內容複製工具可讓使用者隨選從AMS代管的AEM 6.x生產環境複製可變內容，至較低環境以進行測試。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 2563c58431e58d2fc5917a2ad88835bbdd4224f2
+source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 44%
+source-wordcount: '1144'
+ht-degree: 36%
 
 ---
 
@@ -165,11 +165,10 @@ Cloud Manager內容複製工具可讓使用者隨選從AMS代管的AEM 6.x生產
 * 無法在同一環境中執行並行內容複製操作。
 * 如果在目的地或來源環境（例如CI/CD管道）上執行了任何作用中操作，則無法執行內容複製。
 * 每個內容集最多可以指定 50 個路徑。排除的路徑沒有限制。
-* 內容複製工具不應用作複製或鏡像工具，因為它無法追蹤來源上移動或刪除的內容。
-* 內容複製作業一旦開始就不能暫停或取消。
-* 內容複製工具將資產連同動態媒體相關中繼資料從較高環境複製到選取的較低環境。
-   * 然後需要使用在較低的環境中的 [DAM 流程資產工作流程](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html)，以便使用各自的動態媒體設定。
-* 不複製版本歷史記錄時，內容複製過程將大幅加快。
+* 內容複製工具不應作為複製或映象工具使用，因為它無法追蹤來源上已移動或刪除的內容。
+* 內容復本一旦啟動，就無法暫停或取消。
+* 內容複製工具會將資產和Dynamic Media中繼資料從較高的環境複製到選取的較低環境。 複製的資產隨後需要在較低環境使用[DAM流程資產工作流程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/assets/using/assets-workflow)重新處理，才能使用個別Dynamic Media設定。
+* 若未復製版本記錄，內容復製程式的速度會大幅加快。
 * 不支援資產大小大於2 GB的[Dynamic Media設定](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)。
 * 若未復製版本記錄，內容復製程式會大幅加快。
 * 目標環境的區域必須與來源環境的區域相同或為其子集。
