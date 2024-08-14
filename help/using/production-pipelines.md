@@ -2,10 +2,10 @@
 title: 設定生產管道
 description: 了解如何使用 Cloud Manager 建立和設定生產管道，以部署程式碼。
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 91%
+source-wordcount: '1285'
+ht-degree: 87%
 
 ---
 
@@ -124,7 +124,7 @@ ht-degree: 91%
 
          * **Dispatcher 設定** - 為生產環境定義 Dispatcher 設定。這些選項和中繼環境的選項相同。
 
-1. 按一下&#x200B;**繼續**，即可前進到&#x200B;**中繼測試**&#x200B;索引標籤，您可在此設定 AEM Sites 和 AEM Assets 的效能測試 (依您已授權的產品而定)。
+1. 按一下&#x200B;**繼續**&#x200B;以進入&#x200B;**中繼測試**&#x200B;標籤，您可在此設定AEM Sites和AEM Assets的效能測試（視您已授權的產品而定）。
 
    >[!TIP]
    >

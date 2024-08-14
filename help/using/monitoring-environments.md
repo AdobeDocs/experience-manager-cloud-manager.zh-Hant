@@ -2,10 +2,10 @@
 title: 監視環境
 description: 了解如何在 Cloud Manager 中監視環境。
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 93%
+source-wordcount: '903'
+ht-degree: 79%
 
 ---
 
@@ -14,15 +14,13 @@ ht-degree: 93%
 
 了解如何在 Cloud Manager 中監視環境。
 
-## 量度臨界值 {#thresholds}
+## 測量結果臨界值 {#thresholds}
 
 可透過觀察環境中的個別執行個體並追蹤每個執行個體的各種量度來完成 [!UICONTROL Cloud Manager] 中的系統監視。每個量度都有兩個已定義的臨界值：警告臨界值以及關鍵臨界值。
 
 如果量度超越其關鍵臨界值，即被視為處於關鍵狀態。如果量度超越其警告臨界值 (但低於其關鍵臨界值)，即被視為處於警告狀態。此臨界值由 Adobe Managed Services 設定，並可在 [!UICONTROL Cloud Manager] 中視覺化。 在大多數情況下，客戶之間的臨界值會保持一致，但在某些情況下，Adobe Managed Services 會修改臨界值以和特定的客戶需求相符。如有關於臨界值的問題，應直接向您的客戶成功工程師 (CSE) 洽詢。
 
 ## 存取系統監視 {#accessing-system-monitoring}
-
-請依照下列步驟存取系統監視。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) 登入 Cloud Manager 並選取適當的組織和方案。
 
@@ -49,7 +47,7 @@ ht-degree: 93%
 >
 >預設情況下，瀏覽至此頁面時，可看見生產環境執行個體，但也可檢視其他環境。
 
-## 系統監視詳細資訊 {#system-monitoring-detail}
+## 系統監視詳細資料 {#system-monitoring-detail}
 
 若要檢視特定量度的詳細資訊，請按一下特定執行個體的其中一個類別欄，或按一下左側導覽中的類別標題。 每個詳細資訊頁面都會顯示該類別中量度的一系列圖表。您可以檢視環境中所有執行個體或特定執行個體的量度。您可以使用右上角的下拉式方框在環境和執行個體之間進行切換。
 
@@ -96,7 +94,7 @@ ht-degree: 93%
    * 每個複寫代理程式都有單獨的量度。
 * **Dispatcher 排齊**：目前在 Dispatcher 排齊佇列中的項目數
 
-## SLA 報告 {#sla-reporting}
+## SLA報告 {#sla-reporting}
 
 您可以查看生產 AEM 環境相對於您簽訂的服務等級協定 (SLA) 的效能。
 
@@ -112,14 +110,14 @@ ht-degree: 93%
 
 ![事件分析](/help/assets/sla-reporting3.png)
 
-## SLA 量度 {#sla-metrics}
+## SLA度量 {#sla-metrics}
 
-* **作者合約**：這是您和 Adobe&#x200B; Managed Services 的合約中為作者層級定義的 SLA。
-* **AMS 作者 SLA**：這是對於由 Adobe&#x200B; 或我們的廠商引起的生產作者層級分解事故測量到的運作時間。
-* **作者 SLA**：這是對於作者層級測量到的運作時間，忽略已排程的停工期，例如維護期。
-* **一般使用者合約**：這是您和 Adobe&#x200B; Managed Services 的合約中為發佈層級定義的 SLA。
-* **AMS 一般使用者 SLA**：這是對於由 Adobe&#x200B; 或我們的廠商引起的生產發佈層級分解事故測量到的運作時間。
-* **一般使用者 SLA**：這是對於發佈層級測量到的運作時間，忽略已排程的停工期，例如維護期。
+* **作者合約**：您和AdobeManaged Services的合約中為作者層級定義的SLA。
+* **AMS作者SLA**：測量到的由Adobe或我們的廠商引起的生產作者層級分解事故的運作時間。
+* **作者SLA**：作者層級測量到的運作時間，忽略已排程的停工期，例如維護期。
+* **一般使用者合約**：您和AdobeManaged Services的合約中為發佈層級定義的SLA。
+* **AMS一般使用者SLA**：測量到的由Adobe或我們的廠商引起的生產發佈層級分解事故的運作時間。
+* **一般使用者SLA**：測量到的發佈層級運作時間，忽略已排程的停工期，例如維護期。
 
 ## 教學課程影片 {#video-tutorial}
 

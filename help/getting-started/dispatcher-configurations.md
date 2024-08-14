@@ -2,19 +2,19 @@
 title: Dispatcher 設定
 description: 了解如何使用 Cloud Manager 部署 Dispatcher 設定檔案。
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
 
-# Dispatcher 設定 {#manage-your-dispatcher-configurations}
+# Dispatcher設定 {#manage-your-dispatcher-configurations}
 
 了解如何使用 Cloud Manager 部署 Dispatcher 設定檔案。 
 
-## 使用 Cloud Manager 部署 Dispatcher 設定 {#deploying-dispatcher-configurations}
+## 使用Cloud Manager部署Dispatcher設定 {#deploying-dispatcher-configurations}
 
 Cloud Manager 能夠部署 Web 伺服器和 Dispatcher 設定檔案的前提在於它們會和一般 AEM 內容套件一起儲存在 Git 存放庫中。
 
@@ -24,7 +24,7 @@ Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-w
 
 部署到 Dispatcher 執行個體後，Dispatcher 執行個體上的這些目錄的內容將被您的 Git 存放庫中的內容覆寫。由於 Web 伺服器和 Dispatcher 設定檔案經常需要環境特定資訊才能正確使用此功能，因此您首先需要和客戶成功工程師 (CSE) 一起將這些環境變數設定為 `/etc/sysconfig/httpd`。
 
-## 現有受管理服務客戶的 Dispatcher 設定 {#steps-for-configuring-dispatcher}
+## 適用於現有受管理服務客戶的Dispatcher設定 {#steps-for-configuring-dispatcher}
 
 請依照下列這些步驟，完成初始的 Dispatcher 設定。
 
@@ -48,7 +48,7 @@ Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-w
 
    您可以在此處使用任何名稱，但在此步驟中建立的目錄名稱必須和步驟 6 中使用的名稱相同。
 
-1. 該子目錄將包含一個 Maven 模組，該模組會使用 Maven 組裝外掛程式來建置 Dispatcher .zip 檔案。若要開始進行，可在 `dispatcher` 目錄中，建立包含此內容的 `pom.xml` 檔案，在必要時變更 `parent` 參照、`artifactId` 和 `name`。
+1. 此子目錄將包含一個Maven模組，該模組會使用Maven組裝外掛程式來建置Dispatcher .zip檔案。 若要開始進行，可在 `dispatcher` 目錄中，建立包含此內容的 `pom.xml` 檔案，在必要時變更 `parent` 參照、`artifactId` 和 `name`。
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -90,7 +90,7 @@ Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-w
 
    * 和步驟 1 一樣，如果需要，此處的 artifactId 和 name 可以是其他值。`dispatcher` 在此僅用為範例。
 
-1. 此 Maven 組裝外掛程式需要 `descriptor` 來定義建立 .zip 檔案的方式。若要建立此描述項，可在包含以下內容的 `dispatcher` 子目錄 (名為 `assembly.xml`) 中建立檔案。請注意，在上述 `pom.xml` 檔案的第 26 行會參照此檔案名稱。
+1. Maven組裝外掛程式需要`descriptor`才能定義.zip檔案的建立方式。 若要建立此描述項，可在包含以下內容的 `dispatcher` 子目錄 (名為 `assembly.xml`) 中建立檔案。請注意，在上述 `pom.xml` 檔案的第 26 行會參照此檔案名稱。
 
    ```xml
    <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"

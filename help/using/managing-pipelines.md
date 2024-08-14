@@ -2,10 +2,10 @@
 title: 管理管道
 description: 了解如何管理現有管道，包括將其編輯、執行和刪除。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 67%
+source-wordcount: '847'
+ht-degree: 63%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 67%
 * **存取存放庫資訊** - 顯示要存取 Cloud Manager Git 存放庫所必需的資訊
 * **了解更多** - 瀏覽至 CI/CD 管道文件資源。
 
-## 管道視窗 {#pipelines}
+## 管線視窗 {#pipelines}
 
 **管道**&#x200B;視窗顯示所選方案所有管道的完整清單。這很有用，因為它提供的資訊比[管線卡](#pipeline-card)中提供的資訊更全面。
 
@@ -66,7 +66,7 @@ ht-degree: 67%
 
 按一下「**檢視詳細資料**」即可前往管道執行的[詳細資料](#view-details)。
 
-## 執行管道 {#running-pipelines}
+## Ruu管道 {#running-pipelines}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
@@ -90,7 +90,7 @@ ht-degree: 67%
       * [設定生產管道](/help/using/production-pipelines.md)
       * [設定非生產管道](/help/using/non-production-pipelines.md)
 
-1. 按一下&#x200B;**更新**&#x200B;一次，您即完成編輯管道。
+1. 按一下&#x200B;**更新**，在您完成編輯管道之後。
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ ht-degree: 67%
 >
 >您無法刪除執行中的管道。
 
-## 檢視詳情 {#view-details}
+## 檢視詳細資訊 {#view-details}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
@@ -120,7 +120,7 @@ ht-degree: 67%
 
 管道執行中的所有步驟都會顯示，尚未開始的步驟會顯示為灰色。已完成的步驟會顯示其持續時間。
 
-管道步驟完成後，將顯示摘要。
+管道步驟完成時，會顯示摘要。
 
 ![步驟摘要](/help/assets/configure-pipelines/pipeline-step.png)
 

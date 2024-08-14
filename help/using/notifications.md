@@ -2,10 +2,10 @@
 title: 通知
 description: 了解 Cloud Manager 如何通知您重要事件。
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 94%
+source-wordcount: '564'
+ht-degree: 79%
 
 ---
 
@@ -36,17 +36,17 @@ ht-degree: 94%
 
 ![通知側邊欄](/help/assets/notificaitons-announcements.png)
 
-按一下任一通知或公告即可檢視其詳細內容。連結至管道部署等活動的通知將帶您了解該活動的詳細資訊，例如管道執行視窗。
+按一下通知或宣告以檢視其詳細資料。 連結至管道部署等活動的通知將帶您了解該活動的詳細資訊，例如管道執行視窗。
 
-按一下面板底部的&#x200B;**檢視全部**&#x200B;選項，即可檢視收件匣中的所有公告。
+按一下面板底部的[檢視全部&#x200B;**]選項，即可檢視收件匣中的所有宣告。**
 
-按一下面板底部的&#x200B;**全部標記為已讀**&#x200B;選項，即可將所有未讀通知標示為已讀取並清除鈴鐺圖示標記。
+按一下面板底部的&#x200B;**全部標示為已讀取**&#x200B;選項，即可將所有未讀取的通知標示為已讀取並清除鈴鐺圖示標籤。
 
 ## 通知設定 {#configuration}
 
 您可以自訂接收通知的方式以及接收哪些通知。
 
-請按一下通知側邊欄頂端的齒輪圖示。
+按一下通知側邊欄頂端的齒輪圖示。
 
 ![通知設定圖示](/help/assets/notifications-configuration.png)
 
@@ -58,7 +58,7 @@ ht-degree: 94%
 
 ![通知訂閱](/help/assets/notifications-subscriptions.png)
 
-預設情況下，您將接收所有產品的所有通知。按一下產品旁的&#x200B;**自訂**，即可定義對該產品要接收的通知類型。
+預設情況下，您將接收所有產品的所有通知。按一下產品旁的&#x200B;**自訂**，以定義您為該產品收到的通知型別。
 
 ![通知訂閱自訂](/help/assets/notifications-subscriptions-customize.png)
 

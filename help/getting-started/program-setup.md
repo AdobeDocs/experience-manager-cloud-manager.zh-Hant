@@ -2,15 +2,15 @@
 title: 計劃設定
 description: 上線後，企業所有者將需要對方案進行一些初始設定。
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 91%
+source-wordcount: '582'
+ht-degree: 86%
 
 ---
 
 
-# 計劃設定 {#program-setup}
+# 計畫設定 {#program-setup}
 
 上線後，企業所有者完成方案的初始設定，包括設定方案說明並定義用於效能測試的關鍵績效指標 (KPI)。
 
@@ -58,7 +58,7 @@ ht-degree: 91%
 
 1. 從 Cloud Manager 首頁畫面瀏覽至該方案。
 
-1. 按一下&#x200B;**編輯方案**，從&#x200B;**概觀**&#x200B;頁面更新或修改您的方案。
+1. 按一下&#x200B;**編輯程式**，從&#x200B;**總覽**&#x200B;頁面更新或修改您的程式。
 
    ![編輯方案選項](/help/assets/set-up-program/edit-program1.png)
 
@@ -72,7 +72,7 @@ ht-degree: 91%
 
 如果您尚未建立管道，請參閱檔案[設定生產管道](/help/using/production-pipelines.md)和[設定非生產管道](/help/using/non-production-pipelines.md)。
 
-## 在方案之間切換 {#swithing-programs}
+## 在程式之間切換 {#swithing-programs}
 
 在處理一個方案時，您可以快速切換到另一個方案，而無需返回 Cloud Manager 概觀頁面。
 

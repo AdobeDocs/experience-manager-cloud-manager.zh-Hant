@@ -2,10 +2,10 @@
 title: 新增使用者和角色
 description: 了解如何使用 Admin Console 新增使用者和角色，並建立設定檔。
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 84%
+source-wordcount: '768'
+ht-degree: 81%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 84%
 >
 >Admin Console 中的「開發人員」角色和 [!UICONTROL Cloud Manager] 中的「開發人員」角色並不相關。
 
-## 使用 Admin Console 建立設定檔 {#using-admin-console-to-create-a-profile}
+## 使用Admin Console建立設定檔 {#using-admin-console-to-create-a-profile}
 
 從 Admin Console 管理 [!UICONTROL Cloud Manager] 角色。透過將使用者新增到 [!UICONTROL Cloud Manager] 產品設定檔，可提供特定的角色會籍。
 

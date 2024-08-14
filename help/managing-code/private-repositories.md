@@ -1,23 +1,23 @@
 ---
-title: 在 Cloud Manager 中新增私人存放庫
+title: 在Cloud Manager中新增私人存放庫
 description: 了解如何設定 Cloud Manager 以搭配使用您自己的私人 GitHub 存放庫。
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 82%
+source-wordcount: '795'
+ht-degree: 38%
 
 ---
 
 
-# 在 Cloud Manager 中新增私人存放庫 {#private-repositories}
+# 在Cloud Manager中新增私人存放庫 {#private-repositories}
 
 了解如何設定 Cloud Manager 以搭配使用您自己的私人 GitHub 存放庫。
 
 ## 概觀 {#overview}
 
-透過設定 Cloud Manager 以搭配使用您自己的私人 GitHub 存放庫，您可以透過 Cloud Manager 直接在 GitHub 存放庫中驗證程式碼，無需始終將程式碼與 Adobe 存放庫保持同步。
+使用您的私人GitHub存放庫設定Cloud Manager，可讓您直接在GitHub中驗證程式碼，而不需經常與Adobe存放庫同步。
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ ht-degree: 82%
 
 1. 在Cloud Manager中，從&#x200B;**方案總覽**&#x200B;頁面，按一下&#x200B;**存放庫**&#x200B;索引標籤以切換至&#x200B;**存放庫**&#x200B;頁面，然後按一下&#x200B;**新增存放庫**。
 
-1. 在&#x200B;**新增存放庫**&#x200B;對話框，選取&#x200B;**私人存放庫**&#x200B;作為存放庫類型。
+1. 在&#x200B;**新增存放庫**&#x200B;對話方塊中，選取&#x200B;**私人存放庫**&#x200B;作為存放庫型別。
 
 1. 提供存放庫的詳細資訊
 
@@ -48,57 +48,57 @@ ht-degree: 82%
 
 >[!TIP]
 >
->如需有關在Cloud Manager中管理存放庫的詳細資訊，請參閱檔案[Cloud Manager存放庫](/help/managing-code/managing-repositories.md)。
+>如需在Cloud Manager中管理存放庫的詳細資訊，請參閱[Cloud Manager存放庫](/help/managing-code/managing-repositories.md)。
 
 ### 私人存放庫所有權驗證 {#validate-ownership}
 
 Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。若要授予存取權，您需要安裝 Adobe GitHub 應用程式並驗證您擁有指定的存放庫。
 
-1. 新增您自己的存放庫，**私人存放庫所有權驗證**&#x200B;對話框隨即開啟。
+1. 新增您自己的存放庫後，會顯示&#x200B;**私人存放庫所有權驗證**&#x200B;對話方塊。
 
    ![私人存放庫所有權驗證](/help/assets/repositories/private-repo-validate.png)
 
-1. Cloud Manager 使用 GitHub 應用程式與您的存放庫安全地互動。
-   * 您 GitHub 組織的擁有者必須安裝位於 `https://github.com/apps/cloud-manager-for-aem` 的應用程式，並授予存放庫的存取權。
-   * 如需有關如何執行此動作的詳細資訊，請參閱GitHub的檔案。
+1. Cloud Manager使用GitHub應用程式與存放庫安全地互動。
 
-1. 為了提高安全性，您必須在存放庫的預設分支中建立密碼檔案。按一下&#x200B;**產生**。
+   您GitHub組織的所有者必須安裝位於`https://github.com/apps/cloud-manager-for-aem`的應用程式並授與存放庫的存取權。 如需詳細資訊，請參閱GitHub的檔案。
+
+1. 若要增強安全性，請在存放庫的預設分支中建立機密檔案。 按一下&#x200B;**產生**。
 
 1. 按一下&#x200B;**確認**，確認產生機密檔案。
 
    ![確認密碼產生](/help/assets/repositories/confirm-generation.png)
 
-1. 回到&#x200B;**私人存放庫所有權驗證**&#x200B;視窗中，Cloud Manager 已在&#x200B;**密碼檔案內容**&#x200B;欄位產生私人檔案內容。複製該欄位中的內容。
+1. 返回&#x200B;**私人存放庫所有權驗證**&#x200B;對話方塊，Cloud Manager已在&#x200B;**機密檔案內容**&#x200B;欄位中產生內容。 複製該欄位中的內容。
 
-   * 密碼檔案的內容只會顯示一次。如果您在關閉此視窗之前未複製內容，則需要重新產生密碼。
+   機密檔案的內容只會顯示一次。 如果您在關閉此視窗之前沒有複製內容，則必須重新產生密碼。
 
    ![複製密碼檔案內容](/help/assets/repositories/new-secret.png)
 
 1. 在 GitHub 存放庫的預設分支中建立一個名為 `.well-known/adobe/cloud-manager-challenge` 的新檔案，並將密碼檔案內容貼到該檔案並儲存。
 
-1. 安裝應用程式且存放庫中存在密碼檔後，您可以在&#x200B;**私人存放庫所有權驗證**&#x200B;對話方塊中按一下&#x200B;**驗證**。
+1. 安裝應用程式且存放庫中存在密碼檔之後，您可以在&#x200B;**私人存放庫所有權驗證**&#x200B;對話方塊中按一下&#x200B;**驗證**。
 
-可以按任何順序安裝應用程式並建立密碼檔案。但是，必須先完成這兩個步驟才能進行驗證。
+您可以安裝應用程式，並依任何順序產生機密檔案。 不過，必須先完成這兩個步驟才能進行驗證。
 
-在驗證之前，存放庫將以紅色圖示列出，表示它尚未驗證且不能使用。
+在驗證之前，存放庫將以紅色圖示列出，表示它尚未驗證且尚無法使用。
 
 ![未經驗證的存放庫](/help/assets/repositories/unvalidated-repo.png)
 
 請注意，**類型**&#x200B;欄可以輕鬆識別 Adobe 提供的存放庫 (**Adobe**) 和您自己的 GitHub 存放庫 (**GitHub**)。
 
-如果您需要在稍後日期返回存放庫以完成驗證，請在&#x200B;**存放庫**&#x200B;頁面上，按一下代表您剛剛新增的GitHub存放庫一列中的省略符號按鈕，然後從下拉式選單中選取&#x200B;**所有權驗證**。
+若要稍後返回存放庫並完成驗證，請移至&#x200B;**存放庫**&#x200B;頁面。 按一下您新增的GitHub存放庫旁邊的省略符號按鈕，然後從下拉式選單中選取「**所有權驗證**」。
 
-## 將私人存放庫與 Cloud Manager 搭配使用 {#using}
+## 搭配Cloud Manager使用私人存放庫 {#using}
 
-在 Cloud Manager 中驗證 GitHub 存放庫後，整合即完成，您可以在 Cloud Manager 中使用該存放庫。
+在Cloud Manager中驗證GitHub存放庫後，整合即已完成，您可以將存放庫與Cloud Manager搭配使用。
 
-1. 當您建立提取要求時，GitHub 檢查將自動啟動。
+1. 當您建立提取請求時，GitHub檢查會自動啟動。
 
    ![GitHub 檢查](/help/assets/repositories/github-checks.png)
 
-1. 對於每個提取要求，[全端程式碼品質管道](/help/using/managing-pipelines.md)將自動建立。此管道在每次提取要求更新時啟動。
+1. 對於每個提取請求，都會自動建立[完整棧疊計畫碼品質管道](/help/using/managing-pipelines.md)。 此管道在每次提取要求更新時啟動。
 
-1. GitHub 檢查保持運作狀態，直到程式碼品質檢查完成。然後程式碼品質結果將傳播到 GitHub 檢查。
+1. GitHub檢查會維持在執行狀態，直到程式碼品質檢查完成為止。 然後程式碼品質結果會傳播至GitHub檢查。
 
    ![GitHub 程式碼品質檢查](/help/assets/repositories/github-code-quality.png)
 
@@ -112,7 +112,7 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
 >
 >您可以控制自動建立的管道以驗證對私人存放庫的每個提取請求。如需詳細資訊，請參閱[私人存放庫的GitHub檢查組態](github-check-config.md)。
 
-## 將私人存放庫與管道建立關聯 {#pipelines}
+## 將私有存放庫與管道相關聯 {#pipelines}
 
 已驗證的私人存放庫可以與[完整棧疊管道](/help/overview/ci-cd-pipelines.md)相關聯。
 
@@ -120,9 +120,8 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
 
 將私人存放庫與 Cloud Manager 搭配使用時會有某些限制。
 
-* 您無法暫停 Cloud Manager 的 GitHub 檢查對提取要求進行驗證。
-   * 如果 GitHub 存放庫在 Cloud Manager 已經過驗證，為該存放庫建立的提取要求，Cloud Manager 將一律進行驗證。
-* 如果您的 GitHb 組織已移除 Adobe GitHub 應用程式，這將移除所有存放庫的提取要求驗證。
-* 在生產全端管道上使用私人存放庫時，不會建立和推送 Git 標記。
+* 您無法使用Cloud Manager的GitHub檢查來暫停提取請求驗證。 如果已在Cloud Manager中驗證GitHub存放庫，Cloud Manager會嘗試驗證為該存放庫建立的提取請求。
+* 如果AdobeGitHub應用程式已從您的GitHb組織移除，此動作會移除所有存放庫的提取請求驗證功能。
+* 在生產完整棧疊管道上使用私人存放庫時，不會建立和推送Git標籤。
 * 當新提交被推送到所選分支時，使用私人存放庫和提交建置觸發器的管道不會自動啟動。
 * [成品重複使用功能](/help/getting-started/project-setup.md#build-artifact-reuse)不適用於私人存放庫。

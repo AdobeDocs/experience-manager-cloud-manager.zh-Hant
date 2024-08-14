@@ -2,10 +2,10 @@
 title: 首次登入
 description: 如果您已經設定好一般設定，而且準備好要第一次使用 Cloud Manager，依照本頁面的說明進行。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 75%
+ht-degree: 66%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 75%
 
 您可以繼續參閱檔案[方案設定](/help/getting-started/program-setup.md)，瞭解設定方案中的後續步驟。
 
-## Cloud Manager 活動 {#activity}
+## Cloud Manager活動 {#activity}
 
 Cloud Manager 會提供方案活動的合併檢視，以及所有 CI/CD 管道執行的清單 (包括生產和非生產)，讓您查看過去和現在的活動。
 
@@ -44,4 +44,4 @@ Cloud Manager 會提供方案活動的合併檢視，以及所有 CI/CD 管道�
 
 >[!NOTE]
 >
->預設情況下，有權存取 AEM 環境的使用者也將擁有 Cloud Manager 使用者角色。單就這個角色而言，並不足以讓使用者擁有方案詳細資訊視圖的存取權。僅擁有 Cloud Manager 使用者角色的這類使用者能夠透過方案選單選項瀏覽至 AEM 環境作者 URL (如果環境存在)。這類使用者如果希望取得方案層級的存取權，必須和他們的管理員聯絡。
+>預設情況下，有權存取 AEM 環境的使用者也將擁有 Cloud Manager 使用者角色。單就這個角色而言，並不足以讓使用者擁有方案詳細資訊視圖的存取權。僅擁有 Cloud Manager 使用者角色的這類使用者能夠透過方案選單選項瀏覽至 AEM 環境作者 URL (如果環境存在)。這類使用者如果想要取得方案層級的存取權，必須聯絡其管理員。

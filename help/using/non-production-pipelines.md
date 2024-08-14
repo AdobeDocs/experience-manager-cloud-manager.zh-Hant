@@ -2,10 +2,10 @@
 title: 設定非生產管道
 description: 了解如何使用 Cloud Manager 建立和設定非生產管道，以部署程式碼。
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 94%
+source-wordcount: '709'
+ht-degree: 91%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 94%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 從 Cloud Manager 首頁畫面存取管道卡。 按一下&#x200B;**新增**&#x200B;並選取&#x200B;**新增非生產管道**。
+1. 從 Cloud Manager 首頁畫面存取管道卡。 按一下&#x200B;**新增**，然後選取&#x200B;**新增非生產管道**。
 
    ![新增非生產管道](/help/assets/configure-pipelines/nonprod-pipeline-add1.png)
 
