@@ -2,10 +2,10 @@
 title: 僅限中繼和僅限生產管道
 description: 了解如何使用專用管道分割中繼和生產部署。
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 70b7994435f7f0f587c134fab1fb66c6576386d9
+source-git-commit: 77eb1c824ba766e43dfd8e2b0f6f6edc71f043e5
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 37%
+source-wordcount: '943'
+ht-degree: 31%
 
 ---
 
@@ -83,9 +83,19 @@ ht-degree: 37%
 
 ## 執行prod-only和stage-only管道 {#running}
 
-Prod-only和stage-only管道的執行方式與[所有其他管道的執行方式](/help/using/managing-pipelines.md#running-pipelines)相同。 如需詳細資訊，請參閱此檔案。
+僅限生產及僅限舞台管道的執行方式與[所有其他管道的執行方式大致相同。](/help/using/managing-pipelines.md#running-pipelines)請參閱檔案以取得詳細資料。 但是，這些配管有兩個新特徵。
 
-此外，僅限生產管道的執行可以直接從僅限中繼管道的執行詳細資訊觸發。
+* 僅限階段和僅限生產環境的管道提供新的[緊急模式](#emergency-mode)，以允許略過測試。
+* 只能從[僅中繼管道的執行詳細資料直接觸發僅限生產管道執行。](#stage-only-run)
+
+### 緊急模式 {#emergency-mode}
+
+每當您啟動僅限生產和中繼線上的管道時，系統會提示您確認啟動以及其啟動方式。
+
+* **正常模式**&#x200B;是標準執行，包含中繼測試步驟。
+* **緊急模式**&#x200B;略過階段測試步驟。
+
+![緊急模式](/help/assets/configure-pipelines/emergency-mode.png)
 
 ### 僅限中繼的管道 {#stage-only-run}
 
@@ -93,7 +103,9 @@ Prod-only和stage-only管道的執行方式與[所有其他管道的執行方式
 
 ![僅限中繼管道執行](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-只有當您處於最新成功的僅限中繼管道執行時，**提升組建版本**&#x200B;按鈕才會出現。按一下後，它會要求您確認僅生產配管的執行，或建立僅生產配管（如果尚未存在）。
+按一下&#x200B;**升級組建**&#x200B;會提示您確認相關階段專用管道是否正常或以[緊急模式執行。](#emergency-mode)
+
+如果僅生產管線不存在，系統將提示您建立管線。
 
 ### 僅限生產用的管道 {#prod-only-run}
 
