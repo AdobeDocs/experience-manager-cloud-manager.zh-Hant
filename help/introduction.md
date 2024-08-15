@@ -2,10 +2,10 @@
 title: 用於 AMS 的 Cloud Manager 的簡介
 description: 從這裡開始了解用於 Adobe​ Managed Services (AMS) 的 Cloud Manager 以及它如何讓組織能夠在雲端中自助管理 Adobe​ Experience Manager。
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
+source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 56%
+source-wordcount: '1256'
+ht-degree: 48%
 
 ---
 
@@ -33,17 +33,15 @@ Adobe Experience Manager 的 [!UICONTROL Cloud Manager] 使開發人員能夠透
 
 藉由 Cloud Manager，您的開發團隊將受益於以下功能：
 
-* 持續整合/持續傳遞 (CI/CD) 程式碼，將上市時間從數月/數週縮短至數天/數小時。
+* 持續整合/持續傳遞(CI/CD)程式碼，將上市時間從數月/數週縮短至數天/數小時。
 
-* 程式碼檢查、效能測試和安全性驗證會根據最佳做法進行，然後再推送至生產環境，將生產中斷的情況降至最低
+* 程式碼檢查、效能測試和安全性驗證，是根據最佳實務而設，然後再推送至生產環境，將生產中斷的情況降至最低。
 
-* API 連線以補足現有的 DevOps 流程
+* API連線以補充現有的DevOps程式。
 
-* 自動縮放功能會聰明地偵測增加容量的需求，並自動將其他 Dispatcher/發佈區段上線。
+* 自動縮放功能會聰明地偵測增加容量的需求，並自動將其他Dispatcher/發佈區段上線。
 
-下圖會說明在 [!UICONTROL Cloud Manager] 中使用的 CI/CD 流程：
-
-![CI/CD 流程](/help/assets/screen_shot_2018-05-12at73843pm.png)
+![CI/CD流程](/help/assets/screen_shot_2018-05-12at73843pm.png)在[!UICONTROL Cloud Manager]中使用的CI/CD處理流程。
 
 ## [!UICONTROL Cloud Manager]中的重要功能 {#key-features-in-cloud-manager}
 
@@ -57,7 +55,7 @@ Adobe Experience Manager 的 [!UICONTROL Cloud Manager] 使開發人員能夠透
 
 若要探索並開始使用[!UICONTROL Cloud Manager]的UI，請參閱[首次登入](/help/getting-started/first-time-login.md)。
 
-### CI/CD 管道 {#ci-cd-pipeline}
+### CI/CD管道 {#ci-cd-pipeline}
 
 [!UICONTROL Cloud Manager] 的一項重要功能是運用最佳化 CI/CD 管道的能力，以便加速自訂程式碼或更新的傳送，例如在網站上新增元件。
 
@@ -65,7 +63,7 @@ Adobe Experience Manager 的 [!UICONTROL Cloud Manager] 使開發人員能夠透
 
 若要深入瞭解如何從[!UICONTROL Cloud Manager]的UI設定管道，請參閱[設定生產管道](/help/using/production-pipelines.md)和[設定非生產管道](/help/using/non-production-pipelines.md)。
 
-### 靈活的部署模式 {#flexible-deployment-modes}
+### 彈性的部署模式 {#flexible-deployment-modes}
 
 [!UICONTROL Cloud Manager] 會提供靈活且可設定的部署模式，讓您因此能夠根據不斷變化的業務需求實現體驗。
 
@@ -75,7 +73,7 @@ Adobe Experience Manager 的 [!UICONTROL Cloud Manager] 使開發人員能夠透
 
 若要進一步瞭解部署程式碼和品質檢查，請參閱[部署程式碼](/help/using/code-deployment.md)。
 
-## Cloud Manager 中的選用功能 {#optional-features-in-cloud-manager}
+## Cloud Manager中的選用功能 {#optional-features-in-cloud-manager}
 
 Cloud Manager提供額外的進階功能，依據您的特定環境設定和需求，這些功能可能對您的專案會有助益。 如果您對這些功能感興趣，請聯絡您的客戶成功工程師(CSE)或Adobe代表以進一步討論。
 
@@ -125,7 +123,7 @@ Cloud Manager提供額外的進階功能，依據您的特定環境設定和需�
 
 如果您對藍綠色部署感興趣，請考慮以下要求和限制並聯絡您的CSE。
 
-#### 要求和限制 {#limitations}
+#### 需求和限制 {#limitations}
 
 * 藍綠色僅適用於Dispatcher/發佈者配對。
 * 預覽 Dispatcher/發佈配對不屬於藍綠色部署的一部分。
