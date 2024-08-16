@@ -1,28 +1,28 @@
 ---
 title: Dispatcher 設定
-description: 了解如何使用 Cloud Manager 部署 Dispatcher 設定檔案。
+description: 瞭解如何使用Cloud Manager部署Dispatcher設定檔案。
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: ba08da1b25a1f9ba8bc954b2fbd27b60d4ddf1a0
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 91%
+source-wordcount: '575'
+ht-degree: 48%
 
 ---
 
 
 # Dispatcher設定 {#manage-your-dispatcher-configurations}
 
-了解如何使用 Cloud Manager 部署 Dispatcher 設定檔案。 
+瞭解如何使用Cloud Manager部署Dispatcher設定檔案
 
 ## 使用Cloud Manager部署Dispatcher設定 {#deploying-dispatcher-configurations}
 
-Cloud Manager 能夠部署 Web 伺服器和 Dispatcher 設定檔案的前提在於它們會和一般 AEM 內容套件一起儲存在 Git 存放庫中。
+Cloud Manager能夠部署Web伺服器和Dispatcher設定檔案，前提是這些檔案和一般AEM內容套件一起儲存在Git存放庫中。
 
-若要利用此功能，Maven 組建應產生 .zip 檔案，且其中至少包含兩個目錄：`conf` 和 `conf.d`。 可使用 `maven-assembly-plugin` 產生此 .zip 檔案。
+若要利用此功能，Maven組建應產生.zip檔案，其中至少包含兩個目錄： `conf`和`conf.d`。 可使用 `maven-assembly-plugin` 產生此 .zip 檔案。
 
-Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-wizard.md)產生的專案具有自動建立的正確 Maven 專案結構。如果您才剛使用 Adobe Managed Services (AMS)，這是建立的路徑。
+Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-wizard.md)產生的專案具有自動建立的正確 Maven 專案結構。如果您不熟悉AdobeManaged Services (AMS)，建議使用此路徑。
 
-部署到 Dispatcher 執行個體後，Dispatcher 執行個體上的這些目錄的內容將被您的 Git 存放庫中的內容覆寫。由於 Web 伺服器和 Dispatcher 設定檔案經常需要環境特定資訊才能正確使用此功能，因此您首先需要和客戶成功工程師 (CSE) 一起將這些環境變數設定為 `/etc/sysconfig/httpd`。
+當您部署至Dispatcher執行個體時，執行個體上的目錄會替換為Git存放庫中的目錄。 由於Web伺服器和Dispatcher設定檔案通常需要環境特定的詳細資料，因此您必須與客戶成功工程師(CSE)共同作業，在`/etc/sysconfig/httpd`中設定適當的環境變數，才能正確使用此功能。
 
 ## 適用於現有受管理服務客戶的Dispatcher設定 {#steps-for-configuring-dispatcher}
 
@@ -33,12 +33,12 @@ Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-w
 1. 在每個目標 Dispatcher 的索引碼值配對中定義所需的變數，並要求您的 CSE 將這些變數新增到每個執行個體上的 `/etc/sysconfig/httpd`。
 1. 在中繼環境中測試更新的設定。
 1. 測試後，請要求您的 CSE 部署到生產環境。
-1. 將檔案提交到您的 Git 存放庫。
+1. 將檔案提交到您的Git存放庫。
 1. 透過 Cloud Manager 部署。
 
 >[!NOTE]
 >
->將 Dispatcher 和 Web 伺服器設定遷移到您的 Git 存放庫可以在 Cloud Manager 上線期間完成，但也可以在以後的某個時間點完成。
+>將Dispatcher和Web伺服器設定移轉至您的Git存放庫可以在Cloud Manager上線期間完成，但也可以在以後的某個時間點完成。
 
 ### 範例 {#example}
 
@@ -48,7 +48,7 @@ Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-w
 
    您可以在此處使用任何名稱，但在此步驟中建立的目錄名稱必須和步驟 6 中使用的名稱相同。
 
-1. 此子目錄將包含一個Maven模組，該模組會使用Maven組裝外掛程式來建置Dispatcher .zip檔案。 若要開始進行，可在 `dispatcher` 目錄中，建立包含此內容的 `pom.xml` 檔案，在必要時變更 `parent` 參照、`artifactId` 和 `name`。
+1. 此子目錄包含一個Maven模組，該模組會使用Maven組裝外掛程式來建置Dispatcher .zip檔案。 在`dispatcher`目錄中，建立包含此內容的`pom.xml`檔案，視需要變更`parent`參考、`artifactId`和`name`。
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -113,7 +113,7 @@ Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-w
    </assembly>
    ```
 
-1. 在 Dispatcher 子目錄中建立一個名為 `src` 的子目錄 (如上述第 11 行組裝描述項中提及的)，以儲存實際的 Apache 和 Dispatcher 設定。在此 `src` 目錄中，建立名為 `conf`、`conf.d`、`conf.dispatcher.d` 和 `conf.modules.d` 的目錄。
+1. 在Dispatcher子目錄中建立名為`src`的子目錄（如上述第11行組裝描述項中參考的），以儲存實際的Apache和Dispatcher設定。 在此 `src` 目錄中，建立名為 `conf`、`conf.d`、`conf.dispatcher.d` 和 `conf.modules.d` 的目錄。
 
 1. 以您的設定檔案填入 `conf`、`conf.d`、`conf.dispatcher.d` 和 `conf.modules.d` 目錄。例如，預設的設定會由這些檔案和符號連結組成。
 
@@ -190,9 +190,9 @@ Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-w
            └── 02-dispatcher.conf
    ```
 
-1. 最後，請在專案根目錄中的 `pom.xml` 檔案中，新增 `<module>` 元素，以包含 Dispatcher 模組。
+1. 最後，請在專案根目錄中的`pom.xml`檔案中，新增`<module>`元素以包含Dispatcher模組。
 
-   例如，如果您現有的模組清單為
+   例如，如果您的現有模組清單如下：
 
    ```xml
        <modules>
@@ -202,7 +202,7 @@ Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-w
        </modules>
    ```
 
-   您應該將其變更為
+   將其變更為下列專案：
 
    ```xml
        <modules>
