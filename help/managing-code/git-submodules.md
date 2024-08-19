@@ -1,27 +1,27 @@
 ---
 title: Git 子模組支援
-description: 了解如何使用 Git 子模組以便在建置時間時跨越 Git 存放庫合併多個分支的內容。
+description: 瞭解如何使用Git子模組，在建置時間時跨Git存放庫合併多個分支的內容。
 exl-id: f946d7e7-114a-4e33-bb82-2625d37bba2f
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 97%
+source-wordcount: '412'
+ht-degree: 31%
 
 ---
 
-# Adobe 存放庫的 Git 子模組支援 {#git-submodule-support}
+# Adobe存放庫的Git子模組支援 {#git-submodule-support}
 
-Git 子模組可用於在建置時間時跨越 Git 存放庫合併多個分支的內容。
+Git子模組可用於在建置時間時跨Git存放庫合併多個分支的內容。
 
-當 Cloud Manager 的建置流程執行時，複製為管道設定的存放庫並簽出已設定的分支後，如果該分支包含根目錄中的 `.gitmodules` 檔案，則執行命令。
+Cloud Manager的建置流程執行時，會先複製管道的存放庫並簽出已設定的分支。 如果分支在根目錄中包含`.gitmodules`檔案，則會執行命令。
 
 ```
 $ git submodule update --init
 ```
 
-這會將每個子模組簽出至適當的目錄中。對於習慣於使用 Git 子模組並且不想管理外部合併流程的組織來說，這種技術有可能成為[使用多個原始程式碼 Git 存放庫](/help/managing-code/multiple-git-repos.md)的備用方法。
+此程式會將每個子模組簽出至適當的目錄中。 對於習慣使用Git子模組並且不想管理外部合併流程的組織來說，此技巧是[使用多個來源Git存放庫](/help/managing-code/multiple-git-repos.md)的潛在替代方法。
 
-例如，我們假設有三個存放庫，每個都包含名為 `main` 的單一分支。在「主要」存放庫中 (即在管道中設定的那個)，`main` 分支有一個 `pom.xml` 檔案，宣告包含在其他兩個存放庫中的專案：
+例如，我們假設有三個存放庫，每個都包含名為 `main` 的單一分支。在「主要」存放庫中（即在管道中設定的那個），`main`分支有一個`pom.xml`檔案，宣告包含在其他兩個存放庫中的專案：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -42,14 +42,14 @@ $ git submodule update --init
 </project>
 ```
 
-然後，您將為其他兩個存放庫新增子模組：
+然後為其他兩個存放庫新增子模組：
 
 ```shell
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectA/ project-a
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectB/ project-b
 ```
 
-這會導致 `.gitmodules` 檔案，如下所示：
+`.gitmodules`檔案中的結果如下所示：
 
 ```text
 [submodule "project-a"]
@@ -62,24 +62,22 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
     branch = main
 ```
 
-有關 Git 子模組的更多資訊可以在 [Git 參考手冊](https://git-scm.com/book/en/v2/Git-Tools-Submodules)中找到。
+如需有關Git子模組的詳細資訊，請參閱[Git參考手冊](https://git-scm.com/book/en/v2/Git-Tools-Submodules)。
 
 ## 限制 {#limitations}
 
-使用Git子模組時，請注意下列事項：
+使用 Git 子模組時，請留意以下事項：
 
 * Git URL 必須完全符合上述語法。
 * 由於安全理由，請勿在這些 URL 中嵌入憑證。
 * 僅支援分支根部的子模組。
-* 會將 Git 子模組參考資料儲存到特定的 Git 認可。
-   * 因此，若對子模組存放庫進行變更，需要更新引用的認可，例如，透過使用 `git submodule update --remote`。
-* 除非另有必要，否則強烈建議使用「淺」子模組。
-   * 為此，需對每個子模組執行 `git config -f .gitmodules submodule.<submodule path>.shallow true`。
+* 會將Git子模組參考資料儲存到特定的Git認可。 因此，若對子模組存放庫進行變更，需要更新引用的認可。 例如，使用`git submodule update --remote`。
+* 除非另有必要，否則Adobe建議您對每個子模組執行`git config -f .gitmodules submodule.<submodule path>.shallow true`，以使用「淺」子模組。
 
 
-## 對私人存放庫的 Git 子模組支援 {#private-repositories}
+## 私人存放庫的Git子模組支援 {#private-repositories}
 
-使用[私人存放庫](private-repositories.md)時，對 Git 子模組的支援與使用 Adob&#x200B;&#x200B;e 存放庫時基本相同。
+使用[私人存放庫](private-repositories.md)時，對Git子模組的支援與使用Adobe存放庫時大致相同。
 
 但是，設定完您的 `pom.xml` 檔案並執行 `git submodule` 命令後，您必須新增一個 `.gitmodules` 檔案到彙總器存放庫的根目錄，以便 Cloud Manager 偵測子模組設定。
 
@@ -91,7 +89,6 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 透過私人存放庫使用 Git 子模組時，請留意以下限制：
 
-* 子模組的 Git URL 可以是 HTTPS 或 SSH 格式，但必須連結到 github.com 存放庫
-   * 將 Adob&#x200B;&#x200B;e 存放庫子模組新增至 GitHub 彙總器存放庫 (反之亦然) 將無法運作。
+* 子模組的Git URL可以是HTTPS或SSH格式，但必須連結至Github.com存放庫。 無法將Adobe存放庫子模組新增至GitHub彙總存放庫，反之亦然。
 * Adobe GitHub 應用程式必須可以存取 GitHub 子模組。
 * [透過 Adob&#x200B;&#x200B;e 託管的存放庫使用 Git 子模組的限制](#limitations-recommendations)也適用。

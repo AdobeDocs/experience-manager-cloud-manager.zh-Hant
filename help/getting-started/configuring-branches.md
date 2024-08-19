@@ -1,24 +1,24 @@
 ---
 title: 設定分支
-description: 了解如何在 Git 中設定您的第一個分支，以及 CI/CD 管道如何將其用於部署您的應用程式程式碼。
+description: 瞭解如何在Git中設定您的第一個分支，以及CI/CD管道如何使用它來部署您的應用程式程式碼。
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
-source-git-commit: 4c051cd1696f8a00d0278131c9521ad4dcb956a3
+source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 100%
+source-wordcount: '324'
+ht-degree: 14%
 
 ---
 
 
 # 設定分支 {#configuring-branches}
 
-了解如何在 Git 中設定您的第一個分支，以及 CI/CD 管道如何將其用於部署您的應用程式程式碼。
+瞭解如何在Git中設定您的第一個分支，以及CI/CD管道如何使用它來部署您的應用程式程式碼。
 
-## 在 Git 中設定您第一個分支 {#setting-up-your-first-branch-in-git}
+## 在Git中設定您的第一個分支 {#setting-up-your-first-branch-in-git}
 
-為在 Cloud Manager 中上線的每個方案[佈建](/help/requirements/environment-provisioning.md)一個最初為空白的 Git 存放庫。此存放庫可包含的分支數量依您的開發流程的要求而定，但必須至少有一個分支供 CI/CD 管道用於將應用程式程式碼部署到中繼和生產環境。最佳做法是將 `main` 用作此分支的名稱。方便的是，這是 Git 用戶端在設定新專案時的預設行為。
+為在 Cloud Manager 中上線的每個方案[佈建](/help/requirements/environment-provisioning.md)一個最初為空白的 Git 存放庫。此存放庫可包含的分支數量依您的開發流程的要求而定，但必須至少有一個分支可供CI/CD管道用於將應用程式程式碼部署到中繼和生產環境。 最佳做法是將 `main` 用作此分支的名稱。方便的是，此方法是Git使用者端在設定新專案時的預設行為。
 
-例如，在設定新專案時，您將執行一組類似以下的命令。
+例如，在設定新專案時，您會執行一組類似下列的命令。
 
 ```shell
 $ git init
@@ -50,11 +50,11 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->這並非使用命令列用戶端的要求。有多種圖形 Git 用戶端可作為獨立應用程式或作為諸如 Eclipse 或 IntelliJ 等整合式開發環境 (IDE) 的一部分提供。只要用戶端應用程式支援使用 HTTPS 的 Git，就應該和 [!UICONTROL Cloud Manager] 相容。
+>不需要使用命令列使用者端。 有多種圖形Git使用者端可作為獨立應用程式或作為諸如Eclipse或IntelliJ等整合式開發環境(IDE)的一部分提供。 只要用戶端應用程式支援使用 HTTPS 的 Git，就應該和 [!UICONTROL Cloud Manager] 相容。
 
-## 推送您第一個分支 {#pushing-your-first-branch}
+## 推送您的第一個分支 {#pushing-your-first-branch}
 
-一旦您認可了至少一個修訂版，您就可以將 [!UICONTROL Cloud Manager] 存放庫新增為遠端，然後將您的認可推送過去。
+當您認可至少一個修訂時，您可以將[!UICONTROL Cloud Manager]存放庫新增為遠端，然後將您的認可推送過去。
 
 ```shell
 $ git remote add adobe <url>
@@ -70,12 +70,12 @@ To <url>
 
 >[!NOTE]
 >
->您的客戶成功工程部將在 [!UICONTROL Cloud Manager] 上線期間提供您特定的 URL 以及您的憑證。
+>您的AdobeCSE （客戶成功工程師）在[!UICONTROL Cloud Manager]上線期間會提供特定URL以及您的認證。
 
-## 額外的分支 {#additional-branches}
+## 其他分支 {#additional-branches}
 
-對於非常簡單的專案，單一分 `main` 支可能就足夠了，但在大多數情況下，將需要較複雜的分支策略。許多客戶會遵循以下流程：即在一個名為 `develop` 的分支上執行日常開發活動，在需要部署時再將開發分支合併到 `main` 分支中。
+對於非常簡單的專案，單一`main`分支可能就足夠了，但在大多數情況下，需要更複雜的分支策略。 許多客戶會遵循在名為`develop`的分支上執行日常開發活動的程式。 然後，在需要部署時，開發分支會合併到`main`分支中。
 
 >[!TIP]
 >
->若要檢視常用的 Git 命令，請參閱[Git 速查表](https://github.github.com/training-kit/downloads/github-git-cheat-sheet)。
+>若要檢視常用的Git命令，請參閱[Git速查表](https://training.github.com/downloads/github-git-cheat-sheet)。
