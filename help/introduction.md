@@ -5,7 +5,7 @@ exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
 source-wordcount: '1256'
-ht-degree: 48%
+ht-degree: 55%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 48%
 >id="aemcloud_cloudmanager_introduction"
 >title="用於 AMS 的 Cloud Manager 的簡介"
 >abstract="讓組織能夠在雲端中自助管理 Adobe Experience Manager。其內容包含持續整合與持續傳遞 (CI/CD) 架構，可讓 IT 團隊與實作合作夥伴加速自訂項目或更新的傳遞，而不會影響效能或安全性。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/programs#cloud-manager" text="建立方案"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/environments#cloud-manager" text="建立環境"
+>additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/cloud-manager/programs#cloud-manager" text="建立方案"
+>additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/cloud-manager/environments#cloud-manager" text="建立環境"
 
 ## 簡介 {#introduction}
 
@@ -29,7 +29,7 @@ Adobe Experience Manager 的 [!UICONTROL Cloud Manager] 使開發人員能夠透
 >
 >本文件專門說明用於 Adob&#x200B;&#x200B;e Managed Services (AMS) 的 Cloud Manager 的特性和功能。
 >
->您可以在[AEM as a Cloud Service檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/home)中找到AEM as a Cloud Service的同等檔案。
+>AEM as a Cloud Service 的同效文件可在[AEM as a Cloud Service 文件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/home)中找到。
 
 藉由 Cloud Manager，您的開發團隊將受益於以下功能：
 
@@ -75,7 +75,7 @@ Adobe Experience Manager 的 [!UICONTROL Cloud Manager] 使開發人員能夠透
 
 ## Cloud Manager中的選用功能 {#optional-features-in-cloud-manager}
 
-Cloud Manager提供額外的進階功能，依據您的特定環境設定和需求，這些功能可能對您的專案會有助益。 如果您對這些功能感興趣，請聯絡您的客戶成功工程師(CSE)或Adobe代表以進一步討論。
+Cloud Manager提供額外的進階功能，依據您的特定環境設定和需求，這些功能可能對您的專案會有助益。 如果您對這些功能感興趣，請和您的客戶成功工程師 (CSE) 或 Adobe 代表聯絡並進一步討論。
 
 ### 自動縮放 {#autoscaling}
 
@@ -87,7 +87,7 @@ Cloud Manager提供額外的進階功能，依據您的特定環境設定和需�
 
 >[!NOTE]
 >
->如果您想探索自動縮放是否適合您的應用程式，請聯絡您的CSE或Adobe代表。
+>如果您有興趣探索自動縮放是否適合您的應用程式，請和您的 CSE 或 Adobe 代表聯絡。
 
 ### 藍綠色部署 {#blue-green}
 
@@ -121,7 +121,7 @@ Cloud Manager提供額外的進階功能，依據您的特定環境設定和需�
 
 所有使用Cloud Manager進行生產部署的AMS使用者都有資格使用藍綠色部署。 但是，使用藍綠色部署需要對您的環境進行額外驗證，並由AdobeCSE進行設定。
 
-如果您對藍綠色部署感興趣，請考慮以下要求和限制並聯絡您的CSE。
+如果您對藍綠色部署感興趣，請考慮以下要求和限制並和您的 CSE 聯絡。
 
 #### 需求和限制 {#limitations}
 
@@ -129,5 +129,5 @@ Cloud Manager提供額外的進階功能，依據您的特定環境設定和需�
 * 預覽 Dispatcher/發佈配對不屬於藍綠色部署的一部分。
 * 每個Dispatcher/發佈配對都和其他所有的Dispatcher/發佈者配對相同。
 * 藍綠色只在生產環境中提供。
-* 藍綠色在AWS和Azure中可用。
+* 藍綠色在 AWS 及 Azure 中都可供使用。
 * 藍綠色不適用於僅限Assets的客戶。
