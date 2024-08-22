@@ -3,9 +3,9 @@ title: 管理環境
 description: 了解如何使用 Cloud Manager 來管理您的環境。
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
 source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 94%
 
 ## 管理環境 {#managing-environments-with-cloud-manager}
 
-在&#x200B;**環境**&#x200B;圖磚上，按一下任何環境的列以顯示&#x200B;**環境**&#x200B;畫面。
+在「**環境**」圖磚上，按一下任何環境列，即可顯示「**環境**」畫面。
 
 「**環境**」畫面會顯示程式中的各個生產和中繼環境。每張卡片的上方都會顯示環境名稱。卡片會包括環境中的節點表以及 CPU 的 T 恤尺寸、儲存空間、區域和狀態。
 

@@ -3,9 +3,9 @@ title: 安全性與隱私權
 description: 了解 Cloud Manager 中程式碼和成品資產的安全性和隱私權。
 exl-id: 67df1987-8db7-40bd-9717-1bf194e957f7
 source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '202'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 90%
 
 [!UICONTROL Cloud Manager] 已預先設定角色，並賦予適當權限。 
 
-若要瞭解您可以在Admin Console及使用者角色許可權中指派的可能角色，請參閱[角色型許可權](/help/requirements/role-based-permissions.md)。
+若要了解有關您在 Admin Console 中可指派的角色以及使用者角色權限，請參閱[角色型權限](/help/requirements/role-based-permissions.md)。
 
 ## 資源隔離 {#resource-isolation}
 

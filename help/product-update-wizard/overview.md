@@ -3,16 +3,16 @@ title: 產品更新精靈
 description: 了解產品更新精靈如何簡化 Cloud Manager 中端對端 AEM 更新流程。
 exl-id: 8134e956-bfcf-41b8-a408-fa4375058c6a
 source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '210'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 
 # 產品更新精靈 {#product-update-wizard}
 
-產品更新精靈會使用 Cloud Manager 提供引導式、逐步升級到最新版本 Adobe Experience Manager 6.5 的體驗。它會使用Cloud Manager的CI/CD架構和內建的自動化測試，簡化端對端流程並確保遵守AEM最佳實務。
+產品更新精靈會使用 Cloud Manager 提供引導式、逐步升級到最新版本 Adobe Experience Manager 6.5 的體驗。因為使用 Cloud Manager 的 CI/CD 框架和內建的自動化測試，所以會簡化端對端流程並確保遵守 AEM 最佳實務。
 
 該精靈包括在 AEM 產品更新期間引導您的五個階段：
 
@@ -36,5 +36,5 @@ ht-degree: 82%
 
 1. 精靈會顯示 **[!UICONTROL AEM 6.5 更新]**&#x200B;流程的第一階段。
 
-若要深入瞭解精靈的第一階段，請參閱檔案[評估階段](/help/product-update-wizard/evaluation.md)。
+若要了解精靈的第一階段的詳細資訊，請參閱文件[評估階段](/help/product-update-wizard/evaluation.md)。
 

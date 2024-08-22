@@ -3,9 +3,9 @@ title: Maven 專案版本處理
 description: 了解 Maven 如何處理 Cloud Manager 中的專案版本設定。
 exl-id: a1d676e0-27cc-4b0d-8799-527c0520946a
 source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '258'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 94%
 
 為了進行中繼和生產部署，Cloud Manager 會產生一個唯一、遞增版本。
 
-在管道執行詳細資訊頁面和活動頁面上可看見此版本。 執行組建時，會更新 Maven 專案以使用此版本，並在 Git 存放庫中建立一個標記，且以該版本命名。
+在管道執行詳細資訊頁面和活動頁面上可看見此版本。執行組建時，會更新 Maven 專案以使用此版本，並在 Git 存放庫中建立一個標記，且以該版本命名。
 
 如果原始專案版本滿足特定條件，則更新後的 Maven 專案版本會將原始專案版本和 Cloud Manager 產生的版本合併。但上述標記則會一直使用產生的版本。為了讓這種合併發生，原始專案版本必須由三個版本區段組成，例如，`1.0.0` 或 `1.2.3`，而非 `1.0` 或 `1`，且原始版本的末尾不得為 `-SNAPSHOT`。
 

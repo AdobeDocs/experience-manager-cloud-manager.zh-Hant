@@ -3,9 +3,9 @@ title: 管理 Cloud Manager 中的存放庫
 description: 了解如何在 Cloud Manager 中建立、檢視和編輯 Git 存放庫。
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '648'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -53,11 +53,11 @@ ht-degree: 79%
 
 ## 新增存放庫 {#adding-repositories}
 
-在&#x200B;**存放庫**&#x200B;視窗中按一下&#x200B;**新增存放庫**&#x200B;按鈕，以啟動&#x200B;**新增存放庫**&#x200B;精靈。
+按一下「**存放庫**」視窗中的「**新增存放庫**」按鈕，以啟動「**新增存放庫**」精靈。
 
 ![新增存放庫精靈](assets/add-repository-wizard.png)
 
-Cloud Manager同時支援由Adobe(**Adobe存放庫**)管理的存放庫和您自己的自行管理存放庫（**私人存放庫**）。 必填欄位會根據您選擇新增的存放庫類型而有所不同。參閱以下文件，了解更多詳細資訊。
+Cloud Manager 會支援 Adobe 託管的存放庫 (**Adobe 存放庫**) 及您自己管理的存放庫 (**私人存放庫**)。必填欄位會根據您選擇新增的存放庫類型而有所不同。參閱以下文件，了解更多詳細資訊。
 
 * [在 Cloud Manager 中新增 Adob&#x200B;&#x200B;e 存放庫](adobe-repositories.md)
 * [在 Cloud Manager 中新增私人存放庫](private-repositories.md)
@@ -69,17 +69,17 @@ Cloud Manager同時支援由Adobe(**Adobe存放庫**)管理的存放庫和您自
 
 ## 存取存放庫資訊 {#repo-info}
 
-在&#x200B;**存放庫**&#x200B;視窗中檢視您的存放庫時，您可以按一下工具列上的&#x200B;**存取存放庫資訊**&#x200B;按鈕，以程式設計方式檢視如何存取Adobe管理的存放庫的詳細資料。
+在「**存放庫**」視窗中查看存放庫時，您可以按一下工作列的「**存取存放庫資訊**」按鈕，以檢視有關如何以程式設計方式存取 Adobe 託管的存放庫詳細資訊。
 
 ![存放庫資訊](assets/access-repo-info.png)
 
-「**存放庫資訊**」視窗會開啟，並且內含詳細資訊。如需存取存放庫資訊的詳細資訊，請參閱[存取存放庫資訊](accessing-repositories.md)。
+「**存放庫資訊**」視窗會開啟，並且內含詳細資訊。有關存取存放庫資訊的更多資訊，請參閱文件「[存取存放庫資訊](accessing-repositories.md)」。
 
 ## 檢查分支 {#check-branches}
 
 **檢查分支/建立專案**&#x200B;動作會根據存放庫的狀態執行兩個功能。
 
-* 如果儲存庫是新建立的，此動作會根據[AEM專案原型](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/overview)建立範例專案。
+* 如果存放庫是新建立，則該動作將根據 [AEM 專案原型](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/overview)建立範例專案。
 * 如果存放庫已經有建立的範例專案，該動作會檢查存放庫及其分支的狀態，並報告範例專案是否已存在。
 
 ![檢查分支動作](assets/check-branches.png)
@@ -90,7 +90,7 @@ Cloud Manager同時支援由Adobe(**Adobe存放庫**)管理的存放庫和您自
 
 ## 檢視和更新 {#view-update}
 
-「**查看與更新**」操作會開啟「**更新存放庫**」對話框。您可以用它來檢視&#x200B;**名稱**&#x200B;和&#x200B;**存放庫URL預覽**，並更新存放庫的&#x200B;**描述**。
+「**查看與更新**」操作會開啟「**更新存放庫**」對話框。使用此操作時，您可以檢視&#x200B;**名稱**&#x200B;和&#x200B;**存放庫 URL 預覽**，並更新存放庫的&#x200B;**說明**。
 
 ![查看和更新&#x200B;&#x200B;存放庫資訊](assets/update-repository.png)
 
@@ -104,4 +104,4 @@ Cloud Manager同時支援由Adobe(**Adobe存放庫**)管理的存放庫和您自
 
 如果您在刪除同名存放庫後嘗試建立新存放庫，您將收到錯誤訊息 `An error has occurred while trying to create repository. Contact your CSE or Adobe Support.`
 
-如果您收到此錯誤訊息，請聯絡Adobe支援，讓他們協助重新命名已刪除的存放庫，或為您的新存放庫選擇其他名稱。
+如果您收到此錯誤訊息，請聯絡 Adobe 支援，他們可協助重新命名已刪除的存放庫，或為新的存放庫選擇不同的名稱。
