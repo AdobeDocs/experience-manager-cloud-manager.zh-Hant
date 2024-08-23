@@ -5,7 +5,7 @@ exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
 source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
 workflow-type: tm+mt
 source-wordcount: '840'
-ht-degree: 42%
+ht-degree: 58%
 
 ---
 
@@ -40,15 +40,15 @@ ht-degree: 42%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 從&#x200B;**方案總覽**&#x200B;頁面，按一下&#x200B;**管道**&#x200B;索引標籤以切換至&#x200B;**管道**&#x200B;視窗。
+1. 從&#x200B;**方案概觀**&#x200B;頁面，按一下&#x200B;**管道**&#x200B;標籤，以切換到&#x200B;**管道**&#x200B;視窗。
 
-1. 在這裡，您可以看到方案的所有管道清單，並像在&#x200B;**管道卡**&#x200B;中一樣開始和停止管道執行。
+1. 在這裡，您可以看到方案所有管道的清單，並啟動和停止管道執行，就像在&#x200B;**管道卡**&#x200B;中一樣。
 
-按一下`i`圖示會顯示有關管道上次或目前執行的詳細資料。
+按一下 `i` 圖示，便會顯示有關管道上次或目前執行的詳細資訊。
 
 ![管道執行詳細資訊](/help/assets/configure-pipelines/pipeline-status.png)
 
-按一下「**檢視詳細資料**」即可前往管道執行的[詳細資料](#view-details)。
+按一下&#x200B;**檢視詳細資訊**，即可前往[管道執行詳細資訊](#view-details)。
 
 ## 活動視窗 {#activity}
 
@@ -56,11 +56,11 @@ ht-degree: 42%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 從&#x200B;**方案總覽**&#x200B;頁面，按一下&#x200B;**活動**&#x200B;索引標籤以切換至&#x200B;**活動**&#x200B;視窗。
+1. 從&#x200B;**方案概觀**&#x200B;頁面，按一下&#x200B;**活動**&#x200B;標籤，以切換到&#x200B;**活動**&#x200B;視窗。
 
 1. 在這裡，您可以看到方案所有管道執行的清單，包括目前和歷史執行。
 
-按一下`i`圖示會顯示所選管道執行執行的詳細資訊。
+按一下 `i` 圖示，便會顯示有關所選管道執行的執行詳細資訊。
 
 ![管道執行詳細資訊](/help/assets/configure-pipelines/pipeline-activity.png)
 
@@ -122,11 +122,11 @@ ht-degree: 42%
 
 ![步驟摘要](/help/assets/configure-pipelines/pipeline-step.png)
 
-按一下&#x200B;**檢視詳細資料**&#x200B;連結以顯示&#x200B;**持續時間**&#x200B;區段。 此區段包含根據該計畫歷史趨勢的管道平均持續時間。
+按一下&#x200B;**檢視詳細資訊**&#x200B;連結，以顯示&#x200B;**持續時間**&#x200B;部份。此區段包含根據該計畫歷史趨勢的管道平均持續時間。
 
 ![持續時間](/help/assets/configure-pipelines/duration.png)
 
-如果您的管道包含&#x200B;**程式碼掃描**&#x200B;步驟而發生問題，您可以按一下&#x200B;**下載詳細資料**&#x200B;按鈕，以檢視未通過的[程式碼品質測試](/help/using/code-quality-testing.md)清單。
+如果您的管道包含引發問題的&#x200B;**代碼掃描**&#x200B;步驟，您可以按一下「**下載詳細資訊**」按鈕，以檢視未通過的[程式碼品質測試](/help/using/code-quality-testing.md)清單。
 
 ![程式碼品質問題](assets/managing-pipelines-code-quality-issues.png)
 

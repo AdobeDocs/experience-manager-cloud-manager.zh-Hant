@@ -6,7 +6,7 @@ exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
 source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 38%
+ht-degree: 45%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 38%
 
 ### 新增存放庫 {#add-repo}
 
-1. 在Cloud Manager中，從&#x200B;**方案總覽**&#x200B;頁面，按一下&#x200B;**存放庫**&#x200B;索引標籤以切換至&#x200B;**存放庫**&#x200B;頁面，然後按一下&#x200B;**新增存放庫**。
+1. 在 Cloud Manager 中，從&#x200B;**方案概觀**&#x200B;頁面，按一下 **存放庫** 標籤以切換到&#x200B;**存放庫**&#x200B;頁面，並按一下&#x200B;**新增存放庫**。
 
 1. 在&#x200B;**新增存放庫**&#x200B;對話方塊中，選取&#x200B;**私人存放庫**&#x200B;作為存放庫型別。
 
@@ -44,7 +44,7 @@ ht-degree: 38%
 
    ![新增自己的存放庫](/help/assets/repositories/add-own-github.png)
 
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 >[!TIP]
 >
@@ -64,7 +64,7 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
 
 1. 若要增強安全性，請在存放庫的預設分支中建立機密檔案。 按一下&#x200B;**產生**。
 
-1. 按一下&#x200B;**確認**，確認產生機密檔案。
+1. 按一下&#x200B;**確認**，確認產生密碼檔案。
 
    ![確認密碼產生](/help/assets/repositories/confirm-generation.png)
 
@@ -110,11 +110,11 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
 
 >[!TIP]
 >
->您可以控制自動建立的管道以驗證對私人存放庫的每個提取請求。如需詳細資訊，請參閱[私人存放庫的GitHub檢查組態](github-check-config.md)。
+>您可以控制自動建立的管道以驗證對私人存放庫的每個提取請求。請參閱[私人存放庫的 GitHub 檢查設定](github-check-config.md)，了解更多資訊。
 
 ## 將私有存放庫與管道相關聯 {#pipelines}
 
-已驗證的私人存放庫可以與[完整棧疊管道](/help/overview/ci-cd-pipelines.md)相關聯。
+經驗證的私人存放庫可以與[全端管道](/help/overview/ci-cd-pipelines.md)建立關聯。
 
 ## 限制 {#limitations}
 

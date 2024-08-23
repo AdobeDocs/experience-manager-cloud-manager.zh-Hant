@@ -20,7 +20,7 @@ ht-degree: 36%
 
 ## 歡迎電子郵件 {#welcome-email}
 
-完成環境布建程式後，指定的客戶管理員會收到一封歡迎電子郵件，確認已授予他們對Adobe[!UICONTROL Experience Cloud]的存取權。 此歡迎電子郵件會包含有關如何開始使用 [!UICONTROL Experience Cloud] 服務、[!UICONTROL AEM Managed Services] 雲端環境及 [!UICONTROL Cloud Manager] 自助服務入口網站的詳細資訊。此外，該電子郵件還會包含一些重要資訊，例如客戶成功工程師 (CSE) 聯絡資訊、何處可取得支援資源、論壇、常見問題集等。在電子郵件中提供的資源清單中，您也會取得有關如何為您的AEM雲端環境存取[!UICONTROL Cloud Manager]的詳細資訊。
+完成環境布建程式後，指定的客戶管理員會收到一封歡迎電子郵件，確認已授予他們對Adobe[!UICONTROL Experience Cloud]的存取權。 此歡迎電子郵件列有相關的詳細資訊，包括如何開始使用 [!UICONTROL Experience Cloud] 服務、[!UICONTROL AEM Managed Services] 雲端環境及 [!UICONTROL Cloud Manager] 自助服務入口網站。此外，該電子郵件還會包含一些重要資訊，例如客戶成功工程師 (CSE) 聯絡資訊、何處可取得支援資源、論壇、常見問題集等。在電子郵件中提供的資源清單中，您也會取得有關如何為您的AEM雲端環境存取[!UICONTROL Cloud Manager]的詳細資訊。
 
 ## 後續步驟 {#next-steps}
 

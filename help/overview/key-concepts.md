@@ -5,7 +5,7 @@ exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
 source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 49%
+ht-degree: 64%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 49%
 
 應用程式是客戶建立的自訂專案和組態集，用來調整基礎[解決方案](#solution) (例如AEM Sites或AEM Assets)以符合其特定使用案例和需求。 應用程式是一個邏輯單位，可能包含多個[成品](#artifact)。
 
-一個應用程式範例是虛構的[WKND生活方式應用程式](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)。
+一個應用程式範例是虛構的 [WKND 生活方式應用程式。](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 
 ## 成品 {#artifact}
 
@@ -30,7 +30,7 @@ ht-degree: 49%
 
 ## 環境 {#environment}
 
-環境是[程式](#program)中的單一叢集虛擬機器器。 對於AEM，此環境包含一個製作執行個體（可選擇外加一個額外的冷待命製作執行個體）、零個或多個發佈執行個體、一個或多個Dispatcher執行個體和一個負載平衡器。
+環境指[方案](#program)中的單一叢集虛擬機器。對於AEM，此環境包含一個製作執行個體（可選擇外加一個額外的冷待命製作執行個體）、零個或多個發佈執行個體、一個或多個Dispatcher執行個體和一個負載平衡器。
 
 ## Git存放庫 {#git-repository}
 
@@ -38,7 +38,7 @@ Git存放庫是儲存客戶特定原始程式碼的位置，可使用[使用Git]
 
 ## 執行個體 {#instance}
 
-執行個體是執行AEM [解決方案](#solution)的特定虛擬伺服器。 從部署的角度來看，執行個體代表單一邏輯單位。
+執行個體是一種特定的虛擬伺服器，會執行 AEM [解決方案](#solution)。從部署的角度來看，執行個體代表單一邏輯單位。
 
 ## 組織 {#organization}
 
@@ -62,4 +62,4 @@ Git存放庫是儲存客戶特定原始程式碼的位置，可使用[使用Git]
 
 ## 步驟 {#step}
 
-步驟是已設定的指令集，會完成某些工作單位，作為[管道](#pipeline)的建置區塊。
+步驟指已設定的指令集，會完成某些工作單位，是[管道](#pipeline)建置要素。
