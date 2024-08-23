@@ -2,7 +2,7 @@
 title: 角色型權限
 description: 了解 Cloud Manager 預先設定的角色型權限以管理對您的雲端資源的存取。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 57%
@@ -18,11 +18,11 @@ ht-degree: 57%
 >
 >本文件旨在說明用於 Adob&#x200B;&#x200B;e Managed Services (AMS) 的 Cloud Manager 以角色為主的權限。
 >
->AEM as a Cloud Service 同等文件可以在 AEM as a Cloud Service 文件中的「[Cloud Manager 簡介](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction#role-based-permissions)」文件找到。
+>AEM as a Cloud Service 同效文件可以在 AEM as a Cloud Service 文件的「[Cloud Manager 簡介](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction#role-based-permissions)」一文中找到。
 
 ## 使用者角色 {#user-roles}
 
-[!UICONTROL Cloud Manager] 的角色管理可使用 [Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html) 完成。[!UICONTROL Cloud Manager] 的任何使用者都必須是客戶的 IMS 組織的成員，並擁有 Adobe Managed Services 產品內容。透過在 Admin Console 中將使用者新增到 [!UICONTROL Cloud Manager] 產品設定檔，可提供特定的角色會籍。
+[!UICONTROL Cloud Manager] 的角色管理可使用 [Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html) 完成。[!UICONTROL Cloud Manager] 的任何使用者都必須是客戶的 IMS 組織成員，並擁有 Adobe Managed Services 產品內容。透過在 Admin Console 中將使用者新增到 [!UICONTROL Cloud Manager] 產品設定檔，可提供特定的角色會籍。
 
 若要進一步瞭解如何設定角色，請參閱[設定使用者和角色](/help/requirements/users-and-roles.md)。
 

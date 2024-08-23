@@ -2,10 +2,10 @@
 title: Cloud Manager 常見問題集
 description: 瞭解為AMS客戶提供的有關Cloud Manager最常見問題的解答。
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '748'
-ht-degree: 57%
+ht-degree: 52%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 57%
 
 可以。您必須使用Java 11的正確設定新增`maven-toolchains-plugin`。
 
-* [此處](/help/getting-started/using-the-wizard.md)記錄此程式。
+* 本流程記錄在[此處](/help/getting-started/using-the-wizard.md)。
 * 如需範例，請參閱[WKND範例專案程式碼](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)。
 
 ## 從 Java 8 切換到 Java 11 後，我的組建失敗並出現有關 maven-scr-plugin 的錯誤。該怎麼辦？ {#maven-src-plugin}
@@ -62,25 +62,25 @@ ht-degree: 57%
 
 ## 我是否能將 SNAPSHOT 用於 Maven 專案的版本？ {#snapshot}
 
-可以。對於開發人員部署，Git 分支 `pom.xml` 檔案在 `<version>` 值的末尾必須包含 `-SNAPSHOT`。
+可以。對於開發人員部署，Git分支`pom.xml`檔案在`<version>`值的結尾必須包含`-SNAPSHOT`。
 
 如此一來，在版本未變更時，仍可安裝後續部署。 在開發人員部署中，不會為 Maven 組建新增或產生自動版本。
 
-您還可以將版本設定為 `-SNAPSHOT`，以用於測試和生產組建或部署。Cloud Manager 會自動設定適當的版本編號並在 Git 中為您建立標記。如有需要，可在稍後參照此標記。
+您還可以將版本設定為 `-SNAPSHOT`，以用於測試和生產組建或部署。Cloud Manager會自動設定適當的版本編號，並在Git中為您建立標籤。 如有需要，可在稍後參照此標記。
 
-如需有關版本處理的進一步詳細資訊[記錄在此處](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling)。
+有關版本處理的進一步詳細資訊[記錄在此處](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling)。
 
 ## 套件和套裝的版本設定如何用於中繼和生產部署？ {#staging-production}
 
-在中繼和生產部署中，會產生自動化版本[，如此處的紀錄](/help/managing-code/maven-project-version.md)。
+在中繼和生產部署中，會產生自動化版本，如[此處的紀錄](/help/managing-code/maven-project-version.md)。
 
 對於測試和生產部署中的自訂版本設定，請設定適當的三部分 Maven 版本，例如 `1.0.0`。每次部署到生產時，都需增加版本。
 
-Cloud Manager 會自動將其版本新增到測試和生產組建，並建立 Git 分支。不需要特別設定。如果您並未依照之前的說明設定 Maven 版本，部署仍會成功，並會自動設定版本。
+Cloud Manager會自動將其版本新增到中繼和生產組建，並建立Git分支。 不需要特別設定。如果您並未依照之前的說明設定 Maven 版本，部署仍會成功，並會自動設定版本。
 
 ## 對於 Cloud Manager 部署，我的 Maven 組建失敗，但它在本機建置且沒有出現錯誤。有什麼問題嗎？ {#maven-build-fail}
 
-如需更多詳細資訊，請參閱此 [Git 資源](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md)。
+如需詳細資訊，請參閱此[Git資源](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md)。
 
 ## 我無法使用 aio 命令設定變數。該怎麼辦？ {#set-variable}
 

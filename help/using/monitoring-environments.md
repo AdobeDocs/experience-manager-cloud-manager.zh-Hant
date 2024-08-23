@@ -2,9 +2,9 @@
 title: 監視環境
 description: 了解如何在 Cloud Manager 中監視環境。
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '910'
 ht-degree: 34%
 
 ---
@@ -54,13 +54,13 @@ AdobeManaged Services設定您可以在[!UICONTROL Cloud Manager]中檢視的臨
 
 ## 系統監視詳細資料 {#system-monitoring-detail}
 
-若要檢視特定量度的詳細資訊，請按一下特定執行個體的其中一個類別欄，或按一下左側導覽中的類別標題。 每個詳細資訊頁面都會顯示該類別中量度的一系列圖表。您可以檢視環境中所有執行個體或特定執行個體的量度。您可以使用右上角的下拉式方框在環境和執行個體之間進行切換。
+若要檢視特定量度的詳細資訊，請按一下特定實例的其中一個類別欄或左側導覽中的類別標題。每個詳細資訊頁面都會顯示該類別中量度的一系列圖表。您可以檢視環境中所有執行個體或特定執行個體的量度。您可以使用右上角的下拉式方框在環境和執行個體之間進行切換。
 
 ![選取環境](/help/assets/System_Monitoring1.png)
 
 左側導覽顯示目前所選類別中的可用量度，其中包含目前所選環境和執行個體的資料。
 
-個別的圖表將顯示狀態和隨時間變化的資料圖表以及臨界值。如果顯示多個執行個體，則每個執行個體的資料都位於單獨的系列中。
+個別的圖表會顯示狀態和一段時間內的資料圖表以及臨界值。 如果顯示多個執行個體，則每個執行個體的資料都位於單獨的系列中。
 
 ![量度圖表](/help/assets/Monitoring_Graphs1.png)
 

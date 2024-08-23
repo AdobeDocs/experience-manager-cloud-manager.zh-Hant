@@ -2,10 +2,10 @@
 title: 通知
 description: 了解 Cloud Manager 如何通知您重要事件。
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 79%
+source-wordcount: '561'
+ht-degree: 67%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 79%
 
 ## Cloud Manager 中的通知 {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager]在以下情況下傳送通知給您：生產管道啟動和完成時（成功或失敗）、生產部署開始時以及到達&#x200B;**上線核准**&#x200B;和&#x200B;**已排程**&#x200B;步驟時。 上述通知會經由 [!UICONTROL Experience Cloud] 通知系統傳送。
+[!UICONTROL Cloud Manager]會在生產部署開始時在生產管道啟動和完成（成功或不成功）時傳送通知給您。 而且，當達到&#x200B;**上線核准**&#x200B;和&#x200B;**已排程**&#x200B;步驟時。 上述通知會經由 [!UICONTROL Experience Cloud] 通知系統傳送。
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ ht-degree: 79%
 
 ![通知設定圖示](/help/assets/notifications-configuration.png)
 
-這將開啟 **Experience Cloud 偏好設定**&#x200B;視窗，您可以在此定義通知訂閱內容以及接收通知的方式。
+**Experience Cloud偏好設定**&#x200B;視窗已開啟，您可以在其中定義通知訂閱及接收通知的方式。
 
 ### 訂閱 {#subscriptions}
 
@@ -58,21 +58,21 @@ ht-degree: 79%
 
 ![通知訂閱](/help/assets/notifications-subscriptions.png)
 
-預設情況下，您將接收所有產品的所有通知。按一下產品旁的&#x200B;**自訂**，以定義您為該產品收到的通知型別。
+依預設，您會收到所有產品的所有通知。 按一下產品旁的&#x200B;**自訂**，以定義您為該產品收到的通知型別。
 
 ![通知訂閱自訂](/help/assets/notifications-subscriptions-customize.png)
 
 ### 優先順序 {#priority}
 
-優先警示將標示&#x200B;**高**&#x200B;標記，並可設定為僅接收警示。在&#x200B;**優先順序**&#x200B;區段中，您可以定義哪些類別符合優先通知的條件。
+優先警示標示為&#x200B;**高**&#x200B;標籤。 您可以將警報設定為僅以警報形式接收。 在&#x200B;**優先順序**&#x200B;部份中，您可以定義哪些類別符合優先通知的條件。
 
 ![通知優先順序](/help/assets/notifications-priority.png)
 
-使用下拉式選單，以新增到符合優先條件類別的清單中。按一下類別名稱旁的 X 即可將其刪除。
+使用下拉式選單，以新增到符合優先條件類別的清單中。按一下類別名稱旁的`X`以移除它們。
 
 ### 警示 {#alerts}
 
-警示會出現在視窗右上角幾秒鐘。使用&#x200B;**警示**&#x200B;區段來定義您接收警示的通知。
+警示會出現在視窗右上角幾秒鐘。使用&#x200B;**警示**&#x200B;部份來定義您接收警示的通知。
 
 ![通知警示](/help/assets/notifications-alerts.png)
 
@@ -84,7 +84,7 @@ ht-degree: 79%
 
 ### 電子郵件 {#emails}
 
-在所有 Adobe [!UICONTROL Experience Cloud] 解決方案的 Web 使用者介面中都可看到通知。您還能選擇透過&#x200B;**電子郵件**&#x200B;區段中的電子郵件傳送這些通知。
+在所有 Adobe [!UICONTROL Experience Cloud] 解決方案的 Web 使用者介面中都可看到通知。您還能選擇透過&#x200B;**電子郵件**&#x200B;部份中的電子郵件傳送這些通知。
 
 ![通知電子郵件](/help/assets/notifications-emails.png)
 
@@ -94,4 +94,4 @@ ht-degree: 79%
 * 每日
 * 每週
 
-若選擇&#x200B;**即時通知**，則對於每個通知都會即刻傳送電子郵件。對於&#x200B;**每日摘要**&#x200B;和&#x200B;**每週摘要**，您可以選擇傳送每日摘要的時間以及在星期幾與何時傳送每週摘要。
+當選擇&#x200B;**即時通知**&#x200B;時，每個通知都會立即傳送電子郵件。 對於&#x200B;**每日摘要**&#x200B;和&#x200B;**每週摘要**，您可以選擇傳送每日摘要的時間以及在星期幾與何時傳送每週摘要。

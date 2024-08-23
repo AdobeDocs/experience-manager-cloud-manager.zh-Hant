@@ -2,10 +2,10 @@
 title: 組建環境
 description: 了解 Cloud Manager 使用者用於建置和測試程式碼的專用組建環境。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1263'
-ht-degree: 53%
+ht-degree: 63%
 
 ---
 
@@ -20,25 +20,25 @@ Cloud Manager的組建環境有下列屬性。
 
 * 組建環境以 Linux 為基礎，衍生自 Ubuntu 22.04。
 * 已安裝 Apache Maven 3.9.4。
-   * Adobe建議使用者[更新其Maven存放庫，改採HTTPS而非HTTP](#https-maven)。
+   * Adobe 建議使用者[更新其 Maven 存放庫以使用 HTTPS 而非 HTTP](#https-maven)。
 * 已安裝的 Java 版本為 Oracle JDK 8u401 和 Oracle JDK 11.0.22。
    * `/usr/lib/jvm/jdk1.8.0_401`
    * `/usr/lib/jvm/jdk-11.0.22`
-* 依預設，`JAVA_HOME`環境變數設為`/usr/lib/jvm/jdk1.8.0_401`，其中包含OracleJDK 8u401。 如需更多詳細資訊，請參閱[備用的 Maven 執行 JDK 版本](#alternate-maven) 區段。
+* 依預設，`JAVA_HOME`環境變數設為`/usr/lib/jvm/jdk1.8.0_401`，其中包含OracleJDK 8u401。 如需更多詳細資訊，請參閱[備用的 Maven 執行 JDK 版本](#alternate-maven) 部份。
 * 安裝了一些必要的附加系統套件。
    * `bzip2`
    * `unzip`
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-* 可在建置時安裝其他套件，如[安裝其他系統套件](#installing-additional-system-packages)一節中所述。
+* 在建置時間可安裝其他套件，如[安裝附加系統套件](#installing-additional-system-packages)部份中所述。
 * 每個組建都是在原始環境中完成的。 組建容器在執行之間不保留任何狀態。
 * 一直使用下列三個命令執行 Maven：
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
-* 透過 `settings.xml` 檔案在系統層級設定 Maven，這會利用名為 `adobe-public` 的設定檔自動納入公共 Adobe 成品存放庫。如需詳細資訊，請參閱[Adobe公用Maven存放庫](https://repo1.maven.org/)。
-* Node.js 18可用於[前端管道](/help/overview/ci-cd-pipelines.md)。
+* 透過 `settings.xml` 檔案在系統層級設定 Maven，這會利用名為 `adobe-public` 的設定檔自動納入公共 Adobe 成品存放庫。如需更多詳細資訊，請參閱 [Adobe 公共 Maven 存放庫](https://repo1.maven.org/)。
+* Node.js 18 可用於[前端管道](/help/overview/ci-cd-pipelines.md)。
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Cloud Manager的組建環境有下列屬性。
 
 >[!TIP]
 >
->請參閱下列其他資源，以瞭解如何使用Cloud Manager API：
+>請參閱以下更多資源，以了解如何使用 Cloud Manager API：
 >
 >* [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 >* [建立 API 整合](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
@@ -54,7 +54,7 @@ Cloud Manager的組建環境有下列屬性。
 
 ## HTTPS Maven存放庫 {#https-maven}
 
-Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)已開始對組建環境進行滾動更新（完成2023.12.0版本），其中包括對Maven 3.8.8的更新。Maven 3.8.1中推出的重大變更是安全性增強功能，旨在減少潛在的弱點。 具體來說，Maven現在會依預設停用所有不安全的`http://*`映象，如[Maven發行說明](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)中所述。
+Cloud Manager [2023.10.0 版](/help/release-notes/2023/2023-10-0.md)開始推出建置環境的更新 (在 2023.12.0 版時完成)，其中包含 Maven 3.8.8 的更新。Maven 3.8.1 引入的一項重大變更是旨在減少潛在漏洞的一項安全性增強。具體而言，Maven 現在預設停用所有不安全的 `http://*` 鏡像，如 [Maven 發行說明](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)中所述。
 
 由於此安全性增強，某些使用者可能會在建置步驟中遇到問題，特別是從使用不安全 HTTP 連線的 Maven 存放庫下載成品時。
 
@@ -105,13 +105,13 @@ Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)已開始對組�
 | oracle | 1.8 |
 | oracle | 1.11 |
 | oracle | 11 |
-| 日 | 1.8 |
-| 日 | 1.11 |
-| 日 | 11 |
+| 週日 | 1.8 |
+| 週日 | 1.11 |
+| 週日 | 11 |
 
 >[!NOTE]
 >
->從2022年4月開始，Oracle JDK將成為AEM應用計劃開發和操作的預設JDK。 Cloud Manager 的建置流程自動切換成使用 Oracle JDK，即使在 Maven 工具鏈中明確選取了替代選項。如需詳細資訊，請參閱[4月發行說明](/help/release-notes/2022/2022-4-0.md)。
+>從2022年4月開始，Oracle JDK將成為AEM應用計劃開發和操作的預設JDK。 Cloud Manager 的建置流程自動切換成使用 Oracle JDK，即使在 Maven 工具鏈中明確選取了替代選項。如需詳細資訊，請參閱 [4 月發行說明](/help/release-notes/2022/2022-4-0.md)。
 
 ### 備用Maven執行JDK版本 {#alternate-maven}
 

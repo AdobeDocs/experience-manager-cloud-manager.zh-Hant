@@ -2,10 +2,10 @@
 title: 使用新增專案精靈
 description: 依照本頁面的說明進行，即可了解如何使用精靈來建立 AEM 應用程式專案。
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 36%
+ht-degree: 30%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 36%
 
    ![詳細的原型參數](/help/assets/screen_shot_2018-10-08at60032am.png)
 
-1. 按一下&#x200B;**建立**，以使用原型建立入門專案並認可已命名的 Git 分支。
+1. 按一下&#x200B;**建立**，使用原型建立入門專案並認可已命名的Git分支。
 
 您現在有基礎專案了。 是時候設定您的管道了。
 

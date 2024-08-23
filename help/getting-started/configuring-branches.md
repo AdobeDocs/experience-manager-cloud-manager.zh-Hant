@@ -2,10 +2,10 @@
 title: 設定分支
 description: 瞭解如何在Git中設定您的第一個分支，以及CI/CD管道如何使用它來部署您的應用程式程式碼。
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 14%
+ht-degree: 4%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 14%
 
 ## 在Git中設定您的第一個分支 {#setting-up-your-first-branch-in-git}
 
-為在 Cloud Manager 中上線的每個方案[佈建](/help/requirements/environment-provisioning.md)一個最初為空白的 Git 存放庫。此存放庫可包含的分支數量依您的開發流程的要求而定，但必須至少有一個分支可供CI/CD管道用於將應用程式程式碼部署到中繼和生產環境。 最佳做法是將 `main` 用作此分支的名稱。方便的是，此方法是Git使用者端在設定新專案時的預設行為。
+已為Cloud Manager中上線的每個方案布建一個最初為空白的Git存放庫[](/help/requirements/environment-provisioning.md)。 此存放庫可包含的分支數量依您的開發流程的要求而定，但必須至少有一個分支可供CI/CD管道用於將應用程式程式碼部署到中繼和生產環境。 最佳做法是將 `main` 用作此分支的名稱。方便的是，此方法是Git使用者端在設定新專案時的預設行為。
 
 例如，在設定新專案時，您會執行一組類似下列的命令。
 
@@ -50,7 +50,7 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->不需要使用命令列使用者端。 有多種圖形Git使用者端可作為獨立應用程式或作為諸如Eclipse或IntelliJ等整合式開發環境(IDE)的一部分提供。 只要用戶端應用程式支援使用 HTTPS 的 Git，就應該和 [!UICONTROL Cloud Manager] 相容。
+>不需要使用命令列使用者端。 有多種圖形Git使用者端可作為獨立應用程式或作為諸如Eclipse或IntelliJ等整合式開發環境(IDE)的一部分提供。 只要使用者端應用程式支援使用HTTPS的Git，就應該與[!UICONTROL Cloud Manager]相容。
 
 ## 推送您的第一個分支 {#pushing-your-first-branch}
 

@@ -2,10 +2,10 @@
 title: 計劃設定
 description: 上線後，企業所有者必須對方案進行一些初始設定。
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 53%
+source-wordcount: '564'
+ht-degree: 49%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 53%
 
 1. 按一下&#x200B;**更新**&#x200B;以儲存變更。
 
-請注意，變更會立即儲存到 Cloud Manager，但要一直到下一次管道執行時才會反映在您的環境中。
+變更會立即儲存至Cloud Manager，但在下次管道執行前不會反映在您的環境中。
 
 如果您尚未建立管道，請參閱[設定生產管道](/help/using/production-pipelines.md)和[設定非生產管道](/help/using/non-production-pipelines.md)。
 

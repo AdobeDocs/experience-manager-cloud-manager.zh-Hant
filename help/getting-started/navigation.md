@@ -2,19 +2,19 @@
 title: 導覽 Cloud Manager UI
 description: 了解 Cloud Manager UI 的組織方式以及如何導覽以管理您的程式和環境。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1435'
-ht-degree: 41%
+ht-degree: 49%
 
 ---
 
 
-# 導覽 Cloud Manager UI {#navigation}
+# 導覽Cloud Manger UI {#navigation}
 
 了解 Cloud Manager UI 的組織方式以及如何導覽以管理您的程式和環境。
 
-Cloud Manager UI 主要由兩個圖形介面組成：
+Cloud Manager UI主要由兩個圖形介面組成：
 
 * [「我的程式」主控台](#my-programs-console)是您檢視和管理所有程式的位置。
 * [計畫總覽視窗](#program-overview)是您能檢視詳細資訊並管理個別計畫的地方。
@@ -35,12 +35,12 @@ Cloud Manager UI 主要由兩個圖形介面組成：
    * 索引標籤預設為關閉，並使用位於[Cloud Manager標題](#cloud-manager-header)左側的漢堡圖示下拉式功能表顯示。
 
 1. [行動號召和統計資料](#cta-statistics)：提供您最近的活動概觀
-1. [**我的程式**&#x200B;區段](#my-programs-section)：包含您所有程式的概觀
+1. [**我的程式**&#x200B;部份](#my-programs-section)：包含您所有程式的概觀
 1. [快速連結](#quick-links)以輕鬆存取相關資源
 
 >[!TIP]
 >
->如需有關計畫的詳細資訊，請參閱[計畫和計畫型別](/help/getting-started/program-setup.md)。
+>如需更多程式詳細資訊，請參閱[了解程式和程式類型](/help/getting-started/program-setup.md)。
 
 ### 工具列 {#my-programs-toolbars}
 
@@ -54,13 +54,13 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 1. 標題左側的漢堡圖示是下拉式功能表，可讓您存取個別程式特定部分的索引標籤。 視內容而定，它也可讓您在[授權儀表板]與&#x200B;**[我的程式](#my-programs-console)**&#x200B;主控台之間切換。
    * 授權儀表板僅適用於AEM as a Cloud Service計畫，而不適用於AMS計畫。
-   * 若要判斷您的程式具有的服務型別（AMS或AEMaaCS），請參閱本檔案的[程式卡片區段](#program-cards)。
+   * 若要確定您的程式所提供的服務類型 (AMS 或 AEMaaCS)，請參閱本文件的[程式卡部份](#program-cards)。
 1. 無論您在Cloud Manager中的哪個位置，Cloud Manager按鈕都會將您帶回Cloud Manager的「我的程式」主控台。
-1. 按一下「意見回饋」按鈕，向Adobe提供有關Cloud Manager的意見回饋。
-1. 組織選擇器會顯示您目前登入的組織（在此範例中為Foundation Internal）。 如果您的Adobe ID與多個組織相關聯，請按一下以切換至其他組織。
-1. 按一下解決方案切換器可讓您快速跳至其他Experience Cloud解決方案。
+1. 按一下「意見回饋」按鈕，即可向 Adobe 提供有關 Cloud Manager 的意見回饋。
+1. 組織選擇器會顯示您目前登入的組織（在此範例中為Foundation Internal）。 如果您的 Adobe ID 與多個組織關聯，可按一下以切換到另一個組織。
+1. 按一下解決方案切換器，即可快速跳轉到其他 Experience Cloud 解決方案。
 1. 「說明」圖示可讓您快速存取學習與支援資源。
-1. 通知圖示具有目前指派的未完成[通知](/help/using/notifications.md)數目
+1. 通知圖示標有目前已指派之未完成的[通知](/help/using/notifications.md)數量
 1. 選取代表您使用者的圖示以存取您的使用者設定。如果您未選取使用者圖片，則會隨機指派圖示。
 
 #### 程式工具列 {#program-toolbar}
@@ -76,7 +76,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ### 行動號召與統計資料 {#cta-statistics}
 
-「行動號召和統計資料」區段為您的組織提供了彙總資料，例如，如果您已成功設定程式，則可能會顯示過去 90 天內的活動統計資料，包括：
+「行動號召和統計資料」部份為您的組織提供了彙總資料，例如，如果您已成功設定程式，則可能會顯示過去 90 天內的活動統計資料，包括：
 
 * [部署](/help/using/code-deployment.md)數量
 * 已識別的[程式碼品質問題](/help/using/code-quality-testing.md)數量
@@ -86,7 +86,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ### 我的程式 {#my-programs-section}
 
-「我的程式」控制台的主要內容是「**我的程式**」區段，該區段會以個別卡片的形式列出您的程式。按一下卡片以存取方案的&#x200B;**方案總覽**&#x200B;頁面，瞭解有關方案的詳細資訊。
+「我的程式」控制台的主要內容是「**我的程式**」部份，該部份會以個別卡片的形式列出您的程式。按一下卡片以存取方案的&#x200B;**方案總覽**&#x200B;頁面，瞭解有關方案的詳細資訊。
 
 >[!NOTE]
 >
@@ -153,7 +153,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ### 工具列 {#program-overview-toolbar}
 
-程式總覽的工具列與[我的程式主控台](#my-programs-toolbars)的工具列類似。 此處僅說明差異。
+程式總覽的工具列與[我的程式主控台](#my-programs-toolbars)的工具列類似。 唯一的差別說明如下。
 
 #### Cloud Manager標題 {#cloud-manager-header-2}
 
@@ -199,19 +199,19 @@ Cloud Manager標題有一個漢堡圖示的下拉式選單，會自動開啟以�
 
 ### 環境卡 {#environments}
 
-**環境**&#x200B;卡會提供您環境的概觀，以及快速動作的連結。
+「**環境**」卡片為您提供環境的概觀和快速動作的連結。
 
 「**環境**」卡片只會列出三個環境。按一下「**全部顯示**」按鈕即可查看程式的所有環境。
 
-如需有關如何管理環境的詳細資訊，請參閱[管理環境](/help/using/managing-environments.md)。
+請參閱「[管理環境](/help/using/managing-environments.md)」，了解有關如何管理環境的詳細資訊。
 
 ### 管道卡 {#pipelines}
 
-**管道**&#x200B;卡提供您管道概觀和快速動作連結。
+「**管道**」卡片為您提供管道的概觀和快速動作的連結。
 
 「**管道**」卡片只列出了三個管道。按一下「**全部顯示**」按鈕即可查看程式的所有管道。
 
-如需有關如何管理管道的詳細資訊，請參閱[管理管道](/help/using/managing-pipelines.md)。
+請參閱「[管理管道](/help/using/managing-pipelines.md)」，了解有關如何管理管道的詳細資訊。
 
 ### 有用的資源 {#useful-resources}
 

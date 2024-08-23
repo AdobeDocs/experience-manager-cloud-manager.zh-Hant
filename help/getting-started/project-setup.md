@@ -2,7 +2,7 @@
 title: 設定您的專案
 description: 了解如何設定您的專案，以便您可以使用 Cloud Manager 對其進行管理和部署。
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 54%
@@ -19,7 +19,7 @@ ht-degree: 54%
 現有的AEM專案必須遵循一些基本規則，才能使用Cloud Manager成功建置和部署。
 
 * 必須使用 Apache Maven 建置專案。
-* 在 Git 存放庫的根目錄中必須有一個 `pom.xml` 檔案。
+* Git存放庫的根目錄中必須有`pom.xml`檔案。
    * 如有必要，此 `pom.xml` 檔案可參照的子模組 (這些子模組又可能有其他子模組) 數量並無限制。
    * 您可在您的 `pom.xml` 檔案中新增對其他 Maven 成品存放庫的參照。
    * 設定後，可支援對[受密碼保護的成品存放庫](#password-protected-maven-repositories)的存取權。但是，不支援對受網路保護的成品存放庫的存取權。
@@ -340,4 +340,4 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 
 ## 根據最佳實務開發程式碼 {#develop-your-code-based-on-best-practices}
 
-Adobe工程和諮詢團隊已為AEM開發人員開發一組[完整的最佳實務](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/bestpractices/best-practices)。
+Adobe 工程和顧問團隊已經為 AEM 開發人員發展出[全方位的最佳實務](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/bestpractices/best-practices)。

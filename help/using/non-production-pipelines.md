@@ -2,16 +2,16 @@
 title: 設定非生產管道
 description: 了解如何使用 Cloud Manager 建立和設定非生產管道，以部署程式碼。
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: ba08da1b25a1f9ba8bc954b2fbd27b60d4ddf1a0
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '685'
-ht-degree: 55%
+ht-degree: 61%
 
 ---
 
 # 設定非生產管道 {#configuring-non-production-pipelines}
 
-了解如何使用 Cloud Manager 建立和設定非生產管道，以部署程式碼。 如果您想先瞭解有關在Cloud Manager中管道如何運作的更多概念性概觀，請參閱[CI/CD管道](/help/overview/ci-cd-pipelines.md)。
+了解如何使用 Cloud Manager 建立和設定非生產管道，以部署程式碼。 如果您想先了解有關在 Cloud Manager 中管道如何運作的更多概念性概觀，請參閱[CI/CD 管道](/help/overview/ci-cd-pipelines.md)。
 
 ## 概觀 {#overview}
 
@@ -20,7 +20,7 @@ ht-degree: 55%
 * **生產管道** - 生產管道是一個專門建置的管道，由一系列精心安排的步驟組成，以將原始程式碼一路帶入生產環境。
 * **非生產管道** - 非生產管道主要用於執行程式碼品質掃描或將原始程式碼部署到開發環境中。
 
-本文件會專注於非生產管道。如需有關如何設定生產管道的詳細資訊，請參閱檔案[設定生產管道](/help/using/production-pipelines.md)。
+本文件會專注於非生產管道。如需有關如何設定生產管道的詳細資訊，請參閱文件[設定生產管道](/help/using/production-pipelines.md)。
 
 有兩種類型的非生產管道：
 
@@ -77,11 +77,11 @@ ht-degree: 55%
 
       1. 按一下&#x200B;**新增路徑**，即可新增您指定的路徑。您在每個環境最多可新增 100 個路徑。
 
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 ## 後續步驟 {#the-next-steps}
 
-設定管道後，即可部署程式碼。 如需詳細資訊，請參閱[程式碼部署](/help/using/code-deployment.md)。
+設定管道後，即可部署程式碼。 請參閱[代碼部署](/help/using/code-deployment.md)，了解更多詳細資訊 。
 
 ## 教學課程影片 {#video-tutorial}
 

@@ -2,10 +2,10 @@
 title: 程式碼部署
 description: 了解如何部署您的程式碼以及部署時 Cloud Manager 中會發生什麼情況。
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: a7dc30ed31e87ab486f0b279b70c850a33a903eb
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1637'
-ht-degree: 54%
+ht-degree: 55%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 54%
 
 了解如何部署您的程式碼以及部署時 Cloud Manager 中會發生什麼情況。
 
-## 使用 Cloud Manager 部署程式碼 {#deploying-code-with-cloud-manager}
+## 使用Cloud Manager部署程式碼 {#deploying-code-with-cloud-manager}
 
 在配置生產管道（包括必要的存放庫和環境）後，您就可以部署計畫碼。
 
@@ -90,7 +90,7 @@ ht-degree: 54%
 | 生產部署排程 | 14 天 |
 | 管理生產部署 | 14 天 |
 
-## 部署流程詳細資訊 {#deployment-process}
+## 部署流程詳細資料 {#deployment-process}
 
 Cloud Manager 會將建置流程產生的所有 target/*.zip 檔案上傳到儲存位置。這些成品是在管道的部署階段從該位置擷取的。
 
@@ -113,12 +113,12 @@ Cloud Manager 會將建置流程產生的所有 target/*.zip 檔案上傳到儲�
 
    >[!NOTE]
    >
-   >所有 AEM 成品都會部署給作者和發佈者。當需要節點特定的設定時，應利用運行模式。若要瞭解執行模式如何讓您針對特定目的調整AEM執行個體的詳細資訊，請參閱檔案「部署到AEM as a Cloud Service」](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/deploying/overview#runmodes)的[「執行模式」一節。
+   >所有 AEM 成品都會部署給作者和發佈者。當需要節點特定的設定時，應利用運行模式。若要了解有關運行模式如何讓您能夠針對特定目的調整 AEM 執行個體的詳細資訊，請參閱[「部署到 AEM as a Cloud Service」文件的「運行模式」一節](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/deploying/overview#runmodes)。
 
 1. Dispatcher成品會依照下列方式部署到每個Dispatcher：
 
    1. 會將目前設定備份並複製到暫時的位置。
-   1. 除不可變檔案外，所有設定都將遭到刪除。如需詳細資訊，請參閱[Dispatcher設定](/help/getting-started/dispatcher-configurations.md)。 此方法會清除目錄，以確保沒有留下孤立的檔案。
+   1. 除不可變檔案外，所有設定都將遭到刪除。如需更多詳細資訊，請參閱 [Dispatcher 設定](/help/getting-started/dispatcher-configurations.md)。此方法會清除目錄，以確保沒有留下孤立的檔案。
    1. 成品會被擷取至 `httpd` 目錄。不可變檔案並不會被覆寫。在部署時，您對Git存放庫中不可變檔案所做的任何變更都將被忽略。 這些檔案是AMS Dispatcher架構的核心，且無法變更。
    1. Apache 會執行設定測試。如果未發現錯誤，則會重新載入服務。如果發生錯誤，則從備份中還原設定，重新載入服務，並將錯誤回報 Cloud Manager。
    1. 管道設定中指定的每個路徑都會失效或從Dispatcher快取中排清。
@@ -198,9 +198,9 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 * 如果最後執行在生產部署步驟之前的任何時候失敗，則無法重新執行。
 
 
-### 重新執行 API {#reexecute-api}
+### 重新執行API {#reexecute-api}
 
-除了可在UI中使用之外，您還可以使用[Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution)來觸發重新執行，並識別觸發為重新執行的執行。
+除了可在 UI 中使用之外，您還可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 觸發重新執行，並識別已作為重新執行來觸發的執行。
 
 #### 觸發重新執行 {#triggering}
 

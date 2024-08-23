@@ -1,11 +1,11 @@
 ---
 title: 新增使用者和角色
-description: 了解如何使用 Admin Console 新增使用者和角色，並建立設定檔。
+description: 瞭解如何使用Admin Console新增使用者和角色，並建立設定檔。
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 81%
+source-wordcount: '758'
+ht-degree: 64%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 81%
 
 [!UICONTROL Cloud Manager] 中的許多功能都需要特定權限才能使用。例如，僅允許某些使用者為方案設定關鍵績效指標 (KPI)。這些權限在邏輯上會按角色分組。
 
-[!UICONTROL Cloud Manager] 目前為管控特定功能可用性的使用者定義了四種角色：
+[!UICONTROL Cloud Manager]目前為使用者定義了四個角色，這些角色控制特定功能的可用性：
 
 * 企業所有者
 * 方案管理員
@@ -27,16 +27,16 @@ ht-degree: 81%
 
 ## 角色定義 {#role-definitions}
 
-本表會概述這些角色。
+下表摘要Cloud Manager中的角色。
 
-| [!UICONTROL Cloud Manager] 角色 | 說明 |
-|--- |--- |
-| 企業所有者 | 這類使用者會負責定義 KPI、核准生產部署並在必要時覆寫重要的 3 層級失敗。 |
-| 方案管理員 | 這類使用者會使用 [!UICONTROL Cloud Manager] 來執行團隊設定、審查狀態、檢視 KPI，並可在必要時核准重要的 3 層級失敗。 |
-| 部署管理員 | 這類使用者會管理部署操作，並使用 [!UICONTROL Cloud Manager] 來執行中繼/生產部署、編輯 CI/CD 管道、核准重要的 3 層級失敗 (如有必要)，並可存取 Git 存放庫。 |
-| 開發人員 | 這類使用者會開發和測試自訂應用程式，並主要使用 [!UICONTROL Cloud Manager] 來檢視部署狀態，且可存取程式碼認可的 Git 存放庫。 |
-| 客戶成功工程師 | 這類使用者通常會為 AMS 客戶支援客戶成功，並會為了執行需要 CSE 監督的部署而和 [!UICONTROL Cloud Manager] 互動。 |
-| 內容作者 | 這類使用者通常不會和 [!UICONTROL Cloud Manager] 互動，但可能會使用 [!UICONTROL Cloud Manager] 方案切換器來存取 AEM。 |
+| [!UICONTROL Cloud Manager]角色 | 說明 |
+| --- | --- |
+| 業務負責人 | 負責定義KPI、核准生產部署並在必要時覆寫重要的3層級失敗。 |
+| 方案管理員 | 他們使用[!UICONTROL Cloud Manager]來執行團隊設定、審查狀態、檢視KPI，並可在必要時核准重要的3層級失敗。 |
+| 部署管理員 | 管理部署操作，並使用[!UICONTROL Cloud Manager]來執行中繼和生產部署、編輯CI/CD管道，以及核准重要的3層級失敗（如有必要）。 訪客也可以存取Git存放庫。 |
+| 開發人員 | 開發和測試自訂應用程式程式碼，並主要使用[!UICONTROL Cloud Manager]來檢視部署狀態，且可存取程式碼認可的Git存放庫。 |
+| 客戶成功工程師 | CSE通常會為AMS客戶支援客戶成功。 他們與[!UICONTROL Cloud Manager]互動，目的是執行需要CSE監督的部署。 |
+| 內容作者 | 他們通常不會與[!UICONTROL Cloud Manager]互動，但可能會使用[!UICONTROL Cloud Manager]方案切換器來存取AEM。 |
 
 >[!NOTE]
 >
@@ -46,20 +46,20 @@ ht-degree: 81%
 
 從 Admin Console 管理 [!UICONTROL Cloud Manager] 角色。透過將使用者新增到 [!UICONTROL Cloud Manager] 產品設定檔，可提供特定的角色會籍。
 
-Admin Console 是在整個組織中管理 Adob&#x200B;&#x200B;e 權益的中心位置。若要進一步瞭解Adobe Admin Console，請參閱 [Admin Console的檔案](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)。
+Admin Console 是在整個組織中管理 Adobe 權益的中心位置。若要進一步瞭解Adobe Admin Console，請參閱[Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)。
 
-為了提供適當的角色型權限給 [!UICONTROL Cloud Manager] 使用者，客戶組織中的管理員必須在 [!UICONTROL AEM Managed Services] 產品內容下建立新產品設定檔，並需對應以下四個 [!UICONTROL Cloud Manager] 角色的每一個：
+管理員必須在[!UICONTROL AEM Managed Services] Product Context下建立新的產品設定檔，以指派[!UICONTROL Cloud Manager]使用者的角色型許可權(對應至四個[!UICONTROL Cloud Manager]角色的每一個)。
 
 * 業務負責人
 * 部署管理員
 * 開發人員
 * 方案管理員
 
-您可以使用 Admin Console 建立或新增使用者/群組到這些產品設定檔。
+您可以使用Admin Console建立使用者或群組，或將其新增到這些產品設定檔中。
 
-1. 在[`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)登入Admin Console。
+1. 請在 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) 登入 Admin Console。
 
-1. 按一下「**概觀**」標籤，然後在「**產品和服務**」卡片上按一下您要修改的產品。 如果在卡片上的清單中找不到，請使用&#x200B;**產品**&#x200B;索引標籤以找到產品並點選。
+1. 按一下「**概觀**」標籤，然後按一下您要在&#x200B;**產品與服務**&#x200B;卡片上編輯的產品。 如果在卡片上的清單中找不到，請使用&#x200B;**產品**&#x200B;索引標籤以找到產品並點選。
 
    ![Admin Console 概觀索引標籤](/help/assets/admin-console-overview.png)
 
@@ -93,26 +93,26 @@ Admin Console 是在整個組織中管理 Adob&#x200B;&#x200B;e 權益的中心�
 
 建立產品設定檔後，您可以指派使用者或使用者群組至設定檔。
 
-1. 在[`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)登入Admin Console。
+1. 請在 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) 登入 Admin Console。
 
 1. 在 Admin Console 中，選擇&#x200B;**使用者**&#x200B;索引標籤。
 
    ![使用者索引標籤](/help/assets/admin-console-users.png)
 
-1. 按一下左側導覽面板中的&#x200B;**使用者**，然後按一下使用者以修改它。
+1. 在左側導覽面板中按一下&#x200B;**使用者**，然後按一下使用者以進行修改。
 
-1. 按一下&#x200B;**產品**&#x200B;區段中的省略符號按鈕，然後選取&#x200B;**編輯**。
+1. 按一下&#x200B;**產品**&#x200B;部份中的省略符號按鈕，並選取&#x200B;**編輯**。
 
    ![編輯使用者](/help/assets/admin-console-edit-user.png)
 
-1. 在&#x200B;**編輯產品和使用者群組**&#x200B;對話方塊中，按一下加號按鈕並選取要指派給使用者的設定檔。
+1. 在&#x200B;**編輯產品和使用者群組**&#x200B;對話框中，按一下加號按鈕並選取要指派給使用者的設定檔。
 
-   * 如果使用者已經被指派了角色，則加號按鈕是編輯按鈕（鉛筆），但操作方式相同。
+   * 如果使用者已經被指派了角色，則加號按鈕是編輯按鈕 (鉛筆)，但操作方式相同。
 
    ![編輯產品和使用者群組](/help/assets/admin-console-edit-products-and-user-groups.png)
 
 1. 按一下&#x200B;**儲存**，即可將設定檔儲存給使用者。
 
-重複相同的步驟即可將設定檔指派給使用者群組，但需從左側導覽面板選取&#x200B;**使用者群組** (位於&#x200B;**使用者**&#x200B;索引標籤上)。按一下使用者群組並選取&#x200B;**指派的產品設定檔**&#x200B;索引標籤，然後按一下&#x200B;**指派產品設定檔**&#x200B;以指派設定檔。
+重複相同的步驟即可將設定檔指派給使用者群組，但需從左側導覽面板選取&#x200B;**使用者群組** (位於&#x200B;**使用者**&#x200B;索引標籤上)。按一下使用者群組並選取&#x200B;**已指派的產品設定檔**&#x200B;索引標籤，然後按一下&#x200B;**指派產品設定檔**，即可指派設定檔。
 
 ![將設定檔指派給群組](/help/assets/admin-console-edit-user-groups.png)

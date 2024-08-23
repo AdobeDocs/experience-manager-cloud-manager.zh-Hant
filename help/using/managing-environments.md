@@ -2,10 +2,10 @@
 title: 管理環境
 description: 了解如何使用 Cloud Manager 來管理您的環境。
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: ht
-source-wordcount: '275'
-ht-degree: 100%
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 83%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 了解如何使用 Cloud Manager 來管理您的環境。
 
-## 總覽頁面 {#overview-page}
+## 概觀頁面 {#overview-page}
 
 **Cloud Manager 的總覽**&#x200B;頁面包括&#x200B;**環境**&#x200B;圖磚，上面會提供所有受管理的 AEM 環境清單。
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ![總覽頁面](/help/assets/Manage-Environ-Overview.png)
 
-## 環境圖磚 {#environments-tile}
+## 「環境」圖磚 {#environments-tile}
 
 此&#x200B;**環境**&#x200B;圖磚會顯示在您的方案中佈建的生產和中繼環境以及狀態。
 
@@ -54,14 +54,14 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->環境詳細資訊 (例如名稱) 一旦佈建後就無法變更。
+>布建後，就無法變更環境詳細資訊（例如名稱）。
 
 >[!NOTE]
 >
->如果您需要環境紀錄，可透過您的客戶成功工程師索取。
+>如果您需要環境記錄，可透過您的客戶成功工程師索取。
 
 ## 教學課程影片 {#video-tutorial}
 
 此影片會提供對 Cloud Manager 環境的總覽，由 AEM 編寫、發佈以及 Dispatcher 執行個體組成。
 
->[!VIDEO](https://video.tv.adobe.com/v/26318/)
+>[!VIDEO](https://video.tv.adobe.com/v/26318/) （3分鐘、1秒）

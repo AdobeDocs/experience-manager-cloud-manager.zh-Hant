@@ -2,10 +2,10 @@
 title: 內容複製工具
 description: Cloud Manager內容複製工具可讓使用者隨選從AMS代管的AEM 6.x生產環境複製可變內容，至較低環境以進行測試。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1144'
-ht-degree: 36%
+ht-degree: 42%
 
 ---
 
@@ -53,7 +53,7 @@ Cloud Manager內容複製工具可讓使用者隨選從AMS代管的AEM 6.x生產
 
    ![內容集](/help/assets/content-sets.png)
 
-1. 在精靈的&#x200B;**詳細資料**&#x200B;索引標籤上，提供內容集的名稱和描述，然後按一下&#x200B;**繼續**。
+1. 在精靈的&#x200B;**詳細資訊**&#x200B;索引標籤上，為內容集提供名稱和描述，然後按一下&#x200B;**繼續**。
 
    ![內容詳細資料](/help/assets/add-content-set-details.png)
 
@@ -67,7 +67,7 @@ Cloud Manager內容複製工具可讓使用者隨選從AMS代管的AEM 6.x生產
 
 1. 如果您需要最佳化或限制您的內容集，可以排除子路徑。
 
-   1. 在所包含路徑清單中，按一下您所需限制路徑旁的&#x200B;**新增排除子路徑**&#x200B;圖示。
+   1. 在包含的路徑列表中，按一下您要限制的路徑旁的&#x200B;**新增排除子路徑**&#x200B;圖示。
    1. 輸入要從所選路徑排除的子路徑。
    1. 按一下&#x200B;**排除路徑**。
    1. 再次按一下&#x200B;**新增排除子路徑**&#x200B;以視需要新增要排除的其他路徑。
@@ -81,7 +81,7 @@ Cloud Manager內容複製工具可讓使用者隨選從AMS代管的AEM 6.x生產
 
    ![正在編輯路徑清單](/help/assets/add-content-set-excluded-paths.png)
 
-1. 按一下&#x200B;**建立**&#x200B;以建立內容集。
+1. 按一下&#x200B;**建立**，以建立內容集。
 
 內容集現在可用於在環境之間複製內容。
 
@@ -92,7 +92,7 @@ Cloud Manager內容複製工具可讓使用者隨選從AMS代管的AEM 6.x生產
 
 ## 編輯內容集 {#edit-content-set}
 
-請依照下列步驟，建立新的內容。不要按一下&#x200B;**新增內容集**，請從主控台選取現有集，然後從省略符號選單中選取&#x200B;**編輯**。
+請依照下列步驟，建立新的內容。不要按一下&#x200B;**新增內容集**，而是從控制台選取一個現有集，並從省略號選單選取&#x200B;**編輯**。
 
 ![編輯內容集](/help/assets/edit-content-set.png)
 

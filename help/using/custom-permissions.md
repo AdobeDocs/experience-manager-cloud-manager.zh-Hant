@@ -2,10 +2,10 @@
 title: 自訂權限
 description: 了解如何使用自訂權限建立新的自訂權限設定檔並內含可設定的權限，以便限制 Cloud Manager 使用者對方案、管道和環境的存取。
 exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1416'
-ht-degree: 47%
+ht-degree: 55%
 
 ---
 
@@ -26,17 +26,17 @@ Cloud Manager有一組預先定義的角色，可管理各種Cloud Manager功能
 
 >[!TIP]
 >
->如需預先定義角色的詳細資訊，請參閱[角色型許可權](/help/requirements/role-based-permissions.md)。
+>如需深入了解預先定義的角色，請參閱[角色型權限](/help/requirements/role-based-permissions.md)。
 
 ## 使用自訂許可權 {#using}
 
 建立和使用您自己的自訂許可權需要以下三個步驟：
 
 1. [建立新的產品設定檔](#create)。
-1. [指派自訂許可權給新的產品設定檔](#assign-permissions)。
-1. [將使用者指派給新的產品設定檔](#assign-users)。
+1. [將自訂權限指派到新的產品設定檔](#assign-permissions)。
+1. [將使用者指派到新的產品設定檔](#assign-users)。
 
-本節詳細說明這些步驟。 當您建立自己的自訂許可權時，可能會發現看到[條款](#terms)和[可設定的許可權](#configurable-permissions)區段很有用。
+本節詳細說明這些步驟。 在建立自己的自訂權限時，您可能會發現參考[詞彙](#terms)和[可設定權限](#configurable-permissions)等部份會很有用。
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Cloud Manager有一組預先定義的角色，可管理各種Cloud Manager功能
 
 1. 選取產品 **AEM Managed Services**。
 
-1. 搜尋名稱符合模式`*-cloud-manager`的和執行個體，然後按一下以管理使用者和許可權。
+1. 搜尋名稱與模式 `*-cloud-manager` 相符的執行個體，然後點選或按一下以管理使用者和權限。
 
 1. 您被重新導向至Admin Console的&#x200B;**產品**&#x200B;標籤，您可以在其中管理Cloud Manager的使用者和許可權。 在Admin Console中，按一下&#x200B;**新增設定檔**。
 
@@ -63,7 +63,7 @@ Cloud Manager有一組預先定義的角色，可管理各種Cloud Manager功能
    * **說明** - 設定檔的資訊性描述，解釋用途 (選擇性)
    * **以電子郵件通知使用者** — 選取時，系統會在使用者加入此設定檔或從中移除時，以電子郵件通知使用者。
 
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 新的產品設定檔已儲存並出現在 Admin Console 的產品設定檔清單。
 
@@ -71,7 +71,7 @@ Cloud Manager有一組預先定義的角色，可管理各種Cloud Manager功能
 
 現在您有了新的產品設定檔，您可以將自訂權限指派至新的產品設定檔。
 
-1. 在Admin Console中，按一下您剛建立的[新產品設定檔名稱](#create)。
+1. 在 Admin Console 中，按一下[您剛建立的新產品設定檔](#create)名稱。
 
 1. 在開啟的視窗中，選取&#x200B;**權限**&#x200B;標籤可檢視可編輯的權限清單。
 
@@ -98,7 +98,7 @@ Cloud Manager有一組預先定義的角色，可管理各種Cloud Manager功能
 
 現在您可以將使用者指派至您建立的內含自訂權限的新產品設定檔。
 
-1. 在Admin Console中，按一下您剛指派自訂許可權的[新產品設定檔名稱](#assign-permissions)。
+1. 在 Admin Console 中，按一下[您剛指派自訂權限的新產品設定檔](#assign-permissions)名稱。
 
 1. 在開啟的視窗中，選取&#x200B;**使用者**&#x200B;標籤。
 
@@ -123,8 +123,8 @@ Cloud Manager有一組預先定義的角色，可管理各種Cloud Manager功能
 | 覆寫/拒絕重要量度失敗 | 允許使用者覆寫/拒絕重要量度失敗 |
 | 生產部署排程 | 允許使用者排程生產部署步驟 |
 | 存放庫資訊存取 | 允許使用者存取存放庫資訊並產生存取密碼 |
-| 存放庫建立 | 允許使用者建立新的 Git 存放庫 |
-| 存放庫刪除 | 允許使用者刪除 Git 存放庫 |
+| 存放庫建立 | 允許使用者建立新的Git存放庫 |
+| 存放庫刪除 | 允許使用者刪除Git存放庫 |
 | 存放庫編輯 | 允許使用者編輯Git存放庫 |
 | 存放庫程式碼產生 | 允許使用者從原型版本產生專案 |
 | 內容複製管理 | 允許使用者管理內容複製作業 |
@@ -143,7 +143,7 @@ Cloud Manager中組織層級許可權的一個範例是&#x200B;**存放庫資訊
 
 | 術語 | 說明 |
 |---|---|
-| 預先定義的權限 | 預先定義的角色，例如&#x200B;**企業所有者**、**部署管理員**&#x200B;等。 管理 Cloud Manager 的各種功能。如需預先定義角色的詳細資訊，請參閱[角色型許可權](/help/requirements/role-based-permissions.md)。 |
+| 預先定義的權限 | 預先定義的角色，例如&#x200B;**企業所有者**、**部署管理員**&#x200B;等。 管理 Cloud Manager 的各種功能。如需深入了解預先定義的角色，請參閱[角色型權限](/help/requirements/role-based-permissions.md)。 |
 | 自訂權限 | Cloud Manager功能可讓使用者建立許可權設定檔，以定義角色來控管Cloud Manager的支援功能 |
 | 權限設定檔 | 在Admin Console中建立，用於管理適用於屬於許可權設定檔的使用者之可設定許可權 |
 | 可設定的權限 | Cloud Manager許可權可在許可權設定檔中設定 |
@@ -160,7 +160,7 @@ Cloud Manager中組織層級許可權的一個範例是&#x200B;**存放庫資訊
 
 ## 限制 {#limitations}
 
-使用自訂許可權時，請牢記以下限制：
+使用自訂權限時，請記住以下限制：
 
 * [只有一小組權限](#configurable-permissions)可用於建立自訂設定檔。
 * 方案、環境、管道等資源。在 Cloud Manager 中建立，可能需要兩分鐘才會出現在 Admin Console 以進行權限設定。
@@ -175,7 +175,7 @@ Cloud Manager中組織層級許可權的一個範例是&#x200B;**存放庫資訊
 * 部署管理員
 * 開發人員
 
-如需預先定義角色的詳細資訊，請參閱[角色型許可權](/help/requirements/role-based-permissions.md)。
+如需深入了解預先定義的角色，請參閱[角色型權限](/help/requirements/role-based-permissions.md)。
 
 ### 引入自訂設定檔後，預先定義的權限設定檔會發生什麼情況？
 
