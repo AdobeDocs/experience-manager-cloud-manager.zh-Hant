@@ -2,7 +2,7 @@
 title: GitHub 檢查附註
 description: 瞭解GitHub如何檢查私人存放庫的註釋PR，以向您提供有用的意見回饋。
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: 6f5d51ef59aef831574bd55cee6b12a29e3d70d2
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 47%
@@ -10,7 +10,7 @@ ht-degree: 47%
 ---
 
 
-# GitHub檢查註解 {#github-annotations}
+# GitHub檢查附註 {#github-annotations}
 
 瞭解GitHub如何檢查私人存放庫的註釋PR，以向您提供有用的意見回饋。
 
