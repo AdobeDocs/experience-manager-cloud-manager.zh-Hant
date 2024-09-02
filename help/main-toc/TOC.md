@@ -8,9 +8,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '540'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 99%
 + [用於 AMS 的 Cloud Manager](/help/introduction.md)
 + 概觀 {#overview}
    + [重要概念](/help/overview/key-concepts.md)
-   + [使用者旅程圖](/help/overview/user-journey.md)
+   + [使用者歷程](/help/overview/user-journey.md)
    + [CI/CD 管道](/help/overview/ci-cd-pipelines.md)
    + [安全性與隱私權](/help/overview/security-and-privacy.md)
    + [說明資源](/help/overview/help-resources.md)
@@ -66,7 +66,7 @@ ht-degree: 99%
    + [GitHub 檢查設定](/help/managing-code/github-check-config.md)
    + [GitHub 檢查附註](/help/managing-code/github-annotations.md)
    + [Maven 專案版本處理](/help/managing-code/maven-project-version.md)
-   + [與Git整合](/help/managing-code/git-integration.md)
+   + [與 Git 整合](/help/managing-code/git-integration.md)
    + [使用多個 Git 存放庫](/help/managing-code/multiple-git-repos.md)
 + 產品更新精靈 {#product-update-wizard}
    + [概觀](/help/product-update-wizard/overview.md)

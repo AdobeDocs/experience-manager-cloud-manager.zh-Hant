@@ -3,9 +3,9 @@ title: 重要概念
 description: 像所有強大的工具一樣，Cloud Manager 包含了許多概念和術語。本文件會概述您開始使用 Cloud Manager 時最重要的一些內容。
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
 source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '414'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 64%
 
 ## 應用程式 {#application}
 
-應用程式是客戶建立的自訂專案和組態集，用來調整基礎[解決方案](#solution) (例如AEM Sites或AEM Assets)以符合其特定使用案例和需求。 應用程式是一個邏輯單位，可能包含多個[成品](#artifact)。
+應用程式是由客戶建立的一組自訂項目和設定，根據其特定使用案例和需求來調整基礎的[解決方案](#solution) (例如 AEM Sites 或 AEM Assets)。應用程式為一種邏輯單位，可能包含多個[成品](#artifact)。
 
-一個應用程式範例是虛構的 [WKND 生活方式應用程式。](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
+一個應用程式範例是虛構的 [WKND 生活方式應用程式。](https://experienceleague.adobe.com/zh-hant/docs/ experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 
 ## 成品 {#artifact}
 
-成品是可部署的單位，而且是將原始程式碼轉換為單一單位的某些建置流程的結果。 例如，包含原始程式碼的.zip檔案。
+成品是可部署的單位，而且是將原始程式碼轉換為單一單位的某些建置程序的結果。例如，.zip 檔案就包含了原始程式碼。
 
 ## 成品存放庫 {#artifact-repository}
 
@@ -30,11 +30,11 @@ ht-degree: 64%
 
 ## 環境 {#environment}
 
-環境指[方案](#program)中的單一叢集虛擬機器。對於AEM，此環境包含一個製作執行個體（可選擇外加一個額外的冷待命製作執行個體）、零個或多個發佈執行個體、一個或多個Dispatcher執行個體和一個負載平衡器。
+環境指[方案](#program)中的單一叢集虛擬機器。對於 AEM，此環境由一個製作執行個體 (可選擇外加一個冷待命製作執行個體)、零個或多個發佈執行個體、一個或多個 Dispatcher 執行個體和一個負載平衡器組成。
 
-## Git存放庫 {#git-repository}
+## Git 存放庫 {#git-repository}
 
-Git存放庫是儲存客戶特定原始程式碼的位置，可使用[使用Git](https://git-scm.com)進行存取。
+Git 存放庫是儲存客戶特定原始程式碼的位置，並可[使用 Git](https://git-scm.com) 存取。
 
 ## 執行個體 {#instance}
 
@@ -46,7 +46,7 @@ Git存放庫是儲存客戶特定原始程式碼的位置，可使用[使用Git]
 
 ## 管道 {#pipeline}
 
-管道是一組按順序執行或「執行」的部署步驟。
+管道是指一組依照順序進行或「執行」的部署步驟。
 
 ## 產品 {#product}
 
