@@ -5,7 +5,7 @@ exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 49%
+ht-degree: 55%
 
 ---
 
@@ -24,17 +24,17 @@ ht-degree: 49%
 
    ![Cloud Manager 主控台](/help/assets/cloud-manager-console.png)
 
-1. 按一下您的程式卡片，導覽至 Cloud Manager 的&#x200B;**概觀**&#x200B;頁面。
+1. 按一下您的方案卡片，導覽至 Cloud Manager 的&#x200B;**概觀**&#x200B;頁面。
 
 1. Cloud Manager 會開啟至&#x200B;**概觀**&#x200B;頁面。
 
    ![Cloud Manager 概觀頁面](/help/assets/program-overview-page.png)
 
-1. 如果您的程式尚未完成設定，請按一下「**行動號召**」中的「[設定程式](/help/getting-started/navigation.md#cta)」，設定您的程式描述並定義關鍵績效指標 (KPI)。如果您的程式已經完成設定，CTA 可能會提供額外的後續步驟。
+1. 如果您的方案尚未完成設定，請按一下「**行動號召**」中的「[設定方案](/help/getting-started/navigation.md#cta)」，設定您的方案說明並定義關鍵績效指標 (KPI)。如果您的方案已經完成設定，CTA 可能會提供額外的後續步驟。
 
-您可以繼續參閱文件[程式設定](/help/getting-started/program-setup.md)｣，了解設定程式中的後續步驟。
+您可以繼續參閱文件[方案設定](/help/getting-started/program-setup.md)｣，了解設定方案中的後續步驟。
 
-## Cloud Manager活動 {#activity}
+## Cloud Manager 活動 {#activity}
 
 Cloud Manager提供方案活動的整合式檢視。 其中會列出所有CI/CD管道執行，無論是生產用還是非生產用。 這類功能可讓您檢視過去和現在的活動。
 
@@ -44,4 +44,4 @@ Cloud Manager提供方案活動的整合式檢視。 其中會列出所有CI/CD�
 
 >[!NOTE]
 >
->依預設，有權存取AEM環境的使用者也具有Cloud Manager使用者角色。 此角色不足以讓使用者存取方案詳細資料檢視。 僅具有Cloud Manager使用者角色的這類使用者能夠透過方案選單選項瀏覽至AEM環境作者URL （如果環境存在）。 這類使用者如果想要取得方案層級的存取權，必須聯絡其管理員。
+>依預設，有權存取AEM環境的使用者也具有Cloud Manager使用者角色。 此角色不足以讓使用者存取方案詳細資料檢視。 僅具有Cloud Manager使用者角色的這類使用者能夠透過方案選單選項瀏覽至AEM環境作者URL （如果環境存在）。 這類使用者如果想要取得方案層級的存取權，必須和他們的管理員聯絡。

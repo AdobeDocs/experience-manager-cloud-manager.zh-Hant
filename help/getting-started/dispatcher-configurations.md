@@ -1,44 +1,44 @@
 ---
 title: Dispatcher 設定
-description: 瞭解如何使用Cloud Manager部署Dispatcher設定檔案。
+description: 了解如何使用 Cloud Manager 部署 Dispatcher 設定檔案。
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 48%
+ht-degree: 98%
 
 ---
 
 
-# Dispatcher設定 {#manage-your-dispatcher-configurations}
+# Dispatcher 設定 {#manage-your-dispatcher-configurations}
 
-瞭解如何使用Cloud Manager部署Dispatcher設定檔案
+了解如何使用 Cloud Manager 部署 Dispatcher 設定檔案
 
 ## 使用Cloud Manager部署Dispatcher設定 {#deploying-dispatcher-configurations}
 
-Cloud Manager能夠部署Web伺服器和Dispatcher設定檔案，前提是這些檔案和一般AEM內容套件一起儲存在Git存放庫中。
+Cloud Manager 能夠部署 Web 伺服器和 Dispatcher 設定檔案的前提，在於它們會和一般 AEM 內容套件一起儲存於 Git 存放庫中。
 
-若要利用此功能，Maven組建應產生.zip檔案，其中至少包含兩個目錄： `conf`和`conf.d`。 可使用 `maven-assembly-plugin` 產生此 .zip 檔案。
+若要運用此功能，Maven 建置應產生 .zip 檔案，且其中至少包含兩個目錄：`conf` 和 `conf.d`。可使用 `maven-assembly-plugin` 產生此 .zip 檔案。
 
-Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-wizard.md)產生的專案具有自動建立的正確 Maven 專案結構。如果您不熟悉AdobeManaged Services (AMS)，建議使用此路徑。
+Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-wizard.md)產生的專案具有自動建立的正確 Maven 專案結構。如果您剛開始使用 Adobe Managed Services (AMS)，此為建議的路徑。
 
-當您部署至Dispatcher執行個體時，執行個體上的目錄會替換為Git存放庫中的目錄。 由於Web伺服器和Dispatcher設定檔案通常需要環境特定的詳細資料，因此您必須與客戶成功工程師(CSE)共同作業，在`/etc/sysconfig/httpd`中設定適當的環境變數，才能正確使用此功能。
+當您部署至 Dispatcher 執行個體時，執行個體上的目錄會替換為 Git 存放庫中的目錄。由於 Web 伺服器和 Dispatcher 設定檔案通常需要環境特定的詳細資訊，因此在正確使用此功能之前，您必須與客戶成功工程師 (CSE) 合作，設定在 `/etc/sysconfig/httpd` 中合適的環境變數。
 
-## 適用於現有受管理服務客戶的Dispatcher設定 {#steps-for-configuring-dispatcher}
+## 現有受管理服務客戶的 Dispatcher 設定 {#steps-for-configuring-dispatcher}
 
 請依照下列這些步驟，完成初始的 Dispatcher 設定。
 
 1. 向您的 CSE 獲取最新的生產設定檔案。
 1. 移除硬式編碼的環境特定資料，例如發佈轉譯器 IP，並以變數取代。
 1. 在每個目標 Dispatcher 的索引碼值配對中定義所需的變數，並要求您的 CSE 將這些變數新增到每個執行個體上的 `/etc/sysconfig/httpd`。
-1. 在中繼環境中測試更新的設定。
-1. 測試後，請要求您的 CSE 部署到生產環境。
-1. 將檔案提交到您的Git存放庫。
+1. 在您的中繼環境中測試更新的設定。
+1. 測試後，請求您的 CSE 將其部署到生產環境。
+1. 將檔案提交到您的 Git 存放庫。
 1. 透過 Cloud Manager 部署。
 
 >[!NOTE]
 >
->將Dispatcher和Web伺服器設定移轉至您的Git存放庫可以在Cloud Manager上線期間完成，但也可以在以後的某個時間點完成。
+>可以在 Cloud Manager 上線期間將 Dispatcher 和 Web 伺服器設定遷移到您的 Git 存放庫，但也可以在之後擇日完成。
 
 ### 範例 {#example}
 
@@ -48,7 +48,7 @@ Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-w
 
    您可以在此處使用任何名稱，但在此步驟中建立的目錄名稱必須和步驟 6 中使用的名稱相同。
 
-1. 此子目錄包含一個Maven模組，該模組會使用Maven組裝外掛程式來建置Dispatcher .zip檔案。 在`dispatcher`目錄中，建立包含此內容的`pom.xml`檔案，視需要變更`parent`參考、`artifactId`和`name`。
+1. 此子目錄包含一個 Maven 模組，該模組會使用 Maven 組裝外掛程式來建置 Dispatcher .zip 檔案。於 `dispatcher` 目錄中，建立包含此內容的 `pom.xml` 檔案，在必要時變更 `parent` 參照、`artifactId` 和 `name`。
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -90,7 +90,7 @@ Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-w
 
    * 和步驟 1 一樣，如果需要，此處的 artifactId 和 name 可以是其他值。`dispatcher` 在此僅用為範例。
 
-1. Maven組裝外掛程式需要`descriptor`才能定義.zip檔案的建立方式。 若要建立此描述項，可在包含以下內容的 `dispatcher` 子目錄 (名為 `assembly.xml`) 中建立檔案。請注意，在上述 `pom.xml` 檔案的第 26 行會參照此檔案名稱。
+1. 此 Maven 組裝外掛程式需要 `descriptor` 來定義 .zip 檔案的建立方式。若要建立此描述項，可在包含以下內容的 `dispatcher` 子目錄 (名為 `assembly.xml`) 中建立檔案。請注意，在上述 `pom.xml` 檔案的第 26 行會參照此檔案名稱。
 
    ```xml
    <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
@@ -113,7 +113,7 @@ Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-w
    </assembly>
    ```
 
-1. 在Dispatcher子目錄中建立名為`src`的子目錄（如上述第11行組裝描述項中參考的），以儲存實際的Apache和Dispatcher設定。 在此 `src` 目錄中，建立名為 `conf`、`conf.d`、`conf.dispatcher.d` 和 `conf.modules.d` 的目錄。
+1. 在 Dispatcher 子目錄中建立一個名為 `src` 的子目錄 (如上述第 11 行組裝描述項中所提及的)，以儲存實際的 Apache 和 Dispatcher 設定。在此 `src` 目錄中，建立名為 `conf`、`conf.d`、`conf.dispatcher.d` 和 `conf.modules.d` 的目錄。
 
 1. 以您的設定檔案填入 `conf`、`conf.d`、`conf.dispatcher.d` 和 `conf.modules.d` 目錄。例如，預設的設定會由這些檔案和符號連結組成。
 
@@ -190,9 +190,9 @@ Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-w
            └── 02-dispatcher.conf
    ```
 
-1. 最後，請在專案根目錄中的`pom.xml`檔案中，新增`<module>`元素以包含Dispatcher模組。
+1. 最後，請在專案根目錄中的 `pom.xml` 檔案中，新增 `<module>` 元素，以包含 Dispatcher 模組。
 
-   例如，如果您的現有模組清單如下：
+   例如，若您現有的模組清單如下所示：
 
    ```xml
        <modules>
@@ -202,7 +202,7 @@ Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-w
        </modules>
    ```
 
-   將其變更為下列專案：
+   將其變更為以下內容：
 
    ```xml
        <modules>

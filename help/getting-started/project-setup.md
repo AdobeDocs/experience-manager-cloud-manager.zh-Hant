@@ -5,7 +5,7 @@ exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1395'
-ht-degree: 54%
+ht-degree: 94%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 54%
 
 ## 編輯現有專案 {#modifying-project-setup-details}
 
-現有的AEM專案必須遵循一些基本規則，才能使用Cloud Manager成功建置和部署。
+現有的 AEM 專案必須符合一些基本規則，方能使用 Cloud Manager 成功建置和部署。
 
 * 必須使用 Apache Maven 建置專案。
 * Git存放庫的根目錄中必須有`pom.xml`檔案。
@@ -30,13 +30,13 @@ ht-degree: 54%
 * 如果需要特定的順序，可以使用內容套件相依性來定義順序。
 * 部署時可能會[略過](#skipping-content-packages)套件。
 
-## 在Cloud Manager中啟動Maven設定檔 {#activating-maven-profiles-in-cloud-manager}
+## 在 Cloud Manager 中啟動 Maven 設定檔 {#activating-maven-profiles-in-cloud-manager}
 
 在某些有限的情況下，當您在 Cloud Manager 中執行而不是在開發人員工作站上執行時，可能需要稍微改變建置流程。對於這些情況，[Maven 設定檔](https://maven.apache.org/guides/introduction/introduction-to-profiles.html)可用於定義組建在不同環境中應如何不同，包括 Cloud Manager。
 
-在Cloud Manager組建環境中啟動Maven設定檔應透過尋找`CM_BUILD` [環境變數](/help/getting-started/build-environment.md#environment-variables)來完成。 相反地，僅供在 Cloud Manager 組建環境之外使用的設定檔應透過尋求不存在此變數來完成。
+在 Cloud Manager 建置環境內啟動 Maven 設定檔，應透過搜尋 `CM_BUILD` [環境變數](/help/getting-started/build-environment.md#environment-variables)的方式完成。相對地，僅供在 Cloud Manager 建置環境之外使用的設定檔，應透過搜尋並確認這個變數不存在來完成。
 
-例如，如果您只想在Cloud Manager內執行組建時輸出一則簡單的訊息，可採取下列步驟：
+例如，若您只想在 Cloud Manager 內部執行建置時輸出一則簡單的訊息，您可以採取以下步驟：
 
 ```xml
         <profile>
@@ -72,9 +72,9 @@ ht-degree: 54%
 
 >[!NOTE]
 >
->若要在開發人員工作站上測試此設定檔，您可在命令列 (包含 `-PcmBuild`) 上或在您的整合式開發環境 (IDE) 中將其啟用。
+>若要在開發人員工作站上測試此設定檔，您可在命令列 (使用 `-PcmBuild`) 上或在您的整合式開發環境 (IDE) 中啟用該設定檔。
 
-而如果您只想在Cloud Manager外部執行組建時輸出一則簡單的訊息，您可以採取下列步驟：
+而若您只想在 Cloud Manager 以外執行建置時輸出一則簡單的訊息，您可以採取以下步驟：
 
 ```xml
         <profile>
@@ -108,21 +108,21 @@ ht-degree: 54%
         </profile>
 ```
 
-## 受密碼保護的Maven存放庫支援 {#password-protected-maven-repositories}
+## 受密碼保護的 Maven 存放庫支援 {#password-protected-maven-repositories}
 
-對於來自受密碼保護的Maven存放庫的成品，應謹慎使用，因為以這種方式部署的程式碼不會完全受到Cloud Manager品質閘道強制的品質檢查的約束。 Adobe也建議您同時部署Java原始程式碼和整個專案的原始程式碼以及二進位。
+對於來自受密碼保護的 Maven 存放庫的成品，應謹慎地使用，因為以這種方式部署的程式碼並非必然接受過 Cloud Manager 品質閘道強制執行的品質檢查。Adobe 也建議您同時部署 Java 原始程式碼，並部署整個專案的原始程式碼以及二進位碼。
 
 >[!TIP]
 >
 >受密碼保護的 Maven 存放庫中的成品應僅在極少數情況下才用於未繫結至 AEM 的程式碼。
 
-若要使用Cloud Manager中受密碼保護的Maven存放庫，請指定密碼（也可選擇指定使用者名稱）作為秘密[管道變數](/help/getting-started/build-environment.md#pipeline-variables)，然後在Git存放庫中名為`.cloudmanager/maven/settings.xml`的檔案內參照該秘密。 此檔案會遵循 [Maven 設定檔](https://maven.apache.org/settings.html)結構描述。
+若要使用Cloud Manager中受密碼保護的Maven存放庫，請指定密碼（也可選擇指定使用者名稱）作為秘密[管道變數](/help/getting-started/build-environment.md#pipeline-variables)，然後在Git存放庫中名為`.cloudmanager/maven/settings.xml`的檔案內參照該秘密。 此檔案會遵循 [Maven 設定檔案](https://maven.apache.org/settings.html)結構描述。
 
-Cloud Manager建置程式啟動時，會將此檔案中的`<servers>`元素合併至Cloud Manager提供的預設`settings.xml`檔案中。 自訂伺服器不應使用以`adobe`和`cloud-manager`開頭的伺服器ID。 此類ID會視為保留的ID。 Cloud Manager只會映象符合其中一個指定首碼或預設ID `central`的伺服器ID。
+Cloud Manager 建置程序開始時，會將此檔案中的 `<servers>` 元素合併至由 Cloud Manager 提供的預設 `settings.xml` 檔案中。自訂伺服器不應使用以 `adobe` 和 `cloud-manager` 開頭的伺服器 ID。此類 ID 是保留使用的。Cloud Manager 僅會與那些符合指定前綴之一的伺服器 ID，或是預設的 ID `central` 進行鏡像。
 
 備妥這個檔案後，將從 `<repository>` 內部和/或 `<pluginRepository>` 元素 (在 `pom.xml` 檔案內) 參照伺服器 ID。一般來說，這些 `<repository>` 和/或 `<pluginRepository>` 元素將包含在 [Cloud Manager 的特定設定檔](#activating-maven-profiles-in-cloud-manager)內，不過這並非絕對必要。
 
-例如，假設存放庫位於`https://repository.myco.com/maven2`，Cloud Manager應使用的使用者名稱為`cloudmanager`，密碼為`secretword`。
+舉例來說，假設存放庫位於 `https://repository.myco.com/maven2`，則 Cloud Manager 應使用的使用者名稱為 `cloudmanager`，而密碼為 `secretword`。
 
 首先，在管道上將密碼設為秘密：
 
@@ -130,7 +130,7 @@ Cloud Manager建置程式啟動時，會將此檔案中的`<servers>`元素合�
 $ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword
 ```
 
-然後從`.cloudmanager/maven/settings.xml`檔案參考下列內容：
+然後參照以下出自 `.cloudmanager/maven/settings.xml` 檔案的內容：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -146,7 +146,7 @@ $ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSI
 </settings>
 ```
 
-而且最後需在 `pom.xml` 檔案內參照伺服器 ID：
+最後，參照 `pom.xml` 檔案內的伺服器 ID：
 
 ```xml
 <profiles>
@@ -189,7 +189,7 @@ $ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSI
 </profiles>
 ```
 
-### 部署來源 {#deploying-sources}
+### 部署原始程式碼 {#deploying-sources}
 
 同時部署 Java 原始程式碼以及二進位至 Maven 存放庫是建議的做法。
 
@@ -210,9 +210,9 @@ $ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSI
         </plugin>
 ```
 
-### 部署專案來源 {#deploying-project-sources}
+### 部署專案原始程式碼 {#deploying-project-sources}
 
-同時部署整個專案的原始程式碼以及二進位至Maven存放庫是建議的做法。 如此可重新建置精確的成品。
+同時部署整個專案的原始程式碼以及二進位碼至 Maven 存放庫是正確的做法。這樣做可以重建精確的成品。
 
 在您的專案中設定 `maven-assembly-plugin`：
 
@@ -237,11 +237,11 @@ $ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSI
         </plugin>
 ```
 
-## 跳過內容封裝 {#skipping-content-packages}
+## 略過內容套件 {#skipping-content-packages}
 
-在 Cloud Manager 中，組建可能會產生任何數量的內容套件。由於各種原因，可能需要產生內容套件但不將其部署。例如，當您僅為了測試而建置內容套件，或建置流程中的另一個步驟重新封裝內容套件時，此方法會很有用。 亦即，作為另一個封裝的子封裝。
+在 Cloud Manager 中，組建可能會產生任何數量的內容套件。由於各種原因，可能需要產生內容套件但不將其部署。例如，當您建置內容套件的目的僅為測試所用，或建置程序中另一個步驟將其重新封裝時，此方法可能很有用。也就是當作另一個套件的子套件。
 
-為了適應這些情況，Cloud Manager 會在內建內容套件的屬性中查找名為 `cloudManagerTarget` 的屬性。如果此屬性設定為`none`，則會略過該套件且不部署。 設定此屬性的機製取決於建立內容封裝的方式。 例如，使用`filevault-maven-plugin`時，您可以像這樣設定外掛程式：
+為了適應這些情況，Cloud Manager 會在所建置的內容套件的屬性中查找名為 `cloudManagerTarget` 的屬性。如果此屬性設定為 `none`，則會跳過該套件且不部署。設定此屬性的機制會依據建置生產內容套件的方式而定。例如，若使用 `filevault-maven-plugin`，您會這樣設定外掛程式，如下所示：
 
 ```xml
         <plugin>
@@ -257,7 +257,7 @@ $ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSI
         </plugin>
 ```
 
-使用`content-package-maven-plugin`時，會類似：
+使用 `content-package-maven-plugin` 時，會類似：
 
 ```xml
         <plugin>
@@ -273,17 +273,17 @@ $ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSI
         </plugin>
 ```
 
-## 組建成品重複使用 {#build-artifact-reuse}
+## 建置成品重複使用 {#build-artifact-reuse}
 
-在許多情況下，會將相同的程式碼部署到多個 AEM 環境中。在可能的情況下，Cloud Manager在偵測到多個全棧疊管道執行中使用了相同的Git認可時，會避免重建程式碼基底。
+在許多情況下，相同的程式碼會部署到多個 AEM 環境中。在可能的情況下，Cloud Manager在偵測到多個全棧疊管道執行中使用了相同的Git認可時，會避免重建程式碼基底。
 
-開始執行時，將擷取分支管道的最新 HEAD 認可。在UI中以及透過API可以看到認可雜湊。 當建置步驟成功完成時，所產生的成品將根據該認可雜湊進行儲存，並可能在後續管道執行中重複使用。
+開始執行時，將擷取分支管道的最新 HEAD 認可。在 UI 中以及透過 API 可以看見該認可雜湊。當建置步驟成功完成時，所產生的成品將根據該認可雜湊進行儲存，並可能在後續管道執行中重複使用。
 
 如果套件在同一個計畫中，可跨管道重複使用。在尋找可重複使用的套件時，AEM 會忽略分支並且會跨分支重複使用成品。
 
-當發生重複使用時，將以原始執行的結果有效地取代建置和程式碼品質步驟。建置步驟的記錄檔會列出成品以及最初用於建置這些成品的執行資訊。
+當發生重複使用時，將以原始執行的結果有效地取代建置和程式碼品質步驟。建置步驟的記錄檔列出成品以及最初用於建置這些成品的執行資訊。
 
-以下是這類紀錄輸出的範例。
+以下是這類記錄輸出的範例。
 
 ```shell
 The following build artifacts were reused from the prior execution 4 of pipeline 1 which used commit f6ac5e6943ba8bce8804086241ba28bd94909aef:
@@ -291,7 +291,7 @@ build/aem-guides-wknd.all-2021.1216.1101633.0000884042.zip (content-package)
 build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatcher-configuration)
 ```
 
-計畫碼品質步驟的紀錄包含類似的資訊。
+程式碼品質步驟的記錄包含類似的資訊。
 
 ### 範例 {#example-reuse}
 
@@ -304,23 +304,23 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 
 兩個分支都在相同的認可 ID 上。
 
-1. 執行管道1會先正常建置套件。
-1. 接著執行管道2會重複使用管道1建立的套件。
+1. 先執行管道 1 通常會建置套件。
+1. 接著執行管道 2 重複使用管道 1 建立的套件。
 
 #### 範例 2 {#example-2}
 
-假設您的程式有兩個分支：分支`foo`和分支`bar`。
+考慮到您的方案有兩個分支：分支 `foo` 及分支 `bar`。
 
 兩個分支的認可 ID 相同。
 
 1. 會建置開發管道並執行 `foo`。
-1. 隨後，生產管道建置並執行`bar`。
+1. 隨後，生產管道會建置並執行 `bar`。
 
-在此情況下，來自`foo`的成品會重複用於生產管道，因為已識別相同的認可雜湊。
+於此情況下，由於識別出相同的認可雜湊，會將來自 `foo` 的成品重複用於生產管道。
 
 ### 選擇退出 {#opting-out}
 
-如有需要，可透過將管道變數 `CM_DISABLE_BUILD_REUSE` 設定為 `true` 來停用特定管道的重複使用行為。如果設定此變數，則仍會擷取認可雜湊。 產生的成品會儲存以供稍後使用，但不會重複使用任何先前儲存的成品。 若要瞭解此行為，請考量下列案例：
+如有需要，可透過將管道變數 `CM_DISABLE_BUILD_REUSE` 設定為 `true` 來停用特定管道的重複使用行為。若設定此變數，仍會擷取認可雜湊。所產生的成品會儲存起來供日後使用，但所有先前儲存的成品都不會重複使用。若要了解此行為，請思考以下情境：
 
 1. 已建立新管道。
 1. 執行管道 (執行 #1)，且目前的 HEAD 認可為 `becdddb`。此執行成功完成，並儲存產生的成品。
@@ -328,16 +328,16 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 1. 在不變更程式碼的情況下重新執行管道。雖然有和 `becdddb` 相關的已儲存成品，但由於 `CM_DISABLE_BUILD_REUSE` 變數，並不會重新使用它們。
 1. 會變更程式碼並重新執行管道。該 HEAD 認可現在是 `f6ac5e6`。此執行成功完成，並儲存產生的成品。
 1. 已刪除 `CM_DISABLE_BUILD_REUSE` 變數。
-1. 在不變更該程式碼的情況下重新執行管道。因為有與`f6ac5e6`相關的已儲存成品，所以會重新使用這些成品。
+1. 在不變更該程式碼的情況下重新執行管道。由於有些已儲存的成品與 `f6ac5e6` 相關聯，因此會重複使用那些成品。
 
 ### 警告 {#caveats}
 
 * 無論認可雜湊是否相同，都不會在不同的計畫中重新使用組建成品。
 * 即使分支和/或管道不同，在相同方案中會重新使用組建成品。
-* [Maven 版本處理](/help/managing-code/maven-project-version.md)只有在生產管道中才會取代專案版本。如果開發和生產管道使用相同的認可，且開發管道先執行，則版本會部署到中繼和生產環境且不會變更。 不過，在此情況下仍會建立標籤。
-* 如果無法擷取已儲存的成品，則會執行建置步驟，就像未儲存任何成品一樣。
-* 當 Cloud Manager 決定重新使用之前已建立的組件成品時，不會考慮 `CM_DISABLE_BUILD_REUSE` 以外的管道變數。
+* [Maven 版本處理](/help/managing-code/maven-project-version.md)只有在生產管道中才會取代專案版本。如果在開發管道和生產管道上使用相同的認可，且開發管道先執行，則版本會部署到中繼，而生產則保持不變。但在這種情況下，仍會建立標記。
+* 如果未成功擷取已儲存的成品，則執行建置步驟，如同未儲存任何成品一樣。
+* 當 Cloud Manager 決定重複使用之前建立的建置成品時，不會考慮 `CM_DISABLE_BUILD_REUSE` 以外的管道變數。
 
-## 根據最佳實務開發程式碼 {#develop-your-code-based-on-best-practices}
+## 依照最佳實務來開發程式碼 {#develop-your-code-based-on-best-practices}
 
-Adobe 工程和顧問團隊已經為 AEM 開發人員發展出[全方位的最佳實務](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/bestpractices/best-practices)。
+Adobe 工程和顧問團隊已經為 AEM 開發人員發展出[全方位的最佳實務](https://experienceleague.adobe.com/zh-hant/docs/ experience-manager-65/content/implementing/developing/bestpractices/best-practices)。

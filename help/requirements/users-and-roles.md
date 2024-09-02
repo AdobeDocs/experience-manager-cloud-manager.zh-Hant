@@ -5,7 +5,7 @@ exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '758'
-ht-degree: 64%
+ht-degree: 66%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 64%
 
 下表摘要Cloud Manager中的角色。
 
-| [!UICONTROL Cloud Manager]角色 | 說明 |
+| [!UICONTROL Cloud Manager] 角色 | 說明 |
 | --- | --- |
 | 業務負責人 | 負責定義KPI、核准生產部署並在必要時覆寫重要的3層級失敗。 |
 | 方案管理員 | 他們使用[!UICONTROL Cloud Manager]來執行團隊設定、審查狀態、檢視KPI，並可在必要時核准重要的3層級失敗。 |

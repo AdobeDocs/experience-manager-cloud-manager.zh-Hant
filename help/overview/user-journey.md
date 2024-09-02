@@ -1,24 +1,24 @@
 ---
-title: 使用者旅程圖
-description: 瞭解不同的上線案例和開始使用Cloud Manager。
+title: 使用者歷程
+description: 了解不同的上線情境，以及開始使用 Cloud Manager。
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 21%
+ht-degree: 95%
 
 ---
 
 
 # 使用者歷程 {#user-journey}
 
-身為AEM (Adobe Experience Manager)使用者，您可能會符合下列其中一種情況：
+身為 AEM (Adobe Experience Manager) 使用者，您可能會遇到以下其中一個情境：
 
-* 您為AEM的新手。
-* 您目前正在使用AEM 6.x。
-* 您必須升級至AEM 6.5才能使用[!UICONTROL Cloud Manager]。
+* 您是 AEM 新手。
+* 您目前正在使用 AEM 6.x。
+* 您需要升級至 AEM 6.5 才能使用 [!UICONTROL Cloud Manager]。
 
-本檔案會展示這三個案例，並說明您的[!UICONTROL Cloud Manager]入門旅程。
+本文件列出這三種情境，並說明您開始使用 [!UICONTROL Cloud Manager] 的歷程。
 
 >[!NOTE]
 >
@@ -30,46 +30,46 @@ ht-degree: 21%
 
 ### Adobe Managed Services 的新手 {#new-to-ams}
 
-您的新客戶即將加入[!UICONTROL Cloud Manager]，這屬於AdobeManaged Services上線流程的一部分。
+如果您是新客戶，您將透過 Adobe Managed Services 的上線流程而開始使用 [!UICONTROL Cloud Manager]。
 
-在上線流程中，您會收到一封歡迎電子郵件，其中包括以下內容：
+在上線流程中，您會收到一封歡迎電子郵件，其中包含以下內容：
 
-* 存取[!UICONTROL Cloud Manager]的URL。
-* 登入[!UICONTROL Experience Cloud]的指示。
-* 使用 Admin Console 來管理您的使用者和他們個別權限的說明，讓他們在需要時能夠存取 [!UICONTROL Cloud Manager]。
+* 存取 [!UICONTROL Cloud Manager] 的 URL。
+* 登入至 [!UICONTROL Experience Cloud] 的說明。
+* 使用 Admin Console 來管理您的使用者及其個別權限的說明，讓他們在需要時能夠存取 [!UICONTROL Cloud Manager]。
 
-### 目前AdobeManaged Services客戶 {#existing-customer}
+### 目前的 Adobe Managed Services 客戶 {#existing-customer}
 
-作為現有的AMS客戶，您必須先將現有的生產和非生產環境升級到AEM 6.4或更高版本。
+由於您是現有的 AMS 客戶，首先必須將現有的生產和非生產環境升級到 AEM 6.4 或更高版本。
 
-在升級期間，您已加入Cloud Manager並獲得存取[!UICONTROL Cloud Manager]的URL。 此外，若使用者需要存取[!UICONTROL Cloud Manager]，您必須開始使用Admin Console來管理他們以及他們的個別許可權。
+升級過程中，系統會讓您開始使用 Cloud Manager 並提供存取 [!UICONTROL Cloud Manager] 的 URL。此外，若使用者需要存取 [!UICONTROL Cloud Manager]，您必須開始使用 Admin Console 來管理他們及其個別權限。
 
-您現有的AEM專案也必須符合建議的最佳做法，因為您開始使用[!UICONTROL Cloud Manager]將新的程式碼變更部署至AEM環境。
+您現有的 AEM 專案也需要符合建議的最佳實務，因為您開始使用 [!UICONTROL Cloud Manager] 對 AEM 環境部署新程式碼變更。
 
-若要取得更多有關升級至AEM 6.5的優勢的資訊，請參閱[升級至AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/upgrading/upgrade)。
+若要取得更多資訊以了解升級至 AEM 6.5 的好處，請參閱「[升級至 AEM 6.5](https://experienceleague.adobe.com/zh-hant/docs/ experience-manager-65/content/implementing/deploying/upgrading/upgrade)」。
 
-## 存取[!UICONTROL Cloud Manager] {#accessing-cloud-manager}
+## 存取 [!UICONTROL Cloud Manager] {#accessing-cloud-manager}
 
-使用您的AdobeIdentity Management憑證登入[!UICONTROL Experience Cloud]登陸頁面。 從該處，從解決方案切換器選取AEM以存取[!UICONTROL Cloud Manager]和您的AEM環境。
+使用您的 Adobe Identity Management 憑證登入 [!UICONTROL Experience Cloud] 的登陸頁面。於該頁面上，從解決方案切換器中選取 AEM 以存取 [!UICONTROL Cloud Manager] 以及您的 AEM 環境。
 
 第一次登入[!UICONTROL Cloud Manager]後，您就可以直接從[!UICONTROL Cloud Manager] UI存取您的AEM環境。 此時，您已準備就緒，可探索 [!UICONTROL Cloud Manager] 的所有可能性，並為您將部署至中繼和生產環境的第一個程式碼預做準備。
 
-若要開始使用[!UICONTROL Cloud Manager]，請參閱[首次登入](/help/getting-started/first-time-login.md)。
+若要開始使用 [!UICONTROL Cloud Manager]，請參閱「[第一次登入](/help/getting-started/first-time-login.md)」。
 
-如需有關AEM的其他資訊，請參閱[部署與維護](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/deploying/deploying/deploy)。
+如需更多有關 AEM 的資訊，請參閱「[部署和維護](https://experienceleague.adobe.com/zh-hant/docs/ experience-manager-65/content/implementing/deploying/deploying/deploy)」。
 
-## 開始使用[!UICONTROL Cloud Manager] {#getting-started-with-cloud-manager}
+## 開始使用 [!UICONTROL Cloud Manager] {#getting-started-with-cloud-manager}
 
-登入[!UICONTROL Cloud Manager]後，您可以透過下列方式開始使用AEM專案：
+登入 [!UICONTROL Cloud Manager] 之後，您可以透過執行以下操作來開始使用您的 AEM 專案：
 
 1. 設定您的程式碼存放庫環境。
-1. 設定您的團隊和角色。 透過使用 Admin Console 將使用者新增到 [!UICONTROL Cloud Manager] 設定檔來指派角色會籍。
-1. 在Git存放庫中設定原始程式碼分支。
-1. 根據載入和效能KPI （關鍵績效指標）定義您的目標。
-1. 定義測試案例，在所有品質檢查都通過後，將程式碼成功部署到中繼和生產環境。
+1. 設定您的團隊和角色。透過使用 Admin Console 將使用者新增到 [!UICONTROL Cloud Manager] 設定檔來指派角色會籍。
+1. 在 Git 存放庫中設定您的原始程式碼分支。
+1. 根據負載和效能關鍵績效指標 (KPI) 定義您的目標。
+1. 當所有的品質檢查都成功通過後，定義測試情境以將程式碼成功部署到中繼和生產環境。
 
 ## 端對端歷程 {#end-to-end-journey}
 
-此圖表會說明使用用於將程式碼變更部署到中繼和生產環境的[!UICONTROL Cloud Manager] CI/CD管道時高層級的客戶歷程。
+使用將程式碼變更部署到中繼和生產環境的 [!UICONTROL Cloud Manager] CI/CD 管道時，以高層級方式在此圖表中呈現所經歷的客戶歷程。
 
-![端對端旅程圖](/help/assets/screen_shot_2018-05-15at124004pm.png)
+![端對端歷程](/help/assets/screen_shot_2018-05-15at124004pm.png)
