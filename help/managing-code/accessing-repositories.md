@@ -1,17 +1,17 @@
 ---
 title: 存放庫存取資訊
-description: 瞭解如何使用Cloud Manager中的自助Git帳戶管理存取和管理您的Adobe管理的Git存放庫。
+description: 了解如何使用 Cloud Manager 中的自助 Git 帳戶管理存取和管理您的 Adobe 託管 Git 存放庫。
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # 存放庫存取資訊 {#accessing-repos}
 
-瞭解如何使用Cloud Manager中的自助Git帳戶管理存取及管理Adobe管理的Git存放庫。
+了解如何使用 Cloud Manager 中的自助 Git 帳戶管理來存取和管理受 Adobe 管理的 Git 存放庫。
 
 ## 從概觀頁面存取存放庫資訊 {#overview-page}
 
@@ -26,7 +26,7 @@ ht-degree: 85%
    * Git 使用者名稱。
    * Git 密碼。
    * Cloud Manager Git 存放庫的 URL。
-   * 預先建立的Git命令，可快速將遠端新增至您的Git存放庫並推送程式碼。
+   * 預先建立的 Git 指令，可快速新增遠端連線至 Git 存放庫並推送程式碼。
 
    ![存放庫資訊視窗](assets/access-repo-info.png)
 

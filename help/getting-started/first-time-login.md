@@ -3,16 +3,16 @@ title: 首次登入
 description: 如果您已經設定好一般設定，而且準備好要第一次使用 Cloud Manager，依照本頁面的說明進行。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '293'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
 
 # 首次登入 {#first-time-login}
 
-在您設定[!UICONTROL Cloud Manager]的一般組態之後，就可以使用它了。
+完成 [!UICONTROL Cloud Manager] 的一般設定之後，您便準備好開始使用。
 
 >[!NOTE]
 >
@@ -36,12 +36,12 @@ ht-degree: 55%
 
 ## Cloud Manager 活動 {#activity}
 
-Cloud Manager提供方案活動的整合式檢視。 其中會列出所有CI/CD管道執行，無論是生產用還是非生產用。 這類功能可讓您檢視過去和現在的活動。
+Cloud Manager 讓您透過統合的資訊瞭解方案的活動。它列出所有 CI/CD 管道執行，包括生產和非生產。您可以透過這類功能了解過去和現在的活動。
 
 >[!TIP]
 >
->如需如何使用Cloud Manager UI的詳細資訊，請參閱[瀏覽Cloud Manager UI](/help/getting-started/navigation.md)。
+>有關如何使用 Cloud Manager UI 的詳細資訊，請參閱「[導覽 Cloud Manager UI](/help/getting-started/navigation.md)」。
 
 >[!NOTE]
 >
->依預設，有權存取AEM環境的使用者也具有Cloud Manager使用者角色。 此角色不足以讓使用者存取方案詳細資料檢視。 僅具有Cloud Manager使用者角色的這類使用者能夠透過方案選單選項瀏覽至AEM環境作者URL （如果環境存在）。 這類使用者如果想要取得方案層級的存取權，必須和他們的管理員聯絡。
+>預設情況下，有權存取 AEM 環境的使用者也擁有 Cloud Manager 使用者角色。此角色的權限不足，無法讓使用者存取方案詳細資訊視圖。僅擁有 Cloud Manager 使用者角色的這類使用者，能夠透過方案選單選項瀏覽至 AEM 環境作者 URL (如果環境存在)。這類使用者如果想要取得方案層級的存取權，必須和他們的管理員聯絡。

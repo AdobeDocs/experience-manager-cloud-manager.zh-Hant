@@ -3,9 +3,9 @@ title: 程式碼品質測試
 description: 了解管道程式碼品質測試如何運作及如何提高部署品質。
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2764'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -107,7 +107,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 >
 >最佳實務是讓 `@SuppressWarnings` 註解盡可能具體。也就是僅註釋導致問題的特定陳述式或區塊。但是，可以在類別層級註釋。這樣做可以更廣泛地禁止警告。
 
-## 安全性測試 {#security-testing}
+## 安全測試 {#security-testing}
 
 [!UICONTROL Cloud Manager] 會在部署後在中繼環境上執行現有 AEM 安全性的健康情況檢查並透過 UI 報告狀態。該結果會由環境中的所有 AEM 執行個體彙總而成。
 
@@ -160,7 +160,7 @@ Cloud Manager 根據&#x200B;**企業所有者**&#x200B;角色所設定的 KPI (�
    * 允許值為 `2000` - `7000`。
 * 來自編目程式的請求固定逾時時間為 10 秒。
 
-#### 測試的頁面集 {#page-sets}
+#### 用於測試的頁面集 {#page-sets}
 
 三個頁面集選取頁面。Cloud Manager 會使用來自生產和中繼環境中的 AEM 執行個體的存取紀錄來決定以下貯體。
 
@@ -204,7 +204,7 @@ Cloud Manager 會在中繼發佈伺服器上以預設的未經驗證使用者的
 | 網路頻寬使用率 | 重要 | >= 90% |
 | 每分鐘的請求次數 | 資訊 | >= 6000 |
 
-請參閱[已驗證的效能測試](#authenticated-performance-testing)，以取得有關使用基本驗證對網站和Assets進行效能測試的更多詳細資料。
+如需對 Sites 和資產使用基本驗證進行效能測試的更多詳細資訊，請參閱「[已驗證的效能測試](#authenticated-performance-testing)」。
 
 >[!NOTE]
 >
@@ -224,27 +224,27 @@ Cloud Manager 會在中繼發佈伺服器上以預設的未經驗證使用者的
 $ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>
 ```
 
-請參閱[修補使用者管道變數](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables) API檔案，瞭解如何使用API。
+若要了解如何使用 API，請參閱「[修補使用者管道變數](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchPipelineVariables)」API 文件。
 
 ### AEM Assets {#aem-assets}
 
 Cloud Manager 每 30 分鐘會重複上傳資產，以執行 AEM Assets 方案的效能測試。
 
-#### 上線需求 {#onboarding-requirement}
+#### 上線要求 {#onboarding-requirement}
 
 對於資產效能測試，您的客戶成功工程師在作者加入中繼環境期間建立`cloudmanager`使用者名稱和密碼。效能測試步驟需要名為 `cloudmanager` 的使用者以及由您的 CSE 設定的相關密碼。
 
 此方法應保留在作者實例中，且其權限不變。更改或刪除可能會導致資產效能測試失敗。
 
-#### 影像和用於測試的Assets {#assets-for-testing}
+#### 用於測試的影像和資產 {#assets-for-testing}
 
-客戶可上傳他們自己的資產供測試。這項流程可在&#x200B;**管道設定**&#x200B;或&#x200B;**編輯**&#x200B;畫面完成。支援 JPEG、PNG、GIF 和 BMP 等常見影像格式以及 Photoshop、Illustrator 和 Postscript 檔案。
+客戶可上傳他們自己的資產供測試使用。這項流程可在&#x200B;**管道設定**&#x200B;或&#x200B;**編輯**&#x200B;畫面完成。支援 JPEG、PNG、GIF 和 BMP 等常見影像格式以及 Photoshop、Illustrator 和 Postscript 檔案。
 
 若未上傳任何影像，Cloud Manager 會使用預設的影像和 PDF 文件進行測試。
 
-#### 測試的散佈Assets {#distribution-of-assets}
+#### 用於測試的資產分佈 {#distribution-of-assets}
 
-在&#x200B;**管道設定**&#x200B;或&#x200B;**編輯**&#x200B;畫面中設定了每分鐘上傳的每種類型的資產數量分佈。
+在「**管道設定**」或「**編輯**」畫面中設定每分鐘上傳的每種類型的資產數量分佈。
 
 例如，如果使用 70/30 分割法，且每分鐘上傳 10 個資產，則每分鐘上傳 7 個影像和 3 個文件。
 
@@ -254,11 +254,11 @@ Cloud Manager 使用 CSE 設定的使用者名稱和密碼在作者執行個體�
 
 >[!TIP]
 >
->請參閱[設定生產管道](/help/using/production-pipelines.md)以瞭解更多資訊。 如需了解如何設定方案以及定義您的 KPI，請參閱[程式設定](/help/getting-started/program-setup.md)。
+>請參閱「[設定生產管道](/help/using/production-pipelines.md)」了解更多資訊。如需了解如何設定方案以及定義您的 KPI，請參閱「[方案設定](/help/getting-started/program-setup.md)」。
 
-### 效能測試結果圖表 {#performance-testing-results-graphs}
+### 效能測試結果圖 {#performance-testing-results-graphs}
 
-**效能測試對話方塊**&#x200B;中有許多量度可供使用。
+「**效能測試對話框**」提供幾種量度
 
 ![量度清單](/help/assets/understand_test-results-screen1.png)
 
@@ -284,9 +284,9 @@ Cloud Manager 使用 CSE 設定的使用者名稱和密碼在作者執行個體�
 * **第 95 百分位數的回應時間** - 測試期間每分鐘第 95 百分位數回應時間的圖表
    * CSV 檔案包含第 95 百分位數回應時間已超過定義的 KPI 的頁面清單
 
-## 掃描最佳化的內容套件 {#content-package-scanning-optimization}
+## 內容套件掃描最佳化 {#content-package-scanning-optimization}
 
-在品質分析流程中，Cloud Manager 會對 Maven 組建產生的內容套件進行分析。Cloud Manager 可提供最佳化功能以加速此流程，若需遵守某些套件限制，前述功能即有助益。
+在品質分析流程中，Cloud Manager 會對 Maven 建置產生的內容套件進行分析。Cloud Manager 可提供最佳化功能以加速此流程，若需遵守某些套件限制，前述功能即有助益。
 
 關鍵最佳化是針對輸出單一「全」套件的方案，其中包含建置產生的其他內容套件，這些內容套件已標記為略過。當 Cloud Manager 偵測到這種情況時，會直接掃描個別內容套件並根據相依性進行排序，而不是將「全」套件解除封裝。例如，考慮以下組建輸出。
 

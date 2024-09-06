@@ -3,9 +3,9 @@ title: 使用者歷程
 description: 了解不同的上線情境，以及開始使用 Cloud Manager。
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '532'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 95%
 
 使用您的 Adobe Identity Management 憑證登入 [!UICONTROL Experience Cloud] 的登陸頁面。於該頁面上，從解決方案切換器中選取 AEM 以存取 [!UICONTROL Cloud Manager] 以及您的 AEM 環境。
 
-第一次登入[!UICONTROL Cloud Manager]後，您就可以直接從[!UICONTROL Cloud Manager] UI存取您的AEM環境。 此時，您已準備就緒，可探索 [!UICONTROL Cloud Manager] 的所有可能性，並為您將部署至中繼和生產環境的第一個程式碼預做準備。
+第一次登入 [!UICONTROL Cloud Manager] 後，您可直接從 [!UICONTROL Cloud Manager] UI 存取您的 AEM 環境。此時，您已準備就緒，可探索 [!UICONTROL Cloud Manager] 的所有可能性，並為您將部署至中繼和生產環境的第一個程式碼預做準備。
 
 若要開始使用 [!UICONTROL Cloud Manager]，請參閱「[第一次登入](/help/getting-started/first-time-login.md)」。
 

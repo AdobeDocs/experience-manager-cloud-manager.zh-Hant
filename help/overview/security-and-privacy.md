@@ -1,22 +1,22 @@
 ---
-title: 安全性與隱私權
+title: 安全性和隱私權
 description: 了解 Cloud Manager 中程式碼和成品資產的安全性和隱私權。
 exl-id: 67df1987-8db7-40bd-9717-1bf194e957f7
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '202'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
 
-# 安全性與隱私權 {#security-and-privacy}
+# 安全性和隱私權 {#security-and-privacy}
 
 了解 Cloud Manager 中程式碼和成品資產的安全性和隱私權。
 
-## 角色和許可權 {#roles}
+## 角色和權限 {#roles}
 
-[!UICONTROL Cloud Manager] 已預先設定角色，並賦予適當權限。 
+[!UICONTROL Cloud Manager] 具有擁有適當權限的預先設定的角色。
 
 若要了解有關您在 Admin Console 中可指派的角色以及使用者角色權限，請參閱[角色型權限](/help/requirements/role-based-permissions.md)。
 
@@ -26,12 +26,12 @@ ht-degree: 70%
 
 ## 資料安全性 {#data-security}
 
-傳輸中會將 [!UICONTROL Cloud Manager] 中的程式碼加密。傳輸過程中還會將 Cloud Manager 建置的二進位檔加密，並在儲存時進行加密。
+傳輸中會將 [!UICONTROL Cloud Manager] 中的程式碼加密。Cloud Manager 建置的二進位檔在傳輸過程中會加密，並在儲存時進行加密。
 
-每個客戶都有自己的Git存放庫，因此程式碼是安全的，不會與任何其他組織共用。
+每個客戶都有自己的 Git 存放庫，而且程式碼受到保護，不會和任何其他組織共用。
 
 ## 資料隱私權 {#data-privacy}
 
-[!UICONTROL Cloud Manager] 會遵守由 Adobe 定義的隱私原則。開發人員會透過HTTPS將程式碼安全地推送到Git存放庫中。
+[!UICONTROL Cloud Manager] 會遵守由 Adobe 定義的隱私權原則。開發人員會經由 HTTPS 將程式碼安全地推送到 Git 存放庫中。
 
-[!UICONTROL Cloud Manager]的使用者介面建置在符合Adobe通用控制架構的服務上。 [!UICONTROL Cloud Manager] 的使用者介面會使用來自數個雲端提供者的安全服務。
+[!UICONTROL Cloud Manager] 的使用者介面建置在符合 Adobe 通用控制框架的服務上。[!UICONTROL Cloud Manager] 的使用者介面會使用來自數個雲端提供者的安全服務。

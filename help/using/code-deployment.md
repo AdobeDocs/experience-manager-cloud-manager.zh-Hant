@@ -3,9 +3,9 @@ title: 程式碼部署
 description: 了解如何部署您的程式碼以及部署時 Cloud Manager 中會發生什麼情況。
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1637'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 了解如何部署您的程式碼以及部署時 Cloud Manager 中會發生什麼情況。
 
-## 使用Cloud Manager部署程式碼 {#deploying-code-with-cloud-manager}
+## 使用 Cloud Manager 部署程式碼 {#deploying-code-with-cloud-manager}
 
 設定好生產管道 (包括必要的存放庫和環境) 後，便是準備好可以部署程式碼。
 
@@ -40,7 +40,7 @@ ht-degree: 97%
 
 ### 中繼部署步驟 {#stage-deployment}
 
-此&#x200B;**中繼部署**&#x200B;步驟包括下列操作：
+此&#x200B;**中繼部署**&#x200B;步驟包括下列動作：
 
 * **驗證**：此步驟確保管道設定為使用目前可用的資源。例如，設定的分支是否存在以及環境是否可用。
 * **建置及單位測試**：此步驟會執行容器化的建置流程。如需詳細資訊，請參閱「[建置環境](/help/getting-started/build-environment.md)」。
@@ -90,7 +90,7 @@ ht-degree: 97%
 | 生產部署排程 | 14 天 |
 | 管理生產部署 | 14 天 |
 
-## 部署流程詳細資料 {#deployment-process}
+## 部署流程詳細資訊 {#deployment-process}
 
 Cloud Manager 會將建置流程產生的所有 target/*.zip 檔案上傳到儲存位置。這些成品是在管道的部署階段從該位置擷取的。
 
@@ -177,7 +177,7 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 ## 重新執行生產部署 {#reexecute-deployment}
 
-在極少數情況下，生產部署步驟可能會因暫時原因而失敗。在這些情況下，只要生產部署步驟已完成，您就可以重新執行該步驟，無論其為成功、取消或不成功。使用由以下三個步驟組成的相同管道，即支援重新執行：
+在極少數情況下，生產部署步驟可能會因暫時的原因而失敗。在這些情況下，只要生產部署步驟已完成，您就可以重新執行該步驟，無論其為成功、取消或不成功。使用由以下三個步驟組成的相同管道，即支援重新執行：
 
 1. **驗證步驟** - 與在正常管道執行期間發生的驗證相同。
 1. **建置步驟** - 在重新執行的內容中，建置步驟會複製成品，實際上並非執行新的建置程序。
@@ -198,9 +198,9 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 * 如果最後執行在生產部署步驟之前的任何時候失敗，則無法重新執行。
 
 
-### 重新執行API {#reexecute-api}
+### 重新執行 API {#reexecute-api}
 
-除了可在 UI 中使用之外，您還可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 觸發重新執行，並識別已作為重新執行來觸發的執行。
+除了可在 UI 中使用之外，您還可以使用 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 觸發重新執行，並識別視為重新執行所觸發的執行。
 
 #### 觸發重新執行 {#triggering}
 
@@ -250,6 +250,6 @@ HAL 連結 `href` 值的語法只是一個範例，實際值應隨時從 HAL 連
 
 向此端點提交一個 `PUT` 請求，若成功會導致 `201` 回應。該回應主體是新執行的表示方式。此功能類似於透過 API 啟動常規執行。
 
-#### 識別重新執行的執行 {#identifying}
+#### 識別已重新執行的執行 {#identifying}
 
 系統透過觸發欄位中的 `RE_EXECUTE` 值來識別重新執行的執行。

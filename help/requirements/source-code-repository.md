@@ -1,18 +1,18 @@
 ---
 title: 原始程式碼存放庫
-description: 瞭解為您在Cloud Manager中擁有的每個方案布建的Git存放庫。
+description: 了解針對您在 Cloud Manager 中擁有的每個方案所佈建的 Git 存放庫。
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '245'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
 
 # 原始程式碼存放庫 {#source-code-repository}
 
-瞭解為您在Cloud Manager中擁有的每個方案布建的Git存放庫。
+了解針對您在 Cloud Manager 中擁有的每個方案所佈建的 Git 存放庫。
 
 ## Cloud Manager 存放庫 {#cloud-manager-repository}
 
@@ -22,7 +22,7 @@ ht-degree: 75%
 
 如需有關如何在 Git 中設定分支的詳細資訊，請參閱「[設定版本分支](/help/getting-started/configuring-branches.md)」。
 
-如需有關如何將Cloud Manager的Git存放庫與CI/CD管道搭配使用的詳細資訊，請參閱[設定生產管道](/help/using/production-pipelines.md)和[設定非生產管道](/help/using/non-production-pipelines.md)以瞭解更多資訊。
+如需更多有關如何將 Cloud Manager 的 Git 存放庫與 CI/CD 管道搭配使用的詳細資訊，請參閱「[設定生產管道](/help/using/production-pipelines.md)」和「[設定非生產管道](/help/using/non-production-pipelines.md)」，了解更多詳細資訊。
 
 ## 內部部署存放庫 {#on-premise-repository}
 

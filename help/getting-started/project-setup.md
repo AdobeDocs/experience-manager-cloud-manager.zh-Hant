@@ -3,9 +3,9 @@ title: 設定您的專案
 description: 了解如何設定您的專案，以便您可以使用 Cloud Manager 對其進行管理和部署。
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1395'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 現有的 AEM 專案必須符合一些基本規則，方能使用 Cloud Manager 成功建置和部署。
 
 * 必須使用 Apache Maven 建置專案。
-* Git存放庫的根目錄中必須有`pom.xml`檔案。
+* 在 Git 存放庫的根目錄中必須有一個 `pom.xml` 檔案。
    * 如有必要，此 `pom.xml` 檔案可參照的子模組 (這些子模組又可能有其他子模組) 數量並無限制。
    * 您可在您的 `pom.xml` 檔案中新增對其他 Maven 成品存放庫的參照。
    * 設定後，可支援對[受密碼保護的成品存放庫](#password-protected-maven-repositories)的存取權。但是，不支援對受網路保護的成品存放庫的存取權。
@@ -116,7 +116,7 @@ ht-degree: 94%
 >
 >受密碼保護的 Maven 存放庫中的成品應僅在極少數情況下才用於未繫結至 AEM 的程式碼。
 
-若要使用Cloud Manager中受密碼保護的Maven存放庫，請指定密碼（也可選擇指定使用者名稱）作為秘密[管道變數](/help/getting-started/build-environment.md#pipeline-variables)，然後在Git存放庫中名為`.cloudmanager/maven/settings.xml`的檔案內參照該秘密。 此檔案會遵循 [Maven 設定檔案](https://maven.apache.org/settings.html)結構描述。
+為使用來自 Cloud Manager 的受密碼保護 Maven 存放庫，需指定密碼 (也可選擇指定使用者名稱) 做為秘密的[管道變數](/help/getting-started/build-environment.md#pipeline-variables)，然後在 Git 存放庫中名為 `.cloudmanager/maven/settings.xml` 的檔案內參照該秘密變數。此檔案會遵循 [Maven 設定檔案](https://maven.apache.org/settings.html)結構描述。
 
 Cloud Manager 建置程序開始時，會將此檔案中的 `<servers>` 元素合併至由 Cloud Manager 提供的預設 `settings.xml` 檔案中。自訂伺服器不應使用以 `adobe` 和 `cloud-manager` 開頭的伺服器 ID。此類 ID 是保留使用的。Cloud Manager 僅會與那些符合指定前綴之一的伺服器 ID，或是預設的 ID `central` 進行鏡像。
 
@@ -275,7 +275,7 @@ $ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSI
 
 ## 建置成品重複使用 {#build-artifact-reuse}
 
-在許多情況下，相同的程式碼會部署到多個 AEM 環境中。在可能的情況下，Cloud Manager在偵測到多個全棧疊管道執行中使用了相同的Git認可時，會避免重建程式碼基底。
+在許多情況下，相同的程式碼會部署到多個 AEM 環境中。在可能的情況下，當 Cloud Manager 偵測到於多個全端管道執行中都使用相同的 Git 認可時，會避免重新建置程式碼基底。
 
 開始執行時，將擷取分支管道的最新 HEAD 認可。在 UI 中以及透過 API 可以看見該認可雜湊。當建置步驟成功完成時，所產生的成品將根據該認可雜湊進行儲存，並可能在後續管道執行中重複使用。
 

@@ -3,9 +3,9 @@ title: Git 子模組支援
 description: 了解如何使用 Git 子模組在建置期間將橫跨多個不同 Git 存放庫的多個分支內容合併。
 exl-id: f946d7e7-114a-4e33-bb82-2625d37bba2f
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '412'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -66,9 +66,9 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 ## 限制 {#limitations}
 
-使用Git子模組時，請注意下列事項：
+使用 Git 子模組時，請留意以下事項：
 
-* Git URL必須完全遵循上述語法。
+* Git URL 必須完全符合上述語法。
 * 由於安全理由，請勿在這些 URL 中嵌入憑證。
 * 僅支援分支根部的子模組。
 * Git 子模組參考資料會儲存至特定的 Git 認可。因此，若對子模組存放庫進行變更，便需要更新所參考的認可。例如，透過使用 `git submodule update --remote`。
@@ -87,8 +87,8 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 ### 限制和建議 {#limitations-recommendations-private-repos}
 
-搭配私人存放庫使用Git子模組時，請注意下列限制。
+透過私人存放庫使用 Git 子模組時，請留意以下限制：
 
-* 子模組的Git URL可以是HTTPS或SSH格式，但必須連結至Github.com存放庫。 無法將 Adobe 存放庫子模組新增至 GitHub 彙總器存放庫，反之亦然。
+* 子模組的 Git URL 可以是 HTTPS 或 SSH 格式，但必須連結至 Github.com 存放庫。無法將 Adobe 存放庫子模組新增至 GitHub 彙總器存放庫，反之亦然。
 * Adobe GitHub 應用程式必須可以存取 GitHub 子模組。
-* [搭配Adobe管理的存放庫使用Git子模組的限制](#limitations-recommendations)也適用。
+* [透過 Adobe 託管的存放庫使用 Git 子模組的限制](#limitations-recommendations)也適用。

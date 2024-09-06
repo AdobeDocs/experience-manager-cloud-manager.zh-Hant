@@ -3,30 +3,30 @@ title: Maven 專案版本處理
 description: 了解 Maven 如何處理 Cloud Manager 中的專案版本設定。
 exl-id: a1d676e0-27cc-4b0d-8799-527c0520946a
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '249'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
 
-# Maven專案版本處理 {#project-version}
+# Maven 專案版本處理 {#project-version}
 
 了解 Maven 如何處理 Cloud Manager 中的專案版本設定。
 
-## Maven處理專案版本的方式 {#how-maven}
+## Maven 如何處理專案版本 {#how-maven}
 
-為了進行中繼和生產部署，Cloud Manager 會產生一個唯一、遞增版本。
+為了進行中繼和生產部署，Cloud Manager 會產生一個唯一的遞增版本。
 
-在管道執行詳細資訊頁面和活動頁面上可看見此版本。執行組建時，會更新Maven專案以使用此版本。 標籤會在Git存放庫中建立，且以該版本命名。
+在管道執行詳細資訊頁面和活動頁面上可看見此版本。執行建置時，Maven 專案將更新以使用此版本。在 Git 存放庫中建立一個標記，並以該版本命名。
 
-如果原始專案版本符合特定條件，則更新後的Maven專案版本會合併原始專案版本和Cloud Manager產生的版本。 但上述標記則會一直使用產生的版本。為了讓這種合併發生，原始專案版本必須由三個版本區段組成，例如，`1.0.0` 或 `1.2.3`，而非 `1.0` 或 `1`，且原始版本的末尾不得為 `-SNAPSHOT`。
+如果原始專案版本滿足特定條件，則更新後的 Maven 專案版本會將原始專案版本和 Cloud Manager 產生的版本合併。但上述標記則會一直使用產生的版本。為了讓這種合併發生，原始專案版本必須由三個版本區段組成，例如，`1.0.0` 或 `1.2.3`，而非 `1.0` 或 `1`，且原始版本的末尾不得為 `-SNAPSHOT`。
 
 >[!NOTE]
 >
->此原始專案版本值必須在Git存放庫分支中的最上層`pom.xml`檔案的`<version>`元素中靜態設定。
+>此原始專案版本值必須在 Git 存放庫分支中的`<version>`頂層元素`pom.xml`檔案中以靜態方式設定。
 
-如果原始版本符合這些標準，則產生的版本會作為新版本區段附加到原始版本。 產生的版本也經過微幅修改，以包括正確的排序和版本處理。 例如，假定產生的版本為 `2019.926.121356.0000020490`：
+如果原始版本符合這些標準，則產生的版本會附加到原始版本做為新版本區段。產生的版本也會有微幅修改，以包括正確的排序和版本處理。例如，假定產生的版本為 `2019.926.121356.0000020490`：
 
 | 版本 | 在 `pom.xml` 中的版本 | 評論 |
 | --- | --- | --- |
@@ -36,4 +36,4 @@ ht-degree: 43%
 
 >[!NOTE]
 >
->無論原始版本是否已整合至Cloud Manager初始化的版本，它仍可作為名為`cloudManagerOriginalVersion`的Maven屬性存取。
+>無論原始版本是否整合至 Cloud Manager 初始化版本中，仍可視為名為 `cloudManagerOriginalVersion` 的 Maven 屬性進行存取。

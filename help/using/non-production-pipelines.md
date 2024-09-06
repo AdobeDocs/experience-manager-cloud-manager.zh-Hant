@@ -3,9 +3,9 @@ title: 設定非生產管道
 description: 了解如何使用 Cloud Manager 建立和設定非生產管道以部署程式碼。
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '685'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->在和管道相關的Git存放庫具有至少一個分支且[程式設定](/help/getting-started/program-setup.md)完成之前，無法設定管道。 如欲了解如何在 Cloud Manager 中新增和管理存放庫，請參閱「[Cloud Manager 存放庫](/help/managing-code/managing-repositories.md)」。
+>與管道相關的 Git 存放庫必須具有至少一個分支，且已完成[方案設定](/help/getting-started/program-setup.md)，才能進行管道設定。如欲了解如何在 Cloud Manager 中新增和管理存放庫，請參閱「[Cloud Manager 存放庫](/help/managing-code/managing-repositories.md)」。
 
 ## 新增非生產管道 {#add-non-production-pipeline}
 
@@ -51,7 +51,7 @@ ht-degree: 95%
 
 1. 提供管道應擷取程式碼的存放庫。
 
-   * **存放庫** — 定義管道應該從哪個Git存放庫擷取程式碼。
+   * **存放庫** - 定義管道應該從哪個 Git 存放庫擷取程式碼。
    * **Git 分支** - 定義特定的管道應該從 Git 中的哪個分支擷取程式碼。
 
 1. 定義您的部署選項。
@@ -67,7 +67,7 @@ ht-degree: 95%
       * **立即失敗** - 每當重要失敗發生時，便取消管道。這基本上是模擬使用者手動拒絕每次失敗。
       * **立即持續** - 當重要失敗發生時，管道皆自動繼續。這基本上是模擬使用者手動核准每次失敗。
 
-   1. **Dispatcher 設定** - **部署管理員**&#x200B;角色可設定一組內容路徑，而這組路徑在管道執行時會失效或從 AEM Dispatcher 快取中清除。在部署任何內容套件後，這些快取操作會視為部署管道步驟一部分來執行。這些設定使用標準的 AEM Dispatcher 行為。進行設定：
+   1. **Dispatcher 設定** - **部署管理員**&#x200B;角色可設定一組內容路徑，而這組路徑在管道執行時會失效或從 AEM Dispatcher 快取中清除。在部署任何內容套件後，這些快取動作會視為部署管道步驟一部分來執行。這些設定使用標準的 AEM Dispatcher 行為。進行設定：
 
       1. **路徑**&#x200B;下會提供內容路徑。
       1. 在&#x200B;**類型**&#x200B;下，選取在該路徑將採取的操作。

@@ -1,20 +1,20 @@
 ---
 title: 導覽 Cloud Manager UI
-description: 了解 Cloud Manager UI 的組織方式以及如何導覽以管理您的方案和環境。
+description: 了解 Cloud Manager UI 的組織方式以及如何導覽此 UI 來管理您的方案和環境。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1435'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# 導覽Cloud Manger UI {#navigation}
+# 導覽 Cloud Manger UI {#navigation}
 
-了解 Cloud Manager UI 的組織方式以及如何導覽以管理您的方案和環境。
+了解 Cloud Manager UI 的組織方式以及如何導覽此 UI 來管理您的方案和環境。
 
-Cloud Manager UI主要由兩個圖形介面組成：
+Cloud Manager UI 主要由兩個圖形介面組成：
 
 * [「我的方案」控制台](#my-programs-console)，您可以在其中檢視和管理所有方案。
 * [「方案概觀」視窗](#program-overview)，您可以在其中管理個別方案並查看詳細資訊。

@@ -3,9 +3,9 @@ title: 監視環境
 description: 了解如何在 Cloud Manager 中監視環境。
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '910'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Adobe Managed Services 會設定臨界值，您可以在 [!UICONTROL Cloud Manag
 
 左側的導覽會顯示目前所選類別中的可用量度，其中包含目前所選環境和執行個體的資料。
 
-個別的圖表會顯示狀態和一段時間內的資料圖表以及臨界值。 如果顯示多個執行個體，則每個執行個體的資料會依個別系列顯示。
+一張獨立的圖表顯示狀態，以及一張圖表顯示隨時間變化的資料及其臨界值。如果顯示多個執行個體，則每個執行個體的資料會依個別系列顯示。
 
 ![量度圖表](/help/assets/Monitoring_Graphs1.png)
 

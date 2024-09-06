@@ -3,9 +3,9 @@ title: 通知
 description: 了解 Cloud Manager 如何通知您重要事件。
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '561'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 81%
 
 ## Cloud Manager 中的通知 {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager]會在生產部署開始時在生產管道啟動和完成（成功或不成功）時傳送通知給您。 而且，當達到&#x200B;**上線核准**&#x200B;和&#x200B;**已排程**&#x200B;步驟時。 上述通知會經由 [!UICONTROL Experience Cloud] 通知系統傳送。
+[!UICONTROL Cloud Manager] 會在生產部署開始時，在生產管道啟動和完成 (成功或不成功) 時傳送通知給您。以及，在達到&#x200B;**上線核准**&#x200B;和&#x200B;**排程**&#x200B;步驟時亦發送通知。上述通知會經由 [!UICONTROL Experience Cloud] 通知系統傳送。
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ ht-degree: 81%
 
 ![通知設定圖示](/help/assets/notifications-configuration.png)
 
-**Experience Cloud偏好設定**&#x200B;視窗已開啟，您可以在其中定義通知訂閱及接收通知的方式。
+已開啟 **Experience Cloud 偏好設定**&#x200B;視窗，您可以在此定義通知訂閱內容以及接收通知的方式。
 
 ### 訂閱 {#subscriptions}
 
@@ -58,17 +58,17 @@ ht-degree: 81%
 
 ![通知訂閱](/help/assets/notifications-subscriptions.png)
 
-依預設，您會收到所有產品的所有通知。 按一下產品旁的「**自訂**」，定義您希望接收該產品的哪些類型通知。
+預設情況下，您接收所有產品的所有通知。按一下產品旁的「**自訂**」，定義您希望接收該產品的哪些類型通知。
 
 ![通知訂閱自訂](/help/assets/notifications-subscriptions-customize.png)
 
 ### 優先順序 {#priority}
 
-優先警示標示為&#x200B;**高**&#x200B;標籤。 您可以將警報設定為僅以警報形式接收。 在&#x200B;**優先順序**&#x200B;部份中，您可以定義哪些類別符合優先通知的條件。
+優先警報會標示「**HIGH**」標記。您可以將這類警報設定為獨立接收的警報。在&#x200B;**優先順序**&#x200B;部份中，您可以定義哪些類別符合優先通知的條件。
 
 ![通知優先順序](/help/assets/notifications-priority.png)
 
-使用下拉式選單，以新增到符合優先條件類別的清單中。按一下類別名稱旁的`X`以移除它們。
+使用下拉式選單，以新增到符合優先條件類別的清單中。按一下在類別名稱旁的 `X`，即可將其刪除。
 
 ### 警示 {#alerts}
 
@@ -94,4 +94,4 @@ ht-degree: 81%
 * 每日
 * 每週
 
-當選擇&#x200B;**即時通知**&#x200B;時，每個通知都會立即傳送電子郵件。 對於&#x200B;**每日摘要**&#x200B;和&#x200B;**每週摘要**，您可以選擇傳送每日摘要的時間以及在星期幾與何時傳送每週摘要。
+若選擇「**即時通知**」，則每個通知都會立即傳送電子郵件。對於「**每日摘要**」和「**每週摘要**」，您可以選擇在什麼時間接收每日摘要，以及在星期幾和什麼時間接收每週摘要。

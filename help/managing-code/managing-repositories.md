@@ -1,28 +1,28 @@
 ---
 title: 管理 Cloud Manager 中的存放庫
-description: 瞭解如何在Cloud Manager中建立、檢視和編輯Git存放庫。
+description: 了解如何在 Cloud Manager 中建立、檢視和編輯 Git 存放庫。
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '641'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
 
-# Cloud Manager存放庫 {#cloud-manager-repos}
+# Cloud Manager 存放庫 {#cloud-manager-repos}
 
-瞭解如何在Cloud Manager中建立、檢視和編輯Git存放庫。
+了解如何在 Cloud Manager 中建立、檢視和編輯 Git 存放庫。
 
 ## 概觀 {#overview}
 
 存放庫是用來使用 Git 儲存和管理專案的程式碼。您在 Cloud Manager 中建立的每項方案都有一個為其建立的 Adob&#x200B;&#x200B;e 託管存放庫。
 
-您可以選擇建立其他Adobe管理的存放庫，並新增您自己的專用存放庫。 所有與您方案有關聯的存放庫都可以在「**存放庫**」視窗中查看。
+您可以選擇建立其他 Adobe 託管的存放庫，也可以新增您自己的私人存放庫。所有與您方案有關聯的存放庫都可以在「**存放庫**」視窗中查看。
 
-在新增或編輯管道時，您也可以選擇在Cloud Manager中建立的存放庫。 如需更多資訊，請參閱 [CI-CD 管道](/help/overview/ci-cd-pipelines.md)。
+在新增或編輯管道時，您也可以選取在 Cloud Manager 中建立的存放庫。如需更多資訊，請參閱 [CI-CD 管道](/help/overview/ci-cd-pipelines.md)。
 
-任何指定管道都有一個主要存放庫或一個分支。透過[Git子模組支援](git-submodules.md)，可以在建置時包含許多次要分支。
+任何指定管道都有一個主要存放庫或一個分支。透過 [Git 子模組支援](git-submodules.md)，可以在建置階段包含許多次要分支。
 
 ## 存放庫視窗 {#repositories-window}
 
@@ -36,8 +36,8 @@ ht-degree: 68%
 
 「**存放庫**」視窗會提供有關存放庫的詳細資訊：
 
-* 存放庫型別。
-   * **Adobe** 表示 Adob&#x200B;&#x200B;e 託管的存放庫
+* 存放庫類型。
+   * **Adobe** 表示 Adobe 託管的存放庫
    * **GitHub** 表示是您管理的私人 GitHub 存放庫
 * 當存放庫建立時
 * 與存放庫有關聯的管道
@@ -57,10 +57,9 @@ ht-degree: 68%
 
 ![新增存放庫精靈](assets/add-repository-wizard.png)
 
-Cloud Manager 會支援 Adobe 託管的存放庫 (**Adobe 存放庫**) 及您自己管理的存放庫 (**私人存放庫**)。視您選擇新增的存放庫型別而定，必填欄位會有所不同。
+Cloud Manager 會支援 Adobe 託管的存放庫 (**Adobe 存放庫**) 及您自己管理的存放庫 (**私人存放庫**)。必填欄位會根據您選擇新增的存放庫類型而有所不同。
 
-請參閱[在Cloud Manager中新增Adobe存放庫](adobe-repositories.md)。
-請參閱[在Cloud Manager中新增私人存放庫](private-repositories.md)。
+請參閱「[在 Cloud Manager 中新增 Adobe 存放庫](adobe-repositories.md)」。請參閱「[在 Cloud Manager 中新增私人存放庫](private-repositories.md)」。
 
 >[!NOTE]
 >
@@ -80,30 +79,30 @@ Cloud Manager 會支援 Adobe 託管的存放庫 (**Adobe 存放庫**) 及您自
 
 **檢查分支/建立專案**&#x200B;動作會根據存放庫的狀態執行兩個功能。
 
-如果是新建立的存放庫，此動作會根據[AEM專案原型](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/overview)建立範例專案。
+如果是新建立的存放庫，則該動作將根據 [AEM 專案原型](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/overview)建立範例專案。
 
 如果存放庫已經有建立的範例專案，該動作會檢查存放庫及其分支的狀態，並報告範例專案是否已存在。
 
 ![檢查分支動作](assets/check-branches.png)
 
-## 複製存放庫URL {#copy-url}
+## 複製存放庫 URL {#copy-url}
 
-「**複製存放庫 URL**」操作會將「**存放庫**」視窗中所選的存放庫 URL 複製到剪貼簿以用在其他地方。
+「**複製存放庫 URL**」動作會將「**存放庫**」視窗中選取的存放庫 URL 複製到剪貼簿，以便在其他地方使用。
 
 ## 檢視和更新 {#view-update}
 
-「**查看與更新**」操作會開啟「**更新存放庫**」對話框。使用此操作時，您可以檢視&#x200B;**名稱**&#x200B;和&#x200B;**存放庫 URL 預覽**，並更新存放庫的&#x200B;**說明**。
+「**檢視和更新**」動作會開啟「**更新存放庫**」對話框。使用此操作時，您可以檢視&#x200B;**名稱**&#x200B;和&#x200B;**存放庫 URL 預覽**，並更新存放庫的&#x200B;**說明**。
 
 ![查看和更新&#x200B;&#x200B;存放庫資訊](assets/update-repository.png)
 
 ## 刪除 {#delete}
 
-「**刪除**」操作會從您的專案中刪除存放庫。如果存放庫與管道相關聯，則無法刪除存放庫。
+「**刪除**」操作會從您的專案中刪除存放庫。如果存放庫與管道有關聯，則無法刪除。
 
 ![刪除](assets/delete.png)
 
-在Cloud Manager中刪除存放庫時，該存放庫會標籤為已刪除；使用者無法再存取該存放庫。 不過，系統會針對復原目的對其進行維護。
+在 Cloud Manager 中刪除存放庫時，它會被標記為已刪除；使用者不能再存取。但是，它會保留在系統中以利日後還原。
 
-如果您在刪除具有相同名稱的存放庫後嘗試建立新的存放庫，您會收到錯誤訊息`An error has occurred while trying to create repository. Contact your CSE or Adobe Support.`
+如果您刪除存放庫後使用其相同的名稱建立新存放庫，將收到錯誤訊息 `An error has occurred while trying to create repository. Contact your CSE or Adobe Support.`
 
 如果您收到此錯誤訊息，請聯絡 Adobe 支援，他們可協助重新命名已刪除的存放庫，或為新的存放庫選擇不同的名稱。
