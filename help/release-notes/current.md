@@ -1,18 +1,17 @@
 ---
-title: Cloud Manager 2024.8.0 版發行說明
-description: 了解 Cloud Manager 2024.8.0 的發行說明。
+title: Cloud Manager 2024.9.0 版發行說明
+description: 了解 Cloud Manager 2024.9.0 的發行說明。
 feature: Release Information
-source-git-commit: 5ced643fabe0a670e456cbea72f9da8196ac774a
-workflow-type: ht
-source-wordcount: '266'
-ht-degree: 100%
+source-git-commit: 3671772a1369273d89fde101ba084a6e2f8ce8dc
+workflow-type: tm+mt
+source-wordcount: '184'
+ht-degree: 76%
 
 ---
 
+# Cloud Manager 2024.9.0 版發行說明 {#release-notes}
 
-# Cloud Manager 2024.8.0 版發行說明 {#release-notes}
-
-本頁面記錄了 [!UICONTROL Cloud Manager] 2024.8.0 版的發行說明。
+本頁面記錄了 [!UICONTROL Cloud Manager] 2024.9.0 版的發行說明。
 
 >[!NOTE]
 >
@@ -20,15 +19,19 @@ ht-degree: 100%
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2024.8.0 版的發行日期為 2024 年 8 月 14 日。下一個版本規劃於 2024 年 9 月 14 日發行。
+Cloud Manager 9月版沒有重大錯誤或功能。
+
+下一版本計畫於2024年10月3日發行。
+
 
 ## 新增功能 {#what-is-new}
 
-* 對於在[早期採用者方案](#staging-production-only-pipelines)中提供使用的僅限中繼和僅限生產的管道，您現在可以於[緊急模式](/help/using/stage-prod-only.md#emergency-mode)執行這些管道，略過中繼測試。
+* 對於階段專用和生產專用管道（可作為[早期採用者方案](#staging-production-only-pipelines)的一部分提供），您現在可以在[緊急模式](/help/using/stage-prod-only.md#emergency-mode)中執行這些管道，略過階段測試。
 
 ## 早期採用方案 {#early-adoption}
 
 參與 Cloud Manager 的早期採用方案，即有機會測試一些即將推出的功能。
+
 
 ### 僅限中繼和僅限生產的管道 {#staging-production-only-pipelines}
 
@@ -36,13 +39,10 @@ Adobe 很高興地宣布開始為[僅限中繼和僅現生產的管道](/help/us
 
 如果您有意願測試此功能並提供意見回饋，請使用和 Adobe ID 相關聯的電子郵件地址寄送電子郵件至 `Grp-cloudmanager_splitpipelines@adobe.com`。
 
-## 錯誤修正
+<!-- ## Bug fixes
 
-* 在管道刪除後發現管道步驟仍在執行的罕見問題已經修正。
-* 現在重新執行管道在第一次嘗試時即可成功，修正了必須多次啟動重新執行的罕見問題。
-* 全端管道已排程的部署步驟現在遵循選定的排程日期，並且不會恢復到「**現在**」。
-* 失敗的內容複製任務狀態現在可正確反映，並且不再罕見地錯誤顯示為 `In Progress` 狀態。
+* text
 
-## 已知問題 {#known-issues}
+## Known Issues {#known-issues}
 
-{{content-copy-known-issues}}
+{{content-copy-known-issues}} LEAVE IN??? -->

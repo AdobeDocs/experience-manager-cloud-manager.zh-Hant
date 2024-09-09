@@ -1,11 +1,11 @@
 ---
 title: 使用新專案精靈
-description: 依照本頁面的說明，了解如何使用精靈來建立 AEM 應用程式專案。
+description: 請依照本頁面的說明進行，瞭解如何使用精靈來建立AEM應用程式專案。
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
+source-git-commit: 7bc874a8dd14544c22201ef2c470faab84d31f8b
+workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
