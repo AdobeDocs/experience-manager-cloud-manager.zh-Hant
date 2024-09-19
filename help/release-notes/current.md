@@ -3,9 +3,9 @@ title: Cloud Manager 2024.9.0 版發行說明
 description: 了解 Cloud Manager 2024.9.0 的發行說明。
 feature: Release Information
 source-git-commit: 3671772a1369273d89fde101ba084a6e2f8ce8dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '184'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -15,18 +15,18 @@ ht-degree: 76%
 
 >[!NOTE]
 >
->如需 AEM as a Cloud Service 中 Cloud Manager 的最新發行說明，請參閱 [AEM as a Cloud Service 中 Cloud Manager 的最新發行說明](https://experienceleague.adobe.com/zh-hant/docs/ experience-manager-cloud-service/content/release-notes/cloud-manager/current)。
+>如需 AEM as a Cloud Service 中 Cloud Manager 的最新發行說明，請參閱 [AEM as a Cloud Service 中 Cloud Manager 的最新發行說明](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/release-notes/cloud-manager/current)。
 
 ## 發行日期 {#release-date}
 
-Cloud Manager 9月版沒有重大錯誤或功能。
+9 月發佈的 Cloud Manager 沒有明顯的錯誤或功能。
 
-下一版本計畫於2024年10月3日發行。
+下一版本預計於 2024 年 10 月 3 日發行。
 
 
 ## 新增功能 {#what-is-new}
 
-* 對於階段專用和生產專用管道（可作為[早期採用者方案](#staging-production-only-pipelines)的一部分提供），您現在可以在[緊急模式](/help/using/stage-prod-only.md#emergency-mode)中執行這些管道，略過階段測試。
+* 對於在[早期採用者方案](#staging-production-only-pipelines)中提供使用的僅限中繼和僅限生產的管道，您現在可以於[緊急模式](/help/using/stage-prod-only.md#emergency-mode)執行這些管道，略過中繼測試。
 
 ## 早期採用方案 {#early-adoption}
 
