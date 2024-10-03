@@ -2,7 +2,7 @@
 title: 存放庫存取資訊
 description: 了解如何使用 Cloud Manager 中的自助 Git 帳戶管理存取和管理您的 Adobe 託管 Git 存放庫。
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
-source-git-commit: b66eb29ab86b2a6acf3a1d92c217154d07b9cc1e
+source-git-commit: 04fbc4a3fdba8b108055d66a4fdb1a31994cb18e
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 47%
@@ -24,7 +24,7 @@ Cloud Manager可讓您使用&#x200B;**管道**&#x200B;卡片中的&#x200B;**存�
 * Cloud Manager Git 存放庫的 URL。
 * 預先建立的 Git 指令，可快速新增遠端連線至 Git 存放庫並推送程式碼。
 
-![存放庫資訊視窗](assets/repository-info.png)
+  ![存放庫資訊視窗](assets/repository-info.png)
 
 Cloud Manager 不會提供[私人存放庫](/help/managing-code/private-repositories.md) 的存取資訊。
 

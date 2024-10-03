@@ -1,16 +1,16 @@
 ---
-title: 設定生產管道
+title: 新增生產管道
 description: 了解如何使用 Cloud Manager 建立和設定生產管道，以部署程式碼。
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1247'
-ht-degree: 100%
+source-git-commit: 1209faf71edbd74cd87acfe24ec438b98ddd4a3a
+workflow-type: tm+mt
+source-wordcount: '1249'
+ht-degree: 99%
 
 ---
 
 
-# 設定生產管道 {#configuring-production-pipelines}
+# 新增生產管道 {#configuring-production-pipelines}
 
 了解如何使用 Cloud Manager 建立和設定生產管道，以部署程式碼。 如果您想先了解有關在 Cloud Manager 中管道如何運作的更多概念性概觀，請參閱[CI/CD 管道](/help/overview/ci-cd-pipelines.md)。
 
