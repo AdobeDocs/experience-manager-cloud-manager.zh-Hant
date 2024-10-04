@@ -2,9 +2,9 @@
 title: Cloud Manager 2024.10.0 版發行說明
 description: 了解 Cloud Manager 2024.10.0 的發行說明。
 feature: Release Information
-source-git-commit: 94d5f3487408f9d8908bb15221c48ef768390527
+source-git-commit: 74e8f7c0f3896e0e33a02b62c003db322c0d50d8
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '369'
 ht-degree: 24%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 24%
 
 請參閱[在Cloud Manager](/help/managing-code/external-repositories.md)中新增外部存放庫。
 
-![新增存放庫對話方塊](/help/release-notes/assets/repositories-add-release-notes.png)
+![新增存放庫對話框](/help/release-notes/assets/repositories-add-release-notes.png)
 
 >[!NOTE]
 >
@@ -67,6 +67,6 @@ Adobe宣佈推出[僅限中繼及僅限生產管道](/help/using/stage-prod-only
 * text
 -->
 
-## 已知問題 {#known-issues}
+<!-- Known Issues {#known-issues}
 
-{{content-copy-known-issues}}
+ -->
