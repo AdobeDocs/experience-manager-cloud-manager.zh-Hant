@@ -1,18 +1,18 @@
 ---
 title: 管理管道
-description: 瞭解如何管理現有管道，包括執行、編輯和刪除它們。
+description: 了解如何管理現有管道，包括執行、編輯它們，並將其刪除。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
 source-git-commit: 9d910e1b1a4aad000a8389ddc22ce380bbccd4ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
 # 管理管道 {#managing-pipelines}
 
-瞭解如何管理現有管道，包括執行、編輯和刪除它們。
+了解如何管理現有管道，包括執行、編輯它們，並將其刪除。
 
 ## 管道資訊卡 {#pipeline-card}
 
@@ -36,11 +36,11 @@ ht-degree: 89%
 
 ## 管道頁面 {#pipelines}
 
-**管道**&#x200B;頁面會顯示所選方案的所有管道完整清單。 此清單很實用，因其提供的資訊比[管道資訊卡](#pipeline-card)所提供的更完整。
+**管道**&#x200B;頁面顯示所選方案所有管道的完整清單。此清單很實用，因其提供的資訊比[管道資訊卡](#pipeline-card)所提供的更完整。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 從&#x200B;**方案總覽**&#x200B;頁面，按一下&#x200B;**管道**&#x200B;索引標籤以切換至&#x200B;**管道**&#x200B;頁面。
+1. 從&#x200B;**方案概觀**&#x200B;頁面，按一下&#x200B;**管道**&#x200B;標籤，以切換到&#x200B;**管道**&#x200B;頁面。
 
 1. 在這裡，您可以看到方案所有管道的清單，並啟動和停止管道執行，就像在&#x200B;**管道卡**&#x200B;中一樣。
 
@@ -52,11 +52,11 @@ ht-degree: 89%
 
 ## 活動頁面 {#activity}
 
-**活動**&#x200B;頁面會顯示所選方案的所有管道執行的完整清單。
+**活動**&#x200B;頁面顯示所選方案所有管道執行的完整清單。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 從&#x200B;**方案總覽**&#x200B;頁面，按一下&#x200B;**活動**&#x200B;索引標籤以切換至&#x200B;**活動**&#x200B;頁面。
+1. 從&#x200B;**方案概觀**&#x200B;頁面，按一下&#x200B;**活動**&#x200B;標籤，以切換到&#x200B;**活動**&#x200B;頁面。
 
 1. 在這裡，您可以看到方案所有管道執行的清單，包括目前和歷史執行。
 

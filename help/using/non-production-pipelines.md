@@ -1,11 +1,11 @@
 ---
 title: 新增非生產管道
-description: 了解如何使用 Cloud Manager 建立和設定非生產管道以部署程式碼。
+description: 了解如何使用 Cloud Manager 建立和設定非生產管道以部署代碼。
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 source-git-commit: 1209faf71edbd74cd87acfe24ec438b98ddd4a3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '688'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,9 +29,9 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->與管道相關的 Git 存放庫必須具有至少一個分支，且已完成[方案設定](/help/getting-started/program-setup.md)，才能進行管道設定。如欲了解如何在 Cloud Manager 中新增和管理存放庫，請參閱「[Cloud Manager 存放庫](/help/managing-code/managing-repositories.md)」。
+>與管道相關的 Git 存放庫必須具有至少一個分支，且已完成[方案設定](/help/getting-started/program-setup.md)，才能進行管道設定。如欲了解如何在 Cloud Manager 中新增和管理存放庫，請參閱 [Cloud Manager 存放庫](/help/managing-code/managing-repositories.md)。
 
-## 新增新的非生產管道 {#add-non-production-pipeline}
+## 新增一個全新非生產管道 {#add-non-production-pipeline}
 
 設定好方案並擁有至少一個使用 Cloud Manager UI 的環境後，您就可以依照以下步驟著手新增非生產管道了。
 

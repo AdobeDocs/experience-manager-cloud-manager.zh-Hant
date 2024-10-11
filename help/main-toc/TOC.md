@@ -8,9 +8,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: 1209faf71edbd74cd87acfe24ec438b98ddd4a3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '342'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -42,11 +42,11 @@ ht-degree: 71%
       + [組建環境](/help/getting-started/build-environment.md)
    + [設定分支](/help/getting-started/configuring-branches.md)
    + [Dispatcher 設定](/help/getting-started/dispatcher-configurations.md)
-+ 使用{#using}
++ 使用 {#using}
    + CI/CD 管道 {#pipelines}
       + [設定生產管道](/help/using/production-pipelines.md)
       + [設定非生產管道](/help/using/non-production-pipelines.md)
-      + [分割階段和僅限生產配管（早期採用者）](/help/using/stage-prod-only.md)
+      + [分割階段以及僅限 Prod 的管道 (早期採用者)](/help/using/stage-prod-only.md)
       + [管理管道](/help/using/managing-pipelines.md)
    + [程式碼部署](/help/using/code-deployment.md)
    + [程式碼品質測試](/help/using/code-quality-testing.md)
@@ -57,17 +57,17 @@ ht-degree: 71%
    + [通知](/help/using/notifications.md)
    + [自訂程式碼品質規則](/help/using/custom-code-quality-rules.md)
    + [內容複製](/help/using/content-copy.md)
-+ 管理程式碼{#managing-code}
++ 管理代碼 {#managing-code}
    + [管理 Cloud Manager 中的存放庫](/help/managing-code/managing-repositories.md)
    + [存放庫存取資訊](/help/managing-code/accessing-repositories.md)
-   + [新增Adobe存放庫](/help/managing-code/adobe-repositories.md)
+   + [新增 Adobe 存放庫](/help/managing-code/adobe-repositories.md)
    + [新增私人存放庫](/help/managing-code/private-repositories.md)
-   + [新增外部存放庫（早期採用者）](/help/managing-code/external-repositories.md)
+   + [新增外部存放庫 (早期採用者)](/help/managing-code/external-repositories.md)
    + [Git 子模組支援](/help/managing-code/git-submodules.md)
    + [GitHub 檢查設定](/help/managing-code/github-check-config.md)
    + [GitHub 檢查附註](/help/managing-code/github-annotations.md)
    + [Maven 專案版本處理](/help/managing-code/maven-project-version.md)
-   + [與Git整合](/help/managing-code/git-integration.md)
+   + [與 Git 整合](/help/managing-code/git-integration.md)
    + [使用多個 Git 存放庫](/help/managing-code/multiple-git-repos.md)
 + 產品更新精靈 {#product-update-wizard}
    + [概觀](/help/product-update-wizard/overview.md)
