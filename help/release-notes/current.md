@@ -1,33 +1,34 @@
 ---
 title: Cloud Manager 2024.11.0 版發行說明
-description: 瞭解關於Cloud Manager 2024.11.0版。
+description: 了解關於 Cloud Manager 2024.11.0 的發行資訊。
 feature: Release Information
-source-git-commit: 4c22de9fa675edcd743d7acce6c7a1def8efa414
-workflow-type: tm+mt
+exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
+source-git-commit: bea7f2e6e7cab764312a800883d0785ff23fd8bf
+workflow-type: ht
 source-wordcount: '457'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
 # Cloud Manager 2024.11.0 版發行說明 {#release-notes}
 
-瞭解關於[!UICONTROL Cloud Manager] 2024.11.0版的資訊。
+了解關於 [!UICONTROL Cloud Manager] 2024.11.0 的發行資訊。
 
 >[!NOTE]
 >
->請參閱 [Adobe Experience Manager as a Cloud Service 最新發行說明](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home)。
+>請參閱 [Adobe Experience Manager as a Cloud Service 最新發行說明](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/release-notes/home)。
 
 ## 發行日期 {#release-date}
 
 <!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-[!UICONTROL Cloud Manager] 2024.11.0的發行日期為2024年11月7日。
+[!UICONTROL Cloud Manager] 2024.11.0 版的發行日期為 2024 年 11 月 7 日。
 
-下一個預計發行日期為2024年12月5日。
+規劃於 2024 年 12 月 5 日發行下一個版本。
 
 ## 新增功能 {#what-is-new}
 
-* 在效能測試期間將頁面重新導向至另一個網域時，會排除這些頁面的測試結果，因為它們無法準確表示實際效能。<!-- (CMGR-5637) -->
+* 頁面在效能測試期間重新導向到另一個網域時，因為那些頁面的測試結果無法準確地代表實際效能，因此予以排除。<!-- (CMGR-5637) -->
 
 ## 早期採用方案 {#early-adoption}
 
@@ -51,14 +52,14 @@ ht-degree: 65%
 
 ### 僅限中繼和僅限生產的管道 {#staging-production-only-pipelines}
 
-Adobe 宣布推出對 [僅階段和僅生產管道](/help/using/stage-prod-only.md)的支援。 這項新功能可讓您將全端生產部署管道劃分為更小、更專業的部署。
+Adobe 宣布推出對[僅階段和僅生產管道](/help/using/stage-prod-only.md)的支援。 這項新功能可讓您將全端生產部署管道劃分為更小、更專業的部署。
 
 如果您想要測試此新功能並提供意見回饋，請使用與您的 Adobe ID 關聯的電子郵件地址向 [Grp-cloudmanager_splitpipelines@adobe.com](mailto:Grp-cloudmanager_splitpipelines@adobe.com) 傳送電子郵件。
 
 ## 錯誤修正
 
-* AEM Cloud Manager中造成內容復製作業狀態更新期間出現「403」錯誤的錯誤現已解決。 此問題歸因於錯誤設定的輸入IP位址，阻止了狀態傳播，並導致某些內容複製活動顯示為卡住並無限期執行，需要手動取消。 此修正現在可確保適當的狀態報告，以及更順暢地執行內容複製任務。<!-- (CMGR-62739) -->
-* 最近的一項更新解決了SonarQube中某些情況下偵測不到硬式編碼密碼的問題。 此修正現在包含展開的模式檢查，並符合SonarQube中的預設偵測標準。<!-- CMGR-62682 -->
+* 造成內容複製作業在狀態更新期間出現「403」錯誤訊息的一項 AEM Cloud Manager 錯誤，現在已經解決。造成這個問題的原因是入口 IP 位址設定錯誤，因此無法傳播狀態，導致有些內容複製活動似乎卡住而且無限期執行中，需要手動取消。經修正後，現在確保能正確地報告狀態，讓內容複製任務執行更順暢。<!-- (CMGR-62739) -->
+* 最近的更新解決 SonarQube 在特定情況下未能偵測到硬式編碼密碼的問題。經修正後，現在已擴大模式檢查，並與 SonarQube 的預設偵測標準保持一致。<!-- CMGR-62682 -->
 
 <!-- Known Issues {#known-issues}
 
