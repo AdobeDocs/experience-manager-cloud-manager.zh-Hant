@@ -2,10 +2,10 @@
 title: Cloud Manager 2024.12.0 版發行說明
 description: 瞭解關於Adobe Managed Services的Cloud Manager 2024.12.0版。
 feature: Release Information
-source-git-commit: e7e2268f866105970e02d4bc54c46613749e5ac0
+source-git-commit: ee79124a012106e53ffaaf9462202712f7078809
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '348'
+ht-degree: 63%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 [!UICONTROL Cloud Manager] 2024.12.0的發行日期為2024年12月5日。
 
-下一個預計發行日期為2024年1月。
+下一個預計發行日期為2025年1月23日。
 
 ## 新增功能 {#what-is-new}
 
