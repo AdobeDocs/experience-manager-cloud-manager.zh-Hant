@@ -1,13 +1,13 @@
 ---
 title: 在 Cloud Manager 中新增外部存放庫 (早期採用者)
 description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager 支援與 GitHub、GitLab 和 Bitbucket 存放庫整合。
-source-git-commit: 054c214be3c8c6e8a8bd4691b70ae2098263ef5b
-workflow-type: ht
-source-wordcount: '740'
-ht-degree: 100%
+exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
+source-git-commit: e7e2268f866105970e02d4bc54c46613749e5ac0
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # 在 Cloud Manager 中新增外部存放庫 {#external-repositories}
 
@@ -98,5 +98,9 @@ ht-degree: 100%
 
 ## 限制
 
-* 外部存放庫無法連結到設定管道。
-* 使用外部存放庫 (不包括 GitHub 託管存放庫) 和&#x200B;**部署觸發程序**&#x200B;選項「[!UICONTROL **在 Git 變更時**]」，觸發程序不會自動啟動。它們必須手動啟動。
+外部存放庫無法連結到設定管道。
+
+<!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY
+
+* Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->
+
