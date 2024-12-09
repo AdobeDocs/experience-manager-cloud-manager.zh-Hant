@@ -2,10 +2,10 @@
 title: 環境一致性的內容複製
 description: Cloud Manager中的內容複製可讓使用者隨選從AdobeManaged Services託管的Adobe Experience Manager 6.x生產環境複製可變內容，以便用於測試的較低環境。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: e47047c85f9d428e268d147b2e24354026dda0f8
+source-git-commit: 228006b424504306e916014bbe8543dc41ba43b5
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 36%
+source-wordcount: '1312'
+ht-degree: 33%
 
 ---
 
@@ -85,9 +85,7 @@ Cloud Manager中的內容複製可讓使用者隨選從AdobeManaged Services託�
 
    ![正在編輯路徑清單](/help/assets/add-content-set-excluded-paths.png)
 
-1. 按一下&#x200B;**建立**。
-
-您現在可以使用內容集在環境之間複製內容。
+1. 按一下「**建立**」。您現在可以使用內容集在環境之間複製內容。
 
 ## 編輯或刪除內容集 {#edit-content-set}
 
@@ -132,21 +130,23 @@ Cloud Manager中的內容複製可讓使用者隨選從AdobeManaged Services託�
    * 目的地環境中的區域必須是來源環境中的區域子集。
    * 在執行內容複製動作之前，會檢查相容性問題。 當您選取&#x200B;**目的地**&#x200B;環境時，系統會自動驗證來源和目的地環境。 如果驗證失敗，程式將停止，並在說明失敗原因的對話方塊中顯示錯誤訊息。
 
+     ![正在複製內容](/help/assets/copying-content.png)
+
 1. （可選）執行下列任一項作業：
 
    1. 若要&#x200B;*保留*&#x200B;目的地環境中排除的路徑，請核取&#x200B;**`Do not delete exclude paths from destination`**。 此設定會保持內容集中指定的排除路徑不變。
    1. 若要&#x200B;*移除*&#x200B;目的地環境中排除的路徑，請取消核取&#x200B;**`Do not delete exclude paths from destination`**。 此設定會刪除內容集中指定的排除路徑。
-   1. 若要從來源環境複製路徑的版本記錄到目的地環境，請核取&#x200B;**復製版本**。
+   1. 若要從來源環境複製路徑的版本記錄到目的地環境，請核取&#x200B;**復製版本**。 當版本歷程記錄為&#x200B;*而非*&#x200B;時，內容復製程式會快速許多。
 
-      ![正在複製內容](/help/assets/copying-content.png)
+
 
 1. 按一下&#x200B;**複製**。 複製過程的狀態反映在所選內容集的控制台中。
 
-## 監視內容複製活動的狀態 {#copy-activity}
+## 監視內容複製狀態 {#copy-activity}
 
 您可以在「**複製內容活動**」頁面中監視複製過程的狀態。
 
-**若要監視內容複製活動的狀態：**
+**監視內容副本狀態：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
@@ -156,7 +156,7 @@ Cloud Manager中的內容複製可讓使用者隨選從AdobeManaged Services託�
 
    ![內容複製活動](/help/assets/copy-content-activity.png)
 
-   複製內容程式可以有下列其中一種狀態：
+   內容復製程式可以有下列其中一種狀態：
 
    | 狀態 | 說明 |
    | --- | --- |
@@ -165,9 +165,7 @@ Cloud Manager中的內容複製可讓使用者隨選從AdobeManaged Services託�
    | 已失敗 | 內容復製作業失敗。 |
 
 
-## 限制 {#limitations}
-
-內容副本有下列限制：
+## 內容副本的限制 {#limitations}
 
 * 無法將較低環境的內容複製到較高環境。
 * 內容複製僅能於同一層級內執行。也就是「作者對作者」或「發佈對發佈」。
@@ -175,13 +173,10 @@ Cloud Manager中的內容複製可讓使用者隨選從AdobeManaged Services託�
 * 唯有在來源和目標環境位於相同雲端提供者及區域時，才能對基於雲端資料存放區的拓撲執行內容複製。
 * 無法於同一環境中執行並行的內容複製作業。
 * 如果在目標或來源環境 (例如 CI/CD 管道) 上有任何作用中的作業正在執行中，則無法執行內容複製。
-* 每個內容集最多可以指定 50 個路徑。排除的路徑沒有數量限制。
 * 內容副本不應作為複製或映象工具使用，因為它無法追蹤來源上已移動或刪除的內容。
 * 內容複製一旦開始就不能暫停或取消。
-* 內容複製會將資產和Dynamic Media中繼資料從較高的環境複製到選取的較低環境。 然後需要在較低的環境中透過 [DAM 流程資產工作流程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/assets/using/assets-workflow)對已複製的資產進行再處理，才能使用各自的 Dynamic Media 設定。
-* 不複製版本歷史記錄時，內容複製流程會大幅加快。
+* 內容複製會將資產和Dynamic Media中繼資料從較高的環境複製到選取的低層環境。 然後需要在較低的環境中透過 [DAM 流程資產工作流程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/assets/using/assets-workflow)對已複製的資產進行再處理，才能使用各自的 Dynamic Media 設定。
 * 不支援[啟用之資產大小超過 2 GB 的 Dynamic Media 設定](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)。
-* 不複製版本歷史記錄時，內容複製過程會大幅加快。
 * 目標環境的區域必須與來源環境的區域相同，或是來源環境區域的子集。
 
 ## 已知問題 {#known-issues}
