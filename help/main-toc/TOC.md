@@ -7,10 +7,10 @@ user-guide-description: 了解如何使用 Cloud Manager 在雲端自行管理�
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: e7e2268f866105970e02d4bc54c46613749e5ac0
+source-git-commit: 2c96feb62a4db2424430c9c410563a7f61320fd2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '349'
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 0%
    + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [通知](/help/using/notifications.md)
    + [自訂程式碼品質規則](/help/using/custom-code-quality-rules.md)
-   + [內容複製](/help/using/content-copy.md)
+   + [環境一致性的內容複製](/help/using/content-copy.md)
 + 管理代碼 {#managing-code}
    + [管理 Cloud Manager 中的存放庫](/help/managing-code/managing-repositories.md)
    + [存放庫存取資訊](/help/managing-code/accessing-repositories.md)
