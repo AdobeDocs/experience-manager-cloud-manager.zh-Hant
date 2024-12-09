@@ -1,22 +1,22 @@
 ---
 title: 環境一致性的內容複製
-description: Cloud Manager內容複製工具可讓使用者隨選從AdobeManaged Services託管的Adobe Experience Manager 6.x生產環境複製可變內容，以便用於測試的較低環境。
+description: Cloud Manager中的內容複製可讓使用者隨選從AdobeManaged Services託管的Adobe Experience Manager 6.x生產環境複製可變內容，以便用於測試的較低環境。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 2c96feb62a4db2424430c9c410563a7f61320fd2
+source-git-commit: e47047c85f9d428e268d147b2e24354026dda0f8
 workflow-type: tm+mt
-source-wordcount: '1364'
-ht-degree: 42%
+source-wordcount: '1351'
+ht-degree: 36%
 
 ---
 
 
 # 內容復本，維持環境一致性 {#content-copy}
 
-Cloud Manager內容複製工具可讓使用者隨選從AdobeManaged Services託管的Adobe Experience Manager 6.x生產環境複製可變內容，以便用於測試的較低環境。
+Cloud Manager中的內容複製可讓使用者隨選從AdobeManaged Services託管的Adobe Experience Manager 6.x生產環境複製可變內容，以便用於測試的較低環境。
 
 ## 關於內容複製 {#introduction}
 
-目前的真實資料對於測試、驗證和使用者接受度很有價值。內容複製工具讓您能將內容從生產 AMS 代管的 AEM 6.x 環境複製到中繼或開發環境中。此工作流程支援各種測試場景。
+目前的真實資料對於測試、驗證和使用者接受度很有價值。內容複製可讓您將內容從生產AMS代管的AEM 6.x環境複製到中繼或開發環境。 此工作流程支援各種測試場景。
 
 要複製的內容由內容集來定義。內容集包含具有要複製之可變內容的 JCR 路徑清單。內容從來源環境移動到目標環境。所有過程都在同一個 Cloud Manager 方案中完成。
 
@@ -37,7 +37,7 @@ Cloud Manager內容複製工具可讓使用者隨選從AdobeManaged Services託�
 
 ## 權限 {#permissions}
 
-若要使用內容複製工具，使用者在來源和目標環境中必須被指派為&#x200B;**部署管理員**&#x200B;角色。
+若要使用內容複製功能，必須將使用者指派給來源和目標環境中的&#x200B;**部署管理員**&#x200B;角色。
 
 ## 建立內容集 {#create-content-set}
 
@@ -55,7 +55,7 @@ Cloud Manager內容複製工具可讓使用者隨選從AdobeManaged Services託�
 
    ![內容集](/help/assets/content-sets.png)
 
-1. 在&#x200B;**新增內容集**&#x200B;對話方塊的&#x200B;**詳細資料**&#x200B;索引標籤的&#x200B;**名稱**&#x200B;和&#x200B;**描述**&#x200B;欄位中，輸入內容集的名稱和選擇性描述，然後按一下&#x200B;**繼續**。
+1. 在&#x200B;**`Add Content Set`**&#x200B;對話方塊的&#x200B;**詳細資料**&#x200B;索引標籤的&#x200B;**名稱**&#x200B;和&#x200B;**描述**&#x200B;欄位中，輸入內容集的名稱和選擇性描述，然後按一下&#x200B;**繼續**。
 
    ![內容詳細資料](/help/assets/add-content-set-details.png)
 
@@ -167,7 +167,7 @@ Cloud Manager內容複製工具可讓使用者隨選從AdobeManaged Services託�
 
 ## 限制 {#limitations}
 
-內容複製工具有下列限制：
+內容副本有下列限制：
 
 * 無法將較低環境的內容複製到較高環境。
 * 內容複製僅能於同一層級內執行。也就是「作者對作者」或「發佈對發佈」。
@@ -176,9 +176,9 @@ Cloud Manager內容複製工具可讓使用者隨選從AdobeManaged Services託�
 * 無法於同一環境中執行並行的內容複製作業。
 * 如果在目標或來源環境 (例如 CI/CD 管道) 上有任何作用中的作業正在執行中，則無法執行內容複製。
 * 每個內容集最多可以指定 50 個路徑。排除的路徑沒有數量限制。
-* 內容複製工具不應用作複製或鏡像工具，因其無法追蹤來源上移動或刪除的內容。
+* 內容副本不應作為複製或映象工具使用，因為它無法追蹤來源上已移動或刪除的內容。
 * 內容複製一旦開始就不能暫停或取消。
-* 內容複製工具將資產及 Dynamic Media 中繼資料從較高環境複製到選取的較低環境。然後需要在較低的環境中透過 [DAM 流程資產工作流程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/assets/using/assets-workflow)對已複製的資產進行再處理，才能使用各自的 Dynamic Media 設定。
+* 內容複製會將資產和Dynamic Media中繼資料從較高的環境複製到選取的較低環境。 然後需要在較低的環境中透過 [DAM 流程資產工作流程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/assets/using/assets-workflow)對已複製的資產進行再處理，才能使用各自的 Dynamic Media 設定。
 * 不複製版本歷史記錄時，內容複製流程會大幅加快。
 * 不支援[啟用之資產大小超過 2 GB 的 Dynamic Media 設定](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)。
 * 不複製版本歷史記錄時，內容複製過程會大幅加快。
