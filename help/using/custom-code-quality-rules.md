@@ -2,10 +2,10 @@
 title: 自訂程式碼品質規則
 description: 探索 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則的具體細節。這些規則以 AEM Engineering 的最佳實務為基礎。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '3482'
-ht-degree: 100%
+source-git-commit: 8811ed130b2c7a37a0c811c308b57acf0872e9c8
+workflow-type: tm+mt
+source-wordcount: '3514'
+ht-degree: 99%
 
 ---
 
@@ -871,6 +871,15 @@ AEM Cloud Service 禁止在分析工具中建立名稱不正確的 tokenizer。t
 * **始自**：2024.7.0 版本
 
 AEM Cloud Service 禁止建立屬性含空格的索引定義。
+
+### 索引定義的設定不應包含haystack0屬性 {#oakpal-indexing-haystack0-property}
+
+* **索引鍵**： HayStackPropertyCheck
+* **類型**：改善
+* **嚴重度**：輕微
+* **始自**：2024.12.0 版本
+
+AEM Cloud Service禁止建立包含haystack屬性的索引定義。
 
 ## Dispatcher 最佳化工具 {#dispatcher-optimization-tool-rules}
 
