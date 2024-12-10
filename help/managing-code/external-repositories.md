@@ -3,9 +3,9 @@ title: 在 Cloud Manager 中新增外部存放庫 (早期採用者)
 description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager 支援與 GitHub、GitLab 和 Bitbucket 存放庫整合。
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
 source-git-commit: e7e2268f866105970e02d4bc54c46613749e5ac0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '0'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
