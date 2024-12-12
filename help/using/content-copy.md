@@ -2,7 +2,7 @@
 title: 環境一致性的內容複製
 description: Cloud Manager中的內容複製可讓使用者隨選從AdobeManaged Services託管的Adobe Experience Manager 6.x生產環境複製可變內容，以便用於測試的較低環境。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 16cc1aa0ff45126df9100f337b6259a3f248038f
+source-git-commit: e3a656605ac59ca1f95985426932fddf2b53b7c9
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 33%
@@ -32,8 +32,9 @@ Cloud Manager中的內容複製可讓使用者隨選從AdobeManaged Services託�
 
 複製內容時，來源環境是真實的來源。
 
-* 如果您在目標環境中編輯內容，於路徑符合的情況下，來源內容會將其覆蓋。
-* 如果路徑不同，來源中的內容會與目標中的內容合併。
+如果您在目標環境中編輯內容，於路徑符合的情況下，來源內容會將其覆蓋。
+
+如果路徑不同，來源中的內容會與目標中的內容合併。
 
 ### 權限 {#permissions}
 
@@ -103,7 +104,6 @@ Cloud Manager中的內容複製可讓使用者隨選從AdobeManaged Services託�
 
 ![編輯內容集](/help/assets/edit-content-set.png)
 
-
 ## 複製內容 {#copy-content}
 
 建立內容集後，您就可以用它來複製內容。
@@ -138,8 +138,6 @@ Cloud Manager中的內容複製可讓使用者隨選從AdobeManaged Services託�
    1. 若要&#x200B;*移除*&#x200B;目的地環境中排除的路徑，請取消核取&#x200B;**`Do not delete exclude paths from destination`**。 此設定會刪除內容集中指定的排除路徑。
    1. 若要從來源環境複製路徑的版本記錄到目的地環境，請核取&#x200B;**復製版本**。 當版本歷程記錄為&#x200B;*而非*&#x200B;時，內容復製程式會快速許多。
 
-
-
 1. 按一下&#x200B;**複製**。 複製過程的狀態反映在所選內容集的控制台中。
 
 ## 檢查內容副本的狀態 {#copy-activity}
@@ -160,10 +158,9 @@ Cloud Manager中的內容複製可讓使用者隨選從AdobeManaged Services託�
 
    | 狀態 | 說明 |
    | --- | --- |
-   | 進行中 | 內容復製作業正在進行中。 |
-   | 完成 | 內容復製作業已順利完成。 |
-   | 已失敗 | 內容復製作業失敗。 |
-
+   | 進行中 | 內容復製程式正在進行中。 |
+   | 完成 | 內容復製程式已成功完成。 |
+   | 已失敗 | 內容復製程式失敗。 |
 
 ## 內容副本的限制 {#limitations}
 
