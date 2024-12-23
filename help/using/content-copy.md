@@ -3,9 +3,9 @@ title: 維持環境一致性的內容複製功能
 description: 使用者可以使用 Cloud Manager 中的內容複製功能，依需求將可變內容從 Adobe Managed Services 託管的 Adobe Experience Manager 6.x 生產環境複製到低階環境以進行測試。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: e3a656605ac59ca1f95985426932fddf2b53b7c9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1321'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -140,11 +140,11 @@ ht-degree: 96%
 
 1. 按一下「**複製**」。複製程序的狀態會反映在所選內容集的控制台中。
 
-## 檢查內容副本的狀態 {#copy-activity}
+## 檢查內容複製的狀態 {#copy-activity}
 
 您可以在「**複製內容活動**」頁面中監視複製程序的狀態。
 
-**若要檢查內容副本的狀態：**
+**若要檢查內容複製的狀態：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，並選取適當的組織和方案。
 
@@ -154,13 +154,13 @@ ht-degree: 96%
 
    ![內容複製活動](/help/assets/copy-content-activity.png)
 
-   內容復製程式可以有下列其中一種狀態：
+   內容複製程序可以有以下其中一種狀態：
 
    | 狀態 | 說明 |
    | --- | --- |
-   | 進行中 | 內容復製程式正在進行中。 |
-   | 已完成 | 內容復製程式已成功完成。 |
-   | 失敗 | 內容復製程式失敗。 |
+   | 進行中 | 內容複製程序正在進行中。 |
+   | 已完成 | 內容複製程序已成功完成。 |
+   | 失敗 | 內容複製程序已失敗。 |
 
 ## 內容複製的限制 {#limitations}
 
@@ -176,6 +176,6 @@ ht-degree: 96%
 * 不支援[啟用資產大小超過 2 GB 的 Dynamic Media 設定](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)。
 * 目標環境的區域必須與來源環境的區域相同，或者是來源環境區域的子集。
 
-## 內容副本的已知問題 {#known-issues}
+## 內容複製的已知問題 {#known-issues}
 
 {{content-copy-known-issues}}
