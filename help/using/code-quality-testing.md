@@ -2,7 +2,7 @@
 title: 程式碼品質測試
 description: 了解管道程式碼品質測試如何運作及如何提高部署品質。
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: dcf2a4727b800f4364fcc7d757d281bde2738a55
+source-git-commit: f5e6ac81c6454730850bb7e884d82be48d2f8525
 workflow-type: tm+mt
 source-wordcount: '2793'
 ht-degree: 98%
@@ -48,9 +48,9 @@ ht-degree: 98%
 
 有超過 100 條規則結合通用 Java 規則和 AEM 特定規則。部分 AEM 特定規則是根據 AEM 工程團隊的最佳做法來建立，並稱為[自訂程式碼品質規則](/help/using/custom-code-quality-rules.md)。
 
+您可以使用此連結](/help/assets/CodeQuality-rules-latest-AMS.xlsx)下載目前完整的規則[清單。
+
 >[!IMPORTANT]
->
->您可以使用此連結](/help/assets/CodeQuality-rules-latest-AMS.xlsx)下載目前完整的規則[清單。
 >
 >自2025年2月13日星期四起(Cloud Manager 2025.2.0)，Cloud Manager程式碼品質使用更新的SonarQube 9.9版本和更新的規則清單，您可以[在此下載](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx)。
 
