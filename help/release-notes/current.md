@@ -3,10 +3,10 @@ title: Cloud Manager 2024.12.0 版發行說明
 description: 了解 Adobe Managed Services 上的 Cloud Manager 2024.12.0 版。
 feature: Release Information
 exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
-source-git-commit: e266a4192e2a897f142a6c83ae5766483946320d
-workflow-type: ht
-source-wordcount: '312'
-ht-degree: 100%
+source-git-commit: dcf2a4727b800f4364fcc7d757d281bde2738a55
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 87%
 
 ---
 
@@ -28,9 +28,13 @@ ht-degree: 100%
 
 下一個版本預計於 2025 年 1 月 23 日發行。
 
-<!-- ## What's new {#what-is-new} -->
+## 新增功能 {#what-is-new}
 
 <!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. --> <!-- CMGR-45683 -->
+
+* 從2025年2月13日星期四開始，Cloud Manager程式碼品質步驟現在使用升級的SonarQube 9.9.5.90363版。
+
+  更新的規則適用於AMS，位於[此連結](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-quality-testing#code-quality-testing-step)，可決定Cloud Manager管道的安全性分數和程式碼品質。 此更新可能會影響您的品質閘道，潛在地封鎖部署。
 
 ## 早期採用方案 {#early-adoption}
 
@@ -40,9 +44,9 @@ ht-degree: 100%
 
 <!-- BOTH CS & AMS -->
 
-**自備 Git** 功能已進行擴展，包括對 GitLab 和 Bitbucket 等外部存放庫的支援。這項新的支援功能是對私人和企業 GitHub 存放庫現有支援的補充。當您新增這些新存放庫時，也可以將它們直接連結到您的管道。您可以將這些存放庫託管在公有雲平台上或私有雲或基礎架構內。這項整合也消除了與 Adobe 存放庫持續進行代碼同步的需求，並提供了在提取請求合併到主分支之前，驗證提取請求的功能。
+**自備 Git** 功能已擴充，以納入對 GitLab 和 Bitbucket 等外部存放庫的支援。這項新的支援功能是對私人和企業 GitHub 存放庫現有支援的補充。當您新增這些新存放庫時，也可以將它們直接連結到您的管道。您可以將這些存放庫託管在公有雲平台上或私有雲或基礎架構內。這項整合也消除了與 Adobe 存放庫持續進行代碼同步的需求，並提供了在提取請求合併到主分支之前，驗證提取請求的功能。
 
-對於使用外部存放庫 (不包括 GitHub 託管存放庫) 以及&#x200B;**部署觸發程序**&#x200B;設定為「**在 Git 變更時**」的管道，這些管道現在會自動啟動。
+對於使用外部存放庫 (不包括 GitHub 託管的存放庫) 且&#x200B;**部署觸發程序**&#x200B;設定為「**在 Git 變更時**」的管道，現在會自動啟動。
 
 請查看[在 Cloud Manager 中新增外部存放庫](/help/managing-code/external-repositories.md)。
 

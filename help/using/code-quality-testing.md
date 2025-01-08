@@ -2,10 +2,10 @@
 title: 程式碼品質測試
 description: 了解管道程式碼品質測試如何運作及如何提高部署品質。
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '2764'
-ht-degree: 100%
+source-git-commit: dcf2a4727b800f4364fcc7d757d281bde2738a55
+workflow-type: tm+mt
+source-wordcount: '2793'
+ht-degree: 98%
 
 ---
 
@@ -48,14 +48,16 @@ ht-degree: 100%
 
 有超過 100 條規則結合通用 Java 規則和 AEM 特定規則。部分 AEM 特定規則是根據 AEM 工程團隊的最佳做法來建立，並稱為[自訂程式碼品質規則](/help/using/custom-code-quality-rules.md)。
 
->[!TIP]
+>[!IMPORTANT]
 >
->若要下載完整的規則清單，可[使用此連結](/help/assets/CodeQuality-rules-latest-AMS.xlsx)。
+>您可以使用此連結](/help/assets/CodeQuality-rules-latest-AMS.xlsx)下載目前完整的規則[清單。
+>
+>自2025年2月13日星期四起(Cloud Manager 2025.2.0)，Cloud Manager程式碼品質使用更新的SonarQube 9.9版本和更新的規則清單，您可以[在此下載](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx)。
 
 程式碼品質測試的結果會以此表格中總結的評分提供。
 
 | 名稱 | 定義 | 類別 | 失敗臨界值 |
-|--- |--- |--- |--- |
+| --- | --- | --- | --- |
 | 安全評等 | A = 無漏洞<br/>B = 至少 1 個輕微漏洞<br/>C = 至少 1 個重大漏洞<br/>D = 至少 1 個嚴重漏洞<br/>E = 至少 1 個阻斷式漏洞 | 嚴重 | &lt; B |
 | 可靠度評等 | A = 無錯誤<br/>B = 至少 1 個輕微錯誤<br/>C = 至少 1 個重大錯誤<br/>D = 至少 1 個嚴重錯誤<br/>E = 至少 1 個阻斷式錯誤 | 重要 | &lt; C |
 | 可維護性評等 | 由程式碼異味的待處理修復成本定義為已進入應用程式的時間的百分比<br/><ul><li>A = &lt;=5%</li><li>B = 6-10%</li><li>C = 11-20%</li><li>D = 21-50%</li><li>E = >50%</li></ul> | 重要 | &lt; A |
@@ -67,7 +69,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->如需更多詳細資訊，請參閱 [SonarQube 的量度定義](https://docs.sonarsource.com/sonarqube/latest/user-guide/code-metrics/metrics-definition/)。
+>如需更多詳細資訊，請參閱 [SonarQube 的量度定義](https://docs.sonarsource.com/sonarqube-server/latest/user-guide/code-metrics/metrics-definition/)。
 
 >[!NOTE]
 >
