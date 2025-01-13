@@ -4,7 +4,7 @@ description: 了解 Adobe Managed Services 上的 Cloud Manager 2024.12.0 版。
 feature: Release Information
 exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
 source-git-commit: 60db60be95318ebf6f2af91a94a9475604a15003
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '359'
 ht-degree: 100%
 
