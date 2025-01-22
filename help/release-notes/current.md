@@ -1,20 +1,19 @@
 ---
-title: Cloud Manager 2024.12.0 版發行說明
-description: 了解 Adobe Managed Services 上的 Cloud Manager 2024.12.0 版。
+title: Cloud Manager 2025.1.0 版發行說明
+description: 了解 Adobe Managed Services 上的 Cloud Manager 2025.1.0 版。
 feature: Release Information
-exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
-source-git-commit: 60db60be95318ebf6f2af91a94a9475604a15003
-workflow-type: ht
-source-wordcount: '359'
-ht-degree: 100%
+source-git-commit: c25508b24f00b8f8cfa7bae3cc4b0d6ecf684db3
+workflow-type: tm+mt
+source-wordcount: '193'
+ht-degree: 32%
 
 ---
 
-# Adobe Managed Services 上的 Cloud Manager 2024.12.0 版發行說明 {#release-notes}
+# Adobe Managed Services 上的 Cloud Manager 2025.1.0 版發行說明 {#release-notes}
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release -->
 
-了解 Adobe Managed Services 上的 [!UICONTROL Cloud Manager] 2024.12.0 版。
+了解 Adobe Managed Services 上的 [!UICONTROL Cloud Manager] 2025.1.0 版。
 
 >[!NOTE]
 >
@@ -24,39 +23,33 @@ ht-degree: 100%
 
 <!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-[!UICONTROL Cloud Manager] 2024.12.0 版的發行日期為 2024 年 12 月 5 日。
+[!UICONTROL Cloud Manager] 2025.1.0的發行日期為2024年1月22日星期三。
 
-下一個版本預計於 2025 年 1 月 23 日發行。
+下一個預計發行日期為2025年2月13日星期四。
 
 ## 新增功能 {#what-is-new}
 
-<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. --> <!-- CMGR-45683 -->
+**程式碼品質規則：** Cloud Manager程式碼品質步驟將開始使用SonarQube Server 9.9搭配Cloud Manager 2025.2.0版本（排定於2025年2月13日星期四）。
 
-* 從 2025 年 2 月 13 日 (星期四) 開始，Cloud Manager 程式碼品質步驟現在使用已升級的 SonarQube 版本 9.9.5.90363。
+若要準備，更新的SonarQube規則現在可在[程式碼品質規則](/help/using/code-quality-testing.md#code-quality-testing-step)取得。
 
-  更新後的規則 (可透過[此連結](/help/using/code-quality-testing.md#code-quality-testing-step)供 AMS 使用) 會決定 Cloud Manager 管道的安全性評分和程式碼品質。此更新可能會影響您的品質門檻，也可能會阻礙部署。
+您可以設定以下管道文字變數（請參閱底下的熒幕擷圖），「提前檢查」新規則：
 
-## 早期採用方案 {#early-adoption}
+`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-成為 Cloud Manager 早期採用方案的一部分，並有機會測試即將推出的功能。
+此外，設定下列變數，以確保程式碼品質步驟會針對相同的認可執行（通常針對相同的`commitId`略過）：
 
-### 自備 Git - 現在支援 GitLab 和 Bitbucket {#gitlab-bitbucket}
+`CM_DISABLE_BUILD_REUSE` = `true`
 
-<!-- BOTH CS & AMS -->
-
-**自備 Git** 功能已擴充，以納入對 GitLab 和 Bitbucket 等外部存放庫的支援。這項新的支援功能是對私人和企業 GitHub 存放庫現有支援的補充。當您新增這些新存放庫時，也可以將它們直接連結到您的管道。您可以將這些存放庫託管在公有雲平台上或私有雲或基礎架構內。這項整合也消除了與 Adobe 存放庫持續進行代碼同步的需求，並提供了在提取請求合併到主分支之前，驗證提取請求的功能。
-
-對於使用外部存放庫 (不包括 GitHub 託管的存放庫) 且&#x200B;**部署觸發程序**&#x200B;設定為「**在 Git 變更時**」的管道，現在會自動啟動。
-
-請查看[在 Cloud Manager 中新增外部存放庫](/help/managing-code/external-repositories.md)。
-
-![新增存放庫對話框](/help/release-notes/assets/repositories-add-release-notes.png)
+![變數設定頁面](/help/release-notes/assets/variables-config.png)
 
 >[!NOTE]
 >
->目前，立即可用的提取請求代碼品質檢查僅限於 GitHub 託管的存放庫，但我們正在進行一項更新以將此功能擴展到其他 Git 供應商。
+>Adobe建議建立新的CI/CD程式碼品質管道，並設定至與您的主要生產管道相同的分支。 在2025年2月13日發行版本之前&#x200B;*設定適當的變數*，以驗證新的強制規則不會引入封鎖程式。
 
-如果您有興趣測試此新功能並分享您的意見回饋，請使用與您的 Adobe ID 關聯的電子郵件地址向 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) 傳送電子郵件。請務必包含您要使用的 Git 平台以及您是否使用私人/公開或企業存放庫結構。
+<!-- ## Early adoption program {#early-adoption}
+
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
 
 
 <!-- ## Bug fixes {#bug-fixes}

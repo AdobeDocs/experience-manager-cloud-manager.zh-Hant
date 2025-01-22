@@ -2,10 +2,10 @@
 title: 自訂程式碼品質規則
 description: 探索 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則的具體細節。這些規則以 AEM Engineering 的最佳實務為基礎。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 8811ed130b2c7a37a0c811c308b57acf0872e9c8
-workflow-type: ht
-source-wordcount: '3514'
-ht-degree: 100%
+source-git-commit: 1b7b703f7cba69878bd98aa971844741ebea7dba
+workflow-type: tm+mt
+source-wordcount: '3490'
+ht-degree: 99%
 
 ---
 
@@ -16,11 +16,13 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->在此提供的程式碼範例僅供說明用途。請參閱 [SonarQube 的概念文件說明](https://docs.sonarsource.com/sonarqube/latest/)以了解其中的概念和品質規則。
+>在此提供的程式碼範例僅供說明用途。請參閱 [SonarQube 的概念文件說明](https://docs.sonarsource.com/sonarqube-server/latest/)以了解其中的概念和品質規則。
 
->[!NOTE]
+由於 Adobe 專屬資訊，完整的 SonarQube 規則無法下載。若要下載完整的規則清單，可[使用此連結](/help/assets/CodeQuality-rules-latest-AMS.xlsx)。繼續閱讀本文件以取得規則的說明和範例。
+
+>[!IMPORTANT]
 >
->由於 Adobe 專屬資訊，完整的 SonarQube 規則無法下載。若要下載完整的規則清單，可[使用此連結](/help/assets/CodeQuality-rules-latest-AMS.xlsx)。繼續閱讀本文件以取得規則的說明和範例。
+>從 2025 年 2 月 13 日 (星期四) (Cloud Manager 2025.2.0) 開始，Cloud Manager 程式碼品質將使用更新後的 SonarQube 9.9 版本和更新後的規則清單 (可[在此處下載](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx))。
 
 ## SonarQube 規則 {#sonarqube-rules}
 
@@ -179,7 +181,7 @@ public void orDoThis() {
 ### `ResourceResolver` 物件應保持關閉 {#resourceresolver-objects-should-always-be-closed}
 
 * **索引碼**：CQRules:CQBP-72
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：重大
 * **始自**：2018.4.0 版本
 
@@ -221,7 +223,7 @@ public void orDoThis(Session session) throws Exception {
 ### 請勿使用 Sling Servlet 路徑註冊 Servlet {#do-not-use-sling-servlet-paths-to-register-servlets}
 
 * **索引碼**：CQRules:CQBP-75
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：重大
 * **始自**：2018.4.0 版本
 
@@ -241,7 +243,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 ### 應記錄或擲回攔截到的例外狀況，而非執行兩者。 {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 * **索引碼**：CQRules:CQBP-44---CatchAndEitherLogOrThrow
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
@@ -283,7 +285,7 @@ public void orDoThis() throws MyCustomException {
 ### 避免 Log 陳述式後馬上接著 Throw 陳述式 {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
 * **索引碼**：CQRules:CQBP-44---ConsecutivelyLogAndThrow
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
@@ -309,7 +311,7 @@ public void doThis() throws Exception {
 ### 處理 GET 或 HEAD 要求時避免在 INFO 上進行記錄 {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 * **索引碼**：CQRules:CQBP-44---LogInfoInGetOrHeadRequests
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 
 一般而言，應該使用 INFO 紀錄層級來區分重要操作，並且預設情況下，會將 AEM 設定為在 INFO 或以上層級記錄。GET 和 HEAD 方法應僅能唯讀操作，因此不構成重要操作。在 INFO 層級記錄以回應 GET 或 HEAD 要求可能會產生大量記錄雜訊，而使得在記錄檔中識別有用資訊變得更加困難。處理 GET 或 HEAD 要求時，如果出現問題，記錄應位在 WARN 或 ERROR 層級。若需要更深入的疑難排解資訊，記錄應設在 DEBUG 或 TRACE 層級。
@@ -337,7 +339,7 @@ public void doGet() throws Exception {
 ### 請勿使用 `Exception.getMessage()` 作為記錄陳述式的第一個參數 {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
 * **索引碼**：CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
@@ -370,7 +372,7 @@ public void doThis() {
 ### Catch 區塊中的記錄應在 WARN 或 ERROR 層級進行 {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 * **索引碼**：CQRules:CQBP-44---WrongLogLevelInCatchBlock
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
@@ -403,7 +405,7 @@ public void doThis() {
 ### 不可將堆疊追蹤列印到控制台 {#do-not-print-stack-traces-to-the-console}
 
 * **索引碼**：CQRules:CQBP-44---ExceptionPrintStackTrace
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
@@ -436,7 +438,7 @@ public void doThis() {
 ### 不可輸出到標準輸出或標準錯誤 {#do-not-output-to-standard-output-or-standard-error}
 
 * **索引碼**：CQRules:CQBP-44—LogLevelConsolePrinters
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
@@ -469,7 +471,7 @@ public void doThis() {
 ### 避免用硬式編碼寫入 `/apps` 和 `/libs` 路徑 {#avoid-hardcoded-apps-and-libs-paths}
 
 * **索引碼**：CQRules:CQBP-71
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
@@ -494,7 +496,7 @@ public void doThis(Resource resource) {
 ### 不應使用 Sling 排程器 {#sonarqube-sling-scheduler}
 
 * **索引碼**：CQRules:AMSCORE-554
-* **類型**：程式碼異味 / Cloud Service 相容性
+* **型別**： `Code Smell` /Cloud Service相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -505,7 +507,7 @@ public void doThis(Resource resource) {
 ### 不應使用 AEM 已過時的 API {#sonarqube-aem-deprecated}
 
 * **索引碼**：AMSCORE-553
-* **類型**：程式碼異味 / Cloud Service 相容性
+* **型別**： `Code Smell` /Cloud Service相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -627,7 +629,7 @@ public class DontDoThis implements Page {
 ### 預設的製作模式不應該是 Classic UI {#oakpal-default-authoring}
 
 * **索引碼**：ClassicUIAuthoringMode
-* **類型**：程式碼異味 / Cloud Service 相容性
+* **型別**： `Code Smell` /Cloud Service相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -636,7 +638,7 @@ OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 會定義 AEM 
 ### 包含對話框的元件應該有 Touch UI 對話框 {#oakpal-components-dialogs}
 
 * **索引碼**：ComponentWithOnlyClassicUIDialog
-* **類型**：程式碼異味 / Cloud Service 相容性
+* **型別**： `Code Smell` /Cloud Service相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -651,7 +653,7 @@ AEM 現代化工具文件提供了有關如何將元件從 Classic UI 轉換為 
 ### 不應使用反向複寫代理程式 {#oakpal-reverse-replication}
 
 * **索引碼**：ReverseReplication
-* **類型**：程式碼異味 / Cloud Service 相容性
+* **型別**： `Code Smell` /Cloud Service相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -693,7 +695,7 @@ AEM 用戶端資料庫可能包含影像和字體之類的靜態資源如[使用
 ### Cloud Service 的使用與工作流程不相容 {#oakpal-usage-cloud-service}
 
 * **索引碼**：CloudServiceIncompatibleWorkflowProcess
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：阻斷因素
 * **始自**：2021.2.0 版本
 
@@ -704,7 +706,7 @@ AEM 用戶端資料庫可能包含影像和字體之類的靜態資源如[使用
 ### 不建議使用靜態範本而支持可編輯範本 {#oakpal-static-template}
 
 * **索引碼**：StaticTemplateUsage
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -715,7 +717,7 @@ AEM 用戶端資料庫可能包含影像和字體之類的靜態資源如[使用
 ### 不建議使用舊版基礎元件 {#oakpal-usage-legacy}
 
 * **索引碼**：LegacyFoundationComponentUsage
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -726,7 +728,7 @@ AEM 用戶端資料庫可能包含影像和字體之類的靜態資源如[使用
 ### 自訂搜尋索引定義節點必須是 `/oak:index` 的直接子節點 {#oakpal-custom-search}
 
 * **索引碼**：OakIndexLocation
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -735,7 +737,7 @@ AEM Cloud Service 要求自訂搜尋索引定義 (即類型 `oak:QueryIndexDefin
 ### 自訂搜尋索引定義節點的 compatVersion 必須為 2 {#oakpal-custom-search-compatVersion}
 
 * **索引碼**：IndexCompatVersion
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -744,7 +746,7 @@ AEM Cloud Service 要求自訂搜尋索引定義 (即類型 `oak:QueryIndexDefin
 ### 自訂搜尋索引定義節點的子孫節點必須屬於 `nt:unstructured` 類型 {#oakpal-descendent-nodes}
 
 * **索引碼**：IndexDescendantNodeType
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -753,7 +755,7 @@ AEM Cloud Service 要求自訂搜尋索引定義 (即類型 `oak:QueryIndexDefin
 ### 自訂搜尋索引定義節點必須包含名為 `indexRules` 並有下層的下層節點 {#oakpal-custom-search-index}
 
 * **索引碼**：IndexRulesNode
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -762,7 +764,7 @@ AEM Cloud Service 要求自訂搜尋索引定義 (即類型 `oak:QueryIndexDefin
 ### 自訂搜尋索引定義節點必須遵循命名慣例 {#oakpal-custom-search-definitions}
 
 * **索引碼**：IndexName
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -771,7 +773,7 @@ AEM Cloud Service 要求自訂搜尋索引定義 (即 `oak:QueryIndexDefinition`
 ### 自訂搜尋索引定義節點必須使用索引類型 lucene {#oakpal-index-type-lucene}
 
 * **索引碼**：IndexType
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -780,7 +782,7 @@ AEM Cloud Service 要求自訂搜尋索引定義 (即類型 `oak:QueryIndexDefin
 ### 自訂搜尋索引定義節點不得包含名為 `seed` 的屬性 {#oakpal-property-name-seed}
 
 * **索引碼**：IndexSeedProperty
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
@@ -789,7 +791,7 @@ AEM Cloud Service 禁止自訂搜尋索引定義 (即 `oak:QueryIndexDefinition`
 ### 自訂搜尋索引定義節點不得包含名為 `reindex` 的屬性 {#oakpal-reindex-property}
 
 * **索引碼**：IndexReindexProperty
-* **類型**：程式碼異味
+* **類型**：`Code Smell`
 * **嚴重度**：輕微
 * **始自**：2021.2.0 版本
 
