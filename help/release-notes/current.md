@@ -2,10 +2,11 @@
 title: Cloud Manager 2025.1.0 版發行說明
 description: 了解 Adobe Managed Services 上的 Cloud Manager 2025.1.0 版。
 feature: Release Information
-source-git-commit: c25508b24f00b8f8cfa7bae3cc4b0d6ecf684db3
+exlid: 669b1f2d8fc68526eb091e0f93f70ab93033d193
+source-git-commit: 434740b5ad2dafd5a6c55d0272cf5effdfa6baac
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 32%
+source-wordcount: '196'
+ht-degree: 31%
 
 ---
 
@@ -29,7 +30,7 @@ ht-degree: 32%
 
 ## 新增功能 {#what-is-new}
 
-**程式碼品質規則：** Cloud Manager程式碼品質步驟將開始使用SonarQube Server 9.9搭配Cloud Manager 2025.2.0版本（排定於2025年2月13日星期四）。
+**程式碼品質規則 — Sonar Cube升級：** Cloud Manager程式碼品質步驟將開始使用SonarQube Server 9.9搭配Cloud Manager 2025.2.0版本，預計於2025年2月13日星期四推出。
 
 若要準備，更新的SonarQube規則現在可在[程式碼品質規則](/help/using/code-quality-testing.md#code-quality-testing-step)取得。
 
