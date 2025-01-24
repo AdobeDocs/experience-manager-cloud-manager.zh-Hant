@@ -3,9 +3,9 @@ title: 維持環境一致性的內容複製功能
 description: 使用者可以使用 Cloud Manager 中的內容複製功能，依需求將可變內容從 Adobe Managed Services 託管的 Adobe Experience Manager 6.x 生產環境複製到低階環境以進行測試。
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: 84b3366481c2efd497583627eac67046452f6c38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1321'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 98%
 
    只有以 `/content`、`/conf`、`/etc`、`/var/workflow/models` 或 `/var/commerce` 開頭的路徑才可以包含在內。
 
-1. 按一下![資料夾新增圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg) **新增路徑**&#x200B;以新增（或包含）內容集的路徑。
+1. 按一下![新增資料夾圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg)**「新增路徑」**&#x200B;來新增 (或包含) 內容集的路徑。
 
 1. (選用) 如有必要，請重複前兩個步驟，並視需要新增其他路徑 (最多 50 個)。否則，請繼續下一步。
 
