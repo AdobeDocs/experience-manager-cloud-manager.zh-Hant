@@ -3,9 +3,9 @@ title: 自訂程式碼品質規則
 description: 探索 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則的具體細節。這些規則以 AEM Engineering 的最佳實務為基礎。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 1b7b703f7cba69878bd98aa971844741ebea7dba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3490'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -496,7 +496,7 @@ public void doThis(Resource resource) {
 ### 不應使用 Sling 排程器 {#sonarqube-sling-scheduler}
 
 * **索引碼**：CQRules:AMSCORE-554
-* **型別**： `Code Smell` /Cloud Service相容性
+* **類型**： `Code Smell` /雲端服務相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -507,7 +507,7 @@ public void doThis(Resource resource) {
 ### 不應使用 AEM 已過時的 API {#sonarqube-aem-deprecated}
 
 * **索引碼**：AMSCORE-553
-* **型別**： `Code Smell` /Cloud Service相容性
+* **類型**： `Code Smell` /雲端服務相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -629,7 +629,7 @@ public class DontDoThis implements Page {
 ### 預設的製作模式不應該是 Classic UI {#oakpal-default-authoring}
 
 * **索引碼**：ClassicUIAuthoringMode
-* **型別**： `Code Smell` /Cloud Service相容性
+* **類型**： `Code Smell` /雲端服務相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -638,7 +638,7 @@ OSGi 設定 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 會定義 AEM 
 ### 包含對話框的元件應該有 Touch UI 對話框 {#oakpal-components-dialogs}
 
 * **索引碼**：ComponentWithOnlyClassicUIDialog
-* **型別**： `Code Smell` /Cloud Service相容性
+* **類型**： `Code Smell` /雲端服務相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
@@ -653,7 +653,7 @@ AEM 現代化工具文件提供了有關如何將元件從 Classic UI 轉換為 
 ### 不應使用反向複寫代理程式 {#oakpal-reverse-replication}
 
 * **索引碼**：ReverseReplication
-* **型別**： `Code Smell` /Cloud Service相容性
+* **類型**： `Code Smell` /雲端服務相容性
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
