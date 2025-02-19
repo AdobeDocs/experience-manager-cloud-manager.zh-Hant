@@ -3,9 +3,9 @@ title: 自訂程式碼品質規則
 description: 探索 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則的具體細節。這些規則以 AEM Engineering 的最佳實務為基礎。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: c50eb54b5603b4370f2d7907a2194477dcc3ba21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3523'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -883,14 +883,14 @@ AEM Cloud Service 禁止建立屬性含空格的索引定義。
 
 AEM Cloud Service 禁止建立包含 haystack 屬性的索引定義。
 
-### 索引定義的設定不應包含屬性： async-previous {#oakpal-indexing-async-previous-property}
+### 索引定義的設定不應包含以下屬性：async-previous {#oakpal-indexing-async-previous-property}
 
-* **Key**： IndexAsyncPreviousCheck
+* **索引鍵**：IndexAsyncPreviousCheck
 * **類型**：改善
 * **嚴重度**：輕微
 * **始自**：2025.2.0 版本
 
-AEM Cloud Service禁止建立包含async-previous屬性的索引定義。
+AEM Cloud Service 禁止建立包含 async-previous 屬性的索引定義。
 
 ## Dispatcher 最佳化工具 {#dispatcher-optimization-tool-rules}
 
