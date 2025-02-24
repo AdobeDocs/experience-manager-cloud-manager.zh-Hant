@@ -5,9 +5,9 @@ feature: Release Information
 exlid: 669b1f2d8fc68526eb091e0f93f70ab93033d193
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 source-git-commit: 51dd060ec9b922ace9ce537cac669c61154284e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '241'
-ht-degree: 20%
+ht-degree: 100%
 
 ---
 
@@ -17,36 +17,36 @@ ht-degree: 20%
 
 了解 Adobe Managed Services 上的 [!UICONTROL Cloud Manager] 2025.2.0 版。
 
-另請參閱Adobe Experience Manager as a Cloud Service ](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/release-notes/home)的[最新發行說明。
+另請參閱 [Adobe Experience Manager as a Cloud Service 最新發行說明](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/release-notes/home)。
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2025.2.0的發行日期為2025年2月13日星期四。
+[!UICONTROL Cloud Manager] 2025.2.0 版的發行日期為 2025 年 2 月 13 日 (星期四)。
 
-下一個預計發行日期為2025年3月13日星期四。
+下一個版本預計於 2025 年 3 月 13 日 (星期四) 發行。
 
 ## 新增功能 {#what-is-new}
 
 <!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. --> <!-- CMGR-45683 -->
 
-* **升級的SonarQube**
+* **升級的 SonarQube**
 
-  從2025年2月13日星期四開始，Cloud Manager程式碼品質步驟現在使用SonarQube 9.9.5.90363。
+  從 2025 年 2 月 13 日 (星期四) 起，Cloud Manager 程式碼品質步驟現在使用 SonarQube 9.9.5.90363。
 
-  更新的規則適用於AMS，位於[此連結](/help/using/code-quality-testing.md#code-quality-testing-step)，可決定Cloud Manager管道的安全性分數和程式碼品質。
+  更新後的規則 (可透過[此連結](/help/using/code-quality-testing.md#code-quality-testing-step)供 AMS 使用) 會決定 Cloud Manager 管道的安全性評分和程式碼品質。
 
-* SonarQube 9.9現在是所有客戶的預設程式碼品質掃描引擎。
+* SonarQube 9.9 現在是所有客戶的預設程式碼品質掃描引擎。
 
-* **Java 17和Java 21組建環境支援**
+* **Java 17 和 Java 21 建置環境支援**
 
-  客戶現在可以選擇使用Java 17或Java 21進行建置，受益於效能改善和新語言功能。 請參閱[建置環境](/help/getting-started/build-environment.md)以取得設定步驟，包括更新您的Maven專案說明和某些程式庫版本。
+  客戶現在可以選擇使用 Java 17 或 Java 21 進行建置，以便從效能改進和新語言功能中受惠。如需設定步驟 (包括更新 Maven 專案說明和特定程式庫版本)，請參閱[建置環境](/help/getting-started/build-environment.md)。
 
   >[!NOTE]
-  >針對Cloud Service環境，當組建版本設為Java 17或Java 21時，執行階段預設為Java 21。
+  >對於 Cloud Service 環境，當建置版本設定為 Java 17 或 Java 21 時，執行階段會預設為 Java 21。
 
-* **已延伸內容復本驗證**
+* **內容複製驗證已擴充**
 
-  已更新內容副本驗證規則。 在此版本中，如果在來源或目標環境中有活動的管道執行，則使用者無法再觸發內容副本。 使用者必須等到所有正在進行的管道執行完成，才能起始內容副本。
+  內容複製驗證規則已更新。在此版本中，如果來源或目的地環境中有作用中的管道執行，則使用者將無法再觸發內容複製。使用者必須等到所有進行中的管道執行完成後才能啟動內容複製。
 
 <!-- 
 ## Early adoption program {#early-adoption}
