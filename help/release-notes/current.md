@@ -3,9 +3,9 @@ title: Cloud Manager 2025.3.0 版發行說明
 description: 了解 Adobe Managed Services 上的 Cloud Manager 2025.3.0 版。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 31ae069c9e121963b4609af3f10ac08ab5539fb8
+source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '307'
 ht-degree: 27%
 
 ---
@@ -46,7 +46,6 @@ ht-degree: 27%
 
 ![檢查更新功能表選項](/help/release-notes/assets/check-for-updates-1.png)
 
-
 ![更新Service Pack對話方塊](/help/release-notes/assets/check-for-updates-2.png)
 
 可以在&#x200B;**活動**&#x200B;頁面上追蹤安裝和升級程式。
@@ -56,6 +55,8 @@ ht-degree: 27%
 ![核准服務頁面更新](/help/release-notes/assets/check-for-updates-3.png)
 
 如果您有興趣測試這項新功能並分享您的意見回饋，請聯絡您的Adobe客戶成功工程師。
+
+另請參閱開發環境的[Service Pack更新 — 早期採用者](/help/using/service-packs-environments.md)。
 
 
 <!-- ## Bug fixes {#bug-fixes}

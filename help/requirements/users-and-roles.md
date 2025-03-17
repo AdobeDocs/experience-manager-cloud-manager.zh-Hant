@@ -2,10 +2,10 @@
 title: 新增使用者和角色
 description: 了解如何使用 Admin Console 新增使用者和角色，並建立設定檔。
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '758'
-ht-degree: 100%
+source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+workflow-type: tm+mt
+source-wordcount: '762'
+ht-degree: 89%
 
 ---
 
@@ -101,18 +101,18 @@ Admin Console 是在整個組織中管理 Adobe 權益的中心位置。若要�
 
 1. 在左側導覽面板中按一下&#x200B;**使用者**，然後按一下使用者以進行修改。
 
-1. 按一下&#x200B;**產品**&#x200B;部份中的省略符號按鈕，並選取&#x200B;**編輯**。
+1. 按一下&#x200B;**產品**&#x200B;區段中的![其他圖示，省略符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下&#x200B;**編輯**。
 
    ![編輯使用者](/help/assets/admin-console-edit-user.png)
 
-1. 在&#x200B;**編輯產品和使用者群組**&#x200B;對話框中，按一下加號按鈕並選取要指派給使用者的設定檔。
+1. 在&#x200B;**編輯產品和使用者群組**&#x200B;對話方塊中，按一下![新增圖示，加號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)並選取要指派給使用者的設定檔。
 
-   * 如果使用者已經被指派了角色，則加號按鈕是編輯按鈕 (鉛筆)，但操作方式相同。
+   * 如果使用者已經指派給角色，![新增圖示，加上](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)按鈕是編輯按鈕（鉛筆），但運作方式相同。
 
    ![編輯產品和使用者群組](/help/assets/admin-console-edit-products-and-user-groups.png)
 
 1. 按一下&#x200B;**儲存**，即可將設定檔儲存給使用者。
 
-重複相同的步驟即可將設定檔指派給使用者群組，但需從左側導覽面板選取&#x200B;**使用者群組** (位於&#x200B;**使用者**&#x200B;索引標籤上)。按一下使用者群組並選取&#x200B;**已指派的產品設定檔**&#x200B;索引標籤，然後按一下&#x200B;**指派產品設定檔**，即可指派設定檔。
+重複相同的步驟即可將設定檔指派給使用者群組，但需從左側導覽面板選取&#x200B;**使用者群組** (位於&#x200B;**使用者**&#x200B;索引標籤上)。按一下使用者群組並選取&#x200B;**指派的產品設定檔**&#x200B;按一下&#x200B;**指派產品設定檔**&#x200B;以指派設定檔。
 
 ![將設定檔指派給群組](/help/assets/admin-console-edit-user-groups.png)

@@ -3,10 +3,10 @@ title: 在 Cloud Manager 中新增私人存放庫
 description: 了解如何設定 Cloud Manager 與您自己的私人 GitHub 存放庫搭配使用。
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: 5090d7ee9a6742d71122acda9901d074bc254305
-workflow-type: ht
-source-wordcount: '818'
-ht-degree: 100%
+source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
+workflow-type: tm+mt
+source-wordcount: '815'
+ht-degree: 96%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 100%
 
    ![新增自己的存放庫](/help/assets/repositories/add-own-github.png)
 
-1. 按一下&#x200B;**儲存**。
+1. 按一下「**儲存**」。
 
 >[!TIP]
 >
@@ -90,8 +90,7 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
 
 請注意，**類型**&#x200B;欄可以輕鬆識別 Adobe 提供的存放庫 (**Adobe**) 和您自己的 GitHub 存放庫 (**GitHub**)。
 
-若稍後要返回存放庫並完成驗證，請前往「**存放庫**」頁面。按一下您新增之 GitHub 存放庫旁的省略符號按鈕，然後從下拉式選單中選取「**所有權驗證**」。
-
+若稍後要返回存放庫並完成驗證，請前往「**存放庫**」頁面。按一下您新增的GitHub存放庫旁的![更多圖示，省略符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下&#x200B;**擁有權驗證**。
 
 
 ## 將私人存放庫與 Cloud Manager 搭配使用 {#using}
@@ -106,7 +105,7 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
 
 1. 對於每個提取請求，皆會自動建立[全端程式碼品質管道](/help/using/managing-pipelines.md)。此管道會在每次提取請求更新時啟動。
 
-1. GitHub 檢查會維持運作狀態，直到程式碼品質檢查完成。程式碼品質結果隨後會傳播至 GitHub 檢查。
+1. GitHub檢查會維持在執行狀態，直到程式碼品質檢查完成為止。 程式碼品質結果隨後會傳播至 GitHub 檢查。
 
    ![GitHub 程式碼品質檢查](/help/assets/repositories/github-code-quality.png)
 

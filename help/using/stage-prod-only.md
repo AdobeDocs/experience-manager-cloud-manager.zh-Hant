@@ -1,21 +1,21 @@
 ---
-title: 僅限中繼和僅限生產管道
+title: 僅限階段和僅限生產環境的管道 — 早期採用者
 description: 了解如何使用專用管道分割中繼和生產部署。
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 03f7429fd2c4a6dd4c8ae3228eff9c8cdab1ded8
-workflow-type: ht
-source-wordcount: '932'
-ht-degree: 100%
+source-git-commit: 2c6f5692ffa31e02d7338e68063d0c1c03a0c73b
+workflow-type: tm+mt
+source-wordcount: '936'
+ht-degree: 98%
 
 ---
 
-# 僅限中繼和僅限生產的管道 {#stage-prod-only}
+# 僅限中繼和僅限生產的管道（早期採用者） {#stage-prod-only}
 
 了解如何使用專用管道分割中繼和生產部署。
 
 >[!NOTE]
 >
->此功能僅適用於[早期採用者計劃](/help/release-notes/current.md#early-adoption)。
+>此功能僅適用於[早期採用者計劃](/help/release-notes/2024/2024-8-0.md)。
 
 ## 概觀 {#overview}
 
@@ -116,3 +116,4 @@ ht-degree: 100%
 對於僅限生產管道，請務必識別您想要部署到生產環境的來源成品。這些詳細資訊可於&#x200B;**成品準備**&#x200B;步驟中找到。您可以瀏覽到這些執行以取得更多詳細資訊和記錄。
 
 ![成品詳細資訊](/help/assets/configure-pipelines/prod-only-pipeline-run.png)
+

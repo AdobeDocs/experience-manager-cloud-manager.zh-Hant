@@ -2,10 +2,10 @@
 title: 導覽 Cloud Manager UI
 description: 了解 Cloud Manager UI 的組織方式以及如何導覽此 UI 來管理您的方案和環境。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1435'
-ht-degree: 100%
+source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+workflow-type: tm+mt
+source-wordcount: '1439'
+ht-degree: 96%
 
 ---
 
@@ -52,11 +52,11 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ![Experience Cloud 標頭](assets/experience-cloud-header.png)
 
-1. 標頭左側的漢堡圖示為一個下拉式選單，可存取個別方案特定部分的標籤。根據內容，也能讓您在授權儀表板和「**[我的方案](#my-programs-console)**」控制台間切換。
+1. 標題左側的![顯示功能表圖示，漢堡](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)圖示是下拉式功能表，可存取個別程式特定部分的索引標籤。 根據內容，也能讓您在授權儀表板和「**[我的方案](#my-programs-console)**」控制台間切換。
    * 授權儀表板僅適用於 AEM as a Cloud Service 方案，不適用於 AMS 方案。
    * 若要確定您的方案所提供的服務類型 (AMS 或 AEMaaCS)，請參閱本文件的[「方案卡片」區段](#program-cards)。
 1. 無論您位於 Cloud Manager 中的哪個位置，Cloud Manager 按鈕皆會將您帶回 Cloud Manager 的「我的方案」控制台。
-1. 按一下「意見回饋」按鈕，即可向 Adobe 提供有關 Cloud Manager 的意見回饋。
+1. 按一下&#x200B;**意見反應**，向Adobe提供有關Cloud Manager的意見反應。
 1. 組織選擇器會顯示您目前所登入的組織 (在本例中為 Foundation Internal)。如果您的 Adobe ID 與多個組織關聯，可按一下以切換到另一個組織。
 1. 按一下解決方案切換器，即可快速跳轉到其他 Experience Cloud 解決方案。
 1. 使用「說明」圖示可快速存取學習和支援資源。
@@ -122,7 +122,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ![資訊](assets/information-view.png)
 
-透過省略符號圖示，您能存取可對方案執行的其他動作。
+![更多圖示，省略符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)可讓您存取可以對方案執行的其他動作。
 
 ![方案的省略符號按鈕](assets/program-ellipsis.png)
 

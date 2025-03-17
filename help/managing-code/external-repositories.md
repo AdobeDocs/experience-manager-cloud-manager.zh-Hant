@@ -1,11 +1,11 @@
 ---
-title: 在 Cloud Manager 中新增外部存放庫 (早期採用者)
+title: 在Cloud Manager中新增外部存放庫 — 早期採用者
 description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager 支援與 GitHub、GitLab 和 Bitbucket 存放庫整合。
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: e7e2268f866105970e02d4bc54c46613749e5ac0
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
+workflow-type: tm+mt
+source-wordcount: '715'
+ht-degree: 98%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 100%
    | --- | --- |
    | **使用現有的存取權杖** | 如果您已為組織提供存放庫存取權杖，且有權存取多個存放庫，您可以選取現有的權杖。使用&#x200B;**權杖名稱**&#x200B;下拉清單，選取想要套用至存放庫的權杖。否則，請新增新的存取權杖。 |
    | **新增新的存取權杖** | **存放庫類型：GitHub**<br>• 在&#x200B;**權杖名稱**&#x200B;文字欄位，輸入您建立的存取權杖名稱。<br>• 依照 [GitHub 文件](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的指示，建立個人存取權杖。<br>• 需要權限：<br>  • `Read access to metadata`。<br>  • `Read and write access to code and pull requests`。<br>• 在&#x200B;**存取權杖**&#x200B;欄位，貼上您所建立的權杖。 |
-   |  | **存放庫類型：GitLab**<br>• 在&#x200B;**權杖名稱**&#x200B;文字欄位，輸入您建立的存取權杖名稱。<br>• 依照 [GitLab 文件](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)中的指示，建立個人存取權杖。<br>• 需要權限：<br>  • `api`<br>  • `read_api`<br>  • `read_repository`<br>  • `write_repository`<br>• 在&#x200B;**存取權杖**&#x200B;欄位，貼上您所建立的權杖。 |
+   |  | **存放庫類型：GitLab**<br>• 在&#x200B;**權杖名稱**&#x200B;文字欄位，輸入您建立的存取權杖名稱。<br>• 依照 [GitLab 文件](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的指示，建立個人存取權杖。<br>• 需要權限：<br>  • `api`<br>  • `read_api`<br>  • `read_repository`<br>  • `write_repository`<br>• 在&#x200B;**存取權杖**&#x200B;欄位，貼上您所建立的權杖。 |
    |  | **存放庫類型：Bitbucket**<br>• 在&#x200B;**權杖名稱**&#x200B;文字欄位，輸入您建立的存取權杖名稱。<br>• 使用 [Bitbucket 文件](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)建立存放庫存取權杖。<br>• 需要權限：<br>  • `Read and write access to code and pull requests`。 |
 
    >[!NOTE]

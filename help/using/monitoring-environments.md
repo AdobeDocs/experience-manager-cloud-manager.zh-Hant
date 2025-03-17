@@ -2,10 +2,10 @@
 title: 監視環境
 description: 了解如何在 Cloud Manager 中監視環境。
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '910'
-ht-degree: 100%
+source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+workflow-type: tm+mt
+source-wordcount: '911'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Managed Services 會設定臨界值，您可以在 [!UICONTROL Cloud Manag
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 按一下您想要監視之方案的省略符號按鈕。
+1. 按一下您要監視之程式的![其他圖示，省略符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 1. 在選單中的「**管理**」標題下，按一下「**顯示監視**」開啟「**報告**」頁面，顯示出系統監視資訊。
 
    ![設定](/help/assets/first-timea1.png)
