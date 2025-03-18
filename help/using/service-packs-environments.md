@@ -1,7 +1,8 @@
 ---
 title: 開發環境的Service Pack更新 — 早期採用者
 description: 瞭解您現在如何透過Cloud Manager使用者介面為開發環境啟動Service Pack更新。
-source-git-commit: 8da0e6cb4587bc7dfc79bec415ff3aeef2d12e3e
+exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
+source-git-commit: 91691878a2c135cc9fe123c06afcf775a962a2e0
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 3%
@@ -14,7 +15,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->此功能僅適用於[早期採用者計劃](/help/release-notes/current.md)。
+>此功能僅適用於[早期採用者計劃](/help/release-notes/current.md#early-adoption)。
 
 ## 概觀 {#service-pack-updates-overview}
 
@@ -91,5 +92,3 @@ ht-degree: 3%
 Service Pack安裝已取消，且不會套用任何變更。
 
    ![拒絕Service Pack](/help/using/assets/service-pack-reject.png)
-
-

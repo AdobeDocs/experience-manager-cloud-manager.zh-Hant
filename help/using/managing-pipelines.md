@@ -2,10 +2,10 @@
 title: 管理管道
 description: 了解如何管理現有管道，包括執行、編輯它們，並將其刪除。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
+source-git-commit: 91691878a2c135cc9fe123c06afcf775a962a2e0
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 73%
+source-wordcount: '1054'
+ht-degree: 60%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 73%
 
 按一下「**檢視詳細資訊**」查看[管道執行的詳細資訊](#view-details)。
 
-## 執行管道 {#running-pipelines}
+## 執行管道 {#run-one-pipeline}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 1. 瀏覽至「**管道**」卡片 (在「**方案概觀**」頁面)。
@@ -77,6 +77,23 @@ ht-degree: 73%
    您可以按一下![更多圖示，再按一下省略符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)並按一下&#x200B;**[檢視詳細資料](#view-details)**，以檢視執行的詳細資料。
 
    視管道型別而定，您可以按一下![更多圖示、省略符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)再按一下&#x200B;**取消**&#x200B;來取消執行。
+
+## 執行多個管道 {#run-multiple-pipelines}
+
+有了Cloud Manager，您可以同時執行多個管道，改善Adobe Managed Services (AMS)客戶的部署效率。 **執行選取的**&#x200B;功能可讓您選取多個管道並觸發它們一次執行。 它可減少個別執行管道的手動工作量，並最佳化建置和部署工作流程。
+
+**若要執行多個管道：**
+
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，並選取適當的組織和方案。
+1. 從左側功能表，按一下![工作流程圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**。
+1. 在&#x200B;**管道**頁面的表格中，選取您要執行管道旁的核取方塊。
+如有必要，請按一下![篩選圖示、漏斗](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **篩選**，依環境、已部署的程式碼型別或兩者來排序管道。
+1. 在頁面的右上角附近，按一下&#x200B;**執行選取的專案(x)**。
+1. 在&#x200B;**執行選取的管道(x)**&#x200B;對話方塊中，按一下&#x200B;**執行(x)**。
+
+   **執行**&#x200B;按鈕反映了可繼續的管道數。 例如，您可能選取了四個管道，但其中一個已經在執行。 或者，連結至所選管道的環境已不存在。 在這種情況下，系統會進行相應的調整。 按鈕更新為「執行(3)」，表示三個管道可以繼續。
+
+1. 管道開始執行，且已在&#x200B;**管道**&#x200B;清單中更新其狀態。
 
 ## 編輯管道 {#editing-pipelines}
 
