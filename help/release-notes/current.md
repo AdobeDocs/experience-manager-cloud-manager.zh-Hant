@@ -3,10 +3,10 @@ title: Cloud Manager 2025.3.0 版發行說明
 description: 了解 Adobe Managed Services 上的 Cloud Manager 2025.3.0 版。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: bb57be6d2cbab8ff47b368bab59cb3072f78b235
+source-git-commit: 55b33db1bf80f066b1a66bc87c0abeefa4771871
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 27%
+source-wordcount: '150'
+ht-degree: 42%
 
 ---
 
@@ -32,31 +32,34 @@ ht-degree: 27%
 
   ![執行選取的管道對話方塊](/help/release-notes/assets/run-selected-pipelines.png)
 
+  另請參閱[執行多個管道](/help/using/managing-pipelines.md#run-multiple-pipelines)
 
 
-## 早期採用方案 {#early-adoption}
+<!--
+## Early adoption program {#early-adoption}
 
-成為 Cloud Manager 早期採用方案的一部分，並有機會測試即將推出的功能。
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features.
 
-### AMS Cloud Manager客戶的自助服務套件更新
+### Self-service Service Pack updates for AMS Cloud Manager customers 
 
-作為率先採用者計畫的一部分，Adobe Managed Services Cloud Manager客戶現在可以透過&#x200B;**Cloud Manager**&#x200B;使用者介面執行自助服務Service Pack更新。 此功能目前僅&#x200B;*可用於開發環境*，並且包括有限失敗的錯誤報告。
+As part of the early adopters program, Adobe Managed Services Cloud Manager customers can now perform self-service service pack updates through the **Cloud Manager** user interface. This feature is currently available *only for development environments* and includes limited error reporting for failures.  
 
-客戶可以在&#x200B;**環境**&#x200B;區段（**三點功能表**）下的&#x200B;**方案總覽**&#x200B;頁面上檢視Service Pack更新。
+Customers can check for service pack updates on the **Program Overview** page under the **Environments** section (**three-dot menu**).
 
-![檢查更新功能表選項](/help/release-notes/assets/check-for-updates-1.png)
+![Check for updates menu option](/help/release-notes/assets/check-for-updates-1.png)
 
-![更新Service Pack對話方塊](/help/release-notes/assets/check-for-updates-2.png)
+![Update Service Pack dialog box](/help/release-notes/assets/check-for-updates-2.png)
 
-可以在&#x200B;**活動**&#x200B;頁面上追蹤安裝和升級程式。
+The installation and upgrade process can be tracked on the **Activity** page. 
 
-程式一旦完成，客戶必須&#x200B;**核准執行**，Service Pack升級才能順利完成。
+Once the process is complete, customers must **approve the execution** for the service pack upgrade to finalize successfully.
 
-![核准服務頁面更新](/help/release-notes/assets/check-for-updates-3.png)
+![Approve service page update](/help/release-notes/assets/check-for-updates-3.png)
 
-如果您有興趣測試這項新功能並分享您的意見回饋，請聯絡您的Adobe客戶成功工程師。
+If you are interested in testing this new feature and sharing your feedback, contact your Adobe Customer Success Engineer.
 
-另請參閱開發環境的[Service Pack更新 — 早期採用者](/help/using/service-packs-environments.md)。
+See also [Service Pack Updates for Development Environments - Early Adopter](/help/using/service-packs-environments.md).
+-->
 
 
 
