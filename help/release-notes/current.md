@@ -6,7 +6,7 @@ exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 source-git-commit: 81894345cd4e0921f3734f6e09a82c192d20f9dd
 workflow-type: tm+mt
 source-wordcount: '150'
-ht-degree: 42%
+ht-degree: 96%
 
 ---
 
@@ -20,17 +20,17 @@ ht-degree: 42%
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2025.3.0的發行日期為2025年3月13日星期四。
+[!UICONTROL Cloud Manager] 2025.3.0 版的發行日期為 2025 年 3 月 13 日星期四。
 
-下一個預計發行日期為2025年4月10日星期四。
+下一個版本預計於 2025 年 4 月 10 日星期四發行。
 
 ## 最新資訊 {#what-is-new}
 
 * **執行多個管道**
 
-  在管道頁面上已引入同時執行多個管道的功能。 使用者必須至少選擇一個管道，但不能超過十個。 在管道頁面的右上角附近，按一下&#x200B;**執行選取的專案(x)**。 會出現一個模型對話方塊，其中列出任何無法啟動的管道。 按一下&#x200B;**執行**&#x200B;以起始所有有效的管道。
+  管道頁面已導入能同時執行多個管道的功能。使用者必須至少選取一個管道，最多可選擇十個。在「管道」頁面的右上角附近，按一下「**執行所選 (x)**」。接著將會出現一個模態對話框，列出所有無法啟動的管道。按一下「**執行**」啟用所有有效管道。
 
-  ![執行選取的管道對話方塊](/help/release-notes/assets/run-selected-pipelines.png)
+  ![執行所選管道對話框](/help/release-notes/assets/run-selected-pipelines.png)
 
   另請參閱[執行多個管道](/help/using/managing-pipelines.md#run-multiple-pipelines)
 

@@ -74,7 +74,7 @@ ht-degree: 97%
    + [概觀](/help/product-update-wizard/overview.md)
    + [評估](/help/product-update-wizard/evaluation.md)
 + 發行說明 {#release-notes}
-   + [目前](/help/release-notes/current.md)
+   + [目前版本](/help/release-notes/current.md)
    + 2025 {#rn-2025}
       + [2025.2.0](/help/release-notes/2025/2025-2-0.md)
       + [2025.1.0](/help/release-notes/2025/2025-1-0.md)
