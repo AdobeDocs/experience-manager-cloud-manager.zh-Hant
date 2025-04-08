@@ -2,10 +2,10 @@
 title: 自訂程式碼品質規則
 description: 探索 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則的具體細節。這些規則以 AEM Engineering 的最佳實務為基礎。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: c50eb54b5603b4370f2d7907a2194477dcc3ba21
-workflow-type: ht
-source-wordcount: '3523'
-ht-degree: 100%
+source-git-commit: 8388edb5510ed4583a7bc703f3781af03d976948
+workflow-type: tm+mt
+source-wordcount: '3644'
+ht-degree: 96%
 
 ---
 
@@ -883,14 +883,32 @@ AEM Cloud Service 禁止建立屬性含空格的索引定義。
 
 AEM Cloud Service 禁止建立包含 haystack 屬性的索引定義。
 
-### 索引定義的設定不應包含以下屬性：async-previous {#oakpal-indexing-async-previous-property}
+### 索引定義的設定不應包含以下屬性：async-previous {#oakpal-indexing-unsupported-async-properties}
 
-* **索引鍵**：IndexAsyncPreviousCheck
+* **Key**： IndexUnsupportedAsyncPropertiesCheck
 * **類型**：改善
 * **嚴重度**：輕微
-* **始自**：2025.2.0 版本
+* **始自**：2025.3.0 版本
 
-AEM Cloud Service 禁止建立包含 async-previous 屬性的索引定義。
+AEM Cloud Service禁止創建具有不受支援的異步屬性的索引定義。
+
+### 索引定義的配置不應在多個索引中具有相同的標記 {#oakpal-indexing-same-tag-multiple-indexes}
+
+* **Key**： SameTagInMultipleIndexes
+* **類型**：改善
+* **嚴重度**：輕微
+* **始自**：2025.3.0 版本
+
+AEM Cloud Service禁止創建在多個索引中包含相同標記的索引定義。
+
+### 索引定義的配置不應包含禁止路徑的模式替換 {#oakpal-xml-mode-analysis}
+
+* **Key**： FilterXmlModeAnalysis
+* **類型**：改善
+* **嚴重度**：重大
+* **始自**：2025.4.0 版本
+
+/內容 以下的路徑不允許在文件庫中使用“替換”模式;它不應該用於 /etc 和 /var 下面的路徑。模式“取代”會將存放庫中所有現有的內容替換為內容軟體包中提供的軟體包，觸發此作的軟體包不應屬於通過 CloudManager 部署的軟體包。
 
 ## Dispatcher 最佳化工具 {#dispatcher-optimization-tool-rules}
 
