@@ -1,47 +1,67 @@
 ---
-title: Cloud Manager 2025.3.0 版發行說明
-description: 了解 Adobe Managed Services 上的 Cloud Manager 2025.3.0 版。
+title: Cloud Manager 2025.4.0 版發行說明
+description: 了解 Adobe Managed Services 上的 Cloud Manager 2025.4.0 版。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 81894345cd4e0921f3734f6e09a82c192d20f9dd
+source-git-commit: 40d093ce7d6839fff4ba16f790c61b96cb88dda5
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 96%
+source-wordcount: '380'
+ht-degree: 88%
 
 ---
 
-# Adobe Managed Services 上的 Cloud Manager 2025.3.0 版發行說明 {#release-notes}
+# Adobe Managed Services 上的 Cloud Manager 2025.4.0 版發行說明 {#release-notes}
 
-<!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.02.0+Release -->
+<!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-了解 Adobe Managed Services 上的 [!UICONTROL Cloud Manager] 2025.3.0 版。
+了解 Adobe Managed Services 上的 [!UICONTROL Cloud Manager] 2025.4.0 版。
 
 另請參閱 [Adobe Experience Manager as a Cloud Service 最新發行說明](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/release-notes/home)。
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2025.3.0 版的發行日期為 2025 年 3 月 13 日星期四。
+[!UICONTROL Cloud Manager] 2025.4.0的發行日期為2025年4月10日星期四。
 
-下一個版本預計於 2025 年 4 月 10 日星期四發行。
+下一個預計發行日期為2025年5月8日星期四。
 
-## 最新資訊 {#what-is-new}
+<!--
+## What's new {#what-is-new}
 
-* **執行多個管道**
+* 
+-->
 
-  管道頁面已導入能同時執行多個管道的功能。使用者必須至少選取一個管道，最多可選擇十個。在「管道」頁面的右上角附近，按一下「**執行所選 (x)**」。接著將會出現一個模態對話框，列出所有無法啟動的管道。按一下「**執行**」啟用所有有效管道。
 
-  ![執行所選管道對話框](/help/release-notes/assets/run-selected-pipelines.png)
+## 早期採用方案 {#early-adoption}
 
-  另請參閱[執行多個管道](/help/using/managing-pipelines.md#run-multiple-pipelines)
+參與Cloud Manager的搶先採用計畫，在即將推出的功能正式發行前取得獨家存取權。
+
+目前提供下列早期採用機會：
+
+### 自備 Git - 現在支援 GitLab 和 Bitbucket {#gitlab-bitbucket}
+
+**自備 Git** 功能已擴充，以納入對 GitLab 和 Bitbucket 等外部存放庫的支援。這項新的支援功能是對私人和企業 GitHub 存放庫現有支援的補充。當您新增這些新存放庫時，也可以將它們直接連結到您的管道。您可以將這些存放庫託管在公有雲平台上或私有雲或基礎架構內。這項整合也消除了與 Adobe 存放庫持續進行代碼同步的需求，並提供了在提取請求合併到主分支之前，驗證提取請求的功能。
+
+對於使用外部存放庫 (不包括 GitHub 託管的存放庫) 且&#x200B;**部署觸發程序**&#x200B;設定為「**在 Git 變更時**」的管道，現在會自動啟動。
+
+請查看[在 Cloud Manager 中新增外部存放庫](/help/managing-code/external-repositories.md)。
+
+![新增存放庫對話框](/help/release-notes/assets/repositories-add-release-notes.png)
+
+>[!NOTE]
+>
+>目前，立即可用的提取請求代碼品質檢查僅限於 GitHub 託管的存放庫，但我們正在進行一項更新以將此功能擴展到其他 Git 供應商。
+
+如果您有興趣測試此新功能並分享您的意見回饋，請使用與您的 Adobe ID 關聯的電子郵件地址向 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) 傳送電子郵件。請務必包含您要使用的 Git 平台以及您是否使用私人/公開或企業存放庫結構。
+
+### 僅限中繼和僅限生產的管道 {#staging-production-only-pipelines}
+
+Adobe 宣布推出對[僅階段和僅生產管道](/help/using/stage-prod-only.md)的支援。 這項新功能可讓您將全端生產部署管道劃分為更小、更專業的部署。
+
+如果您想要測試此新功能並提供意見回饋，請使用與您的 Adobe ID 關聯的電子郵件地址向 [Grp-cloudmanager_splitpipelines@adobe.com](mailto:Grp-cloudmanager_splitpipelines@adobe.com) 傳送電子郵件。
 
 
 
 <!--
-
-## Early adoption program {#early-adoption}
-
-Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features.
-
 ### Self-service Service Pack updates for AMS Cloud Manager customers 
 
 As part of the early adopters program, Adobe Managed Services Cloud Manager customers can now perform self-service service pack updates through the **Cloud Manager** user interface. This feature is currently available *only for development environments* and includes limited error reporting for failures.  
@@ -61,13 +81,14 @@ Once the process is complete, customers must **approve the execution** for the s
 If you are interested in testing this new feature and sharing your feedback, contact your Adobe Customer Success Engineer.
 
 See also [Service Pack Updates for Development Environments - Early Adopter](/help/using/service-packs-environments.md).
+-->
 
 
 
-## Bug fixes {#bug-fixes}
+## 錯誤修正 {#bug-fixes}
 
 * A
 
-Known Issues {#known-issues}
+已知問題 {#known-issues}
 
-* A -->
+* A —>
