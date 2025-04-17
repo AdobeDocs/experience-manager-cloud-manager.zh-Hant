@@ -2,7 +2,7 @@
 title: 在 Cloud Manager 中新增外部存放庫 (早期採用者)
 description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager支援與GitHub Enterprise、GitLab和Bitbucket存放庫整合。
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: a63d996b283396efa139bf567c40a51e6f46d9bc
+source-git-commit: 5ba12cdfa4a0d790561fd2f3da738bf697133bee
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 28%
@@ -39,7 +39,7 @@ ht-degree: 28%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在&#x200B;**我的程式**&#x200B;主控台上，選取要連結外部存放庫的程式。
+1. 在&#x200B;**[我的程式](/help/getting-started/navigation.md#my-programs-console)**&#x200B;主控台上，選取要連結外部存放庫的程式。
 
 1. 在側邊功能表的&#x200B;**方案**&#x200B;下，按一下![資料夾大綱圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **存放庫**。
 
@@ -121,7 +121,7 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 在&#x200B;**我的程式**&#x200B;主控台上，選取您要設定外部Git存放庫webhook的程式。
+1. 在&#x200B;**[我的程式](/help/getting-started/navigation.md#my-programs-console)**&#x200B;主控台上，選取您要設定外部Git存放庫webhook的程式。
 
 1. 在頁面左上角，按一下 ![顯示選單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) 以顯示左側選單。
 
