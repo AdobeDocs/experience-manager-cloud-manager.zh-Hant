@@ -1,15 +1,16 @@
 ---
-title: 在 Cloud Manager 中新增外部存放庫 (早期採用者)
+title: 在Cloud Manager中新增外部存放庫
 description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager支援與GitHub Enterprise、GitLab和Bitbucket存放庫整合。
+badge: label="早期採用者" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 5ba12cdfa4a0d790561fd2f3da738bf697133bee
+source-git-commit: b830c30bb6b2b99ef442577325a30de6b9953ec8
 workflow-type: tm+mt
-source-wordcount: '1866'
+source-wordcount: '1867'
 ht-degree: 28%
 
 ---
 
-# 在Cloud Manager中新增外部存放庫 — 早期採用者 {#external-repositories}
+# 在 Cloud Manager 中新增外部存放庫 {#external-repositories}
 
 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager支援與GitHub Enterprise、GitLab和Bitbucket存放庫整合。
 
