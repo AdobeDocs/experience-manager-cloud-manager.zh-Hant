@@ -7,10 +7,10 @@ user-guide-description: 了解如何使用 Cloud Manager 在雲端自行管理�
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 4c4ffeb689117620bd810f35d277f5ab20bda8d3
+source-git-commit: ecee095cfdf929e38823ace77f184db3108cab92
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '368'
+ht-degree: 97%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 100%
    + [首次登入](/help/getting-started/first-time-login.md)
    + [導覽](/help/getting-started/navigation.md)
    + [方案設定](/help/getting-started/program-setup.md)
-   + 建立 AEM 專案 {#project-creation}
+   + AEM專案建立 {#project-creation}
       + [使用精靈](/help/getting-started/using-the-wizard.md)
       + [專案設定](/help/getting-started/project-setup.md)
       + [組建環境](/help/getting-started/build-environment.md)
@@ -58,7 +58,7 @@ ht-degree: 100%
    + [通知](/help/using/notifications.md)
    + [自訂程式碼品質規則](/help/using/custom-code-quality-rules.md)
    + [維持環境一致性的內容複製功能](/help/using/content-copy.md)
-+ 管理代碼 {#managing-code}
++ 管理程式碼 {#managing-code}
    + [管理 Cloud Manager 中的存放庫](/help/managing-code/managing-repositories.md)
    + [存放庫存取資訊](/help/managing-code/accessing-repositories.md)
    + [新增 Adobe 存放庫](/help/managing-code/adobe-repositories.md)
@@ -76,6 +76,7 @@ ht-degree: 100%
 + 發行說明 {#release-notes}
    + [目前版本](/help/release-notes/current.md)
    + 2025 {#rn-2025}
+      + [2025.4.0](/help/release-notes/2025/2025-4-0.md)
       + [2025.3.0](/help/release-notes/2025/2025-3-0.md)
       + [2025.2.0](/help/release-notes/2025/2025-2-0.md)
       + [2025.1.0](/help/release-notes/2025/2025-1-0.md)
