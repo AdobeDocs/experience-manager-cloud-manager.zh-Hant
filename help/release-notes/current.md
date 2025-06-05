@@ -3,10 +3,10 @@ title: Cloud Manager 2025.6.0 版發行說明
 description: 了解 Adobe Managed Services 上的 Cloud Manager 2025.5.0 版。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 13e6f33e7ef92f4a27ae30c7550351b20d3e86ed
+source-git-commit: d0acd47ea6011dc5896d20d76ab0fcaa970df6ac
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 64%
+source-wordcount: '558'
+ht-degree: 65%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 64%
 
 ## 新增功能 {#what-is-new}
 
-* **(UI)僅限暫存和僅限生產的管道**
+* **僅限暫存及僅限生產的管道**
 
   Cloud Manager現在支援僅限中繼及僅限生產的管道。 此功能可讓您將完整棧疊生產部署分割成較小且專用管道。<!-- This feature went into GA from Early Adopter in the June 5, 2025 CM release -->
 
@@ -39,7 +39,7 @@ ht-degree: 64%
 
   請參閱[僅限階段和僅限生產管道](/help/using/stage-prod-only.md)。
 
-* **(UI)管道我的最愛**
+* **管道我的最愛**
 
   在此版本中，Cloud Manager引入釘選我的最愛管道的功能，可讓您將特定管道標籤為我的最愛，以便這些管道顯示在&#x200B;**管道**&#x200B;頁面上的清單頂端。 此增強功能使經常存取的管道更容易找到和執行。<!-- CMGR-68293 -->
 
