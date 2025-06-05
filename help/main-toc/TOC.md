@@ -7,10 +7,10 @@ user-guide-description: 了解如何使用 Cloud Manager 在雲端自行管理�
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: ecee095cfdf929e38823ace77f184db3108cab92
+source-git-commit: 35845e827b0a3fadfe2a55a2171b5e02100cf3eb
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 97%
+source-wordcount: '373'
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 97%
    + CI/CD 管道 {#pipelines}
       + [設定生產管道](/help/using/production-pipelines.md)
       + [設定非生產管道](/help/using/non-production-pipelines.md)
-      + [分割階段以及僅限 Prod 的管道 (早期採用者)](/help/using/stage-prod-only.md)
+      + [分割階段和僅生產管道](/help/using/stage-prod-only.md)
       + [管理管道](/help/using/managing-pipelines.md)
    + [程式碼部署](/help/using/code-deployment.md)
    + [程式碼品質測試](/help/using/code-quality-testing.md)
@@ -64,6 +64,7 @@ ht-degree: 97%
    + [新增 Adobe 存放庫](/help/managing-code/adobe-repositories.md)
    + [新增私人存放庫](/help/managing-code/private-repositories.md)
    + [新增外部存放庫 (早期採用者)](/help/managing-code/external-repositories.md)
+   + [管理存取權杖（率先採用）](/help/managing-code/manage-access-tokens.md)
    + [Git 子模組支援](/help/managing-code/git-submodules.md)
    + [GitHub 檢查設定](/help/managing-code/github-check-config.md)
    + [GitHub 檢查附註](/help/managing-code/github-annotations.md)
@@ -76,6 +77,7 @@ ht-degree: 97%
 + 發行說明 {#release-notes}
    + [目前版本](/help/release-notes/current.md)
    + 2025 {#rn-2025}
+      + [2025.5.0](/help/release-notes/2025/2025-5-0.md)
       + [2025.4.0](/help/release-notes/2025/2025-4-0.md)
       + [2025.3.0](/help/release-notes/2025/2025-3-0.md)
       + [2025.2.0](/help/release-notes/2025/2025-2-0.md)

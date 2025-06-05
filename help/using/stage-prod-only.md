@@ -1,22 +1,17 @@
 ---
-title: 僅限中繼和僅限生產管道
-description: 了解如何使用專用管道分割中繼和生產部署。
-badge: label="早期採用者" type="Positive" url="/help/release-notes/current.md#staging-production-only-pipelines"
+title: 分割僅限階段和僅限生產的管道
+description: 了解如何使用專用管道，分割中繼和生產部署。
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: b830c30bb6b2b99ef442577325a30de6b9953ec8
+source-git-commit: 35845e827b0a3fadfe2a55a2171b5e02100cf3eb
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 99%
+source-wordcount: '924'
+ht-degree: 98%
 
 ---
 
-# 僅限中繼和僅限生產的管道 {#stage-prod-only}
+# 分割僅限階段和僅限生產的管道 {#stage-prod-only}
 
-了解如何使用專用管道分割中繼和生產部署。
-
->[!NOTE]
->
->此功能僅適用於[早期採用者計劃](/help/release-notes/current.md#staging-production-only-pipelines)。
+了解如何使用專用管道，分割中繼和生產部署。
 
 ## 概觀 {#overview}
 
