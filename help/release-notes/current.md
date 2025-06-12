@@ -3,10 +3,10 @@ title: Cloud Manager 2025.6.0 版發行說明
 description: 了解 Adobe Managed Services 上的 Cloud Manager 2025.5.0 版。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: d0acd47ea6011dc5896d20d76ab0fcaa970df6ac
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '558'
-ht-degree: 65%
+ht-degree: 72%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 65%
 
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-下一個預計發行日期為2025年7月10日星期四。
+下一個版本規劃於 2025 年 7 月 10 日 (星期四) 發行。
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
@@ -33,7 +33,7 @@ ht-degree: 65%
 
 * **僅限暫存及僅限生產的管道**
 
-  Cloud Manager現在支援僅限中繼及僅限生產的管道。 此功能可讓您將完整棧疊生產部署分割成較小且專用管道。<!-- This feature went into GA from Early Adopter in the June 5, 2025 CM release -->
+  Cloud Manager現在支援僅限中繼及僅限生產的管道。 此功能可讓您將完整棧疊生產部署分割成較小且專用管道。<!-- This feature went into GA from Private beta in the June 5, 2025 CM release -->
 
   ![已選取「完整棧疊程式碼」選項按鈕並選取「中繼」環境的「新增非生產管道」對話方塊](/help/release-notes/assets/add-non-production-pipeline.png)
 
@@ -41,18 +41,18 @@ ht-degree: 65%
 
 * **管道我的最愛**
 
-  在此版本中，Cloud Manager引入釘選我的最愛管道的功能，可讓您將特定管道標籤為我的最愛，以便這些管道顯示在&#x200B;**管道**&#x200B;頁面上的清單頂端。 此增強功能使經常存取的管道更容易找到和執行。<!-- CMGR-68293 -->
+  在此版本中，Cloud Manager引入釘選我的最愛管道的功能，可讓您將特定管道標籤為我的最愛，以便這些管道顯示在&#x200B;**管道**&#x200B;頁面上的清單頂端。 此增強功能讓您能夠更容易找到和執行經常存取的管道。<!-- CMGR-68293 -->
 
-  ![管道標示為我的最愛](/help/release-notes/assets/pipeline-favorites.png) *兩個管道標示為我的最愛。*
+  ![Pipelines marked as favorites](/help/release-notes/assets/pipeline-favorites.png) *兩個管道已標記為我的最愛。*
 
-  檢視[標示管道我的最愛](/help/using/managing-pipelines.md#pipeline-favorites)。
+  請參閱[將管道標記為我的最愛](/help/using/managing-pipelines.md#pipeline-favorites)。
 
 
-## 早期採用方案 {#early-adoption}
+## 私人測試版計畫 {#beta-program}
 
-參與 Cloud Manager 的早期採用計劃，在即將推出的功能正式發布之前獲得獨家使用權。
+參與Cloud Manager的私人測試版計畫，在一般版本發行前取得即將推出的功能的獨家存取權。
 
-目前有以下早期採用機會：
+目前提供下列私人測試版商機：
 
 
 ### 管理存取權杖{#access-tokens}
@@ -83,7 +83,7 @@ ht-degree: 65%
 
 ## 錯誤修正 {#bug-fixes}
 
-* 現在，AEM Cloud Manager在擷取客戶成品時，正確對應了409錯誤所導致的Maven建置失敗（衝突）與客戶導致的失敗。 此變更透過區分內部錯誤和與客戶環境設定相關的問題來改善錯誤訊息。<!-- CMGR-66673 -->
+* AEM Cloud Manager 現在可以將取得客戶成品時的 409 錯誤 (衝突) 所導致之 Maven 建置失敗，正確地對應至客戶所導致的故障。此項變更能透過區分內部錯誤和與客戶環境設定相關的問題來改善錯誤訊息。<!-- CMGR-66673 -->
 
 <!--
 Known Issues {#known-issues}

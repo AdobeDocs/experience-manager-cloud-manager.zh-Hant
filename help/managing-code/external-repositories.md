@@ -1,12 +1,12 @@
 ---
 title: 在Cloud Manager中新增外部存放庫
 description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager支援與GitHub Enterprise、GitLab和Bitbucket存放庫整合。
-badge: label="早期採用者" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
+badge: label="私人測試版" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 83ba61364d5a492bd7236d7fcaeabf8cf904627a
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '1871'
-ht-degree: 28%
+ht-degree: 27%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 28%
 
 >[!NOTE]
 >
->本文所述功能僅可透過早期採用計畫使用。 如需詳細資訊，以及要註冊為早期採用者，請參閱[自備Git](/help/release-notes/current.md#gitlab-bitbucket)。
+>本文所述的功能只能透過私人測試版計畫取得。 如需詳細資訊以及註冊私人測試版，請參閱[自備Git](/help/release-notes/current.md#gitlab-bitbucket)。
 
 ## 設定外部存放庫
 
@@ -79,7 +79,7 @@ ht-degree: 28%
 
    >[!NOTE]
    >
-   >**新增新的存取權杖**&#x200B;功能目前在「早期採用者」階段。其他的功能正在規劃中。因此，存取權杖所需的權限可能會變更。另外，用於管理權杖的使用者介面可能會更新，可能包括權杖過期日期等功能。並且，自動檢查以確保連結至存放庫的權杖保持有效。
+   >功能&#x200B;**新增存取權杖**&#x200B;目前處於私人測試階段。 其他的功能正在規劃中。因此，存取權杖所需的權限可能會變更。另外，用於管理權杖的使用者介面可能會更新，可能包括權杖過期日期等功能。並且，自動檢查以確保連結至存放庫的權杖保持有效。
 
 1. 按一下「**驗證**」。
 

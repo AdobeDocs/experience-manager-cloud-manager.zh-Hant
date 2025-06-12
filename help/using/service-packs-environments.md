@@ -1,23 +1,23 @@
 ---
-title: 開發環境的 Service Pack 更新 (早期採用者)
+title: 開發環境的Service Pack更新 — 私人測試版
 description: 了解如何立即透過 Cloud Manager 使用者介面，啟用開發環境的 Service Pack 更新。
 hide: true
 hidefromtoc: true
 exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
-source-git-commit: 55b33db1bf80f066b1a66bc87c0abeefa4771871
-workflow-type: ht
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
+workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
-# 開發環境的 Service Pack 更新 (早期採用者) {#stage-prod-only}
+# 開發環境的Service Pack更新（私人測試版） {#stage-prod-only}
 
 了解如何透過 Cloud Manager 使用者介面，啟用開發環境的 Service Pack 更新。
 
 >[!NOTE]
 >
->此功能僅適用於[早期採用者計劃](/help/release-notes/current.md#early-adoption)。
+>此功能僅適用於[私人測試版計畫](/help/release-notes/current.md#beta-program)。
 
 ## 概觀 {#service-pack-updates-overview}
 

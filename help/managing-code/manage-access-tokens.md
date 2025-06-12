@@ -1,9 +1,9 @@
 ---
 title: 在Cloud Manager中管理存取權杖
 description: 瞭解如何在Adobe Managed Services上檢視、編輯和刪除用於在Cloud Manager中自攜Git的存取權杖。
-badge: label="早期採用者" type="Positive" url="/help/release-notes/current.md#access-tokens"
+badge: label="私人測試版" type="Positive" url="/help/release-notes/current.md#access-tokens"
 exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
-source-git-commit: 4d95981d14004bde4931bf59846f9be7e10e3083
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 3%
@@ -20,7 +20,7 @@ Cloud Manager使用存取權杖來管理託管於外部Git平台上的存放庫�
 
 >[!NOTE]
 >
->本文所述功能僅可透過早期採用計畫使用。 如需詳細資訊以及註冊為早期採用者，請參閱[管理存取權杖](/help/release-notes/current.md#access-tokens)。
+>本文所述的功能只能透過私人測試版計畫取得。 如需詳細資訊以及註冊私人測試版，請參閱[管理存取權杖](/help/release-notes/current.md#access-tokens)。
 
 ## 檢視存取權杖 {#view-access-tokens}
 

@@ -7,10 +7,10 @@ user-guide-description: 了解如何使用 Cloud Manager 在雲端自行管理�
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 35845e827b0a3fadfe2a55a2171b5e02100cf3eb
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '373'
-ht-degree: 94%
+ht-degree: 91%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 94%
    + [程式碼品質測試](/help/using/code-quality-testing.md)
    + [管理環境](/help/using/managing-environments.md)
    + [監視環境](/help/using/monitoring-environments.md)
-   + [開發環境的 Service Pack 更新 (早期採用者)](/help/using/service-packs-environments.md)
+   + [開發環境的Service Pack更新（私人測試版）](/help/using/service-packs-environments.md)
    + [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
    + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [通知](/help/using/notifications.md)
@@ -63,8 +63,8 @@ ht-degree: 94%
    + [存放庫存取資訊](/help/managing-code/accessing-repositories.md)
    + [新增 Adobe 存放庫](/help/managing-code/adobe-repositories.md)
    + [新增私人存放庫](/help/managing-code/private-repositories.md)
-   + [新增外部存放庫 (早期採用者)](/help/managing-code/external-repositories.md)
-   + [管理存取權杖（率先採用）](/help/managing-code/manage-access-tokens.md)
+   + [新增外部存放庫（私人測試版）](/help/managing-code/external-repositories.md)
+   + [管理存取權杖（私人測試版）](/help/managing-code/manage-access-tokens.md)
    + [Git 子模組支援](/help/managing-code/git-submodules.md)
    + [GitHub 檢查設定](/help/managing-code/github-check-config.md)
    + [GitHub 檢查附註](/help/managing-code/github-annotations.md)
