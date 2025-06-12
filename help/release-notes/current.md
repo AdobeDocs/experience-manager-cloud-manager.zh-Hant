@@ -3,10 +3,10 @@ title: Cloud Manager 2025.6.0 版發行說明
 description: 了解 Adobe Managed Services 上的 Cloud Manager 2025.5.0 版。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
+source-git-commit: 38d398caf2323b603afd293aa9152308fefd323f
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 72%
+source-wordcount: '560'
+ht-degree: 68%
 
 ---
 
@@ -55,18 +55,9 @@ ht-degree: 72%
 目前提供下列私人測試版商機：
 
 
-### 管理存取權杖{#access-tokens}
-
-使用Cloud Manager中的&#x200B;**管理存取權杖**&#x200B;功能，檢視、重新命名和刪除與自備Git存放庫相關的存取權杖，例如GitHub Enterprise、GitLab、Bitbucket和Azure DevOps。
-
-請參閱[管理存取權杖](/help/managing-code/manage-access-tokens.md)。
-
-如果您有興趣測試此新功能並分享您的意見回饋，請使用與您的 Adobe ID 關聯的電子郵件地址向 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) 傳送電子郵件。請務必包含您要使用的 Git 平台以及您是否使用私人/公開或企業存放庫結構。
-
-
 ### 自備 Git - 現在支援 GitLab 和 Bitbucket {#gitlab-bitbucket}
 
-**自備 Git** 功能已擴充，以納入對 GitLab 和 Bitbucket 等外部存放庫的支援。這項新的支援功能是對私人和企業 GitHub 存放庫現有支援的補充。當您新增這些新存放庫時，也可以將它們直接連結到您的管道。您可以將這些存放庫託管在公有雲平台上或私有雲或基礎架構內。這項整合也消除了與 Adobe 存放庫持續進行代碼同步的需求，並提供了在提取請求合併到主分支之前，驗證提取請求的功能。
+**自攜Git** (BYOG)功能已擴充為包含對外部存放庫（例如GitLab和Bitbucket）的支援。 這項新的支援功能是對私人和企業 GitHub 存放庫現有支援的補充。當您新增這些新存放庫時，也可以將它們直接連結到您的管道。您可以將這些存放庫託管在公有雲平台上或私有雲或基礎架構內。這項整合也消除了與 Adobe 存放庫持續進行代碼同步的需求，並提供了在提取請求合併到主分支之前，驗證提取請求的功能。
 
 對於使用外部存放庫 (不包括 GitHub 託管的存放庫) 且&#x200B;**部署觸發程序**&#x200B;設定為「**在 Git 變更時**」的管道，現在會自動啟動。
 
@@ -77,6 +68,14 @@ ht-degree: 72%
 >[!NOTE]
 >
 >目前，立即可用的提取請求代碼品質檢查僅限於 GitHub 託管的存放庫，但我們正在進行一項更新以將此功能擴展到其他 Git 供應商。
+
+如果您有興趣測試此新功能並分享您的意見回饋，請使用與您的 Adobe ID 關聯的電子郵件地址向 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) 傳送電子郵件。請務必包含您要使用的 Git 平台以及您是否使用私人/公開或企業存放庫結構。
+
+#### 管理存取權杖{#access-tokens}
+
+結合BYOG使用&#x200B;**管理存取權杖**&#x200B;功能，檢視、重新命名和刪除與外部「自攜Git」存放庫（例如GitHub Enterprise、GitLab、Bitbucket和Azure DevOps）相關聯的存取權杖。
+
+請參閱[管理存取權杖](/help/managing-code/manage-access-tokens.md)。
 
 如果您有興趣測試此新功能並分享您的意見回饋，請使用與您的 Adobe ID 關聯的電子郵件地址向 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) 傳送電子郵件。請務必包含您要使用的 Git 平台以及您是否使用私人/公開或企業存放庫結構。
 
