@@ -3,10 +3,10 @@ title: 在Cloud Manager中新增外部存放庫
 description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager支援與GitHub Enterprise、GitLab和Bitbucket存放庫整合。
 badge: label="私人測試版" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 3958e36391eaca3450ef765676fcbbd485766318
+source-git-commit: 073f1024891e1a1d4298c5c593df011f5572e820
 workflow-type: tm+mt
-source-wordcount: '2050'
-ht-degree: 24%
+source-wordcount: '2295'
+ht-degree: 31%
 
 ---
 
@@ -51,14 +51,14 @@ ht-degree: 24%
 
 1. 在&#x200B;**新增存放庫**&#x200B;對話框中，選取&#x200B;**私人存放庫**，將外部 Git 存放庫連結至您的方案。
 
-   ![新增自己的存放庫](/help/managing-code/assets/repositories-private-repo-type.png)
+   ![新增自己的存放庫](/help/managing-code/assets/repository-add-private-dialogbox2.png)
 
 1. 在每個對應欄位中，提供關於存放庫的下列詳細資料：
 
    | 欄位 | 說明 |
    | --- | --- |
    | **存放庫名稱** | 必要。您的新存放庫的生動名稱。 |
-   | **存放庫 URL** | 必要。存放庫的 URL。<br><br>如果您使用GitHub託管的存放庫，路徑必須在`.git`結尾。<br>例如，*`https://github.com/org-name/repo-name.git`*(URL 路徑僅用於插圖目的)。<br><br>如果您正在使用外部存放庫，則必須遵循下列 URL 路徑格式：<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> 或<br>`https://self-hosted-domain/org-name/repo-name.git`<br>，與您的 Git 廠商相符。 |
+   | **存放庫 URL** | 必要。存放庫的 URL。<br><br>如果您使用GitHub託管的存放庫，路徑必須在`.git`結尾。<br>例如，*`https://github.com/org-name/repo-name.git`* （URL路徑僅供圖解之用）。<br><br>如果您正在使用外部存放庫，則必須遵循下列 URL 路徑格式：<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> 或<br>`https://self-hosted-domain/org-name/repo-name.git`<br>，與您的 Git 廠商相符。 |
    | **選取存放庫類型** | 必要。選取您正在使用的存放庫型別：<ul><li>**GitHub** （GitHub Enterprise和自控版GitHub）</li><li>**GitLab** （包括`gitlab.com`和自控的GitLab版本） </li><li>**位元貯體** (僅支援`bitbucket.org` （雲端版本）。 自2024年2月15日起，已棄用自行託管的Bitbucket版本。)</li></ul>若上述存放庫 URL 路徑包含 Git 廠商名稱，例如 GitLab 或 Bitbucket，則系統已為您預先選擇存放庫類型。 |
    | **說明** | 選擇性。存放庫的詳細描述。 |
 
@@ -67,20 +67,56 @@ ht-degree: 24%
 1. 在&#x200B;**私人存放庫擁有權驗證**&#x200B;對話框中，提供存取權杖以驗證外部存放庫的擁有權，讓您可以進行存取。
 
    ![為存放庫選取現有的存取權杖](/help/managing-code/assets/repositories-exisiting-access-token.png)
-   *選取Bitbucket儲存庫的現有存取權杖。*
+   *選取Bitbucket存放庫的現有存取Token （僅供說明之用）。*
 
-   | 權杖類型 | 說明 |
-   | --- | --- |
-   | **使用現有的存取權杖** | 如果您已為組織提供存放庫存取權杖，且有權存取多個存放庫，您可以選取現有的權杖。使用&#x200B;**權杖名稱**&#x200B;下拉清單，選取想要套用至存放庫的權杖。否則，請新增新的存取權杖。 |
-   | **新增新的存取權杖** | **存放庫型別： GitHub Enterprise**<br><ul><li> 在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>依照[GitHub檔案](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的指示建立個人存取權杖。<li>GitHub Enterprise Personal Access Token (PAT)的必要許可權<br>這些許可權確保Cloud Manager可以驗證提取請求、管理認可狀態檢查以及存取必要的存放庫詳細資訊。<br>當您在GitHub Enterprise中產生PAT時，請確定它包含下列存放庫許可權：<ul><li>提取請求（讀取和寫入）<li>認可狀態（讀取和寫入）<li>儲存區域中繼資料（唯讀）</li></li></ul></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
-   | | **存放庫型別： GitLab**<ul><li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>依照[GitLab檔案](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的指示建立個人存取權杖。<li>GitLab個人存取權杖(PAT)的必要許可權<br>這些範圍允許Cloud Manager存取驗證和webhook整合所需的存放庫資料和使用者資訊。<br>當您在GitLab中產生PAT時，請確定它包含下列權杖範圍：<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
-   | | **存放庫型別： Bitbucket**<ul><li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>使用[Bitbucket檔案](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)建立存放庫存取權杖。<li>Bitbucket個人存取Token (PAT)的必要許可權<br>這些許可權可讓Cloud Manager存取存放庫內容、管理提取請求，以及設定或回應webhook事件。<br>當您在Bitbucket中建立應用程式密碼時，請確定它包含下列必要的應用程式密碼許可權：<ul><li>存放庫（唯讀）<li>提取請求（讀取和寫入）<li>Webhook （讀取和寫入）</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
+>[!BEGINTABS]
 
-   請參閱[管理存取權杖](/help/managing-code/manage-access-tokens.md)。
+>[!TAB GitHub Enterprise]
 
-   >[!NOTE]
-   >
-   >功能&#x200B;**新增存取權杖**&#x200B;目前處於私人測試階段。 其他的功能正在規劃中。因此，存取權杖所需的權限可能會變更。另外，用於管理權杖的使用者介面可能會更新，可能包括權杖過期日期等功能。並且，自動檢查以確保連結至存放庫的權杖保持有效。
+**GitHub Enterprise**
+
+| 權杖類型 | 說明 |
+| --- | --- |
+| **使用現有的存取權杖** | 如果您已為組織提供存放庫存取權杖，且有權存取多個存放庫，您可以選取現有的權杖。使用&#x200B;**權杖名稱**&#x200B;下拉清單，選取想要套用至存放庫的權杖。否則，請新增新的存取權杖。 |
+| **新增新的存取權杖** | <ul><li> 在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>依照[GitHub檔案](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的指示建立個人存取權杖。<li>GitHub Enterprise Personal Access Token (PAT)的必要許可權<br>這些許可權確保Cloud Manager可以驗證提取請求、管理認可狀態檢查以及存取必要的存放庫詳細資訊。<br>當您在GitHub Enterprise中產生PAT時，請確定它包含下列存放庫許可權：<ul><li>提取請求（讀取和寫入）<li>認可狀態（讀取和寫入）<li>儲存區域中繼資料（唯讀）</li></li></ul></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
+
+請參閱[管理存取權杖](/help/managing-code/manage-access-tokens.md)。
+
+>[!NOTE]
+>
+>功能&#x200B;**新增存取權杖**&#x200B;目前處於私人測試階段。 其他的功能正在規劃中。因此，存取權杖所需的權限可能會變更。另外，用於管理權杖的使用者介面可能會更新，可能包括權杖過期日期等功能。並且，自動檢查以確保連結至存放庫的權杖保持有效。
+
+>[!TAB GitLab]
+
+**GitLab**
+
+| 權杖類型 | 說明 |
+| --- | --- |
+| **使用現有的存取權杖** | 如果您已為組織提供存放庫存取權杖，且有權存取多個存放庫，您可以選取現有的權杖。使用&#x200B;**權杖名稱**&#x200B;下拉清單，選取想要套用至存放庫的權杖。否則，請新增新的存取權杖。 |
+| **新增新的存取權杖** | <ul><li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>依照[GitLab檔案](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的指示建立個人存取權杖。<li>GitLab個人存取權杖(PAT)的必要許可權<br>這些範圍允許Cloud Manager存取驗證和webhook整合所需的存放庫資料和使用者資訊。<br>當您在GitLab中產生PAT時，請確定它包含下列權杖範圍：<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
+
+請參閱[管理存取權杖](/help/managing-code/manage-access-tokens.md)。
+
+>[!NOTE]
+>
+>功能&#x200B;**新增存取權杖**&#x200B;目前處於私人測試階段。 其他的功能正在規劃中。因此，存取權杖所需的權限可能會變更。另外，用於管理權杖的使用者介面可能會更新，可能包括權杖過期日期等功能。並且，自動檢查以確保連結至存放庫的權杖保持有效。
+
+>[!TAB 位元貯體]
+
+**位元貯體**
+
+| 權杖類型 | 說明 |
+| --- | --- |
+| **使用現有的存取權杖** | 如果您已為組織提供存放庫存取權杖，且有權存取多個存放庫，您可以選取現有的權杖。使用&#x200B;**權杖名稱**&#x200B;下拉清單，選取想要套用至存放庫的權杖。否則，請新增新的存取權杖。 |
+| **新增新的存取權杖** | <ul><li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>使用[Bitbucket檔案](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)建立存放庫存取權杖。<li>Bitbucket個人存取Token (PAT)的必要許可權<br>這些許可權可讓Cloud Manager存取存放庫內容、管理提取請求，以及設定或回應webhook事件。<br>當您在Bitbucket中建立應用程式密碼時，請確定它包含下列必要的應用程式密碼許可權：<ul><li>存放庫（唯讀）<li>提取請求（讀取和寫入）<li>Webhook （讀取和寫入）</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
+
+請參閱[管理存取權杖](/help/managing-code/manage-access-tokens.md)。
+
+>[!NOTE]
+>
+>功能&#x200B;**新增存取權杖**&#x200B;目前處於私人測試階段。 其他的功能正在規劃中。因此，存取權杖所需的權限可能會變更。另外，用於管理權杖的使用者介面可能會更新，可能包括權杖過期日期等功能。並且，自動檢查以確保連結至存放庫的權杖保持有效。
+
+>[!ENDTABS]
 
 1. 按一下「**驗證**」。
 
@@ -154,7 +190,7 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 
 >[!TAB GitHub Enterprise]
 
-### GitHub企業版
+**GitHub Enterprise**
 
 1. 找到解決方案的&#x200B;**Webhook**&#x200B;設定區段。
 1. 將您先前複製的Webhook URL貼到URL文字欄位中。
@@ -171,6 +207,8 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 
 >[!TAB GitLab]
 
+**GitLab**
+
 1. 找到解決方案的&#x200B;**Webhook**&#x200B;設定區段。
 1. 將您先前複製的Webhook URL貼到URL文字欄位中。
    1. 將Webhook URL中的`api_key`查詢引數取代為您自己的實際API金鑰。
@@ -186,7 +224,7 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 
 >[!TAB 位元貯體]
 
-### Bitbucket
+**位元貯體**
 
 1. 找到解決方案的&#x200B;**Webhook**&#x200B;設定區段。
 1. 將您先前複製的Webhook URL貼到URL文字欄位中。
@@ -209,42 +247,51 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 
 下列行為適用：
 
-* **GitHub Enterprise**
+>[!BEGINTABS]
 
-  建立檢查時，其外觀類似下列熒幕擷圖。 與`GitHub.com`的主要差異在於`GitHub.com`使用檢查執行，而GitHub Enterprise （使用個人存取權杖）會產生認可狀態：
+>[!TAB GitHub Enterprise]
 
-  ![認可狀態以指示GitHub Enterprise上的PR驗證程式](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
+**GitHub Enterprise**
 
-* **位元貯體**
+建立檢查時，其外觀類似下列熒幕擷圖。 與`GitHub.com`的主要差異在於`GitHub.com`使用檢查執行，而GitHub Enterprise （使用個人存取權杖）會產生認可狀態：
 
-  程式碼品質驗證執行時：
+![認可狀態以指示GitHub Enterprise上的PR驗證程式](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
 
-  ![執行程式碼品質驗證時的狀態](/help/managing-code/assets/repository-webhook-bitbucket1.png)
+>[!TAB GitLab]
 
-  使用認可狀態來追蹤PR驗證進度。 在以下案例中，熒幕擷圖顯示程式碼品質驗證因客戶問題而失敗時會發生什麼情況。 新增附有詳細錯誤資訊的註解，並建立確認檢查，以顯示失敗（顯示在右側）：
+**GitLab**
 
-  位元貯體的![提取要求驗證狀態](/help/managing-code/assets/repository-webhook-bitbucket2.png)
+GitLab互動僅依賴評論。 驗證開始時，會新增註解。 驗證完成後（無論成功還是失敗），初始註解都將被移除並替換為包含驗證結果或錯誤詳細資料的新註解。
 
-* **GitLab**
+程式碼品質驗證執行時：
 
-  GitLab互動僅依賴評論。 驗證開始時，會新增註解。 驗證完成後（無論成功還是失敗），初始註解都將被移除並替換為包含驗證結果或錯誤詳細資料的新註解。
+![執行程式碼品質驗證時](/help/managing-code/assets/repository-webhook-gitlab1.png)
 
-  程式碼品質驗證執行時：
+完成冷品質驗證時：
 
-  ![執行程式碼品質驗證時](/help/managing-code/assets/repository-webhook-gitlab1.png)
+![當冷品質驗證完成時](/help/managing-code/assets/repository-webhook-gitlab2.png)
 
-  完成冷品質驗證時：
+當程式碼品質驗證失敗並出現錯誤時：
 
-  ![當冷品質驗證完成時](/help/managing-code/assets/repository-webhook-gitlab2.png)
+![當程式碼品質驗證失敗並出現錯誤時](/help/managing-code/assets/repository-webhook-gitlab3.png)
 
-  當程式碼品質驗證失敗並出現錯誤時：
+當程式碼品質驗證因客戶問題而失敗時：
 
-  ![當程式碼品質驗證失敗並出現錯誤時](/help/managing-code/assets/repository-webhook-gitlab3.png)
+![當程式碼品質驗證因客戶問題而失敗時](/help/managing-code/assets/repository-webhook-gitlab4.png)
 
-  當程式碼品質驗證因客戶問題而失敗時：
+>[!TAB 位元貯體]
 
-  ![當程式碼品質驗證因客戶問題而失敗時](/help/managing-code/assets/repository-webhook-gitlab4.png)
+**位元貯體**
 
+程式碼品質驗證執行時：
+
+![執行程式碼品質驗證時的狀態](/help/managing-code/assets/repository-webhook-bitbucket1.png)
+
+使用認可狀態來追蹤PR驗證進度。 在以下案例中，熒幕擷圖顯示程式碼品質驗證因客戶問題而失敗時會發生什麼情況。 新增附有詳細錯誤資訊的註解，並建立確認檢查，以顯示失敗（顯示在右側）：
+
+位元貯體的![提取要求驗證狀態](/help/managing-code/assets/repository-webhook-bitbucket2.png)
+
+>[!ENDTABS]
 
 ## 疑難排解webhook問題
 
