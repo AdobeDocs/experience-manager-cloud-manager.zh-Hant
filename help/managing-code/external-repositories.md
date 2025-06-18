@@ -3,9 +3,9 @@ title: 在Cloud Manager中新增外部存放庫
 description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager支援與GitHub Enterprise、GitLab和Bitbucket存放庫整合。
 badge: label="私人測試版" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 5bef5a1b8f54a245e1354b1b77c775a06b9b3faa
+source-git-commit: 06fa04f8a459885a20f2b626ccf5d648ccc5fb57
 workflow-type: tm+mt
-source-wordcount: '2141'
+source-wordcount: '2150'
 ht-degree: 26%
 
 ---
@@ -170,7 +170,7 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 1. 按一下&#x200B;**關閉**。
 1. 導覽至您的Git廠商解決方案（GitHub Enterprise、GitLab或Bitbucket）。
 
-   在[新增外部存放庫](#add-ext-repo)中可取得webhook組態的所有詳細資訊以及每個廠商所需的事件。 在步驟8下，檢視表格。
+   在[新增外部存放庫](#add-ext-repo)中可取得webhook組態的所有詳細資訊以及每個廠商所需的事件。 在步驟8下，參閱標籤表。
 
 >[!BEGINTABS]
 
@@ -225,7 +225,7 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 
 正確設定Webhook後，Cloud Manager會自動觸發管道執行，或針對您的存放庫進行PR驗證檢查。
 
-下列行為適用：
+根據您使用的外部存放庫，以下行為適用：
 
 >[!BEGINTABS]
 
