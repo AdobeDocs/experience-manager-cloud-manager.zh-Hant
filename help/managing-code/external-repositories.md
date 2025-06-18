@@ -3,10 +3,10 @@ title: 在Cloud Manager中新增外部存放庫
 description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager支援與GitHub Enterprise、GitLab和Bitbucket存放庫整合。
 badge: label="私人測試版" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 06fa04f8a459885a20f2b626ccf5d648ccc5fb57
+source-git-commit: bacb4b6e79519e4fef4cf01e04154d492cc888e2
 workflow-type: tm+mt
-source-wordcount: '2150'
-ht-degree: 26%
+source-wordcount: '2035'
+ht-degree: 27%
 
 ---
 
@@ -63,6 +63,8 @@ ht-degree: 26%
    | **說明** | 選擇性。存放庫的詳細描述。 |
 
 1. 選取&#x200B;**儲存**&#x200B;以新增存放庫。
+
+   現在，提供存取權杖以驗證外部存放庫的所有權。
 
 1. 在&#x200B;**私人存放庫所有權驗證**&#x200B;對話方塊中，提供存取權杖來驗證外部存放庫的所有權，以便您可以存取它，然後按一下&#x200B;**驗證**。
 
@@ -129,6 +131,7 @@ ht-degree: 26%
 >
 >如需關於在 Cloud Manager 管理存放庫的詳細資訊，請參閱「[Cloud Manager 存放庫](/help/managing-code/managing-repositories.md)」。
 
+
 ## 為外部存放庫設定webhook {#configure-webhook}
 
 Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參閱[新增外部存放庫](#add-ext-repo)。 這些Webhook可讓Cloud Manager接收與Git廠商解決方案中不同動作相關的事件。
@@ -172,60 +175,44 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 
    在[新增外部存放庫](#add-ext-repo)中可取得webhook組態的所有詳細資訊以及每個廠商所需的事件。 在步驟8下，參閱標籤表。
 
+1. 找到解決方案的&#x200B;**Webhook**&#x200B;設定區段。
+1. 將您先前複製的Webhook URL貼到URL文字欄位中。
+   1. 將Webhook URL中的`api_key`查詢引數取代為您自己的實際API金鑰。
+
+      若要產生API金鑰，您必須在Adobe Developer Console中建立整合專案。 如需完整詳細資訊，請參閱[建立API整合專案](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)。
+
+1. 將您先前複製的Webhook密碼貼到&#x200B;**密碼** （或&#x200B;**密碼金鑰**&#x200B;或&#x200B;**密碼權杖**）文字欄位中。
+1. 設定webhook以傳送Cloud Manager所需的事件。 請使用下表來判斷您的Git提供者適用的正確事件。
+
 >[!BEGINTABS]
 
 >[!TAB GitHub Enterprise]
 
-1. 找到解決方案的&#x200B;**Webhook**&#x200B;設定區段。
-1. 將您先前複製的Webhook URL貼到URL文字欄位中。
-   1. 將Webhook URL中的`api_key`查詢引數取代為您自己的實際API金鑰。
-
-      若要產生API金鑰，您必須在Adobe Developer Console中建立整合專案。 如需完整詳細資訊，請參閱[建立API整合專案](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)。
-
-1. 將您先前複製的Webhook密碼貼到&#x200B;**密碼** （或&#x200B;**密碼金鑰**&#x200B;或&#x200B;**密碼權杖**）文字欄位中。
-1. 設定webhook以傳送Cloud Manager預期的所需事件。
-
-   | 必要的webhook事件 |
-   | --- |
-   | 這些事件可讓Cloud Manager回應GitHub活動，例如提取請求驗證、管道的推播型觸發器或Edge Delivery Services程式碼同步。<br>請確定webhook已設定為在下列必要webhook事件上觸發：<ul><li>提取請求<li>推送<li>問題註解</li></li></li></ul></ul></ul> |
+    | 必要的webhook事件 |
+    | — |
+    | 這些事件可讓Cloud Manager回應GitHub活動，例如提取請求驗證、管道的推播型觸發器或Edge Delivery Services程式碼同步。&lt;br>請確定webhook已設定為在下列必要webhook事件中觸發：&lt;ul>&lt;li>提取請求&lt;li>推送&lt;li>問題評論&lt;/li>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul> |
 
 >[!TAB GitLab]
 
-1. 找到解決方案的&#x200B;**Webhook**&#x200B;設定區段。
-1. 將您先前複製的Webhook URL貼到URL文字欄位中。
-   1. 將Webhook URL中的`api_key`查詢引數取代為您自己的實際API金鑰。
-
-      若要產生API金鑰，您必須在Adobe Developer Console中建立整合專案。 如需完整詳細資訊，請參閱[建立API整合專案](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)。
-
-1. 將您先前複製的Webhook密碼貼到&#x200B;**密碼** （或&#x200B;**密碼金鑰**&#x200B;或&#x200B;**密碼權杖**）文字欄位中。
-1. 設定webhook以傳送Cloud Manager預期的所需事件。
-
-   | 必要的webhook事件 |
-   | --- |
-   | 這些webhook事件可讓Cloud Manager在推送程式碼或提交合併請求時觸發管道。 也會追蹤與提取請求驗證相關的註解（透過附註事件）。<br>請確定webhook已設定為在下列必要webhook事件上觸發<ul><li>推送事件<li>合併請求事件<li>附註事件</li></li></li></ul></ul></ul> |
+    | 必要的webhook事件 |
+    | — |
+    | 這些webhook事件可讓Cloud Manager在推送程式碼或提交合併請求時觸發管道。 也會追蹤與提取請求驗證相關的註解（透過附註事件）。&lt;br>請確定webhook已設定為在下列必要webhook事件上觸發&lt;ul>&lt;li>推播事件&lt;li>合併請求事件&lt;li>記事事件&lt;/li>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul> |
 
 >[!TAB 位元貯體]
 
-1. 找到解決方案的&#x200B;**Webhook**&#x200B;設定區段。
-1. 將您先前複製的Webhook URL貼到URL文字欄位中。
-   1. 將Webhook URL中的`api_key`查詢引數取代為您自己的實際API金鑰。
-
-      若要產生API金鑰，您必須在Adobe Developer Console中建立整合專案。 如需完整詳細資訊，請參閱[建立API整合專案](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)。
-
-1. 將您先前複製的Webhook密碼貼到&#x200B;**密碼** （或&#x200B;**密碼金鑰**&#x200B;或&#x200B;**密碼權杖**）文字欄位中。
-1. 設定webhook以傳送Cloud Manager預期的所需事件。
-
-   | 必要的webhook事件 |
-   | --- |
-   | 這些事件確保Cloud Manager可以驗證提取請求、回應程式碼推送，以及與評論互動以協調管道。<br>請確定webhook已設定為在下列必要webhook事件上觸發<ul><li>提取請求：已建立<li>提取請求：已更新<li>提取請求：已合併<li>提取請求：註解<li>存放庫：推播</li></li></li></ul></ul></ul> |
+    | 必要的webhook事件 |
+    | — |
+    | 這些事件確保Cloud Manager可以驗證提取請求、回應程式碼推送，以及與評論互動以協調管道。&lt;br>請確定webhook已設定為觸發下列必要的webhook事件&lt;ul>&lt;li>提取請求：已建立&lt;li>提取請求：已更新&lt;li>提取請求：已合併&lt;li>提取請求：評論&lt;li>存放庫：推送&lt;/li>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul> |
 
 >[!ENDTABS]
 
+
 ### 使用Webhook驗證提取請求
 
-正確設定Webhook後，Cloud Manager會自動觸發管道執行，或針對您的存放庫進行PR驗證檢查。
+正確設定webhook後，Cloud Manager會自動觸發存放庫的管道執行或提取請求(PR)驗證檢查。
 
-根據您使用的外部存放庫，以下行為適用：
+此行為會依您使用的Git提供者而有所不同，如下所述。
+
 
 >[!BEGINTABS]
 
