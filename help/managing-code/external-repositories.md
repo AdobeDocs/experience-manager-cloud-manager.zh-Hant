@@ -3,10 +3,10 @@ title: 在Cloud Manager中新增外部存放庫
 description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager支援與GitHub Enterprise、GitLab和Bitbucket存放庫整合。
 badge: label="私人測試版" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: a0836dd24dd3b711c9d1b78f28755e2db98b051c
+source-git-commit: 5bef5a1b8f54a245e1354b1b77c775a06b9b3faa
 workflow-type: tm+mt
-source-wordcount: '2210'
-ht-degree: 17%
+source-wordcount: '2141'
+ht-degree: 26%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 17%
 
 1. 選取&#x200B;**儲存**&#x200B;以新增存放庫。
 
-1. 在&#x200B;**私人存放庫擁有權驗證**&#x200B;對話框中，提供存取權杖以驗證外部存放庫的擁有權，讓您可以進行存取。
+1. 在&#x200B;**私人存放庫所有權驗證**&#x200B;對話方塊中，提供存取權杖來驗證外部存放庫的所有權，以便您可以存取它，然後按一下&#x200B;**驗證**。
 
    ![為存放庫選取現有的存取權杖](/help/managing-code/assets/repositories-exisiting-access-token.png)
    *選取Bitbucket存放庫的現有存取Token （僅供說明之用）。*
@@ -73,43 +73,37 @@ ht-degree: 17%
 
 >[!TAB GitHub Enterprise]
 
-    | 權杖型別 | 說明 |
-    | — | — |
-    | **使用現有的存取Token** | 如果您已為貴組織提供存放庫存取權杖，並擁有多個存放庫的存取權，則可選取現有權杖。 使用&#x200B;**Token名稱**&#x200B;下拉式清單來選擇要套用至存放庫的權杖。 否則，請新增存取權杖。 |
-    | **新增存取權杖** |&lt;ul>&lt;li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取Token的名稱。&lt;li>依照[GitHub檔案](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的指示建立個人存取權杖。&lt;li>GitHub Enterprise Personal Access Token (PAT)的必要許可權&lt;br>這些許可權確保Cloud Manager可以驗證提取請求、管理認可狀態檢查並存取必要的存放庫詳細資料。&lt;br>在GitHub Enterprise中產生PAT時，請確定它包含下列存放庫許可權：&lt;ul>&lt;li>提取請求（讀取和寫入）&lt;li>認可狀態（讀取和寫入）&lt;li>存放庫中繼資料（唯讀）&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
-    
-    1。 按一下&#x200B;**驗證**。
-    
-    驗證後，外部存放庫已準備好使用並連結至管道。
-    
-    另請參閱[管理存取權杖](/help/managing-code/manage-access-tokens.md)。
+| 權杖類型 | 說明 |
+| --- | --- |
+| **使用現有的存取權杖** | 如果您已為組織提供存放庫存取權杖，且有權存取多個存放庫，您可以選取現有的權杖。使用&#x200B;**權杖名稱**&#x200B;下拉清單，選取想要套用至存放庫的權杖。否則，請新增新的存取權杖。 |
+| **新增新的存取權杖** | <ul><li> 在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>依照[GitHub檔案](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的指示建立個人存取權杖。<li>GitHub Enterprise Personal Access Token (PAT)的必要許可權<br>這些許可權確保Cloud Manager可以驗證提取請求、管理認可狀態檢查以及存取必要的存放庫詳細資訊。<br>當您在GitHub Enterprise中產生PAT時，請確定它包含下列存放庫許可權：<ul><li>提取請求（讀取和寫入）<li>認可狀態（讀取和寫入）<li>儲存區域中繼資料（唯讀）</li></li></ul></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
+
+驗證之後，外部存放庫即可使用並連結至管道。
+
+另請參閱[管理存取權杖](/help/managing-code/manage-access-tokens.md)。
 
 >[!TAB GitLab]
 
-    | 權杖型別 | 說明 |
-    | — | — |
-    | **使用現有的存取Token** | 如果您已為貴組織提供存放庫存取權杖，並擁有多個存放庫的存取權，則可選取現有權杖。 使用&#x200B;**Token名稱**&#x200B;下拉式清單來選擇要套用至存放庫的權杖。 否則，請新增存取權杖。 |
-    | **新增存取權杖** |&lt;ul>&lt;li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取Token的名稱。&lt;li>依照[GitLab檔案](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的指示建立個人存取權杖。&lt;li>GitLab個人存取權杖(PAT)的必要許可權&lt;br>這些範圍允許Cloud Manager存取存放庫資料以及驗證和Webhook整合所需的使用者資訊。&lt;br>在GitLab中產生PAT時，請確定它包括下列Token範圍：&lt;ul>&lt;li>api&lt;li>read_user&lt;/li>&lt;/li>&lt;/ul>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛才建立的權杖。 |
+| 權杖類型 | 說明 |
+| --- | --- |
+| **使用現有的存取權杖** | 如果您已為組織提供存放庫存取權杖，且有權存取多個存放庫，您可以選取現有的權杖。使用&#x200B;**權杖名稱**&#x200B;下拉清單，選取想要套用至存放庫的權杖。否則，請新增新的存取權杖。 |
+| **新增新的存取權杖** | <ul><li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>依照[GitLab檔案](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的指示建立個人存取權杖。<li>GitLab個人存取權杖(PAT)的必要許可權<br>這些範圍允許Cloud Manager存取驗證和webhook整合所需的存放庫資料和使用者資訊。<br>當您在GitLab中產生PAT時，請確定它包含下列權杖範圍：<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
 
-1. 按一下「**驗證**」。
+驗證之後，外部存放庫即可使用並連結至管道。
 
-   驗證之後，外部存放庫即可使用並連結至管道。
-
-   另請參閱[管理存取權杖](/help/managing-code/manage-access-tokens.md)。
+另請參閱[管理存取權杖](/help/managing-code/manage-access-tokens.md)。
 
 
 >[!TAB 位元貯體]
 
-    | 權杖型別 | 說明 |
-    | — | — |
-    | **使用現有的存取Token** | 如果您已為貴組織提供存放庫存取權杖，並擁有多個存放庫的存取權，則可選取現有權杖。 使用&#x200B;**Token名稱**&#x200B;下拉式清單來選擇要套用至存放庫的權杖。 否則，請新增存取權杖。 |
-    | **新增存取權杖** |&lt;ul>&lt;li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取Token的名稱。&lt;li>使用[Bitbucket檔案](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)建立存放庫存取權杖。&lt;li>Bitbucket個人存取權杖(PAT)的必要許可權&lt;br>這些許可權可讓Cloud Manager存取存放庫內容、管理提取請求，以及設定或回應webhook事件。&lt;br>當您在Bitbucket中建立應用程式密碼時，請確定它包含下列必要的應用程式密碼許可權：&lt;ul>&lt;li>存放庫（唯讀）&lt;li>提取請求（讀取和寫入）&lt;li>Webhook（讀取和寫入）&lt;/li>&lt;/ul>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>在&#x200B;**Access Token**&#x200B;欄位中，貼上您剛才建立的權杖。 |
-    
-    1。 按一下&#x200B;**驗證**。
-    
-    驗證後，外部存放庫已準備好使用並連結至管道。
-    
-    另請參閱[管理存取權杖](/help/managing-code/manage-access-tokens.md)。
+| 權杖類型 | 說明 |
+| --- | --- |
+| **使用現有的存取權杖** | 如果您已為組織提供存放庫存取權杖，且有權存取多個存放庫，您可以選取現有的權杖。使用&#x200B;**權杖名稱**&#x200B;下拉清單，選取想要套用至存放庫的權杖。否則，請新增新的存取權杖。 |
+| **新增新的存取權杖** | <ul><li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>使用[Bitbucket檔案](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)建立存放庫存取權杖。<li>Bitbucket個人存取Token (PAT)的必要許可權<br>這些許可權可讓Cloud Manager存取存放庫內容、管理提取請求，以及設定或回應webhook事件。<br>當您在Bitbucket中建立應用程式密碼時，請確定它包含下列必要的應用程式密碼許可權：<ul><li>存放庫（唯讀）<li>提取請求（讀取和寫入）<li>Webhook （讀取和寫入）</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
+
+驗證之後，外部存放庫即可使用並連結至管道。
+
+另請參閱[管理存取權杖](/help/managing-code/manage-access-tokens.md)。
 
 >[!ENDTABS]
 
