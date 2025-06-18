@@ -75,10 +75,10 @@ ht-degree: 17%
 
     | 權杖型別 | 說明 |
     | — | — |
-    | **使用現有的存取Token** | 如果您已為貴組織提供存放庫存取權杖，並擁有多個存放庫的存取權，則可選取現有權杖。 使用**Token名稱**下拉式清單來選擇要套用至存放庫的權杖。 否則，請新增存取權杖。 |
-    | **新增存取權杖** |&lt;ul>&lt;li>在**Token名稱**文字欄位中，輸入您要建立之存取Token的名稱。&lt;li>依照[GitHub檔案](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的指示建立個人存取權杖。&lt;li>GitHub Enterprise Personal Access Token (PAT)的必要許可權&lt;br>這些許可權確保Cloud Manager可以驗證提取請求、管理認可狀態檢查並存取必要的存放庫詳細資料。&lt;br>在GitHub Enterprise中產生PAT時，請確定它包含下列存放庫許可權：&lt;ul>&lt;li>提取請求（讀取和寫入）&lt;li>認可狀態（讀取和寫入）&lt;li>存放庫中繼資料（唯讀）&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>在**存取Token**欄位中，貼上您剛建立的權杖。 |
+    | **使用現有的存取Token** | 如果您已為貴組織提供存放庫存取權杖，並擁有多個存放庫的存取權，則可選取現有權杖。 使用&#x200B;**Token名稱**&#x200B;下拉式清單來選擇要套用至存放庫的權杖。 否則，請新增存取權杖。 |
+    | **新增存取權杖** |&lt;ul>&lt;li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取Token的名稱。&lt;li>依照[GitHub檔案](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)中的指示建立個人存取權杖。&lt;li>GitHub Enterprise Personal Access Token (PAT)的必要許可權&lt;br>這些許可權確保Cloud Manager可以驗證提取請求、管理認可狀態檢查並存取必要的存放庫詳細資料。&lt;br>在GitHub Enterprise中產生PAT時，請確定它包含下列存放庫許可權：&lt;ul>&lt;li>提取請求（讀取和寫入）&lt;li>認可狀態（讀取和寫入）&lt;li>存放庫中繼資料（唯讀）&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
     
-    1。 按一下**驗證**。
+    1。 按一下&#x200B;**驗證**。
     
     驗證後，外部存放庫已準備好使用並連結至管道。
     
@@ -88,8 +88,8 @@ ht-degree: 17%
 
     | 權杖型別 | 說明 |
     | — | — |
-    | **使用現有的存取Token** | 如果您已為貴組織提供存放庫存取權杖，並擁有多個存放庫的存取權，則可選取現有權杖。 使用**Token名稱**下拉式清單來選擇要套用至存放庫的權杖。 否則，請新增存取權杖。 |
-    | **新增存取權杖** |&lt;ul>&lt;li>在**Token名稱**文字欄位中，輸入您要建立之存取Token的名稱。&lt;li>依照[GitLab檔案](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的指示建立個人存取權杖。&lt;li>GitLab個人存取權杖(PAT)的必要許可權&lt;br>這些範圍允許Cloud Manager存取存放庫資料以及驗證和Webhook整合所需的使用者資訊。&lt;br>在GitLab中產生PAT時，請確定它包括下列Token範圍：&lt;ul>&lt;li>api&lt;li>read_user&lt;/li>&lt;/li>&lt;/ul>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>在**存取Token**欄位中，貼上您剛才建立的權杖。 |
+    | **使用現有的存取Token** | 如果您已為貴組織提供存放庫存取權杖，並擁有多個存放庫的存取權，則可選取現有權杖。 使用&#x200B;**Token名稱**&#x200B;下拉式清單來選擇要套用至存放庫的權杖。 否則，請新增存取權杖。 |
+    | **新增存取權杖** |&lt;ul>&lt;li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取Token的名稱。&lt;li>依照[GitLab檔案](https://docs.gitlab.com/user/profile/personal_access_tokens/)中的指示建立個人存取權杖。&lt;li>GitLab個人存取權杖(PAT)的必要許可權&lt;br>這些範圍允許Cloud Manager存取存放庫資料以及驗證和Webhook整合所需的使用者資訊。&lt;br>在GitLab中產生PAT時，請確定它包括下列Token範圍：&lt;ul>&lt;li>api&lt;li>read_user&lt;/li>&lt;/li>&lt;/ul>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛才建立的權杖。 |
 
 1. 按一下「**驗證**」。
 
@@ -102,10 +102,10 @@ ht-degree: 17%
 
     | 權杖型別 | 說明 |
     | — | — |
-    | **使用現有的存取Token** | 如果您已為貴組織提供存放庫存取權杖，並擁有多個存放庫的存取權，則可選取現有權杖。 使用**Token名稱**下拉式清單來選擇要套用至存放庫的權杖。 否則，請新增存取權杖。 |
-    | **新增存取權杖** |&lt;ul>&lt;li>在**Token名稱**文字欄位中，輸入您要建立之存取Token的名稱。&lt;li>使用[Bitbucket檔案](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)建立存放庫存取權杖。&lt;li>Bitbucket個人存取權杖(PAT)的必要許可權&lt;br>這些許可權可讓Cloud Manager存取存放庫內容、管理提取請求，以及設定或回應webhook事件。&lt;br>當您在Bitbucket中建立應用程式密碼時，請確定它包含下列必要的應用程式密碼許可權：&lt;ul>&lt;li>存放庫（唯讀）&lt;li>提取請求（讀取和寫入）&lt;li>Webhook（讀取和寫入）&lt;/li>&lt;/ul>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>在**Access Token**欄位中，貼上您剛才建立的權杖。 |
+    | **使用現有的存取Token** | 如果您已為貴組織提供存放庫存取權杖，並擁有多個存放庫的存取權，則可選取現有權杖。 使用&#x200B;**Token名稱**&#x200B;下拉式清單來選擇要套用至存放庫的權杖。 否則，請新增存取權杖。 |
+    | **新增存取權杖** |&lt;ul>&lt;li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取Token的名稱。&lt;li>使用[Bitbucket檔案](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)建立存放庫存取權杖。&lt;li>Bitbucket個人存取權杖(PAT)的必要許可權&lt;br>這些許可權可讓Cloud Manager存取存放庫內容、管理提取請求，以及設定或回應webhook事件。&lt;br>當您在Bitbucket中建立應用程式密碼時，請確定它包含下列必要的應用程式密碼許可權：&lt;ul>&lt;li>存放庫（唯讀）&lt;li>提取請求（讀取和寫入）&lt;li>Webhook（讀取和寫入）&lt;/li>&lt;/ul>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>在&#x200B;**Access Token**&#x200B;欄位中，貼上您剛才建立的權杖。 |
     
-    1。 按一下**驗證**。
+    1。 按一下&#x200B;**驗證**。
     
     驗證後，外部存放庫已準備好使用並連結至管道。
     
