@@ -3,9 +3,9 @@ title: 在Cloud Manager中新增外部存放庫
 description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager支援與GitHub Enterprise、GitLab和Bitbucket存放庫整合。
 badge: label="私人測試版" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 073f1024891e1a1d4298c5c593df011f5572e820
+source-git-commit: 523e8ef1c90bf88aa846e067aa1cca9e6ed5d8ce
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2283'
 ht-degree: 31%
 
 ---
@@ -73,8 +73,6 @@ ht-degree: 31%
 
 >[!TAB GitHub Enterprise]
 
-**GitHub Enterprise**
-
 | 權杖類型 | 說明 |
 | --- | --- |
 | **使用現有的存取權杖** | 如果您已為組織提供存放庫存取權杖，且有權存取多個存放庫，您可以選取現有的權杖。使用&#x200B;**權杖名稱**&#x200B;下拉清單，選取想要套用至存放庫的權杖。否則，請新增新的存取權杖。 |
@@ -88,8 +86,6 @@ ht-degree: 31%
 
 >[!TAB GitLab]
 
-**GitLab**
-
 | 權杖類型 | 說明 |
 | --- | --- |
 | **使用現有的存取權杖** | 如果您已為組織提供存放庫存取權杖，且有權存取多個存放庫，您可以選取現有的權杖。使用&#x200B;**權杖名稱**&#x200B;下拉清單，選取想要套用至存放庫的權杖。否則，請新增新的存取權杖。 |
@@ -102,8 +98,6 @@ ht-degree: 31%
 >功能&#x200B;**新增存取權杖**&#x200B;目前處於私人測試階段。 其他的功能正在規劃中。因此，存取權杖所需的權限可能會變更。另外，用於管理權杖的使用者介面可能會更新，可能包括權杖過期日期等功能。並且，自動檢查以確保連結至存放庫的權杖保持有效。
 
 >[!TAB 位元貯體]
-
-**位元貯體**
 
 | 權杖類型 | 說明 |
 | --- | --- |
@@ -190,8 +184,6 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 
 >[!TAB GitHub Enterprise]
 
-**GitHub Enterprise**
-
 1. 找到解決方案的&#x200B;**Webhook**&#x200B;設定區段。
 1. 將您先前複製的Webhook URL貼到URL文字欄位中。
    1. 將Webhook URL中的`api_key`查詢引數取代為您自己的實際API金鑰。
@@ -207,8 +199,6 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 
 >[!TAB GitLab]
 
-**GitLab**
-
 1. 找到解決方案的&#x200B;**Webhook**&#x200B;設定區段。
 1. 將您先前複製的Webhook URL貼到URL文字欄位中。
    1. 將Webhook URL中的`api_key`查詢引數取代為您自己的實際API金鑰。
@@ -223,8 +213,6 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
    | 這些webhook事件可讓Cloud Manager在推送程式碼或提交合併請求時觸發管道。 也會追蹤與提取請求驗證相關的註解（透過附註事件）。<br>請確定webhook已設定為在下列必要webhook事件上觸發<ul><li>推送事件<li>合併請求事件<li>附註事件</li></li></li></ul></ul></ul> |
 
 >[!TAB 位元貯體]
-
-**位元貯體**
 
 1. 找到解決方案的&#x200B;**Webhook**&#x200B;設定區段。
 1. 將您先前複製的Webhook URL貼到URL文字欄位中。
@@ -251,15 +239,11 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 
 >[!TAB GitHub Enterprise]
 
-**GitHub Enterprise**
-
 建立檢查時，其外觀類似下列熒幕擷圖。 與`GitHub.com`的主要差異在於`GitHub.com`使用檢查執行，而GitHub Enterprise （使用個人存取權杖）會產生認可狀態：
 
 ![認可狀態以指示GitHub Enterprise上的PR驗證程式](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 >[!TAB GitLab]
-
-**GitLab**
 
 GitLab互動僅依賴評論。 驗證開始時，會新增註解。 驗證完成後（無論成功還是失敗），初始註解都將被移除並替換為包含驗證結果或錯誤詳細資料的新註解。
 
@@ -280,8 +264,6 @@ GitLab互動僅依賴評論。 驗證開始時，會新增註解。 驗證完成
 ![當程式碼品質驗證因客戶問題而失敗時](/help/managing-code/assets/repository-webhook-gitlab4.png)
 
 >[!TAB 位元貯體]
-
-**位元貯體**
 
 程式碼品質驗證執行時：
 
