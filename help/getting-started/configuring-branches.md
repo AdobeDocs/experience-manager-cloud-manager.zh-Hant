@@ -2,10 +2,10 @@
 title: 設定分支
 description: 了解如何設定您在 Git 中的第一個分支，以及 CI/CD 管道如何運用該分支部署您的應用程式程式碼。
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '324'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 95%
 
 ---
 
@@ -74,7 +74,7 @@ To <url>
 
 ## 額外的分支 {#additional-branches}
 
-對於非常簡單的專案，單一 `main` 分支可能就足夠了，但在大多數情況下，會需要較複雜的分支策略。許多客戶所依循的流程是在一個名為 `develop` 的分支上執行日常開發活動。然後，當需要部署時再將開發分支合併到 `main` 分支中。
+對於非常簡單的專案，單一 `main` 分支可能就足夠了，但在大多數情況下，會需要較複雜的分支策略。許多客戶所依循的流程是在一個名為 `develop` 的分支上執行日常開發活動。然後，當需要部署時，`develop`分支會合併到`main`分支中。
 
 >[!TIP]
 >

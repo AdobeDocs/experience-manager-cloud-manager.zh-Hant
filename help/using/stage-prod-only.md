@@ -2,16 +2,16 @@
 title: 分割僅限階段和僅限生產的管道
 description: 了解如何使用專用管道，分割中繼和生產部署。
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 35845e827b0a3fadfe2a55a2171b5e02100cf3eb
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 98%
+source-wordcount: '917'
+ht-degree: 96%
 
 ---
 
 # 分割僅限階段和僅限生產的管道 {#stage-prod-only}
 
-了解如何使用專用管道，分割中繼和生產部署。
+您可以使用專用管道來分割中繼和生產部署。
 
 ## 概觀 {#overview}
 
@@ -75,7 +75,7 @@ ht-degree: 98%
 
 ### 僅限生產管道 {#prod-only}
 
-1. 選取「**新增僅限生產管道**」選項後，「**新增僅限生產管道**」對話框會開啟。
+1. 在您按一下&#x200B;**新增僅限生產的管道**&#x200B;後，其相關的對話方塊會開啟。
 1. 在「**管道名稱**」欄位中輸入想要的名稱。此對話框的其餘選項和功能，與標準耦合管道建立對話框中的選項和功能相同。
 1. 在對話框右下角，按一下「**儲存**」。
 

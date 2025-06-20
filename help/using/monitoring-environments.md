@@ -2,10 +2,10 @@
 title: 監視環境
 description: 了解如何在 Cloud Manager 中監視環境。
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 98%
+source-wordcount: '865'
+ht-degree: 75%
 
 ---
 
@@ -28,8 +28,8 @@ Adobe Managed Services 會設定臨界值，您可以在 [!UICONTROL Cloud Manag
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 按一下您要監視之程式的![其他圖示，省略符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
-1. 在選單中的「**管理**」標題下，按一下「**顯示監視**」開啟「**報告**」頁面，顯示出系統監視資訊。
+1. 按一下要監視的方案的![「更多」圖示 (省略符號)](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+1. 在功能表的&#x200B;**管理**&#x200B;下方，按一下&#x200B;**顯示監視**&#x200B;以開啟顯示系統監視資訊的&#x200B;**報告**&#x200B;頁面。
 
    ![設定](/help/assets/first-timea1.png)
 
@@ -73,28 +73,28 @@ Adobe Managed Services 會設定臨界值，您可以在 [!UICONTROL Cloud Manag
 
 #### 主機 {#host}
 
-* **每個核心處理器的負載**：CPU 正在執行的程序數量。或者，在一分鐘 (load1)、五分鐘 (load5) 和十五分鐘 (load15) 期間平均處於等待狀態的佇列程序數。
-* **程序計數**：目前未完成的程序數。
-* **使用者計數**：具有作用中 shell 工作階段的使用者數量。
-* **記憶體用量**：目前已分配之系統記憶體的百分比。
-* **JVM 記憶體**：已分配之 Java 堆積的大小 (以 MB 為單位)。
-* **舊世代空間**：目前已分配之 JVM 舊世代記憶體的百分比。
+* **`Load Per Core`**： CPU正在執行的處理序數目。 或者，在一分鐘 (load1)、五分鐘 (load5) 和十五分鐘 (load15) 期間平均處於等待狀態的佇列程序數。
+* **P`rocess Count`**：目前開啟的處理序數目。
+* **`User Count`**：具有使用中殼層工作階段的使用者數目。
+* **`Memory Usage`**：目前已配置的系統記憶體的百分比。
+* **`JVM Memory`**：已配置之Java棧積的大小（以MB為單位）。
+* **`Old Generation Space`**：目前已配置的JVM舊世代記憶體的百分比。
 
 #### 網路 {#network}
 
-* **CQ 連接埠檢查**：存取 AEM 或 Dispatcher 連接埠的回應時間 (以秒為單位)。作者、發佈和 Dispatcher 有不同的量度。
+* **`CQ Port Check`**：存取AEM或Dispatcher連線埠的回應時間（秒）。 作者、發佈和 Dispatcher 有不同的量度。
 
 #### 儲存空間 {#storage}
 
-* **磁碟空間**：主機上每個掛接點已使用的磁碟空間 (以 MB 為單位)。每個掛接點都有不同的量度。至少會有 `/` 和 `/mnt` 的量度，但如要更多掛接點量度，可能需視特定執行個體設定而定。
-* **資料夾大小**
-* **AEM 區段存放區**：AEM 區段存放區已使用的磁碟空間 (以 GB 為單位)。
+* **`Disk Space`**：主機上每個掛接點已使用的磁碟空間（以MB為單位）。 每個掛接點都有不同的量度。至少會有 `/` 和 `/mnt` 的量度，但如要更多掛接點量度，可能需視特定執行個體設定而定。
+* **`Folder Size`**
+* **`AEM Segment Store`**： AEM區段存放區已使用的磁碟空間（以GB為單位）。
 
 #### 應用程式 {#application}
 
-* **複寫代理程式**：測試複寫事件所需時間 (以秒為單位)
+* **`Replication Agent`**：測試復寫事件所需的時間（以秒為單位）
    * 每個複寫代理程式都有單獨的量度。
-* **Dispatcher 清除快取**：目前在 Dispatcher 清除快取佇列中的項目數
+* **`Dispatcher Flush`**：目前在Dispatcher排清佇列中的專案數
 
 ## SLA 報告 {#sla-reporting}
 
@@ -114,15 +114,15 @@ Adobe Managed Services 會設定臨界值，您可以在 [!UICONTROL Cloud Manag
 
 ## SLA 量度 {#sla-metrics}
 
-* **作者合約**：您和 Adobe Managed Services 的合約中為作者層級定義的 SLA。
-* **AMS 作者 SLA**：生產作者層級測量到的運作時間，將廠商或 Adobe 所引起之事故納入考量。
-* **作者 SLA**：作者層級測量到的運作時間，忽略已排程的停工期，例如維護期。
-* **一般使用者合約**：您和 Adobe Managed Services 的合約中為發佈層級定義的 SLA。
-* **AMS 一般使用者 SLA**：生產發佈層級測量到的運作時間，將廠商或 Adobe 所引起之事故納入考量。
-* **一般使用者 SLA**：發佈層級測量到的運作時間，忽略已排程的停工期，例如維護期。
+* **`Author Contract`**：您與Adobe Managed Services的合約中為製作層級定義的SLA。
+* **`AMS Author SLA`**：測量到的生產製作層級運作時間，因廠商或Adobe引起的客製化事件。
+* **`Author SLA`**：測量出的製作層級運作時間，忽略已排程的停工期，例如維護期。
+* **`End User Contract`**：您和Adobe Managed Services的合約中為發佈層級定義的SLA。
+* **`AMS End User SLA`**：測量到的生產發佈層級運作時間，因廠商或Adobe引起的客製化事件。
+* **`End User SLA`**：測量到的發佈層級運作時間，忽略已排程的停工期，例如維護期。
 
 ## 教學課程影片 {#video-tutorial}
 
-本影片概述如何使用 Cloud Manager Reports 產生的圖表來檢視您的方案環境。
+本影片概觀如何使用 Cloud Manager Reports 產生的圖表來檢視您的方案環境。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26315/)

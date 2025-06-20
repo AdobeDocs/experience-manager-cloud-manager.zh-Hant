@@ -2,10 +2,10 @@
 title: 自訂權限
 description: 了解如何使用自訂權限建立新的自訂權限設定檔並內含可設定的權限，以便限制 Cloud Manager 使用者對方案、管道和環境的存取。
 exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1416'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '1373'
+ht-degree: 98%
 
 ---
 
@@ -111,23 +111,23 @@ Cloud Manager 有一組預先定義的角色，用於管理 Cloud Manager 各項
 以下權限可用於建立自訂設定檔。
 
 | 權限 | 說明 |
-|---|---|
-| 方案存取 | 允許使用者存取方案 |
-| 方案編輯 | 允許使用者編輯方案 |
-| 管道建立 | 允許使用者建立新管道 |
-| 管道刪除 | 允許使用者刪除管道 |
-| 管道編輯 | 允許使用者編輯管道 |
-| 生產部署核准/拒絕 | 允許使用者核准或拒絕生產部署步驟 |
-| 管道執行取消 | 允許使用者取消管道執行 |
-| 管道執行啟動 | 允許使用者啟動新的管道執行 |
-| 覆寫/拒絕重要量度失敗 | 允許使用者覆寫/拒絕重要量度失敗 |
-| 生產部署排程 | 允許使用者排程生產部署步驟 |
-| 存放庫資訊存取 | 允許使用者存取存放庫資訊並產生存取密碼 |
-| 存放庫建立 | 允許使用者建立新的 Git 存放庫 |
-| 存放庫刪除 | 允許使用者刪除 Git 存放庫 |
-| 存放庫編輯 | 允許使用者編輯 Git 存放庫 |
-| 存放庫程式碼產生 | 允許使用者從原型版本產生專案 |
-| 內容複製管理 | 允許使用者管理內容複製作業 |
+| --- | --- |
+| `Program Access` | 允許使用者存取方案 |
+| `Program Edit` | 允許使用者編輯方案 |
+| `Pipeline Create` | 允許使用者建立新管道 |
+| `Pipeline Delete` | 允許使用者刪除管道 |
+| `Pipeline Edit` | 允許使用者編輯管道 |
+| `Production Deployments Approve/Reject` | 允許使用者核准或拒絕生產部署步驟 |
+| `Pipeline Executions Cancel` | 允許使用者取消管道執行 |
+| `Pipeline Executions Start` | 允許使用者啟動新的管道執行 |
+| `Override/Reject Important Metric Failures` | 允許使用者覆寫/拒絕重要量度失敗 |
+| `Production Deployments Schedule` | 允許使用者排程生產部署步驟 |
+| `Repository Info Access` | 允許使用者存取存放庫資訊並產生存取密碼 |
+| `Repository Create` | 允許使用者建立新的 Git 存放庫 |
+| `Repository Delete` | 允許使用者刪除 Git 存放庫 |
+| `Repository Edit` | 允許使用者編輯 Git 存放庫 |
+| `Repository Code Generate` | 允許使用者從原型版本產生專案 |
+| `Content Copy Manage` | 允許使用者管理內容複製作業 |
 
 ### 組織層級權限 {#organization-level}
 
@@ -142,7 +142,7 @@ Cloud Manager 有一組預先定義的角色，用於管理 Cloud Manager 各項
 以下詞彙用於建立和管理自訂權限和預先定義的角色。
 
 | 術語 | 說明 |
-|---|---|
+| --- | --- |
 | 預先定義的權限 | 預先定義的角色，例如&#x200B;**企業所有者**、**部署管理員**&#x200B;等等。管理 Cloud Manager 的各項功能。如需深入了解預先定義的角色，請參閱[角色型權限](/help/requirements/role-based-permissions.md)。 |
 | 自訂權限 | Cloud Manager 的功能，允許使用者建立權限設定檔來定義角色以管理 Cloud Manager 的支援功能 |
 | 權限設定檔 | 在 Admin Console 中建立，用於管理可設定的權限，而這些權限適用於權限設定檔所包含的使用者 |
@@ -152,11 +152,11 @@ Cloud Manager 有一組預先定義的角色，用於管理 Cloud Manager 各項
 權限項目是指權限所適用的範圍。通常是以下其中一項：
 
 | 權限項目類型 | 範例 | 說明 |
-|---|---|---|
+| --- | --- | --- |
 | 組織 | 組織：公司 A | 組織的所有適用資源。資源可以是方案、環境或管道。如果使用者在任何權限中新增一個組織，則該組織中所有新資源也具有該權限。 |
-| 方案 | 方案 A | 方案的所有適用資源 |
-| 環境 | 方案 A：環境 | 適用於特定環境 |
-| 管道 | 方案 A：管道 | 適用於特定管道 |
+| 方案 | 方案 A | 方案的所有適用資源。 |
+| 環境 | 方案 A：環境 | 適用於特定環境。 |
+| 管道 | 方案 A：管道 | 適用於特定管道。 |
 
 ## 限制 {#limitations}
 

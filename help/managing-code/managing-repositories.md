@@ -2,10 +2,10 @@
 title: 管理 Cloud Manager 中的存放庫
 description: 了解如何在 Cloud Manager 中新增和刪除 Git 存放庫。
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: ee84c682b6bd2b9144b3f75d544dea33a5ad944b
-workflow-type: ht
-source-wordcount: '732'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '730'
+ht-degree: 97%
 
 ---
 
@@ -73,7 +73,7 @@ Cloud Manager 支援兩種存放庫：Adobe 託管的存放庫 (**Adobe 存放�
 
 ## 檢查分支/建立專案 {#check-branches}
 
-在 **AEM Cloud Manager** 中，**檢查分支/建立專案**&#x200B;動作有兩個用途，實際取決於存放庫目前的狀態。
+在&#x200B;**AEM Cloud Manager**&#x200B;中，**檢查分支/建立專案**&#x200B;有兩個用途，視存放庫的目前狀態而定。
 
 * 如果是新建立的存放庫，則此動作將使用 [AEM 專案原型](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/overview)產生範例專案。
 * 如果範例專案已建立在存放庫中，則該動作將檢查存放庫及其分支的狀態，提供有關範例專案是否已存在的意見回饋。

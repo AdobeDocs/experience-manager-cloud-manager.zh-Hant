@@ -3,10 +3,10 @@ title: Cloud Manager 2025.6.0 版發行說明
 description: 了解 Adobe Managed Services 上的 Cloud Manager 2025.5.0 版。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 38d398caf2323b603afd293aa9152308fefd323f
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 68%
+source-wordcount: '556'
+ht-degree: 71%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 68%
 
   請參閱[僅限階段和僅限生產管道](/help/using/stage-prod-only.md)。
 
-* **管道我的最愛**
+* **最愛管道**
 
   在此版本中，Cloud Manager引入釘選我的最愛管道的功能，可讓您將特定管道標籤為我的最愛，以便這些管道顯示在&#x200B;**管道**&#x200B;頁面上的清單頂端。 此增強功能讓您能夠更容易找到和執行經常存取的管道。<!-- CMGR-68293 -->
 
@@ -48,11 +48,11 @@ ht-degree: 68%
   請參閱[將管道標記為我的最愛](/help/using/managing-pipelines.md#pipeline-favorites)。
 
 
-## 私人測試版計畫 {#beta-program}
+## Private Beta 計劃 {#beta-program}
 
 參與Cloud Manager的私人測試版計畫，在一般版本發行前取得即將推出的功能的獨家存取權。
 
-目前提供下列私人測試版商機：
+目前提供以下 Private Beta 機會：
 
 
 ### 自備 Git - 現在支援 GitLab 和 Bitbucket {#gitlab-bitbucket}
@@ -73,7 +73,7 @@ ht-degree: 68%
 
 #### 管理存取權杖{#access-tokens}
 
-結合BYOG使用&#x200B;**管理存取權杖**&#x200B;功能，檢視、重新命名和刪除與外部「自攜Git」存放庫（例如GitHub Enterprise、GitLab、Bitbucket和Azure DevOps）相關聯的存取權杖。
+使用BYOG的&#x200B;**管理存取權杖**，以檢視、重新命名和刪除與外部自備Git存放庫關聯的存取權杖，例如GitHub Enterprise、GitLab、Bitbucket和Azure DevOps。
 
 請參閱[管理存取權杖](/help/managing-code/manage-access-tokens.md)。
 

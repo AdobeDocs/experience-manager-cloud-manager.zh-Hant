@@ -2,10 +2,10 @@
 title: 自訂程式碼品質規則
 description: 探索 Cloud Manager 在程式碼品質測試過程中執行的自訂程式碼品質規則的具體細節。這些規則以 AEM Engineering 的最佳實務為基礎。
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 54987d6ccd8c31dab677d90b40466c458743f936
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '3644'
-ht-degree: 96%
+source-wordcount: '3636'
+ht-degree: 95%
 
 ---
 
@@ -227,7 +227,7 @@ public void orDoThis(Session session) throws Exception {
 * **嚴重度**：重大
 * **始自**：2018.4.0 版本
 
-如 [Sling 文件](https://sling.apache.org/documentation/the-sling-engine/servlets.html)中所述，不建議按路徑繫結 servlet。路徑繫結的 servlet 不能使用標準的 JCR 存取控制，因此需要額外嚴格的安全性。建議不要使用路徑繫結的 servlet，而是在存放庫中建立節點並按資源類型註冊 servlet。
+如[Sling檔案](https://sling.apache.org/documentation/the-sling-engine/servlets.html)中所述，不建議按路徑繫結servlet。 路徑繫結的 servlet 不能使用標準的 JCR 存取控制，因此需要額外嚴格的安全性。建議不要使用路徑繫結的 servlet，而是在存放庫中建立節點並按資源類型註冊 servlet。
 
 #### 不符合規範的程式碼 {#non-compliant-code-5}
 
@@ -475,7 +475,7 @@ public void doThis() {
 * **嚴重度**：輕微
 * **始自**：2018.4.0 版本
 
-以 `/libs` 和 `/apps` 開頭的路徑通常不應使用硬式編碼。這些路徑通常儲存在 Sling 搜尋路徑的相對位置，預設為 `/libs,/apps`。使用絕對路徑可能會產生難以察覺的缺陷，而且後期才會在專案生命週期中顯現。
+以 `/libs` 和 `/apps` 開頭的路徑通常不應使用硬式編碼。這些路徑通常會相對於`Sling`搜尋路徑（預設為`/libs,/apps`）儲存。 使用絕對路徑可能會產生難以察覺的缺陷，而且後期才會在專案生命週期中顯現。
 
 #### 不符合規範的程式碼 {#non-compliant-code-13}
 
@@ -500,7 +500,7 @@ public void doThis(Resource resource) {
 * **嚴重度**：輕微
 * **始自**：2020.5.0 版本
 
-請勿將 Sling 排程器用於要求保證執行的任務。Sling 已排程的作業可保證執行並更適合叢集和非叢集環境。
+請勿將Sling排程器用於需要保證執行的任務。 Sling 已排程的作業可保證執行並更適合叢集和非叢集環境。
 
 若要了解如何在叢集環境中處理 Sling 作業的詳細資訊，請參閱 [Apache Sling 事件和作業處理文件](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)。
 
@@ -908,8 +908,7 @@ AEM Cloud Service禁止在多個索引中建立包含相同標籤的索引定義
 * **嚴重度**：重大
 * **始自**：2025.4.0 版本
 
-/content以下的路徑不允許在檔案儲存庫中使用「取代」模式；它不應該用於/etc和/var以下的路徑。
-「取代」模式會使用內容套件中提供的內容來取代存放庫中所有現有的內容，而且觸發此動作的套件不應包含在透過CloudManager部署的套件中。
+`/content`以下的路徑不允許在檔案儲存庫中使用「取代」模式；它不應該用於低於`/etc`與`/var.`的路徑。 「取代」模式會以來自封裝的內容覆寫現有的存放庫內容。 透過Cloud Manager部署的套件不應包含觸發此動作的套件。
 
 ## Dispatcher 最佳化工具 {#dispatcher-optimization-tool-rules}
 

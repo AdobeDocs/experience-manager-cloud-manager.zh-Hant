@@ -3,29 +3,28 @@ title: 評估階段
 seo-title: Evaluation Phase
 description: 了解產品更新精靈的評估階段如何使用模式偵測器來評估升級複雜性。
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
-workflow-type: ht
-source-wordcount: '279'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 57%
 
 ---
 
 
 # 評估階段 {#evaluation}
 
-產品更新精靈的第一階段為&#x200B;**[!UICONTROL 評估]**&#x200B;階段，該階段會直接在精靈中使用模式偵測器來評估升級複雜性。在此步驟結束時，您可以存取評估報告。
+產品更新精靈的第一階段是&#x200B;**[!UICONTROL 評估]**&#x200B;階段。 它會在精靈中執行模式偵測器，以評估升級複雜性。 在此步驟結束時，您可以檢視評估報告。
 
-所產生的報告可讓您透過偵測以下模式來檢查作者實例的升級資格：
+該報告會透過偵測以下模式，來檢查作者執行個體的升級整備程度：
 
-* 違反關於受升級影響或覆寫之區域的特定規則。
+* 受升級影響或覆寫的區域中的規則違規。
+* 此版本使用的AEM 6.x功能或API無法回溯相容，且升級後可能會失效。
 
-* 使用 AEM 6.x 功能，或和新版本 AEM 無法回溯相容且升級後可能會中斷的 API。
-
-該報告可用於評估升級到 Adobe Experience Manager (AEM) 6.5 所需的開發工作。
+此報表有助於估計升級至Adobe Experience Manager (AEM) 6.5所需的開發工作。
 
 >[!NOTE]
 >
->若要了解更多有關模式偵測器的詳細資訊，請參閱「[使用模式偵測器評估升級複雜性](https://experienceleague.adobe.com/zh-hant/docs/ experience-manager-65/content/implementing/deploying/upgrading/pattern-detector)」。
+>若要了解更多有關模式偵測器的詳細資訊，請參閱「[使用模式偵測器評估升級複雜性](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/deploying/upgrading/pattern-detector)」。
 
 ## 執行評估報告 {#running}
 
@@ -45,4 +44,4 @@ ht-degree: 100%
 
    ![報告已建立](/help/assets/Evaluation-1.png)
 
-Cloud Manager 中最新版本的產品更新精靈目前僅支援&#x200B;**評估**&#x200B;階段。即將推出其他四個階段，分別為&#x200B;**修復**、**執行**、**驗證**&#x200B;以及&#x200B;**完成**。
+Cloud Manager中目前的產品更新精靈僅支援&#x200B;**評估**&#x200B;階段。 即將推出其他四個階段，分別為&#x200B;**修復**、**執行**、**驗證**&#x200B;以及&#x200B;**完成**。

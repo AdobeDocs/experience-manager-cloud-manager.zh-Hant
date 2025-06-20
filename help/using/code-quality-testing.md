@@ -2,10 +2,10 @@
 title: 程式碼品質測試
 description: 了解管道程式碼品質測試如何運作及如何提高部署品質。
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: f5e6ac81c6454730850bb7e884d82be48d2f8525
-workflow-type: ht
-source-wordcount: '2793'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '2783'
+ht-degree: 98%
 
 ---
 
@@ -126,18 +126,18 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | 載入還原序列化防火牆。 | [還原序列化防火牆已載入](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | 嚴重 |
 | `AuthorizableNodeName` 實作不會在節點名稱/路徑中揭露可授權 ID。 | [可授權節點名稱產生](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/security/security-checklist#security) | 嚴重 |
 | 已變更預設密碼。 | [預設登入帳戶](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/security/security#users-and-groups-in-aem) | 嚴重 |
-| Sling 預設的 GET servlet 受到保護，免於 DOS 攻擊。 | Sling Get Servlet | 嚴重 |
-| Sling JavaScript 處理常式已正確設定。 | Sling JavaScript 處理常式 | 嚴重 |
-| 已正確設定 Sling JSP 指令碼處理常式。 | Sling JSP 指令碼處理常式 | 嚴重 |
+| `Sling`個預設GET servlet受到保護，免於DOS攻擊。 | `Sling Get` servlet | 嚴重 |
+| 已正確設定`Sling` JavaScript處理常式。 | `Sling` JavaScript處理常式 | 嚴重 |
+| 已正確設定`Sling` JSP指令碼處理常式。 | `Sling` JSP指令碼處理常式 | 嚴重 |
 | 已正確設定 SSL。 | SSL 設定 | 嚴重 |
 | 未找到明顯不安全的使用者設定檔原則。 | 使用者設定檔預設存取 | 嚴重 |
-| 已設定 Sling 查閱者篩選器來防止 CSRF 攻擊。 | [Sling 查閱者篩選器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/security/security-checklist#security) | 重要 |
+| `Sling`反向連結篩選器已設定為防止CSRF攻擊。 | [Sling 查閱者篩選器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/security/security-checklist#security) | 重要 |
 | 已正確設定 Adobe Granite HTML 資料庫管理員。 | CQ HTML 資料庫管理員組態 | 重要 |
 | 已停用 CRXDE 支援套裝。 | CRXDE 支援 | 重要 |
-| 已停用 Sling DavEx 套裝和 servlet。 | DavEx 健康情況檢查 | 重要 |
+| `Sling` DavEx組合與servlet已停用。 | DavEx 健康情況檢查 | 重要 |
 | 未安裝樣本內容。 | 範例內容套件 | 重要 |
 | 已停用 WCM 請求篩選器和 WCM 偵錯篩選器。 | [WCM 篩選器設定](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/deploying/configuring/osgi-configuration-settings#configuring) | 重要 |
-| 已正確設定 Sling WebDAV 套裝和 servlet。 | WebDAV 健康情況檢查 | 重要 |
+| 已正確設定`Sling` WebDAV套件組合和servlet。 | WebDAV 健康情況檢查 | 重要 |
 | 已設定 Web 伺服器來預防 clickjacking。 | Web 伺服器組態 | 重要 |
 | 複寫並非使用 `admin` 使用者。 | 複寫及傳輸使用者 | 資訊 |
 

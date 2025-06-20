@@ -2,10 +2,10 @@
 title: 角色型權限
 description: 了解 Cloud Manager 預先設定的角色型權限以管理對您的雲端資源的存取。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 682b142f35bc233bad82b0ddfa69bc0f2d5b5fdb
-workflow-type: ht
-source-wordcount: '616'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '560'
+ht-degree: 99%
 
 ---
 
@@ -43,26 +43,26 @@ ht-degree: 100%
 
 | 權限 | 說明 | 業務負責人 | 部署管理員 | 方案管理員 | 開發人員 | CSE |
 | --- | --- | --- | --- | --- | --- | --- |
-| 讀取應用程式 | 讀取方案 KPI | x | x | x | x | x |
-| 寫入應用程式 | 方案設定或編輯 | x | | | | |
-| 新增方案 | 選取新方案 | x |  |  |  |  |
-| 讀取環境 | 請參閱環境詳細資料 | x | x | x | x | x |
-| 建立執行 | 啟動管道 | x | x | x | | |
-| 讀取執行 | 啟動執行狀態 | x | x | x | x | x |
-| 恢復執行 | 暫停狀態下恢復執行的能力 | x | x | x | | x |
-| 執行核准部署至生產環境 | 提供上線核准 | x | x | x | | |
-| 執行排程部署至生產環境 | 生產部署排程 | x | x | x | | x |
-| 執行部署至生產環境 | 在因 CSE 監督而暫停時將應用程式部署到生產環境 |  |  |  |  | x |
-| 執行取消 | 取消目前的執行 |  |  | x |  |  |
-| 執行覆寫品質閘道失敗 | 核准重要品質閘道失敗 | x | x | x |  |  |
-| 管道建立 | 設定 / 編輯管道 |  | x |  |  |  |
-| 管道讀取 | 查看管道詳情 | x | x | x | x | x |
-| 管道寫入 | 設定 / 編輯管道 |  | x |  |  |  |
-| 管道修改核准 | 允許編輯企業所有者選項 |  | x |  |  |  |
-| 管道修改受管理的部署 | 允許 CSE 監督選項的編輯 |  | x |  |  |  |
-| 管道刪除 | 勇許管道刪除 |  | x |  |  |  |
-| 步驟讀取 | 查看步驟品質量度結果 | x | x | x | x | x |
-| 產生個人存取權杖 | 存取 Git |  | x |  | x |  |
+| `Read the Application` | 讀取方案 KPI | x | x | x | x | x |
+| `Write Application` | 方案設定或編輯 | x | | | | |
+| `Add Program` | 選取新方案 | x |  |  |  |  |
+| `Read Environment` | 請參閱環境詳細資料 | x | x | x | x | x |
+| `Create Execution` | 啟動管道 | x | x | x | | |
+| `Read Execution` | 啟動執行狀態 | x | x | x | x | x |
+| `Resume Execution` | 暫停狀態下恢復執行的能力 | x | x | x | | x |
+| `Execution Approve Deploy to Production` | 提供上線核准 | x | x | x | | |
+| `Execution Schedule Deploy to Production` | 生產部署排程 | x | x | x | | x |
+| `Execution Deploy to Production` | 在因 CSE 監督而暫停時將應用程式部署到生產環境 |  |  |  |  | x |
+| `Execution Cancel` | 取消目前的執行 |  |  | x |  |  |
+| `Execution Override Quality Gate Failures` | 核准重要品質閘道失敗 | x | x | x |  |  |
+| `Pipeline Create` | 設定 / 編輯管道 |  | x |  |  |  |
+| `Pipeline Read` | 查看管道詳情 | x | x | x | x | x |
+| `Pipeline Write` | 設定 / 編輯管道 |  | x |  |  |  |
+| P`ipeline Modify Approval` | 允許編輯企業所有者選項 |  | x |  |  |  |
+| `Pipeline Modify Managed Deployment` | 允許 CSE 監督選項的編輯 |  | x |  |  |  |
+| `Pipeline Delete` | 勇許管道刪除 |  | x |  |  |  |
+| `Step Read` | 查看步驟品質量度結果 | x | x | x | x | x |
+| `Generate Personal Access Token` | 存取 Git |  | x |  | x |  |
 
 <!-- CQDOC-22080 | Download log files  |  |  | x |  | x |  | -->
 
