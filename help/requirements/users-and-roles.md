@@ -2,10 +2,10 @@
 title: 新增使用者和角色
 description: 了解如何使用 Admin Console 新增使用者和角色，並建立設定檔。
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+source-git-commit: 012359b4ecf872ece036b27b48fededf150493d2
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 89%
+source-wordcount: '872'
+ht-degree: 84%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 89%
 >
 >Admin Console 中的「開發人員」人物誌和 [!UICONTROL Cloud Manager] 中的「開發人員」角色並無相關。
 
-## 使用 Admin Console 建立設定檔 {#using-admin-console-to-create-a-profile}
+## 使用Admin Console建立產品設定檔 {#using-admin-console-to-create-a-profile}
 
 從 Admin Console 管理 [!UICONTROL Cloud Manager] 角色。透過將使用者新增到 [!UICONTROL Cloud Manager] 產品設定檔，可提供特定的角色會籍。
 
@@ -55,7 +55,13 @@ Admin Console 是在整個組織中管理 Adobe 權益的中心位置。若要�
 * 開發人員
 * 方案管理員
 
-您可以使用 Admin Console 建立或新增使用者/群組到這些產品設定檔。
+使用Admin Console建立使用者或群組或將其新增到這些產品設定檔。
+
+>[!IMPORTANT]
+>
+>由於Admin Console和Cloud Manager目前的限制，在選取&#x200B;**無許可權**&#x200B;的情況下無法儲存設定檔。 嘗試這樣做會導致後端錯誤。 此行為會影響部署管理員設定檔的建立。 做為因應措施，在建立新設定檔時請至少選取一個許可權。
+
+**若要使用Admin Console建立產品設定檔：**
 
 1. 請在 [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com) 登入 Admin Console。
 
@@ -76,6 +82,10 @@ Admin Console 是在整個組織中管理 Adobe 權益的中心位置。若要�
    * **設定檔名稱** - 此&#x200B;**設定檔名稱** 可以為任何值，但為避免混淆，建議使用&#x200B;**建議的設定檔名稱**&#x200B;欄中的值。
    * **顯示名稱** - 此&#x200B;**顯示名稱**&#x200B;必須是由[!UICONTROL Cloud Manager] 定義的技術值 (請參閱下表)。
    * **權限群組** - 您可以為設定檔選擇一個權限群組 (並不一定可提供)。
+
+     >[!IMPORTANT]
+     >
+     >由於Admin Console和Cloud Manager目前的限制，在選取&#x200B;**無許可權**&#x200B;的情況下無法儲存設定檔。 嘗試這樣做會導致後端錯誤。 此行為會影響部署管理員設定檔的建立。 做為因應措施，在建立新設定檔時請至少選取一個許可權。
 
    ![建立新設定檔](/help/assets/screen_shot_2018-05-04at171819.png)
 
@@ -101,18 +111,18 @@ Admin Console 是在整個組織中管理 Adobe 權益的中心位置。若要�
 
 1. 在左側導覽面板中按一下&#x200B;**使用者**，然後按一下使用者以進行修改。
 
-1. 按一下&#x200B;**產品**&#x200B;區段中的![其他圖示，省略符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下&#x200B;**編輯**。
+1. 在「**產品**」區段按一下![「更多」圖示 (省略符號)](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下「**編輯**」。
 
    ![編輯使用者](/help/assets/admin-console-edit-user.png)
 
-1. 在&#x200B;**編輯產品和使用者群組**&#x200B;對話方塊中，按一下![新增圖示，加號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)並選取要指派給使用者的設定檔。
+1. 在「**編輯產品和使用者群組**」對話框中，按一下![「新增」圖示 (加號)](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)，並選取要指派給使用者的設定檔。
 
-   * 如果使用者已經指派給角色，![新增圖示，加上](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)按鈕是編輯按鈕（鉛筆），但運作方式相同。
+   * 如果使用者已指派角色，則此![「新增」圖示 (加號)](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)按鈕會變成編輯按鈕 (鉛筆)，但使用方式相同。
 
    ![編輯產品和使用者群組](/help/assets/admin-console-edit-products-and-user-groups.png)
 
 1. 按一下&#x200B;**儲存**，即可將設定檔儲存給使用者。
 
-重複相同的步驟即可將設定檔指派給使用者群組，但需從左側導覽面板選取&#x200B;**使用者群組** (位於&#x200B;**使用者**&#x200B;索引標籤上)。按一下使用者群組並選取&#x200B;**指派的產品設定檔**&#x200B;按一下&#x200B;**指派產品設定檔**&#x200B;以指派設定檔。
+重複相同的步驟即可將設定檔指派給使用者群組，但需從左側導覽面板選取&#x200B;**使用者群組** (位於&#x200B;**使用者**&#x200B;索引標籤上)。按一下使用者群組並選取「**已指派的產品設定檔**」，然後按一下「**指派產品設定檔**」來指派設定檔。
 
-![將設定檔指派給群組](/help/assets/admin-console-edit-user-groups.png)
+![將設定檔指派至群組](/help/assets/admin-console-edit-user-groups.png)
