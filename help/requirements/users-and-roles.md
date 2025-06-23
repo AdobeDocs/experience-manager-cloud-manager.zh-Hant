@@ -2,10 +2,10 @@
 title: 新增使用者和角色
 description: 了解如何使用 Admin Console 新增使用者和角色，並建立設定檔。
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 012359b4ecf872ece036b27b48fededf150493d2
+source-git-commit: 9ad9af206fafea45f8bbf61b02950de0776b5a9f
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 84%
+source-wordcount: '770'
+ht-degree: 95%
 
 ---
 
@@ -57,9 +57,10 @@ Admin Console 是在整個組織中管理 Adobe 權益的中心位置。若要�
 
 使用Admin Console建立使用者或群組或將其新增到這些產品設定檔。
 
+<!-- CQDOC-22790
 >[!IMPORTANT]
 >
->由於Admin Console和Cloud Manager目前的限制，在選取&#x200B;**無許可權**&#x200B;的情況下無法儲存設定檔。 嘗試這樣做會導致後端錯誤。 此行為會影響部署管理員設定檔的建立。 做為因應措施，在建立新設定檔時請至少選取一個許可權。
+>Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. -->
 
 **若要使用Admin Console建立產品設定檔：**
 
@@ -83,18 +84,19 @@ Admin Console 是在整個組織中管理 Adobe 權益的中心位置。若要�
    * **顯示名稱** - 此&#x200B;**顯示名稱**&#x200B;必須是由[!UICONTROL Cloud Manager] 定義的技術值 (請參閱下表)。
    * **權限群組** - 您可以為設定檔選擇一個權限群組 (並不一定可提供)。
 
-     >[!IMPORTANT]
-     >
-     >由於Admin Console和Cloud Manager目前的限制，在選取&#x200B;**無許可權**&#x200B;的情況下無法儲存設定檔。 嘗試這樣做會導致後端錯誤。 此行為會影響部署管理員設定檔的建立。 做為因應措施，在建立新設定檔時請至少選取一個許可權。
+<!-- CQDOC-22790
+      >[!IMPORTANT]
+      >
+      >Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. -->
 
-   ![建立新設定檔](/help/assets/screen_shot_2018-05-04at171819.png)
+![建立新設定檔](/help/assets/screen_shot_2018-05-04at171819.png)
 
-   | 角色 | 顯示名稱 (必填) | 建議的設定檔名稱 |
-   |---|---|---|
-   | 企業所有者 | `CM_BUSINESS_OWNER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - 企業所有者角色 |
-   | 部署管理員 | `CM_DEPLOYMENT_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - 部署管理員角色 |
-   | 開發人員 | `CM_DEVELOPER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - 開發人員角色 |
-   | 方案管理員 | `CM_PROGRAM_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - 方案管理員角色 |
+| 角色 | 顯示名稱 (必填) | 建議的設定檔名稱 |
+|---|---|---|
+| 企業所有者 | `CM_BUSINESS_OWNER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - 企業所有者角色 |
+| 部署管理員 | `CM_DEPLOYMENT_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - 部署管理員角色 |
+| 開發人員 | `CM_DEVELOPER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - 開發人員角色 |
+| 方案管理員 | `CM_PROGRAM_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - 方案管理員角色 |
 
 
 1. 按一下&#x200B;**完成**&#x200B;即可儲存新的設定檔。
