@@ -2,9 +2,9 @@
 title: Cloud Manager 常見問題集
 description: 了解 AMS 客戶提出有關 Cloud Manager 的常見問題的解答。
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '748'
+source-git-commit: e7e9844b5f06552fc2104584c63935dee7a9fa89
+workflow-type: tm+mt
+source-wordcount: '709'
 ht-degree: 100%
 
 ---
@@ -14,12 +14,13 @@ ht-degree: 100%
 
 本文件為 AMS 客戶提供有關 Cloud Manager 最常見問題的解答。
 
-## 是否可能將 Java 11 和 Cloud Manager 組建一起使用？ {#java-11}
+<!-- 
+## Is it possible to use Java 11 with Cloud Manager builds? {#java-11}
 
-可以。您需要使用 Java 11 的正確設定新增 `maven-toolchains-plugin`。
+Yes. You need to add the `maven-toolchains-plugin` with the correct settings for Java 11.
 
-* 此流程記錄在[此處](/help/getting-started/using-the-wizard.md)。
-* 舉例來說，請參閱「[WKND 範例專案程式碼](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)」。
+* This process is documented [here](/help/getting-started/using-the-wizard.md).
+* For an example, see the [WKND sample project code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75). -->
 
 ## 從 Java 8 切換到 Java 11 後，我的組建失敗並出現有關 maven-scr-plugin 的錯誤。該怎麼辦？ {#maven-src-plugin}
 
@@ -68,7 +69,7 @@ ht-degree: 100%
 
 您還可以將版本設定為 `-SNAPSHOT`，以用於測試和生產組建或部署。Cloud Manager 會自動設定適當的版本編號並在 Git 中為您建立標記。如有需要，稍後可以參照此標記。
 
-有關版本處理的進一步詳細資訊[記錄在此處](https://experienceleague.adobe.com/zh-hant/docs/ experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling)。
+有關版本處理的進一步詳細資訊[記錄在此處](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling)。
 
 ## 套件和套裝的版本設定如何用於中繼和生產部署？ {#staging-production}
 

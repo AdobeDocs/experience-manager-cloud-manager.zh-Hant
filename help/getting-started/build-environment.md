@@ -2,10 +2,10 @@
 title: 組建環境
 description: 了解 Cloud Manager 使用者用於建置和測試程式碼的專用組建環境。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+source-git-commit: e9f3ac70735a95a15b1f63cf40496672162de777
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 97%
+source-wordcount: '1161'
+ht-degree: 83%
 
 ---
 
@@ -40,6 +40,9 @@ Cloud Manager 的建置環境有下列屬性。
 * 在系統層級使用 `settings.xml` 檔案設定 Maven，其會利用名為 `adobe-public` 的設定檔自動納入公共 Adobe 成品存放庫。如需更多詳細資訊，請參閱 [Adobe 公共 Maven 存放庫](https://repo1.maven.org/)。
 * Node.js 18 可用於[前端管道](/help/overview/ci-cd-pipelines.md)。
 
+>[!IMPORTANT]
+>Cloud Manager 2025.06.0版的Maven工具鏈支援已移除。現在僅支援透過`.cloudmanager/java-version`選取JDK。 如需詳細資訊，請參閱[使用特定的Java版本](#using-java-version)。
+
 >[!NOTE]
 >
 >雖然 Cloud Manager 並未定義 `jacoco-maven-plugin` 的特定版本，但使用的版本必須至少為 `0.7.5.201505241946`。
@@ -62,14 +65,23 @@ Cloud Manager [2023.10.0 版](/help/release-notes/2023/2023-10-0.md)開始推出
 
 ## 使用特定 Java 版本 {#using-java-version}
 
-在預設情況下，由 Cloud Manager 建置程序建置的專案使用 Oracle 8 JDK。希望使用備用 JDK 的客戶有兩種選擇。
+在預設情況下，由 Cloud Manager 建置程序建置的專案使用 Oracle 8 JDK。想要使用替代JDK的客戶可以為整個Maven執行流程選擇替代JDK版本。
 
-* [Maven 工具鏈](#maven-toolchains)
-* [如需全部 Maven 執行流程，可選取備用 JDK 版本。](#alternate-maven)
+>[!IMPORTANT]
+>
+>Cloud Manager 2025.06.0不再支援Maven工具鏈。請注意，包含maven-toolchains-plugin設定的管道將失敗，並出現`Cannot find matching toolchain definitions.`請使用`.cloudmanager/java-version`檔案來選取JDK 11、17或21。
+>
+>**移轉指南：**
+>
+>1. 透過刪除任何`org.apache.maven.plugins:maven-toolchains-plugin`專案以及任何認可至您原始檔控制項的`toolchains.xml`來移除工具鏈。
+>1. 挑選具有`.cloudmanager/java-version`（21、17或11）的JDK，如[備用Maven執行JDK版本](#alternate-maven)中所述。
+>1. Adobe建議清除Cloud Manager組建快取或觸發新的管道執行。
+>
 
-### Maven 工具鏈 {#maven-toolchains}
+<!--DEPRECATED 
+### Maven Toolchains {#maven-toolchains}
 
-此 [Maven 工具鏈外掛程式](https://maven.apache.org/plugins/maven-toolchains-plugin/)讓專案可選取特定 JDK (或工具鏈)，在工具鏈感知的 Maven 外掛程式中使用。透過指定廠商和版本值，在專案的 `pom.xml` 檔案中完成這個程序。在 `pom.xml` 檔案中的範例區段如下：
+The [Maven Toolchains plug-in](https://maven.apache.org/plugins/maven-toolchains-plugin/) lets projects select a specific JDK (or toolchain) to use in the context of toolchains-aware Maven plug-ins. This process is done in the project's `pom.xml` file by specifying a vendor and version value. A sample section in the `pom.xml` file is the following:
 
 ```xml
         <plugin>
@@ -92,30 +104,31 @@ Cloud Manager [2023.10.0 版](/help/release-notes/2023/2023-10-0.md)開始推出
         </toolchains>
     </configuration>
 </plugin>
+
 ```
 
-此流程致使所有工具鏈感知的 Maven 外掛程式使用 Oracle JDK 版本 11。
+This process causes all toolchains-aware Maven plug-ins to use the Oracle JDK, version 11.
 
-採用此方法時，Maven 本身仍使用預設的 JDK (Oracle 8) 執行，並且 `JAVA_HOME` 環境變數並未變更。因此，透過 [Apache Maven Enforcer Plug-in](https://maven.apache.org/enforcer/maven-enforcer-plugin/) 之類的外掛程式來檢查或強制執行 Java 版本並不可行，且不得使用這類外掛程式。
+When using this method, Maven itself still runs using the default JDK (Oracle 8) and the `JAVA_HOME` environment variable is not changed. Therefore, checking or enforcing the Java version through plug-ins like the [Apache Maven Enforcer Plug-in](https://maven.apache.org/enforcer/maven-enforcer-plugin/) does not work and such plug-ins must not be used.
 
-目前可提供的廠商/版本組合為：
+The currently available vendor/version combinations are:
 
-| 廠商 | 版本 |
+|Vendor|Version|
 |---|---|
-| Oracle | 1.8 |
-| Oracle | 1.11 |
-| Oracle | 11 |
-| Sun | 1.8 |
-| Sun | 1.11 |
-| Sun | 11 |
+| Oracle |1.8|
+| Oracle |1.11|
+| Oracle |11|
+| Sun |1.8|
+| Sun |1.11|
+| Sun |11|
 
 >[!NOTE]
 >
->從 2022 年 4 月開始，Oracle JDK 會成為 AEM 應用程式開發和運作的預設 JDK。Cloud Manager 的建置程序自動切換成使用 Oracle JDK，即使在 Maven 工具鏈中已明確選取替代選項。如需詳細資訊，請參閱 [4 月發行說明](/help/release-notes/2022/2022-4-0.md)。
+>Starting April 2022, Oracle JDK is going to be the default JDK for the development and operation of AEM applications. Cloud Manager's build process automatically switches to using Oracle JDK, even if an alternative option is explicitly selected in the Maven toolchain. See the [April release notes](/help/release-notes/2022/2022-4-0.md) for more details. -->
 
 ### 備用 Maven 執行 JDK 版本 {#alternate-maven}
 
-也可以選取 Oracle 8 或 Oracle 11 做為整個 Maven 執行的 JDK。和工具鏈選項不同，這會變更適用於所有外掛程式的 JDK，除非同時設定工具鏈設定，若是這種情況，則工具鏈設定仍適用於工具鏈感知的 Maven 外掛程式。於是，利用 [Apache Maven Enforcer Plug-in](https://maven.apache.org/enforcer/maven-enforcer-plugin/) 來檢查和強制執行 Java 版本變成有效的方法。
+您可以選取Oracle 8或Oracle 11作為整個Maven執行的JDK。 此方法會變更用於所有外掛程式的JDK。 於是，利用 [Apache Maven Enforcer Plug-in](https://maven.apache.org/enforcer/maven-enforcer-plugin/) 來檢查和強制執行 Java 版本變成有效的方法。
 
 為進行此程序，可在管道使用的 Git 存放庫分支中建立名為 `.cloudmanager/java-version` 的檔案。本檔案可能有的內容為 `11` 或 `8`。任何其他值會受到忽略。若指定`11`，則系統使用Oracle 11並將`JAVA_HOME`環境變數設為`/usr/lib/jvm/jdk-11.0.22`。 若指定`8`，則系統使用Oracle 8並將`JAVA_HOME`環境變數設為`/usr/lib/jvm/jdk1.8.0_401`。
 
