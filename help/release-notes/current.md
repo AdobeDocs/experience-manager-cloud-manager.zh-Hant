@@ -3,10 +3,10 @@ title: Cloud Manager 2025.7.0 版發行說明
 description: 了解 Adobe Managed Services 上的 Cloud Manager 2025.7.0 版。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 106caded8056a8a667b6c702b573566f9358f401
+source-git-commit: a1f023b8ecc6fcae97832c5f3fad6bb8ae79ced1
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 65%
+source-wordcount: '528'
+ht-degree: 67%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 65%
 
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-下一個預計發行日期為2025年8月7日星期四。
+下一個版本預計於 2025 年 8 月 7 日 (星期四) 發行。
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
@@ -48,9 +48,9 @@ ht-degree: 65%
   請參閱[將管道標記為我的最愛](/help/using/managing-pipelines.md#pipeline-favorites)。
 
 
-## 早期採用者計劃 {#beta-program}
+## Alpha/Beta計畫 {#beta-program}
 
-參與Cloud Manager的Alpha版和Beta版計畫，在一般版本發行前取得即將推出的功能的專屬搶先使用權。
+參與Cloud Manager的Alpha版和Beta版計畫，在一般版本發行前取得即將推出的功能的獨家存取權。
 
 目前提供下列機會：
 
