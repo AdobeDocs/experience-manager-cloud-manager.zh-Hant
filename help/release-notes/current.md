@@ -3,10 +3,10 @@ title: Cloud Manager 2025.8.0 版發行說明
 description: 了解 Adobe Managed Services 上的 Cloud Manager 2025.8.0 版。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: d6f058c3f6dc010f08a5cb75a0fb152b56111e79
+source-git-commit: 73a094f47f518e2782ac96357e1adc4e923a0b63
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 58%
+source-wordcount: '625'
+ht-degree: 71%
 
 ---
 
@@ -57,7 +57,37 @@ ht-degree: 58%
 目前提供下列機會：
 
 
-### 自備 Git - 現在支援 GitLab 和 Bitbucket {#gitlab-bitbucket}
+### 自備Git (BYOG) {#gitlab-bitbucket-azure-vsts}
+
+<!-- BOTH CS & AMS -->
+
+客戶現在可以將其 Azure DevOps Git 存放庫加入 Cloud Manager 中，並同時支援現代 Azure DevOps 和舊版 VSTS (Visual Studio Team Services) 存放庫。
+
+* Edge Delivery Services 使用者可以使用所加入的存放庫來同步處理及部署網站程式碼。
+* AEM as a Cloud Service 和 Adobe Managed Services (AMS) 使用者可以將此存放庫連結至全堆疊以及前端管道。
+
+即將推出對更多管道類型的支援以及透過程式碼品質管道驗證提取要求的功能。
+
+請查看[在 Cloud Manager 中新增外部存放庫](/help/managing-code/external-repositories.md)。
+
+![Add Repository dialog box](/help/release-notes/assets/azure-repo.png)
+
+如果您有興趣測試此新功能並分享您的意見回饋，請使用與您的 Adobe ID 關聯的電子郵件地址向 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) 傳送電子郵件。請務必包含您要使用的 Git 平台以及您是否使用私人/公開或企業存放庫結構。
+
+#### 管理存取權杖{#manage-access-tokens}
+
+使用 Cloud Manager 中的&#x200B;**管理存取權杖**，檢視、重新命名及刪除與外部 BYOG 存放庫 (例如 GitHub Enterprise、GitLab、Bitbucket 和 Azure DevOps) 關聯的存取權杖。
+
+請參閱[管理存取權杖](/help/managing-code/manage-access-tokens.md)。
+
+如果您有興趣測試此新功能並分享意見回饋，請使用與您的 Adobe ID 相關聯的電子郵件寄送電子郵件至 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)。
+
+
+
+
+
+
+
 
 **自攜Git** (BYOG)功能已擴充為包含對外部存放庫（例如GitLab和Bitbucket）的支援。 這項新的支援功能是對私人和企業 GitHub 存放庫現有支援的補充。當您新增這些新存放庫時，也可以將它們直接連結到您的管道。您可以將這些存放庫託管在公有雲平台上或私有雲或基礎架構內。這項整合也消除了與 Adobe 存放庫持續進行代碼同步的需求，並提供了在提取請求合併到主分支之前，驗證提取請求的功能。
 
