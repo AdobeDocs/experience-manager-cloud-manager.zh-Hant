@@ -7,9 +7,9 @@ user-guide-description: 了解如何使用 Cloud Manager 在雲端自行管理�
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: cd51834aa2b9d0ccc291d6d8ef1a88ecab83f277
+source-git-commit: b1e693ed0c7745ca5ee36a0b593236784ffaf526
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '376'
 ht-degree: 91%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 91%
    + [新增使用者和角色](/help/requirements/users-and-roles.md)
    + [自訂權限](/help/using/custom-permissions.md)
    + [環境佈建](/help/requirements/environment-provisioning.md)
-+ 開始使用 {#getting-started}
++ 快速入門 {#getting-started}
    + [首次登入](/help/getting-started/first-time-login.md)
    + [導覽](/help/getting-started/navigation.md)
    + [方案設定](/help/getting-started/program-setup.md)
@@ -77,6 +77,7 @@ ht-degree: 91%
 + 發行說明 {#release-notes}
    + [目前版本](/help/release-notes/current.md)
    + 2025 {#rn-2025}
+      + [2025.7.0](/help/release-notes/2025/2025-7-0.md)
       + [2025.6.0](/help/release-notes/2025/2025-6-0.md)
       + [2025.5.0](/help/release-notes/2025/2025-5-0.md)
       + [2025.4.0](/help/release-notes/2025/2025-4-0.md)

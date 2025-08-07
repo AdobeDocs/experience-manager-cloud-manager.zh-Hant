@@ -1,11 +1,10 @@
 ---
 title: 在Cloud Manager中管理存取權杖
 description: 瞭解如何在Adobe Managed Services上檢視、編輯和刪除用於在Cloud Manager中自攜Git的存取權杖。
-badge: label="私人測試版" type="Positive" url="/help/release-notes/current.md#access-tokens"
 exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
-source-git-commit: 254ad0ac77e793657292e34ae4a6bf3baecea8d5
+source-git-commit: d6f058c3f6dc010f08a5cb75a0fb152b56111e79
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '388'
 ht-degree: 3%
 
 ---
@@ -14,7 +13,7 @@ ht-degree: 3%
 
 Cloud Manager使用存取權杖來管理託管於外部Git平台上的存放庫。 先前，如果權杖過期，關聯的存放庫必須重新上線才能保持運作。
 
-現在，**管理存取權杖**&#x200B;功能可讓您更有效率地管理權杖。 您可以檢視、重新命名或移除連線至受支援外部Git提供者（包括GitHub Enterprise、GitLab、Bitbucket和Azure DevOps）的Token。
+現在，**管理存取權杖**&#x200B;可讓您更有效地管理權杖。 您可以檢視、重新命名或移除連線至受支援外部Git提供者（包括GitHub Enterprise、GitLab、Bitbucket和Azure DevOps）的Token。
 
 另請參閱[在Cloud Manager中新增外部存放庫](/help/managing-code/external-repositories.md)。
 
@@ -55,4 +54,4 @@ Cloud Manager使用存取權杖來管理託管於外部Git平台上的存放庫�
 
    目前使用中的權杖的圖示已停用（![刪除大綱圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)）。
 
-1. 在&#x200B;**刪除存取權杖**&#x200B;對話方塊中，按一下&#x200B;**刪除**&#x200B;以永久移除權杖。
+1. 在&#x200B;**刪除存取權杖**&#x200B;中，按一下&#x200B;**刪除**&#x200B;以永久移除權杖。
