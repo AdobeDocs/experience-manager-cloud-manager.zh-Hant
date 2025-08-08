@@ -3,10 +3,10 @@ title: Cloud Manager 2025.8.0 版發行說明
 description: 了解 Adobe Managed Services 上的 Cloud Manager 2025.8.0 版。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 73a094f47f518e2782ac96357e1adc4e923a0b63
+source-git-commit: cba5f331d2b4093822dce4470147966e2cac15b7
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 71%
+source-wordcount: '469'
+ht-degree: 66%
 
 ---
 
@@ -81,27 +81,6 @@ ht-degree: 71%
 請參閱[管理存取權杖](/help/managing-code/manage-access-tokens.md)。
 
 如果您有興趣測試此新功能並分享意見回饋，請使用與您的 Adobe ID 相關聯的電子郵件寄送電子郵件至 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)。
-
-
-
-
-
-
-
-
-**自攜Git** (BYOG)功能已擴充為包含對外部存放庫（例如GitLab和Bitbucket）的支援。 這項新的支援功能是對私人和企業 GitHub 存放庫現有支援的補充。當您新增這些新存放庫時，也可以將它們直接連結到您的管道。您可以將這些存放庫託管在公有雲平台上或私有雲或基礎架構內。這項整合也消除了與 Adobe 存放庫持續進行代碼同步的需求，並提供了在提取請求合併到主分支之前，驗證提取請求的功能。
-
-對於使用外部存放庫 (不包括 GitHub 託管的存放庫) 且&#x200B;**部署觸發程序**&#x200B;設定為「**在 Git 變更時**」的管道，現在會自動啟動。
-
-請查看[在 Cloud Manager 中新增外部存放庫](/help/managing-code/external-repositories.md)。
-
-![新增存放庫對話框](/help/release-notes/assets/repositories-add-release-notes.png)
-
->[!NOTE]
->
->目前，立即可用的提取請求代碼品質檢查僅限於 GitHub 託管的存放庫，但我們正在進行一項更新以將此功能擴展到其他 Git 供應商。
-
-<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
 
 #### 管理存取權杖{#access-tokens}
 
