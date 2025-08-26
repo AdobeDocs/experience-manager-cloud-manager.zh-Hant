@@ -1,12 +1,13 @@
 ---
 title: 關於Experience Hub
 description: 瞭解Adobe Experience Hub頁面。
-hide: true
-hidefromtoc: true
-source-git-commit: b64b8529e4c6072c9bcb7438dc2d89098d29115d
+hide: false
+hidefromtoc: false
+exl-id: adc8996f-671a-4018-a195-1212ea662284
+source-git-commit: 2a67253253bb06b888bc0283d07838a6f0779532
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 7%
+source-wordcount: '547'
+ht-degree: 5%
 
 ---
 
@@ -14,9 +15,9 @@ ht-degree: 7%
 
 Experience Hub推出管理Adobe Experience Manager內容、資產和網站的集中式起點。 Experience Hub的設計目的是提供個人化體驗，可讓您根據自己的角色和目標，順暢地在AEM生態系統中導覽。 它以指南的方式提供關鍵的深入解析和建議的動作，協助您有效率地達成目標。Experience Hub擁有清晰、以人物為導向的版面配置，可確保快速存取基本工具，並支援所有AEM功能中精簡而有效的體驗。
 
-觀看重新構想的AEM Experience Hub工作區快速導覽（1分鐘27秒）。
+觀看重新構想的AEM Experience Hub工作區快速導覽（2分鐘19秒）。
 
->[!VIDEO](https://video.tv.adobe.com/v/3463278?quality=12&learn=on&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3470957?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -27,8 +28,8 @@ Available as a private beta, Experience Hub offers an optimized experience focus
 
    ![Adobe Experience Cloud首頁](/help/assets/experience-cloud-experiencemanager.png)
 
-1. 在&#x200B;**快速存取**&#x200B;群組中，按一下&#x200B;**Experience Manager**。
-1. 在&#x200B;**告訴我們您要做什麼**&#x200B;頁面上，按一下您想要的選項，讓Adobe可以量身打造您的體驗。
+1. 在&#x200B;**快速存取**&#x200B;群組中，按一下&#x200B;[**Experience Manager**](https://experience.adobe.com)。
+1. 第一次存取時，請在&#x200B;**告訴我們您要做什麼**&#x200B;頁面上按一下您想要的選項，讓Adobe可以量身打造您的體驗。
 
    您可以隨時變更此喜好設定。
 
@@ -43,9 +44,17 @@ Adobe Experience Manager頁面已更新為增強型導覽和互動式Widget。 �
 * Extension Manager
 * Brand Portal
 
-這些解決方案現在移至&#x200B;**工具**&#x200B;下的主要導覽。 此外，**Sites**&#x200B;和&#x200B;**Assets**&#x200B;的新導覽元素可讓您快速存取重要的Adobe Experience Manager功能，例如Assets、集合、Sites和內容片段。 這些功能適用於您有存取權的主要生產環境。
+>[!IMPORTANT]
+>
+>顯示的Widget、工具和成品取決於使用者角色、權益和AEM部署型別(AEM as a Cloud Service或Managed Services 6.5/6.5 LTS)。
+
+這些解決方案現在移至&#x200B;**工具**&#x200B;或&#x200B;**服務**&#x200B;下的主要導覽。 此外，新的導覽元素可讓您快速存取主要Adobe Experience Manager功能，這些功能是已啟用解決方案專用的，例如Assets、Sites、Forms、內容片段、啟動等等。
 
 ![Experience Hub環境](/help/assets/experience-hub-author-environments.png)
+
+這些功能適用於您有權存取的主要生產環境，或者您可以選取特定環境作為目標，以備您存取多個AEM執行個體時使用。
+
+![生產和中繼環境](/help/assets/experience-hub-prod-stage.png)
 
 作為Adobe Experience Manager的中央樞紐，Experience Hub頁面會展開並包含為每個使用者角色量身打造的其他介面工具和動作。 可完全自訂的頁面，可讓您選擇熒幕的最佳版面配置。 Widget可經過篩選，因此只有選取的元件會顯示在首頁面上，確保提供個人化體驗。
 
@@ -55,15 +64,21 @@ Widget也可以在頁面上調整大小和重新定位，以更符合您的需�
 
 ![Experience Hub Widget](/help/assets/experience-hub-widgets.png)
 
-「**製作環境**」區段會顯示您可存取的所有AEM環境，而「**最近**」區段則提供AEM系統內追蹤的最近造訪頁面清單。
+**製作環境**&#x200B;區段會顯示您可存取的所有AEM環境，其中包含解決方案和頁面可用的特定捷徑，也可讓您在清單頂端釘選您要顯示的特定環境。
 
-導覽元素包括Assets Browse，它會載入使用者可存取的生產環境的存放庫。
+下圖中的&#x200B;**最近**&#x200B;區段列出您最近在AEM中造訪的頁面。 根據您的租使用者授權，Widget可能包含「方案」、「管道執行」、「Assets」、「頁面編輯器」和「表單編輯器」等專案。
 
-![Experience Hub導覽元素](/help/assets/experience-hub-navigation.png)
+頁面左上角附近的&#x200B;**快速鍵**&#x200B;提供可設定的快速鍵清單，協助您開始日常工作。 此清單可自訂，每個動作都會以選取的AEM環境為目標。
 
-如果沒有可用的生產AEM Cloud Service環境，則使用者的選項會顯示為暗灰色（無法使用）。
+![製作環境](/help/assets/experience-hub-recents.png)
+
+![Experience Hub快速鍵](/help/assets/experience-hub-quick-shortcuts.png)
+
+如果沒有生產AEM Cloud Service或Managed Services環境存在，選擇選項會變暗且無法使用。
 
 ![無生產環境的Experience Hub](/help/assets/experience-hub-no-prod-environs.png)
 
+<!--
+## AI Assistant in AEM 6.5
 
-
+For customers who have [completed pre-requisite criteria](/help/ai-assistant-in-aem.md#get-access), the AI Assistant in AEM is available to users of their organization. See [AI Assistant in AEM](/help/ai-assistant-in-aem.md). -->
