@@ -3,9 +3,9 @@ title: Cloud Manager 2025.8.0 版發行說明
 description: 了解 Adobe Managed Services 上的 Cloud Manager 2025.8.0 版。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: b34fe26f8c9a2d59a7df3d03717f302fe4456352
+source-git-commit: 5df4852716a608c7497e93eef030b4b5bd27d42b
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '475'
 ht-degree: 75%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 75%
 
   從 2025 年 8 月 19 日起，Adobe 將分階段向所有 Adobe Experience Manager 使用者推出新的 Experience Hub。
 
-  Experience Hub 是統一的起點，提供符合內容情境的個人化體驗，幫助使用者更快實現目標。該推出計畫於 2025 年 8 月 26 日結束，屆時所有使用者皆可使用。新的 Experience Hub 可直接透過 [experience.adobe.com](https://experience.adobe.com/) 存取。若想了解更多資訊，請參閱 [Adobe Experience Hub](/help/experience-hub.md)。
+  Experience Hub 是統一的起點，提供符合內容情境的個人化體驗，幫助使用者更快實現目標。該推出計畫於 2025 年 8 月 26 日結束，屆時所有使用者皆可使用。新的 Experience Hub 可直接透過 [experience.adobe.com](https://experience.adobe.com/) 存取。若想了解更多資訊，請參閱 [Adobe Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)。
 
 * **僅限暫存及僅限生產的管道**
 
