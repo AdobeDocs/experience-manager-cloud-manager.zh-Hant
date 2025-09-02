@@ -2,10 +2,10 @@
 title: 導覽 Cloud Manager UI
 description: 了解 Cloud Manager UI 的組織方式以及如何導覽此 UI 來管理您的方案和環境。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 5cde30f97eb4fb9e784179cb85fba36eccca9dbc
+source-git-commit: cc41d4716aa3c3683010b6dd392b5355b129d1ef
 workflow-type: tm+mt
-source-wordcount: '1501'
-ht-degree: 61%
+source-wordcount: '1530'
+ht-degree: 52%
 
 ---
 
@@ -44,20 +44,19 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 第一個是 Cloud Manager 標頭。當您瀏覽 Cloud Manager 時標頭會持續顯示。它是一個錨點，可讓您存取適用於 Cloud Manager 方案的設定和資訊。
 
-![Experience Cloud 標頭](/help/getting-started/assets/cloud-manager-header.png)
+![Experience Cloud 標頭](/help/getting-started/assets/cloud-manager-header-toolbar.png)
 
-|   | 區域 | 描述 |
-| --- | --- | --- |
-| 1 | ![顯示功能表圖示，漢堡](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) | 一個下拉式功能表，可讓您存取個別程式特定部分的索引標籤。<br>若要判斷您的程式具有的服務型別（AMS或AEMaaCS），請參閱本檔案的[程式卡片區段](#program-cards)。 |
-| 2 | Adobe Cloud Manager | 按一下以開啟Cloud Manager的&#x200B;**我的程式**&#x200B;主控台，無論您身在Cloud Manager何處。 |
-| 3 | 選取的組織 | 組織選擇器會顯示您目前所登入的組織 (在本例中為 Foundation Internal)。如果您的Adobe ID與多個組織相關聯，請按一下以切換至其他組織。 |
-| 4 | 意見回饋圖示 | 按一下「 」，向Adobe提供有關Cloud Manager的意見回饋。 |
-| 5 | AI助理圖示 | 提供對話式介面，旨在簡化為AEM相關查詢尋找答案的程式。 檢視[AI小幫手](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) |
-| 6 | ![說明圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | 按一下以提供學習與支援資源的快速存取權。 |
-| 7 | ![鈴鐺圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) | 按一下以檢視目前指派的不完整[通知數目](/help/using/notifications.md) |
-| 8 | ![應用程式圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | 按一下以在AEM首頁和AEM解決方案之間快速移動 |
-| 9 | 應用程式圖示 | 按一下以存取您的&#x200B;**帳戶設定**&#x200B;和&#x200B;**程式設定**，或按一下以登出。 |
-
+| 區域 | 說明 |
+| --- | --- |
+| ![顯示功能表圖示，漢堡](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) | 一個下拉式功能表，可讓您存取個別程式特定部分的索引標籤。<br>若要判斷您的程式具有的服務型別（AMS或AEMaaCS），請參閱本檔案的[程式卡片區段](#program-cards)。 |
+| ![Adobe紅白圖示](/help/getting-started/assets/AdobeLogoWhiteOnRed.svg) Cloud Manager | 按一下以開啟Cloud Manager的&#x200B;**我的程式**&#x200B;主控台，無論您身在Cloud Manager何處。 |
+| *`Name of selected organization`* | 組織選擇器會顯示您目前登入的組織（在此範例中為&#x200B;*Foundation Internal*）。 如果您的Adobe ID與多個組織相關聯，請按一下以切換至其他組織。 |
+| ![意見回饋圖示](/help/getting-started/assets/AppComment.svg)意見 | 按一下「 」，向Adobe提供有關Cloud Manager的意見回饋。 |
+| ![AI助理圖示](/help/getting-started/assets/AIChat.svg) | AI Assistant提供對話式介面，旨在簡化為AEM相關查詢尋找答案的程式。 檢視[AI小幫手](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) |
+| ![說明圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | 按一下以提供學習與支援資源的快速存取權。 |
+| ![白鈴圖示](/help/getting-started/assets/Bell.svg) | 按一下以檢視目前指派的不完整[通知數目](/help/using/notifications.md) |
+| ![應用程式圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | 按一下以在AEM首頁和AEM解決方案之間快速移動 |
+| *`Dynamic Account icon`* | 按一下您的使用者圖片以存取您的&#x200B;**帳戶設定**&#x200B;和&#x200B;**程式設定**，或者登出。<br>如果您選擇不新增使用者圖片，圖示會隨機指派（如上方工具列影像所示）。 |
 
 <!--
 1. The ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) icon on the left side of the header is  
@@ -80,8 +79,8 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 |   | 區域 | 描述 |
 | --- | --- | --- |
 | 1 | 我的方案 | 按一下以開啟下拉式清單，您可在其中選擇新增方案、選取其他現有方案或返回Experience Manager首頁。 |
-| 2 | 快速入門 | 按一下以存取[上線檔案歷程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/journey/overview)，讓您快速上手Cloud Manager。<br>入門歷程是針對Adobe Experience Manager as a Cloud Service (AEMaaCS)上的Cloud Manager而設計，而非針對Adobe Managed Services (AMS)上的Cloud Manager。 不過，有許多概念都是相同的。 |
-| 3 | 動態動作按鈕 | 動作按鈕提供適合內容的動作，例如新增方案、新增網域或新增SSL憑證。 |
+| 2 | ![資訊圖示](/help/getting-started/assets/Info.svg)快速入門 | 按一下以存取[上線檔案歷程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/journey/overview)，讓您快速上手Cloud Manager。<br>入門歷程是針對Adobe Experience Manager as a Cloud Service (AEMaaCS)上的Cloud Manager而設計，而非針對Adobe Managed Services (AMS)上的Cloud Manager。 不過，有許多概念都是相同的。 |
+| 3 | *`Dynamic action button`* | 動作按鈕提供適合內容的動作，您可以按一下，例如&#x200B;**新增程式** （如上例所示），或新增網域。 |
 
 ### 行動號召和統計資料 {#cta-statistics}
 
@@ -101,7 +100,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 您可以使用下列排序選項來快速尋找您想要的程式：
 
-![排序選項](assets/my-programs-sorting.png)
+![排序選項](/help/getting-started/assets/cloud-manager-my-programs-sorting.png)
 
 * 排序方式：
    * 建立日期
@@ -114,25 +113,26 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 每個方案都以一張卡片或表格中的一列來呈現，提供該方案的概觀以及採取動作的快速連結。
 
-![方案卡片](assets/program-card.png)
+![方案卡片](/help/getting-started/assets/cloud-manager-program-card.png)
 
 * 方案映像 (若已設定)
-* 方案名稱
+* 程式名稱（在上述範例中，*WKND Magazine*）
 * 服務類型：
    * 適用於 AMS 方案的 **Experience Manager**
    * 適用於 [AEM as a Cloud Service 方案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/home)的 **Experience Manager Cloud**
-* 狀態
+* 狀態（在上述範例中，*就緒*）
 * 設定的解決方案:
 * 建立日期
 
-透過資訊圖示，還可以快速存取有關方案的其他資訊 (在清單檢視中很實用)。
+按一下「![資訊」圖示](/help/getting-started/assets/Info.svg)即可快速存取此程式的額外資訊（在清單檢視中很有用）。
 
-![資訊](assets/information-view.png)
+在Cloud Manager AMS中![資訊快顯功能表](/help/getting-started/assets/cloud-manager-information-view.png)
 
-透過![「更多」圖示 (省略符號)](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)可以針對方案執行其他動作。
+按一下![更多圖示，省略符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)可讓您存取可以對程式執行的其他動作。
 
-![方案的省略符號按鈕](assets/program-ellipsis.png)
+![方案的省略符號按鈕](/help/getting-started/assets/cloud-manager-program-ellipsis.png)
 
+* Experience Manager首頁
 * 瀏覽至方案的特定[環境](/help/using/managing-environments.md)
 * 開啟[方案概觀](#program-overview)
 * [編輯方案](/help/getting-started/program-setup.md)
@@ -146,16 +146,15 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 在「[**我的方案**」控制台](#my-programs-console)中選取一項方案後，您會進入「**方案概觀**」頁面。
 
-![方案概觀](assets/program-overview.png)
+![方案概觀](/help/getting-started/assets/cloud-manager-program-overview.png)
 
-透過「方案概觀」，您可以存取 Cloud Manager 方案的所有詳細資訊。與「我的方案」控制台一樣，它由多個部分組成。
+**計畫總覽**&#x200B;可讓您存取Cloud Manager計畫的所有詳細資料。 與&#x200B;**我的程式**&#x200B;類似，它由幾個部分組成。
 
 1. [工具列](#program-overview-toolbar)可快速跳回「**我的方案**」控制台並瀏覽方案。
-1. [標籤](#program-tabs)可在方案的不同面向間切換。
+1. [索引標籤區域](#program-tabs)可在程式的不同方面之間切換。
 1. [行動號召](#cta)以方案的最後動作為依據。
-1. 方案的[環境概觀](#environments)。
-1. 方案的[管道概觀](#pipelines)。
-1. [實用資源](#useful-resources)連結。
+1. 與程式的[環境](#environments)相關聯。
+1. 已關聯方案的[管道](#pipelines)。
 
 ### 工具列 {#program-overview-toolbar}
 
