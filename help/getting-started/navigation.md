@@ -52,7 +52,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 | ![Adobe紅白圖示](/help/getting-started/assets/AdobeLogoWhiteOnRed.svg) Cloud Manager | 按一下以開啟Cloud Manager的&#x200B;**我的程式**&#x200B;主控台，無論您身在Cloud Manager何處。 |
 | *`Name of selected organization`* | 組織選擇器會顯示您目前登入的組織（在此範例中為&#x200B;*Foundation Internal*）。 如果您的Adobe ID與多個組織相關聯，請按一下以切換至其他組織。 |
 | ![意見回饋圖示](/help/getting-started/assets/AppComment.svg)意見 | 按一下「 」，向Adobe提供有關Cloud Manager的意見回饋。 |
-| ![AI助理圖示](/help/getting-started/assets/AIChat.svg) | AI Assistant提供對話式介面，旨在簡化為AEM相關查詢尋找答案的程式。 檢視[AI小幫手](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) |
+| ![AI助理圖示](/help/getting-started/assets/AIChat.svg) | AI Assistant提供對話式介面，旨在簡化為AEM相關查詢尋找答案的程式。 檢視[AI小幫手](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) |
 | ![說明圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | 按一下以提供學習與支援資源的快速存取權。 |
 | ![白鈴圖示](/help/getting-started/assets/Bell.svg) | 按一下以檢視目前指派的不完整[通知數目](/help/using/notifications.md) |
 | ![應用程式圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | 按一下以在AEM首頁和AEM解決方案之間快速移動 |
