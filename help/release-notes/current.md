@@ -3,7 +3,7 @@ title: Cloud Manager 2025.9.0 版發行說明
 description: 了解 Adobe Managed Services 上的 Cloud Manager 2025.9.0 版。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 979430b92a03abbc8c600e4cc0e10cff5041f425
+source-git-commit: 68e546c1337122f823d63529ebd68d6966bb132a
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 70%
@@ -31,11 +31,11 @@ ht-degree: 70%
 
 ## 新增功能 {#what-is-new}
 
-* 現在已為Azure DevOps私人存放庫新增&#x200B;**支援**
+* **現在已新增Azure DevOps私人存放庫的支援**
 
   檔案更新包含使用Azure DevOps自攜Git和提取請求驗證的設定步驟。 請參閱[在Cloud Manager中新增外部存放庫](/help/managing-code/external-repositories.md)。
 
-* **私人存放庫提取要求檢查**
+* **私人存放庫的提取要求檢查**
 
   Cloud Manager現在支援在GitHub、Bitbucket、Azure DevOps和GitLab中使用私人存放庫來設定管道。 檢視私人存放庫的![提取要求檢查](/help/managing-code/github-check-config.md)。
 
