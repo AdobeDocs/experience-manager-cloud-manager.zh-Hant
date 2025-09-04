@@ -1,33 +1,35 @@
 ---
-title: 私人存放庫的 GitHub 檢查設定
+title: 私人存放庫的提取請求檢查
 description: 了解如何控制自動建立的管道以驗證對私人存放庫的每個提取請求。
 exl-id: 29c9e487-e196-411a-8cda-6751b0a56066
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '236'
-ht-degree: 100%
+source-git-commit: 1ae6792f8bc628c3530a63004c3d38f215c72778
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 92%
 
 ---
 
-# 私人存放庫的 GitHub 檢查設定 {#github-check-config}
+# 私人存放庫的提取請求檢查 {#github-check-config}
+
+<!--OLD TITLE THAT I THOUGHT WAS BETTER Check configuration for private repositories -->
 
 了解如何控制自動建立的管道以驗證對私人存放庫的每個提取請求。
 
-## GitHub 檢查的設定 {#configuration}
+## 私人存放庫檢查的設定 {#configuration}
 
 使用[私人存放庫時](private-repositories.md#using)，其會自動建立[全端程式碼品質管道](/help/overview/ci-cd-pipelines.md)。此管道在每次提取要求更新時啟動。
 
 您可以透過建立一個 `.cloudmanager/pr_pipelines.yml` 檔案 (位於私有存放庫的預設分支中) 來控制這些檢查。
 
 ```yaml
-github:
+pullRequest:
   shouldDeletePreviousComment: false
 pipelines:
   - type: CI_CD
     template:
       programId: 1234
       pipelineId: 456
-    namePrefix: Full Stack Code Quality Pipeline for PR 
+    namePrefix: Full Stack Code Quality Pipeline for PR
     importantMetricsFailureBehavior: CONTINUE
 ```
 

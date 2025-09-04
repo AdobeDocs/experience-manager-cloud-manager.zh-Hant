@@ -7,10 +7,10 @@ user-guide-description: 了解如何使用 Cloud Manager 在雲端自行管理�
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 5df4852716a608c7497e93eef030b4b5bd27d42b
+source-git-commit: 1ae6792f8bc628c3530a63004c3d38f215c72778
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 91%
+source-wordcount: '384'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 91%
 # Cloud Manager 文件 {#content}
 
 + [用於 AMS 的 Cloud Manager](/help/introduction.md)
-+ [Experience Hub](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + 概觀 {#overview}
    + [重要概念](/help/overview/key-concepts.md)
    + [使用者歷程](/help/overview/user-journey.md)
@@ -67,7 +67,7 @@ ht-degree: 91%
    + [新增外部存放庫（私人測試版）](/help/managing-code/external-repositories.md)
    + [管理存取權杖（私人測試版）](/help/managing-code/manage-access-tokens.md)
    + [Git 子模組支援](/help/managing-code/git-submodules.md)
-   + [GitHub 檢查設定](/help/managing-code/github-check-config.md)
+   + [私人存放庫的提取請求檢查](/help/managing-code/github-check-config.md)
    + [GitHub 檢查附註](/help/managing-code/github-annotations.md)
    + [Maven 專案版本處理](/help/managing-code/maven-project-version.md)
    + [與 Git 整合](/help/managing-code/git-integration.md)
@@ -78,6 +78,7 @@ ht-degree: 91%
 + 發行說明 {#release-notes}
    + [目前版本](/help/release-notes/current.md)
    + 2025 {#rn-2025}
+      + [2025.8.0](/help/release-notes/2025/2025-8-0.md)
       + [2025.7.0](/help/release-notes/2025/2025-7-0.md)
       + [2025.6.0](/help/release-notes/2025/2025-6-0.md)
       + [2025.5.0](/help/release-notes/2025/2025-5-0.md)
