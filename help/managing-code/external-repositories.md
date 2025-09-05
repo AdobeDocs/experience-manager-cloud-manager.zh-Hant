@@ -2,7 +2,7 @@
 title: 在Cloud Manager中新增外部存放庫
 description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager支援與GitHub Enterprise、GitLab、Bitbucket和Azure DevOps存放庫整合。
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 1ae6792f8bc628c3530a63004c3d38f215c72778
+source-git-commit: 76a5cb04514bc1961c8f9008e9bea5d1d6fe1c19
 workflow-type: tm+mt
 source-wordcount: '2453'
 ht-degree: 27%
@@ -318,8 +318,6 @@ Azure DevOps會透過狀態檢查來追蹤提取請求驗證。 Cloud Manager執
 
 使用webhooks-4![的提取要求](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)Azure DevOps驗證
 
-
->[!ENDTABS]
 
 >[!ENDTABS]
 
