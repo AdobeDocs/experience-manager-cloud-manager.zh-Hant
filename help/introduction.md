@@ -2,10 +2,10 @@
 title: 用於 AMS 的 Cloud Manager 的簡介
 description: 從這裡開始了解用於 Adobe​ Managed Services (AMS) 的 Cloud Manager 以及它如何讓組織能夠在雲端中自助管理 Adobe​ Experience Manager。
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
-workflow-type: ht
-source-wordcount: '1256'
-ht-degree: 100%
+source-git-commit: 8f29a06f63b8dc10cb3d28e2f38da1ead84f32f5
+workflow-type: tm+mt
+source-wordcount: '1250'
+ht-degree: 95%
 
 ---
 
@@ -29,31 +29,28 @@ Adobe Experience Manager 的 [!UICONTROL Cloud Manager] 使開發人員能夠透
 >
 >本文件專門說明用於 Adob&#x200B;&#x200B;e Managed Services (AMS) 的 Cloud Manager 的特性和功能。
 >
->AEM as a Cloud Service 的同效文件可在[AEM as a Cloud Service 文件](https://experienceleague.adobe.com/zh-hant/docs/ experience-manager-cloud-service/content/implementing/home)中找到。
+>AEM as a Cloud Service 的同效文件可在[AEM as a Cloud Service 文件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/home)中找到。
 
 使用 Cloud Manager 讓您的開發團隊受益於以下功能：
 
 * 持續整合/持續傳遞 (CI/CD) 程式碼，將上市時間從數月/數週縮短至數天/數小時。
-
 * 程式碼檢查、效能測試和安全性驗證會根據最佳實務進行，然後再推送至生產環境，將生產中斷的情況降至最低。
-
 * API 連線能力補足現有的 DevOps 流程。
-
 * 自動縮放功能以智慧方式偵測增加容量的需求，並自動將其他 Dispatcher/發佈區段上線。
 
 ![CI/CD 流程](/help/assets/screen_shot_2018-05-12at73843pm.png)於 [!UICONTROL Cloud Manager] 中使用的 CI/CD 流程。
 
 ## [!UICONTROL Cloud Manager] 中的主要功能 {#key-features-in-cloud-manager}
 
-以下是針對 Cloud Manager 特定主要功能的深入介紹。
+以下區段重點說明Cloud Manager的主要功能。
 
 ### 自助服務介面 {#self-service-interface}
 
-適用於 [!UICONTROL Cloud Manager] 的使用者介面 (UI) 讓您輕鬆存取和管理雲端環境，以及 Adobe Experience Manager 應用程式的 CI/CD 管道。
+若要探索並開始使用 [!UICONTROL Cloud Manager] 的 UI，請參閱「[首次登入](/help/getting-started/first-time-login.md)」。
+
+適用於[!UICONTROL Cloud Manager]的使用者介面(UI)可讓您輕鬆存取和管理雲端環境，以及輕鬆為Adobe Experience Manager應用程式使用CI/CD管道。
 
 您可以定義應用程式專用的關鍵績效指標 (KPI)，例如每分鐘的尖峰頁面檢視次數，或頁面載入的預期回應時間。這些 KPI 是衡量部署成功與否的基礎。您可以輕鬆定義不同團隊成員的角色和權限。自助服務介面讓您全面掌控。亦提供最佳實務資源的連結，而且在需要時可聯繫 Adobe 專家尋求指引。
-
-若要探索並開始使用 [!UICONTROL Cloud Manager] 的 UI，請參閱「[首次登入](/help/getting-started/first-time-login.md)」。
 
 ### CI/CD 管道 {#ci-cd-pipeline}
 
@@ -105,14 +102,14 @@ Cloud Manager 提供額外的進階功能，依據您的特定環境設定和需
 啟用藍綠色部署時，該部署流程和標準雲端服務部署流程不同。
 
 | 步驟 | 藍綠色部署 | 標準部署 |
-|---|---|---|
+| --- | --- | --- |
 | 1 | 部署給作者 | 部署給作者 |
 | 2 | 暫停測試 | - |
 | 3 | 建立綠色基礎架構 | - |
-| 4 | 部署至綠色發佈/Dispatcher 層級 | 部署給發佈者 |
+| 4 | 部署至綠色發佈/Dispatcher階層 | 部署給發佈者 |
 | 5 | 暫停測試 (最長 24 小時) | - |
 | 6 | 將綠色基礎架構新增至生產負載平衡器 | - |
-| 7 | 從生產負載平衡器移除綠色基礎架構- |
+| 7 | 從生產負載平衡器移除藍色基礎架構 | - |
 | 8 | 暫停以進行最終簽核 (最長需要 24 小時) | - |
 | 9 | 自動結束藍色基礎架構 | - |
 | 10 | 管道已完成 | - |
