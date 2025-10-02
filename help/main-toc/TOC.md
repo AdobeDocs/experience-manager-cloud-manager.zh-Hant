@@ -7,10 +7,10 @@ user-guide-description: 了解如何使用 Cloud Manager 在雲端自行管理�
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 1ae6792f8bc628c3530a63004c3d38f215c72778
+source-git-commit: edbf6ed4b8991df69adda569da8b509cf6d861d6
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 89%
+source-wordcount: '386'
+ht-degree: 90%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 89%
 # Cloud Manager 文件 {#content}
 
 + [用於 AMS 的 Cloud Manager](/help/introduction.md)
-+ [Experience Hub](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + 概觀 {#overview}
    + [重要概念](/help/overview/key-concepts.md)
    + [使用者歷程](/help/overview/user-journey.md)
@@ -33,7 +33,7 @@ ht-degree: 89%
    + [新增使用者和角色](/help/requirements/users-and-roles.md)
    + [自訂權限](/help/using/custom-permissions.md)
    + [環境佈建](/help/requirements/environment-provisioning.md)
-+ 快速入門 {#getting-started}
++ 開始使用 {#getting-started}
    + [首次登入](/help/getting-started/first-time-login.md)
    + [導覽](/help/getting-started/navigation.md)
    + [方案設定](/help/getting-started/program-setup.md)
@@ -78,6 +78,7 @@ ht-degree: 89%
 + 發行說明 {#release-notes}
    + [目前版本](/help/release-notes/current.md)
    + 2025 {#rn-2025}
+      + [2025.9.0](/help/release-notes/2025/2025-9-0.md)
       + [2025.8.0](/help/release-notes/2025/2025-8-0.md)
       + [2025.7.0](/help/release-notes/2025/2025-7-0.md)
       + [2025.6.0](/help/release-notes/2025/2025-6-0.md)
