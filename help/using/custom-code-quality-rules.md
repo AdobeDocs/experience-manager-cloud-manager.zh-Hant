@@ -932,7 +932,7 @@ AEM Cloud Service禁止在多個索引中建立包含相同標籤的索引定義
 
 * [Dispatcher 設定一般](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-general)
 
-* [Dispatcher 發佈伺服器陣列快取應已啟用 `serveStaleOnError` ](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-servestaleonerror-enabled)
+* [Dispatcher 發佈伺服器陣列快取應已啟用 `serveStaleOnError` &#x200B;](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-servestaleonerror-enabled)
 
 * [Dispatcher 發佈伺服器陣列篩選器應包含來自 AEM 原型 6.x.x 版本的預設拒絕規則](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-contain-the-default-deny-rules-from-the-6xx-version-of-the-aem-archetype)
 
