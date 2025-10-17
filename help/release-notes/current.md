@@ -3,7 +3,7 @@ title: Cloud Manager 2025.10.0 版發行說明
 description: 了解 Adobe Managed Services 上的 Cloud Manager 2025.10.0 版。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: f62191a1b9dd67ea1e999e2db0bb05de66bf73f2
+source-git-commit: 696fae5ea39bd33a92e5e066338e129aee432cb1
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 74%
@@ -41,7 +41,7 @@ ht-degree: 74%
 
 ### Experience Hub 的擴展性和自訂 {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/experience-hub/experience-hub) 是您存取 AEM 的入口點，並可根據組織需求進行自訂。告知 Adobe 您現有的 AEM 使用者介面擴充功能，以便協助您花最少的力氣便能在 Experience Hub 中啟用這些功能。
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) 是您存取 AEM 的入口點，並可根據組織需求進行自訂。告知 Adobe 您現有的 AEM 使用者介面擴充功能，以便協助您花最少的力氣便能在 Experience Hub 中啟用這些功能。
 
 ![Experience Hub 擴展性與自訂工作流程的圖表](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
