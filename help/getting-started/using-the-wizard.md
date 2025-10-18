@@ -2,17 +2,17 @@
 title: 使用新專案精靈
 description: 依照本頁面的說明，了解如何使用精靈來建立 AEM 應用程式專案。
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
-source-git-commit: f3617eb50147f5af33282cb0f25ada7dc423d434
+source-git-commit: b98e1711f1f98f52977dd6cb4cd2bc834d81a360
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 92%
+source-wordcount: '322'
+ht-degree: 82%
 
 ---
 
 
 # 使用新增專案精靈 {#using-the-wizard}
 
-當您加入Cloud Manager成為新客戶時，系統已為您提供一個空白的Git存放庫。 為協助您開始使用，Cloud Manger 會提供精靈，以根據 [AEM 專案原型](https://github.com/adobe/aem-project-archetype)來建立最低限度的 AEM 專案作為起點。
+當您加入Cloud Manager成為新客戶時，會為您提供一個空白的Git存放庫。 為協助您開始使用，Cloud Manger 會提供精靈，以根據 [AEM 專案原型](https://github.com/adobe/aem-project-archetype)來建立最低限度的 AEM 專案作為起點。
 
 依照下列步驟操作，即可使用精靈來建立 AEM 專案。
 
@@ -39,6 +39,6 @@ ht-degree: 92%
 
 ## 現有或遷移的客戶 {#existing-migrating}
 
-如果您目前是 Adobe Managed Services (AMS) 客戶，或是正要遷移的內部部署 AEM 客戶，您可能已經在 Git 或其他版本控制系統中擁有專案程式碼。
+如果您目前是Adobe Managed Services (AMS)客戶或正在移轉的內部部署AEM客戶，您很可能已在Git或其他版本控制系統中擁有專案程式碼。
 
 在這種情況下，您可以將專案匯入 Cloud Manager Git 存放庫中。
