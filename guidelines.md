@@ -1,8 +1,8 @@
 ---
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+source-git-commit: d8380bf56891af7ce3fe833e209ae8663e4bc6fe
 workflow-type: tm+mt
 source-wordcount: '713'
-ht-degree: 96%
+ht-degree: 93%
 
 ---
 # Adobe Experience Manager 說明文件協助撰寫指南
@@ -23,25 +23,25 @@ AEM 說明文件的目標是讓 AEM 使用者盡快取得說明文件。因此�
 
 不符合這些標準的貢獻可能會遭拒。
 
-### Adobe 將標準使用案例記錄在說明文件中。
+### 標準使用案例記錄在Adobe
 
 AEM 說明文件涵蓋標準使用案例。AEM 說明文件不包含產品標準安裝與使用範圍以外的使用案例。
 
-### Adobe 一般不會記錄錯誤或其變通辦法。
+### Adobe通常不會記錄錯誤或其因應措施
 
 AEM 說明文件涵蓋標準使用案例。因此，系統不會記錄錯誤、錯誤造成的影響，以及針對錯誤的變通辦法。
 
 此規則的例外情況適用於版本注意事項，已知問題可能會和產品管理核准的可能解決方案列在一張清單中。
 
-### 協助撰寫說明文件的目的不在於回答技術問題。
+### 說明文件協助撰寫的目的並非解答技術問題
 
 歡迎您協助提出任何一定要改善 AEM 說明文件的想法。但是，任何評論、問題和提取要求僅以&#x200B;*協助撰寫*&#x200B;為目的。這些不是用來回答您有關如何使用 AEM、實作 AEM 專案或解決技術問題。
 
-您可以報告有關 AEM 使用或技術錯誤的任何問題。透過 [Experience Cloud 企業支援入口網站](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)使用一般的支援流程來報告，或透過在 [Experience Manager 社群](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)中討論來報告。
+您可以報告有關 AEM 使用或技術錯誤的任何問題。透過 [Experience Cloud 企業支援入口網站](https://experienceleague.adobe.com/?support-solution=General#support)使用一般的支援流程來報告，或透過在 [Experience Manager 社群](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)中討論來報告。
 
 ***協助撰寫的 AEM 說明文件不會取代 Adobe 客戶服務***，且這類協助撰寫的說明文件只要試圖解答支援相關問題，一律會遭到拒絕。
 
-### 協助撰寫內容必須清楚參考受影響的說明文件頁面。
+### 協助撰寫內容必須清楚參考受影響的說明檔案頁面
 
 如果您要建立問題以建議改善說明文件，則必須附上受影響頁面的連結。如果您使用說明文件頁面上的「 **編輯此頁面** 」連結來建立問題，則系統會自動建立問題並包含該頁面的連結。
 

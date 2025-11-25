@@ -1,17 +1,17 @@
 ---
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: ht
-source-wordcount: '498'
-ht-degree: 100%
+source-git-commit: 23930ee54667561b5f3983056af4406301f28da2
+workflow-type: tm+mt
+source-wordcount: '500'
+ht-degree: 92%
 
 ---
-# 協助撰寫 Adobe Experience Manager Screens 說明文件
+# 協助撰寫Adobe Experience Manager Cloud Manager說明檔案
 
-感謝您選擇協助撰寫 Adobe Experience Manager Screens 說明文件！Adobe 樂於接受來自整個讀者社群以及 Adobe 員工的內容貢獻。
+感謝您選擇協助撰寫Adobe Experience Manager Cloud Manager說明檔案。 Adobe 樂於接受來自整個讀者社群以及 Adobe 員工的內容貢獻。
 
 本檔案說明您應如何提供內容，並指出在提供內容時應遵循的指南。
 
-## Adobe 開放原始碼行為準則
+## Adobe開放原始碼行為準則
 
 本專案已採用 [Adobe 開放原始碼行為準則](code-of-conduct.md)。一旦提供 AEM 說明文件，即表示您同意遵守本行為準則。如發現禁止的不當行為，可透過 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com) 通報。
 
@@ -46,16 +46,16 @@ Adobe 希望為您提供易於協助撰寫的方式。您可以透過兩種方�
 
 ### 快速簡介影片
 
-請觀賞下列概述影片，快速瞭解如何建立問題和提取請求。
+請觀賞下列概觀影片，快速瞭解如何建立問題和提取請求。
 
 >[!VIDEO](https://video.tv.adobe.com/v/27069)
 
-### Adobe 員工的貢獻
+### Adobe員工的貢獻
 
 如果您是 Adobe 員工且想要協助撰寫，可使用企業 Git 中的 `AdobeDocs` 組織。
 
 Adobe 十分樂見以任何形式協助撰寫，並且將審查您提交至公開存放庫的貢獻內容。不過，來自 Adobe 員工的提取請求更容易處理，並且可在企業存放庫中更快獲得核准。務必避免於企業存放庫之外談論任何所有權的相關資訊。
 
-## 更多資訊
+## 詳細資訊
 
-如需 GitHub 製作平台使用方式的詳細資訊，請參閱 [Adobe 文件貢獻者指南](https://experienceleague.adobe.com/zh-hant/docs/contributor/contributor-guide/introduction)。
+如需 GitHub 編寫平台使用方式的詳細資訊，可參閱 [Adobe 文件貢獻者指南](https://experienceleague.adobe.com/zh-hant/docs/contributor/contributor-guide/introduction)。
