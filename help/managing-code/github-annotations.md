@@ -2,10 +2,10 @@
 title: GitHub 檢查附註
 description: 了解 GitHub 檢查如何為您的私人存放庫加上 PR 附註，以便為您提供有用的意見回饋。
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 6f5d51ef59aef831574bd55cee6b12a29e3d70d2
-workflow-type: ht
-source-wordcount: '251'
-ht-degree: 100%
+source-git-commit: 75baacd1fd6f36ca1d6ea5c1993516569ab6ef47
+workflow-type: tm+mt
+source-wordcount: '250'
+ht-degree: 92%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## 概觀 {#overview}
 
-如果您的 Cloud Manager 方案使用[私人存放庫](private-repositories.md)，每個提取請求會在 GitHub 中自動執行檢查。這些檢查會附註實用資訊，以協助您盡快了解程式碼的任何問題。
+如果您的Cloud Manager程式使用[私人存放庫](private-repositories.md)，請為每個提取請求自動簽入GitHub。 這些檢查會附註實用資訊，以協助您盡快了解程式碼的任何問題。
 
 ![GitHub 檢查附註範例](assets/github-check-annotations.png)
 

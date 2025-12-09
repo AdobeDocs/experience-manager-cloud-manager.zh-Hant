@@ -2,10 +2,10 @@
 title: 重要概念
 description: 像所有強大的工具一樣，Cloud Manager 包含了許多概念和術語。本文件會概述您開始使用 Cloud Manager 時最重要的一些內容。
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
-workflow-type: ht
+source-git-commit: 75baacd1fd6f36ca1d6ea5c1993516569ab6ef47
+workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 應用程式是由客戶建立的一組自訂項目和設定，根據其特定使用案例和需求來調整基礎的[解決方案](#solution) (例如 AEM Sites 或 AEM Assets)。應用程式為一種邏輯單位，可能包含多個[成品](#artifact)。
 
-一個應用程式範例是虛構的 [WKND 生活方式應用程式。](https://experienceleague.adobe.com/zh-hant/docs/ experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
+一個應用程式範例是虛構的 [WKND 生活方式應用程式。](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 
 ## 成品 {#artifact}
 
@@ -42,7 +42,7 @@ Git 存放庫是儲存客戶特定原始程式碼的位置，並可[使用 Git](
 
 ## 組織 {#organization}
 
-組織指代表企業客戶的 Adobe&#x200B; 建構。一家公司可能有多個組織，會依據在 Adob&#x200B;&#x200B;e 的 Identity Management System (IMS) 中對其進行佈建方式而定。
+組織指代表企業客戶的 Adobe&#x200B; 建構。一家公司可能會有多個組織，具體取決於這些組織在Adobe的Identity Management系統(IMS)中的布建方式。
 
 ## 管道 {#pipeline}
 
