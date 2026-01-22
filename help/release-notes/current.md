@@ -3,7 +3,7 @@ title: Cloud Manager 2026.1.0 版發行說明
 description: 了解 Adobe Managed Services 上的 Cloud Manager 2026.1.0 版。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 19b8efeab20b07bdb71595fbff979ea11d8801c0
+source-git-commit: 6279792f05ec04c82634d255dad7264f6d0cef64
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 62%
@@ -37,7 +37,7 @@ ht-degree: 62%
   所選管道的下拉式選單上的![檢視/編輯變數選項](/help/release-notes/assets/view-edit-variables-option.png)
   所選管道的下拉式選單上的&#x200B;*檢視/編輯變數選項。*
 
-  ![變數設定對話方塊](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*變數設定對話方塊。
+  ![變數設定對話方塊&#x200B;](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*變數設定對話方塊。*
 
 * **改善穩定性、效能和可靠性**
 
@@ -52,7 +52,7 @@ ht-degree: 62%
 
 ### Experience Hub 的擴展性和自訂 {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/experience-hub/experience-hub) 是您存取 AEM 的入口點，並可根據組織需求進行自訂。告知 Adobe 您現有的 AEM 使用者介面擴充功能，以便協助您花最少的力氣便能在 Experience Hub 中啟用這些功能。
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) 是您存取 AEM 的入口點，並可根據組織需求進行自訂。告知 Adobe 您現有的 AEM 使用者介面擴充功能，以便協助您花最少的力氣便能在 Experience Hub 中啟用這些功能。
 
 ![Experience Hub 擴展性與自訂工作流程的圖表](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
