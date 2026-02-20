@@ -2,9 +2,9 @@
 title: 在Cloud Manager中管理存取權杖
 description: 瞭解如何在Adobe Managed Services上檢視、編輯和刪除用於在Cloud Manager中自攜Git的存取權杖。
 exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
-source-git-commit: d6f058c3f6dc010f08a5cb75a0fb152b56111e79
+source-git-commit: 28841719e820e47577b411a4034ebc7a8e1bb556
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '359'
 ht-degree: 3%
 
 ---
@@ -13,13 +13,15 @@ ht-degree: 3%
 
 Cloud Manager使用存取權杖來管理託管於外部Git平台上的存放庫。 先前，如果權杖過期，關聯的存放庫必須重新上線才能保持運作。
 
-現在，**管理存取權杖**&#x200B;可讓您更有效地管理權杖。 您可以檢視、重新命名或移除連線至受支援外部Git提供者（包括GitHub Enterprise、GitLab、Bitbucket和Azure DevOps）的Token。
+現在，**管理存取權杖**&#x200B;可讓您更有效地管理權杖。 您可以檢視、重新命名或移除連線至受支援外部Git提供者(包括GitHub Enterprise、GitLab、Bitbucket和Azure DevOps)的Token。
 
 另請參閱[在Cloud Manager中新增外部存放庫](/help/managing-code/external-repositories.md)。
 
+<!--
 >[!NOTE]
 >
->本文所述的功能只能透過私人測試版計畫取得。 如需詳細資訊以及註冊私人測試版，請參閱[管理存取權杖](/help/release-notes/current.md#access-tokens)。
+>The features described in this article are only available through the private beta program. For more details and to sign up for  the private beta, see [Manage Access Tokens](/help/release-notes/current.md#access-tokens).
+-->
 
 ## 檢視存取權杖 {#view-access-tokens}
 
