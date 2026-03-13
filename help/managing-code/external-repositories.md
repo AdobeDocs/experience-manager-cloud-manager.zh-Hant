@@ -313,19 +313,19 @@ Azure DevOps會透過狀態檢查來追蹤提取請求驗證。 Cloud Manager執
 
 在程式碼品質驗證期間，狀態檢查會顯示處理進行中：
 
-使用webhooks-1](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)對提取請求進行![Azure DevOps驗證
+使用webhooks-1![&#128279;](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)對提取請求進行Azure DevOps驗證
 
 程式碼品質驗證完成後，狀態檢查會更新以反映結果：
 
-使用webhooks-2](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)對提取請求進行![Azure DevOps驗證
+使用webhooks-2![&#128279;](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)對提取請求進行Azure DevOps驗證
 
 如果驗證失敗，詳細錯誤資訊會顯示在狀態檢查詳細資訊中。 您可以按一下狀態檢查，以在Cloud Manager中檢視完整驗證結果。
 
-使用webhooks-3](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)對提取請求進行![Azure DevOps驗證
+使用webhooks-3![&#128279;](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)對提取請求進行Azure DevOps驗證
 
 針對提取請求評論和回饋，Cloud Manager會直接將評論新增至Azure DevOps中的提取請求，其中包含驗證詳細資料和任何必要的動作。
 
-使用webhooks-4](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)對提取請求進行![Azure DevOps驗證
+使用webhooks-4![&#128279;](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)對提取請求進行Azure DevOps驗證
 
 
 >[!ENDTABS]
