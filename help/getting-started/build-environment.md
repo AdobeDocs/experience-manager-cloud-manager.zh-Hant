@@ -2,10 +2,10 @@
 title: 組建環境
 description: 了解 Cloud Manager 使用者用於建置和測試程式碼的專用組建環境。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: e9f3ac70735a95a15b1f63cf40496672162de777
+source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 83%
+source-wordcount: '1243'
+ht-degree: 81%
 
 ---
 
@@ -24,7 +24,7 @@ Cloud Manager 的建置環境有下列屬性。
 * 已安裝的 Java 版本為 Oracle JDK 8u401 和 Oracle JDK 11.0.22。
    * `/usr/lib/jvm/jdk1.8.0_401`
    * `/usr/lib/jvm/jdk-11.0.22`
-* 在預設的情況下，`JAVA_HOME` 環境變數設定為 `/usr/lib/jvm/jdk1.8.0_401`，其中包含 Oracle JDK 8u401。如需更多詳細資訊，請參閱[備用的 Maven 執行 JDK 版本](#alternate-maven) 部份。
+* 在預設的情況下，`JAVA_HOME` 環境變數設定為 `/usr/lib/jvm/jdk1.8.0_401`，其中包含 Oracle JDK 8u401。 如需更多詳細資訊，請參閱[備用的 Maven 執行 JDK 版本](#alternate-maven) 部份。
 * 安裝了一些必要的附加系統套件。
    * `bzip2`
    * `unzip`
@@ -32,16 +32,16 @@ Cloud Manager 的建置環境有下列屬性。
    * `imagemagick`
    * `graphicsmagick`
 * 在建置時間可安裝其他套件，如[安裝附加系統套件](#installing-additional-system-packages)部份中所述。
-* 每項建置都是在原始環境中完成的。組建容器在執行之間不保留任何狀態。
+* 每項建置都是在原始環境中完成的。 組建容器在執行之間不保留任何狀態。
 * Maven使用下列三個命令執行：
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
-* 在系統層級使用 `settings.xml` 檔案設定 Maven，其會利用名為 `adobe-public` 的設定檔自動納入公共 Adobe 成品存放庫。如需更多詳細資訊，請參閱 [Adobe 公共 Maven 存放庫](https://repo1.maven.org/)。
+* 在系統層級使用 `settings.xml` 檔案設定 Maven，其會利用名為 `adobe-public` 的設定檔自動納入公共 Adobe 成品存放庫。 如需更多詳細資訊，請參閱 [Adobe 公共 Maven 存放庫](https://repo1.maven.org/)。
 * Node.js 18 可用於[前端管道](/help/overview/ci-cd-pipelines.md)。
 
 >[!IMPORTANT]
->Cloud Manager 2025.06.0版的Maven工具鏈支援已移除。現在僅支援透過`.cloudmanager/java-version`選取JDK。 如需詳細資訊，請參閱[使用特定的Java版本](#using-java-version)。
+>Cloud Manager 2025.06.0版的Maven工具鏈支援已移除。 現在僅支援透過`.cloudmanager/java-version`選取JDK。 如需詳細資訊，請參閱[使用特定的Java版本](#using-java-version)。
 
 >[!NOTE]
 >
@@ -57,19 +57,19 @@ Cloud Manager 的建置環境有下列屬性。
 
 ## HTTPS Maven 存放庫 {#https-maven}
 
-Cloud Manager [2023.10.0 版](/help/release-notes/2023/2023-10-0.md)開始推出建置環境的更新 (在 2023.12.0 版時完成)，其中包含 Maven 3.8.8 的更新。Maven 3.8.1 引入的一項重大變更是旨在減少潛在漏洞的一項安全性增強。具體而言，Maven 現在預設停用所有不安全的 `http://*` 鏡像，如 [Maven 發行說明](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)中所述。
+Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)已開始對組建環境進行滾動更新（完成2023.12.0版本），其中包括對Maven 3.8.8的更新。 Maven 3.8.1中推出的重大變更是安全性增強功能，旨在減少潛在的弱點。 具體而言，Maven 現在預設停用所有不安全的 `http://*` 鏡像，如 [Maven 發行說明](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)中所述。
 
 由於此安全性增強，某些使用者可能會在建置步驟中遇到問題，特別是從使用不安全 HTTP 連線的 Maven 存放庫下載成品時。
 
-為了確保更新的版本有流暢的使用體驗，Adobe 建議使用者更新其 Maven 存放庫以使用 HTTPS 而非 HTTP。這項調整符合產業日益轉向使用安全通訊協定的趨勢，有助於維持安全可靠的建置程序。
+為了確保更新的版本有流暢的使用體驗，Adobe 建議使用者更新其 Maven 存放庫以使用 HTTPS 而非 HTTP。 這項調整符合產業日益轉向使用安全通訊協定的趨勢，有助於維持安全可靠的建置程序。
 
 ## 使用特定 Java 版本 {#using-java-version}
 
-在預設情況下，由 Cloud Manager 建置程序建置的專案使用 Oracle 8 JDK。想要使用替代JDK的客戶可以為整個Maven執行流程選擇替代JDK版本。
+在預設情況下，由 Cloud Manager 建置程序建置的專案使用 Oracle 8 JDK。 想要使用替代JDK的客戶可以為整個Maven執行流程選擇替代JDK版本。
 
 >[!IMPORTANT]
 >
->Cloud Manager 2025.06.0不再支援Maven工具鏈。請注意，包含maven-toolchains-plugin設定的管道將失敗，並出現`Cannot find matching toolchain definitions.`請使用`.cloudmanager/java-version`檔案來選取JDK 11、17或21。
+>Cloud Manager 2025.06.0不再支援Maven工具鏈。 請注意，包含maven-toolchains-plugin設定的管道將失敗，並出現`Cannot find matching toolchain definitions.`請使用`.cloudmanager/java-version`檔案來選取JDK 11、17或21。
 >
 >**移轉指南：**
 >
@@ -78,7 +78,8 @@ Cloud Manager [2023.10.0 版](/help/release-notes/2023/2023-10-0.md)開始推出
 >1. Adobe建議清除Cloud Manager組建快取或觸發新的管道執行。
 >
 
-<!--DEPRECATED 
+<!--
+DEPRECATED 
 ### Maven Toolchains {#maven-toolchains}
 
 The [Maven Toolchains plug-in](https://maven.apache.org/plugins/maven-toolchains-plugin/) lets projects select a specific JDK (or toolchain) to use in the context of toolchains-aware Maven plug-ins. This process is done in the project's `pom.xml` file by specifying a vendor and version value. A sample section in the `pom.xml` file is the following:
@@ -124,13 +125,14 @@ The currently available vendor/version combinations are:
 
 >[!NOTE]
 >
->Starting April 2022, Oracle JDK is going to be the default JDK for the development and operation of AEM applications. Cloud Manager's build process automatically switches to using Oracle JDK, even if an alternative option is explicitly selected in the Maven toolchain. See the [April release notes](/help/release-notes/2022/2022-4-0.md) for more details. -->
+>Starting April 2022, Oracle JDK is going to be the default JDK for the development and operation of AEM applications. Cloud Manager's build process automatically switches to using Oracle JDK, even if an alternative option is explicitly selected in the Maven toolchain. See the [April release notes](/help/release-notes/2022/2022-4-0.md) for more details.
+-->
 
 ### 備用 Maven 執行 JDK 版本 {#alternate-maven}
 
 您可以選取Oracle 8或Oracle 11作為整個Maven執行的JDK。 此方法會變更用於所有外掛程式的JDK。 於是，利用 [Apache Maven Enforcer Plug-in](https://maven.apache.org/enforcer/maven-enforcer-plugin/) 來檢查和強制執行 Java 版本變成有效的方法。
 
-為進行此程序，可在管道使用的 Git 存放庫分支中建立名為 `.cloudmanager/java-version` 的檔案。本檔案可能有的內容為 `11` 或 `8`。任何其他值會受到忽略。若指定`11`，則系統使用Oracle 11並將`JAVA_HOME`環境變數設為`/usr/lib/jvm/jdk-11.0.22`。 若指定`8`，則系統使用Oracle 8並將`JAVA_HOME`環境變數設為`/usr/lib/jvm/jdk1.8.0_401`。
+為進行此程序，可在管道使用的 Git 存放庫分支中建立名為 `.cloudmanager/java-version` 的檔案。 本檔案可能有的內容為 `11` 或 `8`。 任何其他值會受到忽略。 若指定`11`，則系統使用Oracle 11並將`JAVA_HOME`環境變數設為`/usr/lib/jvm/jdk-11.0.22`。 若指定`8`，則系統使用Oracle 8並將`JAVA_HOME`環境變數設為`/usr/lib/jvm/jdk1.8.0_401`。
 
 ## 環境變數 {#environment-variables}
 
@@ -149,7 +151,7 @@ The currently available vendor/version combinations are:
 | `CM_PIPELINE_ID` | 數值的管道識別碼 |
 | `CM_PIPELINE_NAME` | 管道名稱 |
 | `CM_PROGRAM_ID` | 數值的方案識別碼 |
-| `CM_PROGRAM_NAME` | 方案名稱 |
+| `CM_PROGRAM_NAME` | 計畫名稱 |
 | `ARTIFACTS_VERSION` | 對於中繼或生產管道，由 Cloud Manager 產生的綜合版本 |
 
 ### 標準環境變數可用性 {#availability}
@@ -162,7 +164,7 @@ The currently available vendor/version combinations are:
 
 #### Dispatcher {#dispatcher}
 
-[Dispatcher](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-dispatcher/using/dispatcher) 只能使用一般環境變數。不能使用密碼。
+[Dispatcher](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-dispatcher/using/dispatcher) 只能使用一般環境變數。 不能使用密碼。
 
 但不能在 `IfDefine` 指令中使用環境變數。
 
@@ -178,7 +180,7 @@ The currently available vendor/version combinations are:
 
 在某些情況下，您的建置程序可能要依據特定設定變數而定，這類變數不適合放入 Git 存放庫中，或者在使用同一分支執行的管道之間需要使用不同變數。
 
-Cloud Manager 讓這些變數能夠經由 Cloud Manager API 或 Cloud Manager CLI 依據每個管道來設定。變數可能以純文字或加密待用的方式儲存。在任何一種情況下，都能在建置環境中以環境變數的形式使用變數，然後可以從 `pom.xml` 檔案或其他建置指令碼中進行參照。
+Cloud Manager 讓這些變數能夠經由 Cloud Manager API 或 Cloud Manager CLI 依據每個管道來設定。 變數可能以純文字或加密待用的方式儲存。 在任何一種情況下，都能在建置環境中以環境變數的形式使用變數，然後可以從 `pom.xml` 檔案或其他建置指令碼中進行參照。
 
 若要使用 CLI 設定變數，請執行類似下列的命令。
 
@@ -219,7 +221,7 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 
 ## 安裝其他系統套件 {#installing-additional-system-packages}
 
-要能發揮完整功能，部分建置需要安裝其他系統套件。例如，建置可能會叫用 Python 或 Ruby 指令碼，因此需要安裝適當的語言解譯器。此情境可透過呼叫 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) 以叫用 APT 來完成。這項執行通常應包裝在 Cloud Manager 特定的 Maven 設定檔中。例如，若要安裝 Python，您可以執行以下操作：
+要能發揮完整功能，部分建置需要安裝其他系統套件。 例如，建置可能會叫用 Python 或 Ruby 指令碼，因此需要安裝適當的語言解譯器。 此情境可透過呼叫 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/) 以叫用 APT 來完成。 這項執行通常應包裝在 Cloud Manager 特定的 Maven 設定檔中。 例如，若要安裝 Python，您可以執行以下操作：
 
 ```xml
         <profile>
@@ -272,8 +274,8 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
         </profile>
 ```
 
-此技術也可用於安裝特定語言套件。意即，RubyGems 使用 `gem`，或 Python 套件使用 `pip`。
+此技術也可用於安裝特定語言套件。 意即，RubyGems 使用 `gem`，或 Python 套件使用 `pip`。
 
 >[!NOTE]
 >
->以這種方式安裝系統套件不會將其安裝在用於執行 Adobe&#x200B; Experience Manager 的執行階段環境中。如果您需要在 AEM 環境中安裝系統套件，請和您的 Adob&#x200B;&#x200B;e 代表聯絡。
+>以這種方式安裝系統套件不會將其安裝在用於執行 Adobe&#x200B; Experience Manager 的執行階段環境中。 如果您需要在 AEM 環境中安裝系統套件，請和您的 Adob&#x200B;&#x200B;e 代表聯絡。
