@@ -2,10 +2,10 @@
 title: Dispatcher 設定
 description: 了解如何使用 Cloud Manager 部署 Dispatcher 設定檔案。
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '575'
-ht-degree: 100%
+source-git-commit: 037a296c21adde6f7fa731c71ee4a75cea042780
+workflow-type: tm+mt
+source-wordcount: '595'
+ht-degree: 89%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 100%
 
 Cloud Manager 能夠部署 Web 伺服器和 Dispatcher 設定檔案的前提，在於它們會和一般 AEM 內容套件一起儲存於 Git 存放庫中。
 
-若要運用此功能，Maven 建置應產生 .zip 檔案，且其中至少包含兩個目錄：`conf` 和 `conf.d`。可使用 `maven-assembly-plugin` 產生此 .zip 檔案。
+若要運用此功能，Maven 建置應產生 .zip 檔案，且其中至少包含兩個目錄：`conf` 和 `conf.d`。 可使用 `maven-assembly-plugin` 產生此 .zip 檔案。
 
-Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-wizard.md)產生的專案具有自動建立的正確 Maven 專案結構。如果您剛開始使用 Adobe Managed Services (AMS)，此為建議的路徑。
+Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-wizard.md)產生的專案具有自動建立的正確 Maven 專案結構。 如果您剛開始使用 Adobe Managed Services (AMS)，此為建議的路徑。
 
-當您部署至 Dispatcher 執行個體時，執行個體上的目錄會替換為 Git 存放庫中的目錄。由於 Web 伺服器和 Dispatcher 設定檔案通常需要環境特定的詳細資訊，因此在正確使用此功能之前，您必須與客戶成功工程師 (CSE) 合作，設定在 `/etc/sysconfig/httpd` 中合適的環境變數。
+當您部署至 Dispatcher 執行個體時，執行個體上的目錄會替換為 Git 存放庫中的目錄。 由於 Web 伺服器和 Dispatcher 設定檔案通常需要環境特定的詳細資訊，因此在正確使用此功能之前，您必須與客戶成功工程師 (CSE) 合作，設定在 `/etc/sysconfig/httpd` 中合適的環境變數。
 
 ## 現有受管理服務客戶的 Dispatcher 設定 {#steps-for-configuring-dispatcher}
 
@@ -30,8 +30,8 @@ Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-w
 
 1. 向您的 CSE 獲取最新的生產設定檔案。
 1. 移除硬式編碼的環境特定資料，例如發佈轉譯器 IP，並以變數取代。
-1. 在每個目標 Dispatcher 的索引碼值配對中定義所需的變數，並要求您的 CSE 將這些變數新增到每個執行個體上的 `/etc/sysconfig/httpd`。
-1. 在您的中繼環境中測試更新的設定。
+1. 在每個目標Dispatcher的索引鍵值配對中定義所需的變數，並將其新增至每個執行個體上的[變數](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/variables.html?lang=en#variables-files-(.vars))資料夾。
+1. 在中繼環境中測試更新的設定。
 1. 測試後，請求您的 CSE 將其部署到生產環境。
 1. 將檔案提交到您的 Git 存放庫。
 1. 透過 Cloud Manager 部署。
@@ -48,7 +48,7 @@ Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-w
 
    您可以在此處使用任何名稱，但在此步驟中建立的目錄名稱必須和步驟 6 中使用的名稱相同。
 
-1. 此子目錄包含一個 Maven 模組，該模組會使用 Maven 組裝外掛程式來建置 Dispatcher .zip 檔案。於 `dispatcher` 目錄中，建立包含此內容的 `pom.xml` 檔案，在必要時變更 `parent` 參照、`artifactId` 和 `name`。
+1. 此子目錄包含一個 Maven 模組，該模組會使用 Maven 組裝外掛程式來建置 Dispatcher .zip 檔案。 於 `dispatcher` 目錄中，建立包含此內容的 `pom.xml` 檔案，在必要時變更 `parent` 參照、`artifactId` 和 `name`。
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -88,9 +88,9 @@ Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-w
    </project>
    ```
 
-   * 和步驟 1 一樣，如果需要，此處的 artifactId 和 name 可以是其他值。`dispatcher` 在此僅用為範例。
+   * 和步驟1一樣，如果需要，此處的artifactId和name可以是其他值。`dispatcher` 在此僅用為範例。
 
-1. 此 Maven 組裝外掛程式需要 `descriptor` 來定義 .zip 檔案的建立方式。若要建立此描述項，可在包含以下內容的 `dispatcher` 子目錄 (名為 `assembly.xml`) 中建立檔案。請注意，在上述 `pom.xml` 檔案的第 26 行會參照此檔案名稱。
+1. 此 Maven 組裝外掛程式需要 `descriptor` 來定義 .zip 檔案的建立方式。 若要建立此描述項，可在包含以下內容的 `dispatcher` 子目錄 (名為 `assembly.xml`) 中建立檔案。 請注意，在上述 `pom.xml` 檔案的第 26 行會參照此檔案名稱。
 
    ```xml
    <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
@@ -113,9 +113,9 @@ Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-w
    </assembly>
    ```
 
-1. 在 Dispatcher 子目錄中建立一個名為 `src` 的子目錄 (如上述第 11 行組裝描述項中所提及的)，以儲存實際的 Apache 和 Dispatcher 設定。在此 `src` 目錄中，建立名為 `conf`、`conf.d`、`conf.dispatcher.d` 和 `conf.modules.d` 的目錄。
+1. 在 Dispatcher 子目錄中建立一個名為 `src` 的子目錄 (如上述第 11 行組裝描述項中所提及的)，以儲存實際的 Apache 和 Dispatcher 設定。 在此 `src` 目錄中，建立名為 `conf`、`conf.d`、`conf.dispatcher.d` 和 `conf.modules.d` 的目錄。
 
-1. 以您的設定檔案填入 `conf`、`conf.d`、`conf.dispatcher.d` 和 `conf.modules.d` 目錄。例如，預設的設定會由這些檔案和符號連結組成。
+1. 以您的設定檔案填入 `conf`、`conf.d`、`conf.dispatcher.d` 和 `conf.modules.d` 目錄。 例如，預設的設定會由這些檔案和符號連結組成。
 
    ```
    dispatcher
@@ -215,7 +215,7 @@ Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-w
 
    * 如步驟 1 中所述，`<module>` 元素的值必須和已建立的目錄名稱相符。
 
-1. 若要進行測試，請在專案根目錄中執行 `mvn clean package`。您應該在輸出中看到類似這樣的行。
+1. 若要進行測試，請在專案根目錄中執行 `mvn clean package`。 您應該在輸出中看到類似這樣的行。
 
    ```
    [INFO] --- maven-assembly-plugin:3.1.0:single (default) @ dispatcher ---
