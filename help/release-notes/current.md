@@ -3,10 +3,10 @@ title: Cloud Manager 2026.3.0版發行說明
 description: 瞭解如何在Adobe Managed Services上發行Cloud Manager 2026.3.0。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
+source-git-commit: b7e651b72d1943aef69c1c69915d4752a6163931
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 19%
+source-wordcount: '461'
+ht-degree: 16%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 19%
 ## 新增功能 {#what-is-new}
 
 * **支援AEM Experience Hub中的UI擴充功能**
-[AEM Experience Hub](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/experience-hub/experience-hub)中的UI擴充功能支援現已啟用，讓開發人員得以使用Adobe App Builder建立的自訂功能和Widget來擴充介面。
+[AEM Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)中的UI擴充功能支援現已啟用，讓開發人員得以使用Adobe App Builder建立的自訂功能和Widget來擴充介面。
 
   若要進一步瞭解，請參閱[AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/)。
 
@@ -57,7 +57,7 @@ ht-degree: 19%
 <!--
 ### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
 
 ![Diagram of Experience Hub extensibility and customization workflow](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
@@ -68,7 +68,7 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 
 ### 模組快取能加快建置速度 {#quick-build-cm-pipelines}
 
-新的建置模型會使用模組層級快取來編譯已變更的模組 (而非整個存放庫)，藉此縮短建置時間。 此建置模型適用於程式碼品質、完整堆疊和僅限中繼管道。
+新的建置模型會使用模組層級快取來編譯已變更的模組 (而非整個存放庫)，藉此縮短建置時間。 它適用於計畫碼品質和完整棧疊管道。
 
 ![編輯非生產管道對話方塊，其中顯示兩個建置策略選項，即Full Build和Smart Build](/help/release-notes/assets/non-production-pipeline-edit.png)
 *編輯非生產管道對話方塊，其中顯示兩個建置策略選項：完整建置和智慧型建置。*
@@ -78,7 +78,9 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 * **完整組建** — 每次執行都會建置存放庫中的所有模組。
 * **智慧型組建** — 僅建置自上次認可後變更的模組，這會縮短整體建置時間。
 
-您控制哪些管道使用&#x200B;**智慧型組建**。 在Beta版期間，此選項僅針對&#x200B;**程式碼品質**&#x200B;和&#x200B;**開發部署**&#x200B;管道顯示。
+請參閱[新增非生產管道](/help/using/non-production-pipelines.md#add-non-production-pipeline)和[關於在非生產管道中使用Smart Build](/help/using/non-production-pipelines.md#about-smart-build)。
+
+您控制哪些管道使用&#x200B;**智慧型組建**。 在Beta版期間，此選項僅針對&#x200B;**程式碼品質**&#x200B;和&#x200B;**開發完整棧疊程式碼部署**&#x200B;管道顯示。
 
 感興趣嗎？ 請寄送電子郵件至 [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com)，並附上您的 Adobe OrgID 和方案 ID。
 
