@@ -2,7 +2,7 @@
 title: 新增非生產管道
 description: 了解如何使用 Cloud Manager 建立和設定非生產管道以部署代碼。
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: 2a022c10ce64bb42d4bffd63bea01de25af0bd41
+source-git-commit: ee409c97269a70aa9cf4ee4a39c425e62bc156e0
 workflow-type: tm+mt
 source-wordcount: '1992'
 ht-degree: 27%
