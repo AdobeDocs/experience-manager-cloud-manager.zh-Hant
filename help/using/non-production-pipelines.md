@@ -2,10 +2,10 @@
 title: 新增非生產管道
 description: 了解如何使用 Cloud Manager 建立和設定非生產管道以部署代碼。
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: ddbffd1310e0af646c071c81d560fb50abeb01c1
+source-git-commit: 261c4334a514ee2101444e83a559d300bba3d507
 workflow-type: tm+mt
 source-wordcount: '1994'
-ht-degree: 23%
+ht-degree: 22%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 23%
 
 使用&#x200B;**管道**&#x200B;圖磚 (在 [!UICONTROL Cloud Manager] 中)，**部署管理員**&#x200B;可建立兩個不同類型的管道。
 
-* **生產管道** - 生產管道是一個專門建置的管道，由一系列精心安排的步驟組成，以將原始程式碼一路帶入生產環境。
+* **生產管道** — 生產管道是一個專門建置的管道，由一系列精心安排的步驟組成，以將原始程式碼一路帶入生產環境。
 * **非生產管道** - 非生產管道主要用於執行程式碼品質掃描或將原始程式碼部署到開發環境中。
 
 本文件會專注於非生產管道。 如需有關如何設定生產管道的詳細資訊，請參閱文件[設定生產管道](/help/using/production-pipelines.md)。
