@@ -3,12 +3,15 @@ title: Cloud Manager 2026.4.0版發行說明
 description: 瞭解關於Adobe Managed Services中的Cloud Manager 2026.4.0版。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 0ad5d533e6f8749a9c141d5a095f0a2fed37efcf
+source-git-commit: 147695c1dc61b1836a09129f81b072c3a4299e93
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 14%
 
 ---
+
+
+<!-- add "hold: true" to metadata above to be able to commit/merge to Main WITHOUT Publishig -->
 
 # Adobe Managed Services中Cloud Manager 2026.4.0的發行說明 {#release-notes}
 
@@ -31,7 +34,7 @@ ht-degree: 14%
 
 * **支援AEM Experience Hub中的使用者介面擴充性。**
 
-  [AEM Experience Hub](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/experience-hub/experience-hub)中的使用者介面擴充功能支援現已啟用，讓開發人員得以使用Adobe App Builder建立的自訂功能和Widget來擴充介面。
+  [AEM Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)中的使用者介面擴充功能支援現已啟用，讓開發人員得以使用Adobe App Builder建立的自訂功能和Widget來擴充介面。
 
   若要進一步瞭解，請參閱[AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/)。
 
@@ -58,7 +61,7 @@ ht-degree: 14%
 <!--
 ### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
 
 ![Diagram of Experience Hub extensibility and customization workflow](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
