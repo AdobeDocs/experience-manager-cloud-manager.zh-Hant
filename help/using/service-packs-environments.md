@@ -2,11 +2,10 @@
 title: 開發環境的Service Pack更新 — 私人測試版
 description: 了解如何立即透過 Cloud Manager 使用者介面，啟用開發環境的 Service Pack 更新。
 hide: true
-hidefromtoc: true
 exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
-source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
+source-git-commit: 9ef2f45331c0aaf5c619af1151da38278cfc3c5d
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '468'
 ht-degree: 94%
 
 ---
@@ -21,7 +20,7 @@ ht-degree: 94%
 
 ## 概觀 {#service-pack-updates-overview}
 
-您可以透過 Cloud Manager 使用者介面啟用開發環境的 Service Pack 更新。您可以利用這項功能檢查可用的 Service Pack 更新，並分別管理安裝程序。
+您可以透過 Cloud Manager 使用者介面啟用開發環境的 Service Pack 更新。 您可以利用這項功能檢查可用的 Service Pack 更新，並分別管理安裝程序。
 
 **主要優勢**
 
