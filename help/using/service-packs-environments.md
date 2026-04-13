@@ -3,7 +3,7 @@ title: 開發環境的Service Pack更新 — 私人測試版
 description: 了解如何立即透過 Cloud Manager 使用者介面，啟用開發環境的 Service Pack 更新。
 hide: true
 exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
-source-git-commit: 9ef2f45331c0aaf5c619af1151da38278cfc3c5d
+source-git-commit: 17edfbaea9bb2bd9b817a0ee5726b0883cdd31f2
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 94%
