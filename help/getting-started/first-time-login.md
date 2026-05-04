@@ -2,13 +2,16 @@
 title: 首次登入
 description: 如果您已經設定好一般設定，而且準備好要第一次使用 Cloud Manager，依照本頁面的說明進行。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
+TQID: https://experienceleague.adobe.com/2fA-qKPKPhxCCRzxWC5pujXWQCa9vcP8tJtnSXSdipU
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: 305
 ht-degree: 89%
 
 ---
-
 
 # 首次登入 {#first-time-login}
 
@@ -20,10 +23,10 @@ ht-degree: 89%
 
 ## 第一次登入 {#logging-in-for-the-first-time}
 
-1. 在 [experiece.adobe.com](https://experience.adobe.com/experiencemanager) 登入 Cloud Manager。 要瞭解更多資訊，請參閱[關於Adobe體驗中心](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/experience-hub/experience-hub)
+1. 在 [experiece.adobe.com](https://experience.adobe.com/experiencemanager) 登入 Cloud Manager。 若要進一步瞭解，請參閱[關於Adobe Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 1. 在左側面板中，按一下「**Cloud Manager**」。
 
-   ![Experience Manager中左側面板中的雲管理器](/help/getting-started/assets/cloud-manager-experiencemanager.png)
+   Experience Manager左側面板中的![Cloud Manager](/help/getting-started/assets/cloud-manager-experiencemanager.png)
 
 <!-- 
 1. Log into Cloud Manager at [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) and you see your list of programs.

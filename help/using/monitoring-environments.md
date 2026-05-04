@@ -2,13 +2,17 @@
 title: 監視環境
 description: 了解如何在 Cloud Manager 中監視環境。
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+TQID: https://experienceleague.adobe.com/1WlZ7i3267CTPVQrvLi9FlzJuTjzSzpghePEMlSygjY
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: 873
 ht-degree: 75%
 
 ---
-
 
 # 監視環境 {#monitoring-environments}
 
@@ -16,13 +20,13 @@ ht-degree: 75%
 
 ## 量度臨界值 {#thresholds}
 
-可透過觀察環境中的個別執行個體並追蹤每個執行個體的各種量度來完成 [!UICONTROL Cloud Manager] 中的系統監視。每個量度都有兩個已定義的臨界值：*警告*&#x200B;臨界值以及&#x200B;*嚴重*&#x200B;臨界值。
+可透過觀察環境中的個別執行個體並追蹤每個執行個體的各種量度來完成 [!UICONTROL Cloud Manager] 中的系統監視。 每個量度都有兩個已定義的臨界值：*警告*&#x200B;臨界值以及&#x200B;*嚴重*&#x200B;臨界值。
 
 如果量度超越其警告臨界值 (但低於其嚴重臨界值)，即被視為處於警告狀態。
 
 如果量度超越其嚴重臨界值，即被視為處於嚴重狀態。
 
-Adobe Managed Services 會設定臨界值，您可以在 [!UICONTROL Cloud Manager] 中檢視該資訊。在大多數情況下，客戶之間會保持一致的臨界值，但在某些情況下，Adobe Managed Services 會針對特定的客戶需求編輯臨界值。如有任何關於臨界值的問題，請直接向您的客戶成功工程師 (CSE) 洽詢。
+Adobe Managed Services 會設定臨界值，您可以在 [!UICONTROL Cloud Manager] 中檢視該資訊。 在大多數情況下，客戶之間會保持一致的臨界值，但在某些情況下，Adobe Managed Services 會針對特定的客戶需求編輯臨界值。 如有任何關於臨界值的問題，請直接向您的客戶成功工程師 (CSE) 洽詢。
 
 ## 存取系統監視 {#accessing-system-monitoring}
 
@@ -37,14 +41,14 @@ Adobe Managed Services 會設定臨界值，您可以在 [!UICONTROL Cloud Manag
 
 ## 系統監視概觀 {#system-monitoring-overview}
 
-「**系統監視**」區段 (在「**報告**」頁面中) 會列出方案內受監視的環境。並報告四個不同類別中的高層級健康狀況：
+「**系統監視**」區段 (在「**報告**」頁面中) 會列出方案內受監視的環境。 並報告四個不同類別中的高層級健康狀況：
 
 * 主機
 * 儲存空間
 * 網路
 * 應用程式
 
-每個類別中的狀態是個別量度的摘要。如果某個類別中的任何量度處於嚴重狀態，則概觀頁面上的整個類別都會處於嚴重狀態。在環境層級和執行個體層級可檢視相同的摘要。
+每個類別中的狀態是個別量度的摘要。 如果某個類別中的任何量度處於嚴重狀態，則概觀頁面上的整個類別都會處於嚴重狀態。 在環境層級和執行個體層級可檢視相同的摘要。
 
 ![系統監視概觀](/help/assets/System-Monitoring-Reports.png)
 
@@ -54,13 +58,13 @@ Adobe Managed Services 會設定臨界值，您可以在 [!UICONTROL Cloud Manag
 
 ## 系統監視詳細資訊 {#system-monitoring-detail}
 
-若要檢視特定量度的詳細資訊，請按一下特定實例的其中一個類別欄或左側導覽中的類別標題。每個詳細資訊頁面都會顯示該類別中量度的一系列圖表。您可以檢視環境中所有執行個體或特定執行個體的量度。您可以使用右上角的下拉式方框在環境和執行個體之間進行切換。
+若要檢視特定量度的詳細資訊，請按一下特定實例的其中一個類別欄或左側導覽中的類別標題。 每個詳細資訊頁面都會顯示該類別中量度的一系列圖表。 您可以檢視環境中所有執行個體或特定執行個體的量度。 您可以使用右上角的下拉式方框在環境和執行個體之間進行切換。
 
 ![選取環境](/help/assets/System_Monitoring1.png)
 
 左側的導覽會顯示目前所選類別中的可用量度，其中包含目前所選環境和執行個體的資料。
 
-一張獨立的圖表顯示狀態，以及一張圖表顯示隨時間變化的資料及其臨界值。如果顯示多個執行個體，則每個執行個體的資料會依個別系列顯示。
+一張獨立的圖表顯示狀態，以及一張圖表顯示隨時間變化的資料及其臨界值。 如果顯示多個執行個體，則每個執行個體的資料會依個別系列顯示。
 
 ![量度圖表](/help/assets/Monitoring_Graphs1.png)
 
@@ -86,7 +90,7 @@ Adobe Managed Services 會設定臨界值，您可以在 [!UICONTROL Cloud Manag
 
 #### 儲存空間 {#storage}
 
-* **`Disk Space`**：主機上每個掛接點已使用的磁碟空間（以MB為單位）。 每個掛接點都有不同的量度。至少會有 `/` 和 `/mnt` 的量度，但如要更多掛接點量度，可能需視特定執行個體設定而定。
+* **`Disk Space`**：主機上每個掛接點已使用的磁碟空間（以MB為單位）。 每個掛接點都有不同的量度。 至少會有 `/` 和 `/mnt` 的量度，但如要更多掛接點量度，可能需視特定執行個體設定而定。
 * **`Folder Size`**
 * **`AEM Segment Store`**： AEM區段存放區已使用的磁碟空間（以GB為單位）。
 
@@ -108,7 +112,7 @@ Adobe Managed Services 會設定臨界值，您可以在 [!UICONTROL Cloud Manag
 
 ![資料點翻轉](/help/assets/SLA-Reports-two.png)
 
-此圖表下的「**事件分析**」區段會顯示在目前選定年度期間該方案發生的事故組合。每個事故都有一個時間範圍、一個原因和一連串評論。
+此圖表下的「**事件分析**」區段會顯示在目前選定年度期間該方案發生的事故組合。 每個事故都有一個時間範圍、一個原因和一連串評論。
 
 ![事件分析](/help/assets/sla-reporting3.png)
 

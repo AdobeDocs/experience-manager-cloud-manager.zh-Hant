@@ -2,9 +2,12 @@
 title: 在 Cloud Manager 中新增 Adobe 存放庫
 description: 了解如何在 Cloud Manager 中新增 Adobe 託管的存放庫。
 exl-id: 24c6ca97-ea70-41b8-b4c7-b8b0f406a57d
-source-git-commit: 675568426df0df5890dd8c72bfb53c24a4c5d666
-workflow-type: ht
-source-wordcount: '230'
+TQID: https://experienceleague.adobe.com/LBI6V07enOlxe8yh-XwlkL-mdMWR0MJyKi1gUQtjtK4
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 241
 ht-degree: 100%
 
 ---
@@ -35,7 +38,7 @@ ht-degree: 100%
 
    ![新增存放庫對話框](/help/managing-code/assets/repository-add-adobe.png)
 
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 您的新存放庫將顯示在「**存放庫**」頁面的表格中。
 
 您現在可以將 [CI/CD 管道](/help/overview/ci-cd-pipelines.md)與存放庫建立關聯，或在&#x200B;[**存放庫**&#x200B;頁面](/help/managing-code/managing-repositories.md)中管理存放庫。

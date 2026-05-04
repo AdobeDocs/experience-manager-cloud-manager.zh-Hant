@@ -3,13 +3,16 @@ title: 評估階段
 seo-title: Evaluation Phase
 description: 了解產品更新精靈的評估階段如何使用模式偵測器來評估升級複雜性。
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+TQID: https://experienceleague.adobe.com/dj-Wnq9FagNI3mzzVHcUH-sOufzb02D0juHqhtgpon0
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 57%
+source-wordcount: 270
+ht-degree: 59%
 
 ---
-
 
 # 評估階段 {#evaluation}
 
@@ -28,7 +31,7 @@ ht-degree: 57%
 
 ## 執行評估報告 {#running}
 
-此模式偵測器可在任何環境中執行。但是，為了提高偵測率並避免影響業務關鍵執行個體的運作速度，Cloud Manager 會在作者實例的中繼環境中執行偵測器。
+此模式偵測器可在任何環境中執行。 但是，為了提高偵測率並避免影響業務關鍵執行個體的運作速度，Cloud Manager 會在作者實例的中繼環境中執行偵測器。
 
 **若要執行評估報告：**
 
@@ -38,7 +41,7 @@ ht-degree: 57%
 
    ![執行評估](/help/assets/Run-Evaluation.png)
 
-1. 精靈會通知您操作狀態。當產生評估報告時，依據適用情形，您會注意到「**進行中」**&#x200B;或「**已完成**」狀態。
+1. 精靈會通知您操作狀態。 當產生評估報告時，依據適用情形，您會注意到「**進行中」**&#x200B;或「**已完成**」狀態。
 
 1. 報告產生後，您可以按一下「**[!UICONTROL 下載報告]**」儲存副本。
 

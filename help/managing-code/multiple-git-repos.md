@@ -2,9 +2,12 @@
 title: 使用多個 Git 存放庫
 description: 了解如何使用您自己的 Git 存放庫或多個 Git 存放庫，而非直接使用 Cloud Manager 的 Git 存放庫。
 exl-id: 53bf78bb-489a-4a83-8459-c361f532d54a
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
-workflow-type: ht
-source-wordcount: '738'
+TQID: https://experienceleague.adobe.com/xKzqOfbi12A0POy-C7Gm7-n649DEBX9JP3LfXA5UC3Y
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 743
 ht-degree: 100%
 
 ---
@@ -17,11 +20,11 @@ ht-degree: 100%
 
 若您是使用自己的一個或多個存放庫，請設定自動同步流程，讓 Cloud Manager 的 Git 存放庫保持最新狀態。
 
-根據代管 Git 存放庫的位置，可以採取 GitHub 操作或 Jenkins 等持續整合解決方案來設定自動化。建立自動化後，每次推送到您自己存放庫的內容可自動轉寄至 Cloud Manager 的 Git 存放庫。
+根據代管 Git 存放庫的位置，可以採取 GitHub 操作或 Jenkins 等持續整合解決方案來設定自動化。 建立自動化後，每次推送到您自己存放庫的內容可自動轉寄至 Cloud Manager 的 Git 存放庫。
 
-雖然以單一的客戶自有 Git 存放庫而言，這類自動化很簡單，但若是針對多個存放庫進行設定，則需要更複雜的初始設定。需要將來自多個 Git 存放庫的內容對應到單一 Cloud Manager Git 存放庫中不同的目錄上。需要在 Cloud Manager 的 Git 存放庫佈建根 Maven `pom.xml`，於模組區段中提供不同子專案的清單
+雖然以單一的客戶自有 Git 存放庫而言，這類自動化很簡單，但若是針對多個存放庫進行設定，則需要更複雜的初始設定。 需要將來自多個 Git 存放庫的內容對應到單一 Cloud Manager Git 存放庫中不同的目錄上。 需要在 Cloud Manager 的 Git 存放庫佈建根 Maven `pom.xml`，於模組區段中提供不同子專案的清單
 
-以下為兩個客戶自有 Git 存放庫的範例 `pom.xml`。第一個專案被放進名為 `project-a` 的目錄中，而第二個專案則被放進名為 `project-b` 的目錄。
+以下為兩個客戶自有 Git 存放庫的範例 `pom.xml`。 第一個專案被放進名為 `project-a` 的目錄中，而第二個專案則被放進名為 `project-b` 的目錄。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -42,13 +45,13 @@ ht-degree: 100%
 </project>
 ```
 
-這類根 `pom.xml` 會被推送到 Cloud Manager Git 存放庫中的某個分支。然後必須設定這兩個專案，將變更自動轉寄到 Cloud Manager 的 Git 存放庫。
+這類根 `pom.xml` 會被推送到 Cloud Manager Git 存放庫中的某個分支。 然後必須設定這兩個專案，將變更自動轉寄到 Cloud Manager 的 Git 存放庫。
 
-舉例來說，推送到專案 A 中分支的動作可以觸發 GitHub 操作。該操作會簽出專案 A 和 Cloud Manager Git 存放庫，並將專案 A 中所有內容複製到 Cloud Manager Git 存放庫內的 `project-a` 目錄中。然後認可並推送更改。
+舉例來說，推送到專案 A 中分支的動作可以觸發 GitHub 操作。 該操作會簽出專案 A 和 Cloud Manager Git 存放庫， 並將專案 A 中所有內容複製到 Cloud Manager Git 存放庫內的 `project-a` 目錄中。 然後認可並推送更改。
 
-例如，專案 A  `main` 分支上的變更會自動推送到 Cloud Manager Git 存放庫中的 `main` 分支。當然，分支間可能有對應，例如，推送至專案 A 中名為 `dev` 分支的動作，會被推送至 Cloud Manager Git 存放庫中名為 `development` 的分支。專案 B 需要類似的步驟。
+例如，專案 A  `main` 分支上的變更會自動推送到 Cloud Manager Git 存放庫中的 `main` 分支。 當然，分支間可能有對應，例如，推送至專案 A 中名為 `dev` 分支的動作，會被推送至 Cloud Manager Git 存放庫中名為 `development` 的分支。 專案 B 需要類似的步驟。
 
-根據分支策略和工作流程，可以為不同的分支設定同步。如果所使用的 Git 存放庫未提供類似 GitHub 操作的概念，則也有可能經由 Jenkins (或類似方法) 進行整合。於此情況下，webhook 會觸發進行這項工作的 Jenkins 作業。
+根據分支原則和工作流程，可以為不同的分支設定同步。 如果所使用的 Git 存放庫未提供類似 GitHub 操作的概念，則也有可能經由 Jenkins (或類似方法) 進行整合。 於此情況下，webhook 會觸發進行這項工作的 Jenkins 作業。
 
 請依照下列步驟，增加新的 (第三個) 來源或存放庫：
 
@@ -58,7 +61,7 @@ ht-degree: 100%
 
 ## GitHub 操作範例 {#sample-github-action}
 
-推送至 `main` 分支會觸發這項 GitHub 操作範例，然後會推送至 Cloud Manager Git 存放庫的子目錄中。該 GitHub 操作必須搭配兩個密碼：`MAIN_USER` 以及 `MAIN_PASSWORD`，才能連線並推送至 Cloud Manager 的 Git 存放庫。
+推送至 `main` 分支會觸發這項 GitHub 操作範例，然後會推送至 Cloud Manager Git 存放庫的子目錄中。 該 GitHub 操作必須搭配兩個密碼：`MAIN_USER` 以及 `MAIN_PASSWORD`，才能連線並推送至 Cloud Manager 的 Git 存放庫。
 
 ```java
 name: SYNC
@@ -115,15 +118,15 @@ jobs:
           git -C main push
 ```
 
-如上所示，可以靈活使用 GitHub 操作。能夠執行 Git 存放庫分支間的任何對應，以及單獨 Git 專案至主要專案目錄版面的任何對應。
+如上所示，可以靈活使用 GitHub 操作。 能夠執行 Git 存放庫分支間的任何對應，以及單獨 Git 專案至主要專案目錄版面的任何對應。
 
 >[!NOTE]
 >
->上述指令碼會使用 `git add` 對假定已納入移除的存放庫進行更新。根據 Git 的預設設定，此要求可能需要替換為 `git add --all`。
+>上述指令碼會使用 `git add` 對假定已納入移除的存放庫進行更新。 根據 Git 的預設設定，此要求可能需要替換為 `git add --all`。
 
 ## Jenkins 作業範例 {#sample-jenkins-job}
 
-此指令碼為範例，可用於 Jenkins 作業或類似操作。Git 存放庫中的變更會觸發之。Jenkins 作業會簽出該專案或分支的最新狀態，然後觸發此指令碼。
+此指令碼為範例，可用於 Jenkins 作業或類似操作。 Git 存放庫中的變更會觸發之。 Jenkins 作業會簽出該專案或分支的最新狀態，然後觸發此指令碼。
 
 此指令碼會陸續簽出 Cloud Manager 的 Git 存放庫並將專案程式碼提交到子目錄。
 
@@ -181,8 +184,8 @@ git commit -F ../commit.txt
 git push
 ```
 
-如上所示，可以極為靈活地使用 Jenkins 作業。能夠執行 Git 存放庫分支間的任何對應，以及單獨 Git 專案至主要專案目錄版面的任何對應。
+如上所示，可以極為靈活地使用 Jenkins 作業。 能夠執行 Git 存放庫分支間的任何對應，以及單獨 Git 專案至主要專案目錄版面的任何對應。
 
 >[!NOTE]
 >
->上述指令碼會使用 `git add` 對假定已納入移除的存放庫進行更新。根據 Git 的預設設定，可能需要將 `git add` 替換為 `git add --all`。
+>上述指令碼會使用 `git add` 對假定已納入移除的存放庫進行更新。 根據 Git 的預設設定，可能需要將 `git add` 替換為 `git add --all`。

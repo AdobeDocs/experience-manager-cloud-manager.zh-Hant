@@ -2,13 +2,15 @@
 title: 通知
 description: 了解 Cloud Manager 如何通知您重要事件。
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '561'
+TQID: https://experienceleague.adobe.com/WBAHeIAH1XL6oVy342wLaUAoAHkUoN1AbcAl2Erkte4
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 564
 ht-degree: 100%
 
 ---
-
 
 # 通知 {#notifications}
 
@@ -16,27 +18,27 @@ ht-degree: 100%
 
 ## Cloud Manager 中的通知 {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager] 會在生產部署開始時，在生產管道啟動和完成 (成功或不成功) 時傳送通知給您。以及，在達到&#x200B;**上線核准**&#x200B;和&#x200B;**排程**&#x200B;步驟時亦發送通知。上述通知會經由 [!UICONTROL Experience Cloud] 通知系統傳送。
+[!UICONTROL Cloud Manager] 會在生產部署開始時在生產管道啟動和完成 (成功或不成功) 時傳送通知給您。 以及，在達到&#x200B;**上線核准**&#x200B;和&#x200B;**排程**&#x200B;步驟時亦發送通知。 上述通知會經由 [!UICONTROL Experience Cloud] 通知系統傳送。
 
 >[!NOTE]
 >
 >系統只會將核准和已排程通知傳送給角色為&#x200B;**企業所有者**、**方案管理員**&#x200B;以及&#x200B;**部署管理員**&#x200B;的使用者。
 
-通知會顯示在[!UICONTROL Cloud Manager] 內的側邊欄中並遍及整個 Adobe [!UICONTROL Experience Cloud]。
+通知會顯示在 [!UICONTROL Cloud Manager] 內的側邊欄中並遍及整個 Adobe [!UICONTROL Experience Cloud]。
 
 當您有新通知時，標題中的鈴鐺圖示會出現標記。
 
 ![通知圖示](/help/assets/notifications-bell-badged.png)
 
-按一下該鈴鐺圖示，即可開啟側邊欄並檢視通知。該側邊欄中的&#x200B;**通知**&#x200B;索引標籤即會顯示最新通知的清單，例如部署確認。通知內容和您的環境有關。
+按一下該鈴鐺圖示，即可開啟側邊欄並檢視通知。 該側邊欄中的&#x200B;**通知**&#x200B;索引標籤即會顯示最新通知的清單，例如部署確認。 通知內容和您的環境有關。
 
 ![通知側邊欄](/help/assets/notifications-activities.png)
 
-**公告**&#x200B;索引標籤會包括 Adobe 產品的公告。公告內容和產品有關。
+**公告**&#x200B;索引標籤會包括 Adobe 產品的公告。 公告內容和產品有關。
 
 ![通知側邊欄](/help/assets/notificaitons-announcements.png)
 
-按一下通知或公告，即可檢視其詳細內容。連結至管道部署等活動的通知將帶您了解該活動的詳細資訊，例如管道執行視窗。
+按一下通知或公告，即可檢視其詳細內容。 連結至管道部署等活動的通知將帶您了解該活動的詳細資訊，例如管道執行視窗。
 
 按一下面板底部的「**檢視全部**」選項，即可檢視收件匣中的所有公告。
 
@@ -58,21 +60,21 @@ ht-degree: 100%
 
 ![通知訂閱](/help/assets/notifications-subscriptions.png)
 
-預設情況下，您接收所有產品的所有通知。按一下產品旁的「**自訂**」，定義您希望接收該產品的哪些類型通知。
+預設情況下，您接收所有產品的所有通知。 按一下產品旁的「**自訂**」，定義您希望接收該產品的哪些類型通知。
 
 ![通知訂閱自訂](/help/assets/notifications-subscriptions-customize.png)
 
 ### 優先順序 {#priority}
 
-優先警報會標示「**HIGH**」標記。您可以將這類警報設定為獨立接收的警報。在&#x200B;**優先順序**&#x200B;部份中，您可以定義哪些類別符合優先通知的條件。
+優先警報會標示「**HIGH**」標記。 您可以將這類警報設定為獨立接收的警報。 在&#x200B;**優先順序**&#x200B;部份中，您可以定義哪些類別符合優先通知的條件。
 
 ![通知優先順序](/help/assets/notifications-priority.png)
 
-使用下拉式選單，以新增到符合優先條件類別的清單中。按一下在類別名稱旁的 `X`，即可將其刪除。
+使用下拉式選單，以新增到符合優先條件類別的清單中。 按一下在類別名稱旁的 `X`，即可將其刪除。
 
 ### 警示 {#alerts}
 
-警示會出現在視窗右上角幾秒鐘。使用&#x200B;**警示**&#x200B;部份來定義您接收警示的通知。
+警示會出現在視窗右上角幾秒鐘。 使用&#x200B;**警示**&#x200B;部份來定義您接收警示的通知。
 
 ![通知警示](/help/assets/notifications-alerts.png)
 
@@ -84,14 +86,14 @@ ht-degree: 100%
 
 ### 電子郵件 {#emails}
 
-在所有 Adobe [!UICONTROL Experience Cloud] 解決方案的 Web 使用者介面中都可看到通知。您還能選擇透過&#x200B;**電子郵件**&#x200B;部份中的電子郵件傳送這些通知。
+在所有 Adobe [!UICONTROL Experience Cloud] 解決方案的 Web 使用者介面中都可看到通知。 您還能選擇透過&#x200B;**電子郵件**&#x200B;部份中的電子郵件傳送這些通知。
 
 ![通知電子郵件](/help/assets/notifications-emails.png)
 
-預設情況下並不會傳送電子郵件。您可以選擇按以下週期接收電子郵件：
+預設情況下並不會傳送電子郵件。 您可以選擇按以下週期接收電子郵件：
 
 * 即時
 * 每日
 * 每週
 
-若選擇「**即時通知**」，則每個通知都會立即傳送電子郵件。對於「**每日摘要**」和「**每週摘要**」，您可以選擇在什麼時間接收每日摘要，以及在星期幾和什麼時間接收每週摘要。
+若選擇「**即時通知**」，則每個通知都會立即傳送電子郵件。 對於「**每日摘要**」和「**每週摘要**」，您可以選擇在什麼時間接收每日摘要，以及在星期幾和什麼時間接收每週摘要。

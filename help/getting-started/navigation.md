@@ -2,15 +2,18 @@
 title: 導覽 Cloud Manager UI
 description: 了解 Cloud Manager UI 的組織方式以及如何導覽此 UI 來管理您的方案和環境。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
+TQID: https://experienceleague.adobe.com/qTv4G7eSJahDusX68iNXzcw64Aq8xxP6SRAtn-SB0t4
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: 1660
 ht-degree: 52%
 
 ---
 
-
-# 導航雲管理器UI {#navigation}
+# 導覽Cloud Manager UI {#navigation}
 
 了解 Cloud Manager UI 的組織方式以及如何導覽此 UI 來管理您的方案和環境。
 
@@ -21,18 +24,18 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ## 「我的方案」控制台 {#my-programs-console}
 
-在[experience.adobe.com](https://experience.adobe.com/experiencemanager)登錄Cloud Manager並選擇適當的組織時，您將到達&#x200B;**我的程式**&#x200B;控制台。
+當您在[experience.adobe.com](https://experience.adobe.com/experiencemanager)登入Cloud Manager並選取適當的組織時，就會進入&#x200B;**我的程式**&#x200B;主控台。
 
 ![我的方案控制台](/help/getting-started/assets/cloud-manager-my-programs-console.png)
 
-**「我的程式」**&#x200B;控制台提供您在所選組織中有權訪問的所有程式的概覽。 它由幾個部分組成。
+**我的程式**&#x200B;主控台提供您在所選組織中有權存取的所有程式的總覽。 它由幾個部分組成。
 
 |   | 區域 | 描述 |
 | --- | --- | --- |
-| 1 | [工具欄](#toolbars-my-programs-toolbars) | 用於組織選擇、警報和帳戶設定。 |
-| 2 | 左側面板標籤 | 用於切換程式當前視圖的各種頁籤，包括：<br><ul><li>**Experience Manager**&#x200B;開啟各種解決方案的主AEM頁</li><li>**顯示所有可用程式的所有程式**。</li><li>**許可證**&#x200B;開啟許可證儀表板。 許可證儀表板僅適用於&#x200B;*AEM作為雲服務程式*(AEMaaCS)，而不適用於AdobeManaged Services程式AEM，如6.5和AEM6.5 LTS。 要確定程式具有的服務類型（AEMaaCS或AMS），請參閱本文的[程式卡部分](#program-cards)。 頁籤預設為關閉，可使用[Cloud Manager標題](#cloud-manager-header)左側的![顯示菜單表徵圖漢堡](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)下拉菜單顯示。</li></ol> |
-| 3 | [我的程式](#my-programs-section) | 列出可以選擇的所有可用程式。<br>有關程式的詳細資訊，請參閱[程式和程式類型](/help/getting-started/program-setup.md)。 |
-| 4 | [呼叫操作和統計資訊](#cta-statistics) | 概述您最近的活動。 |
+| 1 | [工具列](#toolbars-my-programs-toolbars) | 用於組織選擇、警示和帳戶設定。 |
+| 2 | 左側面板索引標籤 | 可讓您切換程式目前檢視的各種標籤，包括下列專案：<br><ul><li>**Experience Manager**&#x200B;會開啟各種AEM解決方案的首頁</li><li>**所有程式**&#x200B;會顯示所有可用的程式。</li><li>**授權**&#x200B;開啟授權儀表板。 授權儀表板僅適用於&#x200B;*AEM as a Cloud Service計畫* (AEMaaCS)，不適用於Adobe Managed Services計畫，例如AEM 6.5和AEM 6.5 LTS。 若要判斷您的程式具有的服務型別（AEMaaCS或AMS），請參閱本文的[程式卡片區段](#program-cards)。 索引標籤預設為關閉，並可使用位於[Cloud Manager標題](#cloud-manager-header)左側的![顯示功能表圖示（漢堡](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)）下拉式功能表來顯示。</li></ol> |
+| 3 | [我的程式](#my-programs-section) | 列出您可以選取的所有可用程式。<br>如需有關程式的詳細資訊，請參閱[程式和程式型別](/help/getting-started/program-setup.md)。 |
+| 4 | [行動號召與統計資料](#cta-statistics) | 提供您最近活動的概覽。 |
 | 5 | [快速連結](#quick-links) | 快速存取相關資源。 |
 
 
@@ -48,15 +51,15 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 | 區域 | 說明 |
 | --- | --- |
-| ![顯示功能表圖示，漢堡](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) | 一個下拉式功能表，可讓您存取個別程式特定部分的標籤。<br>若要判斷您的程式具有的服務型別（AMS或AEMaaCS），請參閱本檔案的[程式卡片區段](#program-cards)。 |
+| ![顯示功能表圖示，漢堡](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) | 一個下拉式功能表，可讓您存取個別程式特定部分的索引標籤。<br>若要判斷您的程式具有的服務型別（AMS或AEMaaCS），請參閱本檔案的[程式卡片區段](#program-cards)。 |
 | ![Adobe紅白圖示](/help/getting-started/assets/AdobeLogoWhiteOnRed.svg) Cloud Manager | 按一下以開啟Cloud Manager的&#x200B;**我的程式**&#x200B;主控台，無論您身在Cloud Manager何處。 |
 | *`Name of selected organization`* | 組織選擇器會顯示您目前登入的組織（在此範例中為&#x200B;*Foundation Internal*）。 如果您的Adobe ID與多個組織相關聯，請按一下以切換至其他組織。 |
 | ![意見回饋圖示](/help/getting-started/assets/AppComment.svg)意見 | 按一下「 」，向Adobe提供有關Cloud Manager的意見回饋。 |
-| ![AI助理圖示](/help/getting-started/assets/AIChat.svg) | AI Assistant提供對話式介面，旨在簡化為AEM相關查詢尋找答案的程式。 檢視[AI小幫手](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/ai-in-aem/ai-assistant/ai-assistant-in-aem#) |
+| ![AI助理圖示](/help/getting-started/assets/AIChat.svg) | AI Assistant提供對話式介面，旨在簡化為AEM相關查詢尋找答案的程式。 檢視[AI小幫手](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-in-aem/ai-assistant/ai-assistant-in-aem#) |
 | ![說明圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | 按一下以提供學習與支援資源的快速存取權。 |
 | ![白鈴圖示](/help/getting-started/assets/Bell.svg) | 按一下以檢視目前指派的不完整[通知數目](/help/using/notifications.md) |
 | ![應用程式圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | 按一下以在AEM首頁和AEM解決方案之間快速移動 |
-| *`Dynamic Account icon`* | 按一下您的使用者圖片以存取您的&#x200B;**帳戶設定**&#x200B;和&#x200B;**程式設定**，或登出。<br>如果您選擇不新增使用者圖片，則會隨機指派圖示（如上圖工具列影像所示）。 |
+| *`Dynamic Account icon`* | 按一下您的使用者圖片以存取您的&#x200B;**帳戶設定**&#x200B;和&#x200B;**程式設定**，或者登出。<br>如果您選擇不新增使用者圖片，圖示會隨機指派（如上方工具列影像所示）。 |
 
 <!--
 1. The ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) icon on the left side of the header is  
