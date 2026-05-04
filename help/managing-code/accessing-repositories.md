@@ -2,9 +2,15 @@
 title: 存放庫存取資訊
 description: 了解如何使用 Cloud Manager 中的自助 Git 帳戶管理存取和管理您的 Adobe 託管 Git 存放庫。
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
-source-git-commit: 04fbc4a3fdba8b108055d66a4fdb1a31994cb18e
-workflow-type: ht
-source-wordcount: '381'
+TQID: https://experienceleague.adobe.com/S3oIN4DvfYCvKQLGQmFtWlqHcN5Mv9xvoNKjaMnNlm0
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 403
 ht-degree: 100%
 
 ---
@@ -34,18 +40,18 @@ Cloud Manager 不會提供[私人存放庫](/help/managing-code/private-reposito
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
-1. 在&#x200B;**計畫概覽**&#x200B;頁面 (位於&#x200B;**管道**&#x200B;卡片下面)，按一下「**存取存放庫資訊**」。
+1. 在&#x200B;**計畫概觀**&#x200B;頁面 (位於&#x200B;**管道**&#x200B;卡片下面)，按一下「**存取存放庫資訊**」。
 
    ![管道卡上的存取存放庫資訊](/help/managing-code/assets/pipelines-card2.png)
 
-1. 若要存取密碼，必須產生新密碼。在&#x200B;**存放庫資訊**&#x200B;對話框中，選取「**產生密碼**」。
+1. 若要存取密碼，必須產生新密碼。 在&#x200B;**存放庫資訊**&#x200B;對話框中，選取「**產生密碼**」。
 
 1. 在確認對話框中，選取「**產生密碼**」。
 
 1. 在「**密碼**」欄位右側，按一下![複製圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)，可將密碼複製到剪貼簿。
 
    * 產生密碼後，先前的密碼便會失效。
-   * Cloud Manager 不會儲存密碼。您有責任以安全方式儲存密碼。
+   * Cloud Manager 不會儲存密碼。 您有責任以安全方式儲存密碼。
    * 由於 Cloud Manager 不會儲存密碼，因此如果遺失密碼，您就必須重新產生新密碼。
 
    ![複製存放庫資訊對話框中的密碼](/help/managing-code/assets/repository-copy-password.png)
@@ -54,10 +60,10 @@ Cloud Manager 不會提供[私人存放庫](/help/managing-code/private-reposito
 
 ## 從存放庫視窗存取存放庫資訊 {#repositories-window}
 
- **存取存放庫資訊**&#x200B;功能也可從&#x200B;[**存放庫**&#x200B;頁面](/help/managing-code/managing-repositories.md)取得。此按鈕顯示有關存取受 Adobe 管理的存放庫的相同資訊。
+**存取存放庫資訊**&#x200B;功能也可從&#x200B;[**存放庫**&#x200B;頁面](/help/managing-code/managing-repositories.md)取得。 此按鈕顯示有關存取受 Adobe 管理的存放庫的相同資訊。
 
 ## 撤銷存取密碼 {#revoke-password}
 
 您可以隨時撤銷存取密碼。
 
-若要如此做，請[為此請求建立支援服務單](https://experienceleague.adobe.com/zh-hant?support-solution=Experience+Manager&amp;support-tab=home#support)。此服務單會以高優先性處理，且通常會在一天內撤銷。
+若要如此做，請[為此請求建立支援服務單](https://experienceleague.adobe.com/zh-hant?support-solution=Experience+Manager&support-tab=home#support)。 此服務單會以高優先性處理，且通常會在一天內撤銷。

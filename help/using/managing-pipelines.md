@@ -2,13 +2,18 @@
 title: 管理管道
 description: 了解如何管理現有管道，包括執行、編輯它們，並將其刪除。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 91eda02d55134fba167f30830a142a80717e9083
+TQID: https://experienceleague.adobe.com/5SdiydpBmjwCLtzujtle4gW1JyRRvR2qNFN3fdN5A0w
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: 1244
 ht-degree: 91%
 
 ---
-
 
 # 管理管道 {#managing-pipelines}
 
@@ -36,7 +41,7 @@ ht-degree: 91%
 
 ## 管道頁面 {#pipelines}
 
-**管道**&#x200B;頁面顯示所選方案所有管道的完整清單。此清單很實用，因其提供的資訊比[管道資訊卡](#pipeline-card)所提供的更完整。
+**管道**&#x200B;頁面顯示所選方案所有管道的完整清單。 此清單很實用，因其提供的資訊比[管道資訊卡](#pipeline-card)所提供的更完整。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和方案。
 
@@ -92,7 +97,7 @@ ht-degree: 91%
 
 ## 執行多個管道 {#run-multiple-pipelines}
 
-使用 Cloud Manager，您可以同時執行多個管道，提升 Adobe Managed Services (AMS) 客戶的部署效率。您可以使用&#x200B;**執行所選**&#x200B;功能選取多個管道，並觸發這些管道立即執行。它減少手動執行個別管道的工作量，並最佳化建置和部署工作流程。
+使用 Cloud Manager，您可以同時執行多個管道，提升 Adobe Managed Services (AMS) 客戶的部署效率。 您可以使用&#x200B;**執行所選**&#x200B;功能選取多個管道，並觸發這些管道立即執行。 它減少手動執行個別管道的工作量，並最佳化建置和部署工作流程。
 
 **若要執行多個管道：**
 
@@ -103,7 +108,7 @@ ht-degree: 91%
 1. 在此頁面的右上角附近，按一下「**執行所選 (x)**」。
 1. 在「**執行所選管道 (x)**」對話框中，按一下「**執行 (x)**」。
 
-   「**執行**」按鈕會反映可繼續執行的管道數量。例如，您可能已選取四個管道，但其中一個已經在執行中，或者連結至所選管道的環境已不存在。在這類情況下，系統會隨之調整。按鈕會更新為「執行 (3)」，表示三個管道可以繼續執行。
+   「**執行**」按鈕會反映可繼續執行的管道數量。 例如，您可能已選取四個管道，但其中一個已經在執行中， 或者連結至所選管道的環境已不存在。 在這類情況下，系統會隨之調整。 按鈕會更新為「執行 (3)」，表示三個管道可以繼續執行。
 
 1. 管道開始執行，並且會在「**管道**」清單中更新其狀態。
 
@@ -154,15 +159,15 @@ ht-degree: 91%
 
 ![管道詳情](/help/assets/configure-pipelines/pipeline-running-details.png)
 
-從這裡，您可以查看管道各個步驟的狀態，並擷取建置記錄以進行診斷。如需詳細資訊，請參閱文件「[程式碼部署](/help/using/code-deployment.md)」。
+從這裡，您可以查看管道各個步驟的狀態，並擷取建置記錄以進行診斷。 如需詳細資訊，請參閱文件「[程式碼部署](/help/using/code-deployment.md)」。
 
-管道執行中的所有步驟都會顯示，尚未開始的步驟會顯示為灰色。已完成的步驟會顯示其持續時間。
+管道執行中的所有步驟都會顯示，尚未開始的步驟會顯示為灰色。 已完成的步驟會顯示其持續時間。
 
 管道步驟完成後，會顯示摘要。
 
 ![步驟摘要](/help/assets/configure-pipelines/pipeline-step.png)
 
-按一下&#x200B;**檢視詳細資訊**&#x200B;連結，以顯示&#x200B;**持續時間**&#x200B;部份。此區段包含該管道的平均持續時間，以該方案的歷史趨勢為根據。
+按一下&#x200B;**檢視詳細資訊**&#x200B;連結，以顯示&#x200B;**持續時間**&#x200B;部份。 此區段包含該管道的平均持續時間，以該方案的歷史趨勢為根據。
 
 ![持續時間](/help/assets/configure-pipelines/duration.png)
 
@@ -170,6 +175,6 @@ ht-degree: 91%
 
 ![程式碼品質問題](assets/managing-pipelines-code-quality-issues.png)
 
-CSV 檔案中有「**專案檔案位置**」欄，會指出違規程式碼的位置。此欄是專案相對路徑，而「**檔案位置**」欄是 Maven 產生。
+CSV 檔案中有「**專案檔案位置**」欄，會指出違規程式碼的位置。 此欄是專案相對路徑，而「**檔案位置**」欄是 Maven 產生。
 
 ![專案程式碼掃描問題詳細資訊](assets/managing-pipelines-code-quality-details.png)

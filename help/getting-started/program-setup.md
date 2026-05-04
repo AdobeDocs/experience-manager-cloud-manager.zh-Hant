@@ -2,17 +2,24 @@
 title: 計劃設定
 description: 上線後，企業所有者必須對方案進行初始設定。
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+TQID: https://experienceleague.adobe.com/AqaA4GSOptV11h2y4V1Mt15KmEhEYBaiM-RvBFjtfWY
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: 570
 ht-degree: 93%
 
 ---
 
-
 # 方案設定 {#program-setup}
 
-上線後，企業所有者透過新增說明和定義關鍵績效指標 (KPI) 來設定方案。接著將使用這些 KPI 進行效能測試。
+上線後，企業所有者透過新增說明和定義關鍵績效指標 (KPI) 來設定方案。 接著將使用這些 KPI 進行效能測試。
 
 ## 使用 [!UICONTROL Cloud Manager] 進行方案設定 {#program-setup-cloud-manager}
 
@@ -34,7 +41,7 @@ ht-degree: 93%
 
    ![「一般」索引標籤](/help/assets/Setup_Program-General.png)
 
-1. 在 **KPI** 索引標籤上，定義您的 KPI。在此範例中，分別為 **AEM Sites** 和 **AEM Assets** 定義了單獨的 KPI。 指定您已獲授權之產品的 KPI。
+1. 在 **KPI** 索引標籤上，定義您的 KPI。 在此範例中，分別為 **AEM Sites** 和 **AEM Assets** 定義了單獨的 KPI。 指定您已獲授權之產品的 KPI。
 
    請參閱 [KPI](#kpis) 一節，以取得有關如何在 Cloud Manager 中測量 KPI 的更多詳細資訊。
 
@@ -48,11 +55,11 @@ ht-degree: 93%
 
 1. 按一下「**儲存**」。
 
-您的方案已建立。在方案準備好可供使用之前，可能需要幾分鐘的時間來佈建資源。
+您的方案已建立。 在方案準備好可供使用之前，可能需要幾分鐘的時間來佈建資源。
 
 ## 編輯方案 {#editing-program}
 
-您可以在方案完成設定後進行編輯。請依照以下步驟編輯方案。
+您可以在方案完成設定後進行編輯。 請依照以下步驟編輯方案。
 
 1. 在 [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com) 登入 Cloud Manager 並選取適當的組織。
 
@@ -62,7 +69,7 @@ ht-degree: 93%
 
    ![編輯方案選項](/help/assets/set-up-program/edit-program1.png)
 
-1. 會顯示&#x200B;**編輯方案**&#x200B;對話框，讓您能夠更新方案。請參閱[使用 Cloud Manager 的方案設定](#program-setup-cloud-manager)一節，以取得有關可用欄位的詳細資訊。
+1. 會顯示&#x200B;**編輯方案**&#x200B;對話框，讓您能夠更新方案。 請參閱[使用 Cloud Manager 的方案設定](#program-setup-cloud-manager)一節，以取得有關可用欄位的詳細資訊。
 
    ![編輯方案對話框](/help/assets/set-up-program/edit-program-general.png)
 
@@ -82,13 +89,13 @@ ht-degree: 93%
 
 ## KPI {#kpis}
 
-根據在中繼環境中執行的測試來測量網站 KPI。通常會降低這些 KPI 來符合中繼環境的能力。
+根據在中繼環境中執行的測試來測量網站 KPI。 通常會降低這些 KPI 來符合中繼環境的能力。
 
-例如，一個使用者若期望在其生產環境中每分鐘平均有 1000 次頁面檢視次數，且有四個 Dispatcher/發佈伺服器投入生產，則此情境下應調整為每分鐘 250 次頁面檢視次數。此案例假設他們的中繼環境僅包含單一Dispatcher/發佈伺服器配對。
+例如，一個使用者若期望在其生產環境中每分鐘平均有 1000 次頁面檢視次數，且有四個 Dispatcher/發佈伺服器投入生產，則此情境下應調整為每分鐘 250 次頁面檢視次數。 此案例假設他們的中繼環境僅包含單一Dispatcher/發佈伺服器配對。
 
-資產效能測試包含在 30 分鐘內重複上傳資產。在整個測試過程中會測量每項資產的處理時間以及各種系統層級量度。
+資產效能測試包含在 30 分鐘內重複上傳資產。 在整個測試過程中會測量每項資產的處理時間以及各種系統層級量度。
 
-您的生產環境前面可能有一個內容傳遞網路 (CDN)，例如 Akamai 或 CloudFront。由於是直接針對中繼環境進行 [!UICONTROL Cloud Manager] 測試，故 KPI 應該僅會反映預期會傳遞通過 CDN 的流量。也就是會有快取遺漏的情形。通常，這樣的體驗是總生產流量中一個相對較小的子集。
+您的生產環境前面可能有一個內容傳遞網路 (CDN)，例如 Akamai 或 CloudFront。 由於是直接針對中繼環境進行 [!UICONTROL Cloud Manager] 測試，故 KPI 應該僅會反映預期會傳遞通過 CDN 的流量。 也就是會有快取遺漏的情形。 通常，這樣的體驗是總生產流量中一個相對較小的子集。
 
 ## 影片概觀 {#video}
 

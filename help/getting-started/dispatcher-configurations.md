@@ -2,13 +2,20 @@
 title: Dispatcher 設定
 description: 了解如何使用 Cloud Manager 部署 Dispatcher 設定檔案。
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
-source-git-commit: 037a296c21adde6f7fa731c71ee4a75cea042780
+TQID: https://experienceleague.adobe.com/KpGTN-444bigrhLddGnZvxkZsThcVc1B--oEoAKTdos
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 89%
+source-wordcount: 595
+ht-degree: 92%
 
 ---
-
 
 # Dispatcher 設定 {#manage-your-dispatcher-configurations}
 
@@ -88,7 +95,7 @@ Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-w
    </project>
    ```
 
-   * 和步驟1一樣，如果需要，此處的artifactId和name可以是其他值。`dispatcher` 在此僅用為範例。
+   * 和步驟 1 一樣，如果需要，此處的 artifactId 和 name 可以是其他值。 `dispatcher` 在此僅用為範例。
 
 1. 此 Maven 組裝外掛程式需要 `descriptor` 來定義 .zip 檔案的建立方式。 若要建立此描述項，可在包含以下內容的 `dispatcher` 子目錄 (名為 `assembly.xml`) 中建立檔案。 請注意，在上述 `pom.xml` 檔案的第 26 行會參照此檔案名稱。
 
