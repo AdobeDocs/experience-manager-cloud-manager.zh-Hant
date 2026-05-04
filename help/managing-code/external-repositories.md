@@ -3,9 +3,13 @@ title: 在Cloud Manager中新增外部存放庫
 description: 了解如何將外部存放庫新增至 Cloud Manager。 Cloud Manager支援與GitHub Enterprise、GitLab、Bitbucket和Azure DevOps存放庫整合。
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
 TQID: https://experienceleague.adobe.com/uLIqzfR3sTBSMHCewIQPPADP9opdLQoT2PNQy5YZTKo
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
 source-wordcount: 2568
@@ -317,19 +321,19 @@ Azure DevOps會透過狀態檢查來追蹤提取請求驗證。 Cloud Manager執
 
 在程式碼品質驗證期間，狀態檢查會顯示處理進行中：
 
-使用webhooks-1](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)對提取請求進行![Azure DevOps驗證
+使用webhooks-1![&#128279;](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)對提取請求進行Azure DevOps驗證
 
 程式碼品質驗證完成後，狀態檢查會更新以反映結果：
 
-使用webhooks-2](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)對提取請求進行![Azure DevOps驗證
+使用webhooks-2![&#128279;](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)對提取請求進行Azure DevOps驗證
 
 如果驗證失敗，詳細錯誤資訊會顯示在狀態檢查詳細資訊中。 您可以按一下狀態檢查，以在Cloud Manager中檢視完整驗證結果。
 
-使用webhooks-3](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)對提取請求進行![Azure DevOps驗證
+使用webhooks-3![&#128279;](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)對提取請求進行Azure DevOps驗證
 
 針對提取請求評論和回饋，Cloud Manager會直接將評論新增至Azure DevOps中的提取請求，其中包含驗證詳細資料和任何必要的動作。
 
-使用webhooks-4](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)對提取請求進行![Azure DevOps驗證
+使用webhooks-4![&#128279;](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)對提取請求進行Azure DevOps驗證
 
 
 >[!ENDTABS]

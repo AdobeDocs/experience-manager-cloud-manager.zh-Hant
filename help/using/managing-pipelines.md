@@ -3,8 +3,11 @@ title: 管理管道
 description: 了解如何管理現有管道，包括執行、編輯它們，並將其刪除。
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
 TQID: https://experienceleague.adobe.com/5SdiydpBmjwCLtzujtle4gW1JyRRvR2qNFN3fdN5A0w
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
 source-wordcount: 1244
@@ -61,7 +64,7 @@ ht-degree: 91%
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，並選取適當的組織和方案。
 1. 從&#x200B;**方案總覽**&#x200B;頁面，按一下![管道標籤 — 工作流程圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**&#x200B;標籤。
 1. 在&#x200B;**管道**&#x200B;頁面上，在管道名稱和型別的左側，按一下取消我的最愛管道的![星形外框圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg)以將其新增到我的最愛清單。
-或者，按一下我的最愛管道](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg)的![星形圖示，將該管道從我的最愛清單中移除。
+或者，按一下我的最愛管道![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg)的星形圖示，將該管道從我的最愛清單中移除。
 
 
 ## 活動頁面 {#activity}
