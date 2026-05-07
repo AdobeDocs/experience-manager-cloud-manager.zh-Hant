@@ -1,6 +1,6 @@
 ---
-title: Cloud Manager 2026.4.0版發行說明
-description: 瞭解關於Adobe Managed Services中的Cloud Manager 2026.4.0版。
+title: Cloud Manager 2026.5.0版發行說明
+description: 瞭解關於Adobe Managed Services中的Cloud Manager 2026.5.0版。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 TQID: https://experienceleague.adobe.com/4zfTpSYuFwrJZ-oeL1SObT14v2Rd--Z1hKn5JllHAro
@@ -11,72 +11,52 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 8964aad406d3e7fc5b911b98f928ad0427511230
+source-git-commit: 0c2a9a946df6d5e1b0e4d5edb2715d8db98e9974
 workflow-type: tm+mt
-source-wordcount: 467
-ht-degree: 14%
+source-wordcount: 512
+ht-degree: 15%
 
 ---
 
 
-# Adobe Managed Services中Cloud Manager 2026.4.0的發行說明 {#release-notes}
+# Adobe Managed Services中Cloud Manager 2026.5.0的發行說明 {#release-notes}
 
 <!-- add "hold: true" to metadata above to be able to commit/merge to Main WITHOUT Publishig -->
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-瞭解關於Adobe Managed Services中[!UICONTROL Cloud Manager] 2026.4.0版的資訊。
+瞭解關於Adobe Managed Services中[!UICONTROL Cloud Manager] 2026.5.0版的資訊。
 
 另請參閱 [Adobe Experience Manager as a Cloud Service 最新發行說明](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/release-notes/home)。
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2026.4.0的發行日期為2026年4月2日星期四。
+[!UICONTROL Cloud Manager] 2026.5.0的發行日期為2026年5月7日星期四。
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-下一個預計發行日期為2026年5月7日星期四。
+下一個預計發行日期為2026年6月4日星期四。
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
 ## 新增功能 {#what-is-new}
 
-* **支援AEM Experience Hub中的使用者介面擴充性。**
-
-  [AEM Experience Hub](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/experience-hub/experience-hub)中的使用者介面擴充功能支援現已啟用，讓開發人員得以使用Adobe App Builder建立的自訂功能和Widget來擴充介面。
-
-  若要進一步瞭解，請參閱[AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/)。
-
-* **設定管道現在支援Managed密碼。**
-
-  使用者現在可以直接在Cloud Manager設定管道中新增和管理秘密。 這些秘密會安全地覆寫管道設定規格中的值，並支援彈性、特定於環境的部署。
-
-  所選管道的下拉式選單上的![檢視/編輯變數選項](/help/release-notes/assets/view-edit-variables-option.png)
-  所選管道的下拉式選單上的&#x200B;*檢視/編輯變數選項。*
-
-  ![變數設定對話方塊&#x200B;](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*變數設定對話方塊。*
-
-* **已改善穩定性、效能和可靠性。**
-
-  此版本包含最佳化和維護更新，改善了Cloud Manager的穩定性、效能和可靠性。
-
+2026年5月AMS版本的Cloud Manager沒有重大新功能。
 
 ## Beta 版方案 {#beta-program}
 
-參與Cloud Manager的Beta計畫，在即將推出的功能正式發行前取得獨家存取權。
+參與 Cloud Manager 的 Beta 版方案享有獨家存取權，在即將推出的功能正式發佈之前搶先體驗。
 
-目前提供下列機會：
+>[!IMPORTANT]
+>
+>Beta發行版本可能包含瑕疵，並依「現況」提供，並無任何保固。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援（透過Adobe支援服務或其他方式）測試版。 Adobe建議客戶謹慎行事，不要依賴Beta版正確運作或效能，或依賴任何隨附的檔案或資料。 Beta版中的功能和API可能會有所變更，恕不另行通知。 因此，使用測試版完全由客戶自行承擔風險。
 
-<!--
-### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
+目前提供下列Beta版計畫機會：
 
-[Experience Hub](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
+### AEM Managed Services的Web層管道 {#web-tier-pipelines}
 
-![Diagram of Experience Hub extensibility and customization workflow](/help/release-notes/assets/experience-hub-extensibility-customization.png)
+Cloud Manager現在支援AMS程式的專用Web層級管道，讓團隊可部署Dispatcher和Web層設定，而不受完整棧疊部署的影響。 如此可加快網頁層級變更的疊代，同時減少不必要的完整管道執行。 設定Web層管道時，完整棧疊管道會自動跳過該環境的Web層部署，以防止部署衝突。 移除網頁層級管道會自動復原預設部署行為。
 
-Embed custom experiences in Experience Hub to extend and personalize your organization's dashboard. In addition to Adobe's built-in widgets, add your own using the [UI Extensibility](https://developer.adobe.com/uix/docs/) framework. Build JavaScript-based UI apps and surface them to your users to meet business-specific requirements and workflows. 
-
-Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) with your Adobe OrgID and a short description of the customization you intend to create.
--->
+若要加入Beta，請聯絡您的Adobe客戶成功工程師以瞭解更多資訊。
 
 ### 模組快取能加快建置速度 {#quick-build-cm-pipelines}
 
@@ -100,7 +80,7 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 
 ## 錯誤修正 {#bug-fixes}
 
-2026年4月AMS版本的Cloud Manager沒有重大錯誤修正。
+2026年5月Cloud Manager的AMS版本沒有重大錯誤修正。
 
 <!--
 Known Issues {#known-issues}
