@@ -3,17 +3,13 @@ title: 新增生產管道
 description: 了解如何使用 Cloud Manager 建立和設定生產管道，以部署程式碼。
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 TQID: https://experienceleague.adobe.com/WH6W8bZNCWo0BAGLwnMOPpB3bk5P6Fd7c5b-dRT5Vc0
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
 workflow-type: tm+mt
-source-wordcount: 1256
-ht-degree: 100%
+source-wordcount: 1665
+ht-degree: 73%
 
 ---
 
@@ -50,24 +46,11 @@ ht-degree: 100%
 
 1. 按一下「**+ 新增**」，然後選取「**新增生產管道**」。
 
-   ![新增生產管道](/help/assets/configure-pipelines/add-prod1.png)
+   ![新增生產管道](/help/assets/configure-pipelines/add-prod7.png)
 
 1. 此&#x200B;**新增生產管道**&#x200B;對話框會開啟&#x200B;**設定**&#x200B;索引標籤，在此會提供幾個必須定義的管道選項。 這些選項會被分組到可摺疊的部份中，並在以下步驟中進行說明。
 
    1. 在&#x200B;**管道名稱**&#x200B;欄位中為您的管道提供描述性名稱。
-
-   1. 在「**原始程式碼**」區段下，您可定義管道從哪裡擷取要處理的程式碼。
-
-      * **存放庫** - 定義管道應從哪個 Git 存放庫擷取程式碼。
-
-      >[!TIP]
-      >
-      >如要了解如何在 Cloud Manager 中新增和管理存放庫，請參閱文件「[方案設定](/help/getting-started/program-setup.md)」。
-
-      * **Git 分支** - 定義應該從所選管道的哪個分支擷取程式碼。
-      * **程式碼位置** - 定義管道應從所選存放庫的分支中擷取程式碼的路徑。
-
-      ![定義管道的存放庫](/help/assets/configure-pipelines/add-prod2.png)
 
    1. 在&#x200B;**環境**&#x200B;部份下，您可以定義部署的觸發器以及應如何在每個環境中推出部署。
 
@@ -133,7 +116,16 @@ ht-degree: 100%
 
          * **Dispatcher 設定** - 定義生產環境的 Dispatcher 設定。 這些選項和中繼環境的選項相同。
 
-1. 按一下「**繼續**」，即可前進到「**中繼測試**」標籤，您可在此設定 AEM Sites 和 AEM Assets 的效能測試 (依您已授權的產品而定)。
+1. 按一下[繼續]****&#x200B;以進入&#x200B;**Source程式碼**&#x200B;標籤，您可在其中選取要部署的程式碼型別並設定來源存放庫。
+
+   1. 在&#x200B;**選取要部署的程式碼**&#x200B;下，選擇部署型別：
+
+      * **[完整棧疊程式碼](#full-stack-code)** — 您完整AEM應用程式的程式碼。
+      * **[網頁層設定](#web-tier-config)** — 用來儲存、處理及傳送網頁給使用者端的Dispatcher屬性。
+
+      如需這些部署型別的詳細資訊，請參閱[CI/CD管道](/help/overview/ci-cd-pipelines.md#code-sources)。 完成配管設定的剩餘步驟取決於您選取的型別。 按照上面的連結跳到本檔案的相關區段。
+
+1. 按一下「**繼續**」，即可前進到「**中繼測試**」標籤，您可在此設定 AEM Sites 和 AEM Assets 的效能測試 (依您已授權的產品而定)。 {#stage-testing}
 
    >[!TIP]
    >
@@ -145,7 +137,7 @@ ht-degree: 100%
       * **其他即時頁面**
       * **新頁面**
 
-      ![網站負載權數](/help/assets/configure-pipelines/add-prod5.png)
+      ![網站負載權數](/help/assets/configure-pipelines/add-prod8.png)
 
    1. 在&#x200B;**資產效能測試分佈**&#x200B;部份下，您可以定義影像和 PDF 的測試分佈並定義您自己的測試資產。
 
@@ -161,6 +153,57 @@ ht-degree: 100%
       ![資產測試分佈](/help/assets/configure-pipelines/add-prod6.png)
 
 1. 按一下&#x200B;**儲存**，即可完成新增生產管道。
+
+### 完整堆疊程式碼 {#full-stack-code}
+
+完整棧疊計畫碼管道部署後端和前端計畫碼構建以及HTTPD/Dispatcher配置。
+
+>[!NOTE]
+>
+>如果完整棧疊生產管道已存在，則此選項會停用。
+
+**若要設定完整棧疊計畫碼生產管道：**
+
+1. 在&#x200B;**Source程式碼**&#x200B;索引標籤上，定義下列選項。
+
+   * **存放庫** - 定義管道應從哪個 Git 存放庫擷取程式碼。
+
+   >[!TIP]
+   >
+   >如要了解如何在 Cloud Manager 中新增和管理存放庫，請參閱文件「[方案設定](/help/getting-started/program-setup.md)」。
+
+   * **Git分支** — 定義管道應該從哪個分支擷取程式碼。
+   * **忽略 Web 層設定**- 選取後，管道不會部署您的 Web 層設定。 如果相同環境已存在網頁層設定管道，則此核取方塊會自動選取並停用，因為網頁層設定是由該管道管理。 當沒有Web層設定管道時，您可以選取或清除此選項來控制完整棧疊管道是否部署Dispatcher設定。
+
+   ![完整棧疊程式碼來源](/help/assets/configure-pipelines/add-prod-fullstack-source.png)
+
+1. 按一下&#x200B;**繼續**&#x200B;以進入&#x200B;**階段測試**&#x200B;標籤。 如需詳細資訊，請參閱[中繼測試](#stage-testing)。
+
+### 網頁層設定 {#web-tier-config}
+
+Web層設定管道僅部署HTTPD/Dispatcher設定。 如需此管道型別的詳細資訊，請參閱[CI/CD管道](/help/overview/ci-cd-pipelines.md#deployment-types)。
+
+>[!NOTE]
+>
+>如果Web層設定生產管道已存在，則此選項會停用。
+
+如果您為具有現有完整棧疊管道的環境建立Web層配置管道，則忽略完整棧疊管道中的Web層配置。 此變更只會影響該環境中的Web層設定。
+
+**若要設定Web層設定生產管道：**
+
+1. 在&#x200B;**Source程式碼**&#x200B;索引標籤上，定義下列選項。
+
+   * **存放庫** — 從下拉式清單中，選取包含網頁層設定的Git存放庫。
+   * **Git分支** — 選取Cloud Manager用於部署的所選存放庫中的分支。
+   * **程式碼位置** — 在選取的存放庫中輸入包含要部署的Web層組態的路徑。 預設位置是存放庫根目錄(`/`)。
+
+   >[!NOTE]
+   >
+   >如果程式碼位置未指向Dispatcher程式碼位置，則會將其他應用程式程式碼提取到成品套件中並部署到Dispatcher，導致Apache在重新啟動時失敗，且管道失敗。 請務必為存放庫中的Dispatcher檔案設定正確的路徑。
+
+   ![網頁層設定來源](/help/assets/configure-pipelines/add-prod-webtier-source.png)
+
+1. 按一下&#x200B;**繼續**&#x200B;以進入&#x200B;**階段測試**&#x200B;標籤。 如需詳細資訊，請參閱[中繼測試](#stage-testing)。
 
 ## 後續步驟 {#the-next-steps}
 
