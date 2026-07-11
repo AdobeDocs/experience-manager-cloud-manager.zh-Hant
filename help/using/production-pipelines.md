@@ -10,10 +10,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
+source-git-commit: 4c73ab16ff7eab406c31a6d26cdd09360a94b3ea
 workflow-type: tm+mt
-source-wordcount: 1665
-ht-degree: 73%
+source-wordcount: 2101
+ht-degree: 58%
 
 ---
 
@@ -208,6 +208,83 @@ Web層設定管道僅部署HTTPD/Dispatcher設定。 如需此管道型別的詳
    ![網頁層設定來源](/help/assets/configure-pipelines/add-prod-webtier-source.png)
 
 1. 按一下&#x200B;**繼續**&#x200B;以進入&#x200B;**階段測試**&#x200B;標籤。 如需詳細資訊，請參閱[中繼測試](#stage-testing)。
+
+
+## 關於在生產管道中使用Smart Build{#about-smart-build}
+
+Cloud Manager中的&#x200B;**智慧型組建**&#x200B;是生產管道的最佳組建策略。 Smart Build會快取模組，並只重新建置自上次成功執行後已變更的模組，藉此縮短建置時間。 未變更的模組會從快取中重複使用，而只會重建已修改的模組及其相依性，進而提高反複開發工作流程的效率。
+
+Smart Build目前可用於下列專案：
+
+* 計畫碼品質管道。
+* 開發、測試和生產完整棧疊部署管道。
+
+>[!NOTE]
+>
+>啟用Smart Build後的首次執行行為類似於Full Build，因為快取是空的。
+
+發生下列情況時，建議使用Smart Build：
+
+* 您正在積極開發和提交頻繁的增量變更。
+* 您的專案包含多個Maven模組。
+* 完整組建需要相當長的時間。
+
+有以下情況時，Smart Build並不總是理想的選擇：
+
+* 您的組建嚴重依賴外掛程式，這些外掛程式會在Maven的相依性圖表之外執行操作。
+* 每次執行都需要完整重建驗證。
+
+### 瞭解組建效能{#smart-build-performance}
+
+使用Smart Build的效能提升取決於幾個因素，包括：
+
+* 專案中的模組數。
+* 程式碼變更的頻率和範圍。
+* 跨模組的相依性分佈。
+
+一般而言，具有許多獨立模組的專案可以有最大的改善。
+
+### 每個模組快取選擇退出{#smart-build-cache-optout}
+
+Smart Build提供可讓您停用特定模組快取的精細控制項。 此功能在某些模組中相當實用：
+
+* 使用外掛程式，例如`exec-maven-plugin`或`maven-antrun-plugin`。
+* 執行Maven相依性未追蹤的檔案操作。
+* 快取時產生不一致的結果。
+
+### 停用模組的快取{#smart-build-disable-caching}
+
+您可以將下列屬性新增至受影響模組的`pom.xml`：
+
+```xml
+<properties>
+  <maven.build.cache.enabled>false</maven.build.cache.enabled>
+</properties>
+```
+
+此語法會強制模組在每次管道執行時重建，而其他模組會繼續受益於快取。
+
+### 使用Smart Build時的限制和考量{#smart-build-limitations}
+
+使用Smart Build時，請記得下列事項：
+
+* Smart Build仰賴Maven相依性分析。
+* 相依性圖表以外的變更可能不會觸發重新建置。
+* 有些外掛程式可能與快取不完全相容。
+* 您可以透過編輯非生產管道隨時切換回&#x200B;**完整組建**。
+
+如果您遇到非預期的建置行為，請考慮停用特定模組的快取，或暫時將建置策略切換為&#x200B;**完整建置**。
+
+### 疑難排解智慧型組建問題{#smart-build-troubleshoot}
+
+| 問題 | 建議的解決方案 |
+| --- | --- |
+| 建置結果不一致 | ·停用受影響模組的快取。<br>·驗證外掛程式行為（尤其是`exec`/`antrun`外掛程式）。 |
+| 沒有效能改善 | ·確定已發生多次執行（快取熱身）。<br>·檢查大多數模組是否頻繁變更。 |
+| 未預期的成品或遺失的變更 | ·檢閱變更是否在Maven相依性追蹤之外。<br>·使用&#x200B;**完整組建**&#x200B;進行驗證。 |
+
+請參閱[新增生產管道](#adding-production-pipeline)以啟用Smart Build。
+
 
 ## 後續步驟 {#the-next-steps}
 

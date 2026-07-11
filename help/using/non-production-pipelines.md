@@ -8,9 +8,9 @@ product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
+source-git-commit: 4c73ab16ff7eab406c31a6d26cdd09360a94b3ea
 workflow-type: tm+mt
-source-wordcount: 2096
+source-wordcount: 2080
 ht-degree: 22%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 22%
 >
 >您必須等到與管道相關的Git存放庫具有至少一個分支且[程式設定](/help/getting-started/program-setup.md)完成時，才能設定管道。 如欲了解如何在 Cloud Manager 中新增和管理存放庫，請參閱 [Cloud Manager 存放庫](/help/managing-code/managing-repositories.md)。
 
-## 新增一個全新非生產管道 {#add-non-production-pipeline}
+## 新增非生產管道 {#add-non-production-pipeline}
 
 在Cloud Manager UI中設定方案和至少一個環境後，您可以新增非生產管道。 在部署到生產環境之前，使用這些管道來測試計畫碼品質。
 
@@ -99,7 +99,7 @@ ht-degree: 22%
 | --- | --- | --- |
 | **Source代碼** | **存放庫** | 從下拉式清單中，選擇管道用作其來源的Git存放庫。 Cloud Manager會從您在此選擇的存放庫建置程式碼。 |
 |   | **Git分支** | 從下拉式清單中，選擇管道應建置的來源（所選存放庫）分支。 預設為 `main`。 管道使用所選分支作為構建和部署的來源。 如有必要，請按一下[重新整理]&#x200B;**&#x200B;**&#x200B;來更新所選存放庫的可用分支清單。 如果最近建立的分支未出現在清單中，請使用此選項。 |
-|   | **建置策略** | <ul><li>**完整組建** — 每次都會建置存放庫中的所有模組<li>Beta **智慧型組建** — 僅建置自上次認可後已變更的模組。<br>進一步瞭解[在非生產管道中使用Smart Build](#about-smart-build)。</li></ol>**重要**： Smart Build僅適用於計畫碼品質管道和開發完整棧疊計畫碼部署管道。 |
+|   | **建置策略** | <ul><li>**完整組建** — 每次都會建置存放庫中的所有模組<li>**智慧型組建** — 僅建置自上次認可後已變更的模組。<br>進一步瞭解[在非生產管道中使用Smart Build](#about-smart-build)。</li></ol> |
 |   | **忽略Web層組態**&#x200B;核取方塊 | 選取此選項可跳過在完整棧疊計畫碼管道中部署Web層設定。 取消選取此選項以部署網頁層級設定以及管道的程式碼。 |
 | **管道** | **體驗稽核**&#x200B;核取方塊 | 選取此選項可在管道中包含體驗稽核步驟。 啟用後，管道會在Source程式碼索引標籤之後包含體驗稽核步驟。 |
 
@@ -131,21 +131,24 @@ ht-degree: 22%
 
 Cloud Manager中的&#x200B;**智慧型組建**&#x200B;是非生產管道的最佳組建策略。 Smart Build會快取模組，並只重新建置自上次成功執行後已變更的模組，藉此縮短建置時間。 未變更的模組會從快取中重複使用，而只會重建已修改的模組及其相依性，進而提高反複開發工作流程的效率。
 
-Smart Build目前僅適用於下列專案：
+Smart Build目前可用於下列專案：
 
 * 計畫碼品質管道。
-* 開發完整棧疊部署管道。
+* 開發、中繼和非生產的完整棧疊部署管道。
+
 
 >[!NOTE]
 >
 >啟用Smart Build後的首次執行行為類似於Full Build，因為快取是空的。
 
 發生下列情況時，建議使用Smart Build：
+
 * 您正在積極開發和提交頻繁的增量變更。
 * 您的專案包含多個Maven模組。
 * 完整組建需要相當長的時間。
 
 有以下情況時，Smart Build並不總是理想的選擇：
+
 * 您的組建嚴重依賴外掛程式，這些外掛程式會在Maven的相依性圖表之外執行操作。
 * 每次執行都需要完整重建驗證。
 
