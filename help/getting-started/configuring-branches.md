@@ -3,27 +3,23 @@ title: 設定分支
 description: 了解如何設定您在 Git 中的第一個分支，以及 CI/CD 管道如何運用該分支部署您的應用程式程式碼。
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
 TQID: https://experienceleague.adobe.com/Mxmx725a6m7J9UtwkI5o3tJGzZ7O3c3Bgv-fF393sZg
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
 workflow-type: tm+mt
-source-wordcount: 332
-ht-degree: 95%
+source-wordcount: 314
+ht-degree: 47%
 
 ---
 
 # 設定分支 {#configuring-branches}
 
-了解如何設定您在 Git 中的第一個分支，以及 CI/CD 管道如何運用該分支部署您的應用程式程式碼。
+瞭解如何在Git中設定您的第一個分支，以及CI/CD管道如何使用它來部署您的應用程式程式碼。
 
 ## 設定您在 Git 中的第一個分支 {#setting-up-your-first-branch-in-git}
 
-在 Cloud Manager 中上線的每個方案都會[佈建](/help/requirements/environment-provisioning.md)一個初始為空白的 Git 存放庫。 此存放庫可包含的分支數量依您開發流程的要求而定，但必須至少有一個分支供 CI/CD 管道用於將應用程式程式碼部署至中繼環境和生產環境。 最佳做法是將 `main` 用作此分支的名稱。 方便的是，這個方法是 Git 用戶端在設定新專案時的預設行為。
+在 Cloud Manager 中上線的每個方案都會[佈建](/help/requirements/environment-provisioning.md)一個初始為空白的 Git 存放庫。 此存放庫可包含的分支數量依您的開發流程的要求而定，但CI/CD管道必須至少使用一個分支將應用程式程式碼部署到中繼和生產環境。 最佳做法是將 `main` 用作此分支的名稱。 此方法是Git使用者端在設定新專案時的預設行為。
 
 例如，在設定新專案時，您會執行一組類似下列內容的命令。
 
@@ -57,7 +53,7 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->使用命令列用戶端並非必要。 有多種圖形化 Git 用戶端可供使用，無論是獨立應用程式或做為整合式開發環境 (IDE) (如 Eclipse 或 IntelliJ) 之一部分。 只要用戶端應用程式支援使用 HTTPS 的 Git，應該能與 [!UICONTROL Cloud Manager] 相容。
+>使用命令列用戶端並非必要。 有多種圖形化 Git 用戶端可供使用，無論是獨立應用程式或做為整合式開發環境 (IDE) (如 Eclipse 或 IntelliJ) 之一部分。 只要使用者端應用程式支援使用HTTPS的Git，就與[!UICONTROL Cloud Manager]相容。
 
 ## 推送您的第一個分支 {#pushing-your-first-branch}
 
@@ -77,12 +73,12 @@ To <url>
 
 >[!NOTE]
 >
->您的 Adobe 客戶成功工程師 (CSE) 會於 [!UICONTROL Cloud Manager] 上線期間提供特定的 URL 以及您的憑證。
+>您的Adobe CSE （客戶成功工程師）在[!UICONTROL Cloud Manager]上線期間提供特定URL以及您的認證。
 
 ## 額外的分支 {#additional-branches}
 
-對於非常簡單的專案，單一 `main` 分支可能就足夠了，但在大多數情況下，會需要較複雜的分支策略。 許多客戶所依循的流程是在一個名為 `develop` 的分支上執行日常開發活動。 然後，當需要部署時，`develop`分支會合併到`main`分支中。
+`main`分支僅夠用於簡單專案，但建議使用更複雜的分支策略。 許多客戶會遵循在名為`develop`的分支上執行例行開發活動的程式。 然後，當需要部署時，`develop`分支會合併到`main`分支中。
 
 >[!TIP]
 >
->若要檢視常用的 Git 命令，請參閱「[Git 速查表](https://training.github.com/downloads/github-git-cheat-sheet)」。
+>若要檢視常用的Git命令，請參閱[Git參考指南](https://training.github.com/downloads/github-git-cheat-sheet/)。
