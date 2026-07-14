@@ -37,7 +37,7 @@ Cloud Manager 使用內建[專案建立精靈](/help/getting-started/using-the-w
 
 1. 從您的客戶成功團隊取得最新的生產設定檔案。
 1. 移除環境特定資料（例如發佈轉譯器IP），並以變數取代。
-1. 在每個目標Dispatcher的索引鍵值配對中定義所需的變數，並將其新增至每個執行個體上的[變數](https://experienceleague.adobe.com/en/docs/experience-manager-learn/ams/dispatcher/variables)資料夾。
+1. 在每個目標Dispatcher的索引鍵值配對中定義所需的變數，並將其新增至每個執行個體上的[變數](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/ams/dispatcher/variables)資料夾。
 1. 在中繼環境中測試更新的設定。
 1. 測試後，請要求您的客戶成功團隊部署到生產環境。
 1. 將檔案提交到您的 Git 存放庫。
