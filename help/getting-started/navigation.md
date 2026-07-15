@@ -10,10 +10,10 @@ feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: fa6be369b979682cebf68852603725d8754605ab
 workflow-type: tm+mt
-source-wordcount: 1660
-ht-degree: 52%
+source-wordcount: 1641
+ht-degree: 35%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 52%
 Cloud Manager UI 主要由兩個圖形介面組成：
 
 * [「我的方案」控制台](#my-programs-console)，您可以在其中檢視和管理所有方案。
-* [「方案概觀」視窗](#program-overview)，您可以在其中管理個別方案並查看詳細資訊。
+* [計畫總覽視窗](#program-overview)是您檢視詳細資訊和管理個別計畫的位置。
 
 ## 「我的方案」控制台 {#my-programs-console}
 
@@ -32,7 +32,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ![我的方案控制台](/help/getting-started/assets/cloud-manager-my-programs-console.png)
 
-**我的程式**&#x200B;主控台提供您在所選組織中有權存取的所有程式的總覽。 它由幾個部分組成。
+**我的程式**&#x200B;主控台提供您在所選組織中有權存取的所有程式的總覽。 它由數個零件組成。
 
 |   | 區域 | 描述 |
 | --- | --- | --- |
@@ -45,11 +45,11 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ### 工具列 {#my-programs-toolbars}
 
-有兩個相互重疊的工具列。
+有兩個工具列。
 
 #### Cloud Manager 標頭 {#cloud-manager-header}
 
-第一個是 Cloud Manager 標頭。 當您瀏覽 Cloud Manager 時標頭會持續顯示。 它是一個錨點，可讓您存取適用於 Cloud Manager 方案的設定和資訊。
+第一個是 Cloud Manager 標頭。 使用Cloud Manager時，標題一律可見。 這是一個中央位置，可讓您存取適用於所有Cloud Manager程式的設定和資訊。
 
 ![Experience Cloud 標頭](/help/getting-started/assets/cloud-manager-header-toolbar.png)
 
@@ -80,7 +80,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 #### 方案工具列 {#program-toolbar}
 
-方案工具列提供了在 Cloud Manager 方案與內容相關的動作之間切換的連結。
+程式工具列提供在Cloud Manager程式與內容相關動作之間切換的連結。
 
 ![Cloud Manager程式工具列](/help/getting-started/assets/cloud-manager-programs-toolbar.png)
 
@@ -92,19 +92,19 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ### 行動號召和統計資料 {#cta-statistics}
 
-「行動號召和統計資料」部份為您的組織提供了彙總資料，例如，如果您已成功設定方案，則可能會顯示過去 90 天內的活動統計資料，包括：
+call-to-action和統計資料區段提供您組織的彙總資料。 例如，如果您已成功設定程式，便會顯示過去90天內的活動統計資料，包括下列資料：
 
 * [部署](/help/using/code-deployment.md)數量
 * 已識別的[程式碼品質問題](/help/using/code-quality-testing.md)數量
 * 組建數量
 
-或者，如果您剛開始設定您的組織，可能會有關於後續步驟或文件資源的提示。
+如果您開始進行組織的設定，有後續步驟的指南或檔案資源。
 
 ### 我的方案 {#my-programs-section}
 
 「我的方案」控制台的主要內容為「**我的方案**」區段，該區段會以個別卡片的形式列出您的方案。 按一下卡片即可存取該方案的「**方案概觀**」頁面，了解有關該方案的詳細資訊。
 
-依您的權限而定，您可能無法選取某些方案。
+根據您的許可權，您可能無法選取某些程式。
 
 您可以使用下列排序選項來快速尋找您想要的程式：
 
@@ -114,12 +114,12 @@ Cloud Manager UI 主要由兩個圖形介面組成：
    * 建立日期
    * 方案名稱
    * 狀態
-* ![向下排序圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) / ![向上排序圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg)分別向下或向上排序程式。
+* ![向下排序圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) / ![向上排序圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg)分別向上或向下排序程式。
 * ![傳統格線檢檢視示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ClassicGridView_18_N.svg) / ![文字專案符號圖示或清單](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TextBulleted_18_N.svg)分別以格線表單或清單表單檢視程式。
 
 #### 方案卡片 {#program-cards}
 
-每個方案都以一張卡片或表格中的一列來呈現，提供該方案的概觀以及採取動作的快速連結。
+表格中的卡片或列代表每個方案，提供方案概覽和動作快速連結。
 
 ![方案卡片](/help/getting-started/assets/cloud-manager-program-card.png)
 
@@ -136,7 +136,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 在Cloud Manager AMS中![資訊快顯功能表](/help/getting-started/assets/cloud-manager-information-view.png)
 
-按一下![更多圖示，省略符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)可讓您存取可以對程式執行的其他動作。
+按一下![其他圖示，省略符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)可讓您存取可以對程式執行的其他動作。
 
 ![方案的省略符號按鈕](/help/getting-started/assets/cloud-manager-program-ellipsis.png)
 
@@ -148,7 +148,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ### 快速連結 {#quick-links}
 
-透過快速連結區段，您可以存取實用的相關資源。
+快速連結區段可讓您存取實用的相關資源。
 
 ## 「方案概觀」視窗 {#program-overview}
 
@@ -156,9 +156,9 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ![方案概觀](/help/getting-started/assets/cloud-manager-program-overview.png)
 
-**計畫總覽**&#x200B;可讓您存取Cloud Manager計畫的所有詳細資料。 與&#x200B;**我的程式**&#x200B;類似，它由幾個部分組成。
+**計畫總覽**&#x200B;可存取Cloud Manager計畫的所有詳細資訊。 它與&#x200B;**我的程式**&#x200B;類似，由幾個部分組成。
 
-1. [工具列](#program-overview-toolbar)可快速跳回「**我的方案**」控制台並瀏覽方案。
+1. [工具列](#program-overview-toolbar)可快速返回&#x200B;**我的程式**&#x200B;主控台並瀏覽程式。
 1. [索引標籤區域](#program-tabs)可在程式的不同方面之間切換。
 1. [行動號召](#cta)以方案的最後動作為依據。
 1. 與程式的[環境](#environments)相關聯。
@@ -170,21 +170,21 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 #### Cloud Manager 標頭 {#cloud-manager-header-2}
 
-Cloud Manager標題有一個![顯示功能表圖示，漢堡](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)下拉式功能表，會自動開啟以顯示計畫總覽的可導覽標籤。
+Cloud Manager標題有一個![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)下拉式功能表，會自動開啟以顯示計畫總覽的可導覽標籤。
 
-按一下![顯示功能表圖示，漢堡](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以隱藏標籤。
+按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以隱藏標籤。
 
 #### 方案工具列 {#program-toolbar-2}
 
-方案工具列同樣能讓您快速切換到其他方案，而且還可讓您執行內容相關動作，例如新增和編輯方案。
+程式工具列仍然提供快速切換到其他程式的存取權，但另外提供對前後關聯適當動作（例如新增和編輯程式）的存取權。
 
 ![方案工具列](assets/cloud-manager-program-toolbar.png)
 
-此外，如果您使用![顯示功能表圖示（漢堡](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)）隱藏標籤，工具列仍會顯示您目前所在的標籤。
+此外，如果您使用![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)隱藏標籤，工具列仍會顯示您目前所在的標籤。
 
 ### 方案標籤 {#program-tabs}
 
-每個方案都有許多相關聯的選項和資料。 這些資料會收集到索引標籤中，以方便導覽方案。 這些索引標籤可讓您存取：
+每個方案都有許多相關聯的選項和資料。 此資料會整理到索引標籤中，以簡化方案導覽。 標籤會提供下列專案的存取權：
 
 * 概觀 - 目前文件中所述的方案概觀
 * [活動](/help/using/managing-pipelines.md#activity) - 方案的管道執行歷史記錄
@@ -198,13 +198,13 @@ Cloud Manager標題有一個![顯示功能表圖示，漢堡](https://spectrum.a
 
 預設情況下，當您開啟方案時，您會到達「**概觀**」索引標籤。 會醒目提示目前的索引標籤。 選取另一個索引標籤即可顯示其詳細資訊。
 
-使用[Cloud Manager標題](#cloud-manager-header-2)中的![顯示功能表圖示，漢堡](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)來隱藏標籤。
+若要隱藏標籤，請在[Cloud Manager標題](#cloud-manager-header-2)中使用![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)。
 
 ### 行動號召 {#cta}
 
-行動號召區段會根據您的方案狀態為您提供有用的資訊。 對於新方案，您可能會看到建議後續步驟和上線日期提醒，[均於方案建立期間設定](/help/getting-started/program-setup.md)。
+行動號召區段會根據您的方案狀態為您提供有用的資訊。 若為新程式，您會看到提供的後續步驟以及上線日期提醒，[設定於程式建立期間](/help/getting-started/program-setup.md)。
 
-對於即時方案，會看到上次部署的狀態以及詳細資訊和開始新部署的連結。
+對於即時計畫，將顯示您上次部署的狀態，其中包含詳細資訊和開始新部署的連結。
 
 ![行動號召](assets/info-banner.png)
 
