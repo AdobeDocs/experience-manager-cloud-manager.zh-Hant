@@ -3,21 +3,18 @@ title: Git 和 Adobe Cloud Manager 整合
 description: 本影片系列會逐步介紹客戶管理的 (內部部署) Git 存放庫與 Adobe Cloud Manager 的設定和整合。
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
 TQID: https://experienceleague.adobe.com/fyGrLuc1bIBY9ZAgYiULxxJQy-ZZBLYtAAdYgqzSLAM
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 2011f63c513689f571d21772752348388c2f342a
 workflow-type: tm+mt
-source-wordcount: 367
-ht-degree: 95%
+source-wordcount: 356
+ht-degree: 76%
 
 ---
 
 # Git 和 Adobe Cloud Manager 整合
 
-Adobe Cloud Manager 隨附已佈建好的一個 Git 存放庫，方便使用 Cloud Manager 的 CI/CD 管道部署程式碼。 您可以直接使用 Cloud Manager 的 Git 存放庫，也可以選擇將內部部署或客戶管理的 Git 存放庫和 Cloud Manager 整合。
+Adobe Cloud Manager 隨附已佈建好的一個 Git 存放庫，方便使用 Cloud Manager 的 CI/CD 管道部署程式碼。 您可以依提供方式使用Cloud Manager的Git存放庫，或選擇將內部部署或客戶管理的Git存放庫與Cloud Manager整合。
 
 ## Git 整合概觀
 
@@ -31,9 +28,9 @@ Adobe Cloud Manager 隨附已佈建好的一個 Git 存放庫，方便使用 Clo
 * [生產部署](#production-deployment)
 * [同步版本標記](#sync-tags)
 
-本影片系列假定觀看者具備 Git 和原始程式碼控制管理的基本知識。 如需 Git 的更多詳細資訊，請參閱[下列附加資源](#additional-resources)。
+此影片系列需要具備Git和原始檔控制管理的基本知識。 如需 Git 的更多詳細資訊，請參閱[下列附加資源](#additional-resources)。
 
-本影片系列中概述的步驟和命名慣例代表使用客戶管理的 Git 存放庫和 Cloud Manager 的一些最佳實務。 預計所描述的慣例和工作流程將針對個別開發團隊進行調整。
+本影片系列中概述的步驟和命名慣例代表使用客戶管理的 Git 存放庫和 Cloud Manager 的一些最佳實務。 所描述的慣例和工作流程適用於個別開發團隊。
 
 有關 Cloud Manager 的完整概觀，請參閱 [Cloud Manager 簡介](/help/introduction.md)。
 
@@ -45,7 +42,7 @@ Adobe Cloud Manager 隨附已佈建好的一個 Git 存放庫，方便使用 Clo
 
 ## 基本分支策略 {#branching-strategy}
 
-設定基本分支策略，以便善用 Cloud Manager 的[生產](/help/using/production-pipelines.md)和[非生產管道](/help/using/non-production-pipelines.md)。
+設定基本分支策略以使用Cloud Manager的[生產](/help/using/production-pipelines.md)和[非生產管道](/help/using/non-production-pipelines.md)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 
