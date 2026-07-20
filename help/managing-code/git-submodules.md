@@ -3,17 +3,13 @@ title: Git 子模組支援
 description: 了解如何使用 Git 子模組在建置期間將橫跨多個不同 Git 存放庫的多個分支內容合併。
 exl-id: f946d7e7-114a-4e33-bb82-2625d37bba2f
 TQID: https://experienceleague.adobe.com/W9-oYHPdxHPJgwKxguEEkRgf3JDo8iHQRnnsSPYbHCI
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: c2a6d2f87cf9f9c98f2af818f73b1fb2793c2e46
 workflow-type: tm+mt
-source-wordcount: 421
-ht-degree: 100%
+source-wordcount: 420
+ht-degree: 82%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 100%
 
 可使用 Git 子模組在建置期間將橫跨不同 Git 存放庫的多個分支內容合併。
 
-在執行 Cloud Manager 的建置過程時，首先會原地複製管道的存放庫並檢查已設定的分支。 如果分支在根目錄中包含 `.gitmodules` 檔案，便會執行該命令。
+在執行 Cloud Manager 的建置過程時，首先會原地複製管道的存放庫並檢查已設定的分支。 如果分支在根目錄中包含`.gitmodules`檔案，則命令會執行。
 
 ```
 $ git submodule update --init
@@ -77,9 +73,9 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 使用 Git 子模組時，請留意以下事項：
 
 * Git URL 必須完全符合上述語法。
-* 由於安全理由，請勿在這些 URL 中嵌入憑證。
+* 基於安全理由，請勿在這些URL中包含認證。
 * 僅支援分支根部的子模組。
-* Git 子模組參考資料會儲存至特定的 Git 認可。 因此，若對子模組存放庫進行變更，便需要更新所參考的認可。 例如，透過使用 `git submodule update --remote`。
+* Git 子模組參考資料會儲存至特定的 Git 認可。 因此，若對子模組存放庫進行變更，您必須更新參考的認可。 例如，透過使用 `git submodule update --remote`。
 * 除非另有必要，Adobe 建議您透過為每個子模組執行 `git config -f .gitmodules submodule.<submodule path>.shallow true` 來使用「淺」子模組。
 
 
@@ -87,7 +83,7 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 使用[私人存放庫](private-repositories.md)時，對 Git 子模組的支援與使用 Adobe 存放庫時基本相同。
 
-但是，設定完您的 `pom.xml` 檔案並執行 `git submodule` 命令後，您必須新增一個 `.gitmodules` 檔案到彙總器存放庫的根目錄，以便 Cloud Manager 偵測子模組設定。
+不過，若要Cloud Manager偵測子模組設定，您必須在設定`pom.xml`檔案並執行`git submodule`命令後，將`.gitmodules`檔案新增至彙總器存放庫的根目錄。
 
 ![.gitmodules 檔案](assets/gitmodules.png)
 
