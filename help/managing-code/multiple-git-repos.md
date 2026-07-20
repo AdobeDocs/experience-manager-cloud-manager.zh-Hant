@@ -3,8 +3,11 @@ title: 使用多個 Git 存放庫
 description: 了解如何使用您自己的 Git 存放庫或多個 Git 存放庫，而非直接使用 Cloud Manager 的 Git 存放庫。
 exl-id: 53bf78bb-489a-4a83-8459-c361f532d54a
 TQID: https://experienceleague.adobe.com/xKzqOfbi12A0POy-C7Gm7-n649DEBX9JP3LfXA5UC3Y
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: a07522b4a3c0619bb57b414de58633c65d9c7b5c
 workflow-type: tm+mt
 source-wordcount: 727
