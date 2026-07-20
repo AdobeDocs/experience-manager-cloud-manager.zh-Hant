@@ -3,11 +3,8 @@ title: 私人存放庫的提取請求檢查
 description: 了解如何控制自動建立的管道以驗證對私人存放庫的每個提取請求。
 exl-id: 29c9e487-e196-411a-8cda-6751b0a56066
 TQID: https://experienceleague.adobe.com/duceoXUt2SqWI0ZXzyuqZtszLfJkWr53G5O5ze4nxTY
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: b52942282fe5f825181123b3839ef155753c5e23
 workflow-type: tm+mt
 source-wordcount: 237
