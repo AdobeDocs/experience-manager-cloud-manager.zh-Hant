@@ -23,7 +23,7 @@ ht-degree: 34%
 
 在上線流程中，Adobe會在Adobe Identity Management系統(IMS)中為您的公司建立組織識別碼。 IMS 是您管理所有使用者及其權限的地方。 需要成為此組織成員並被授予任何[!UICONTROL Experience Cloud]服務存取權的每一位使用者都必須擁有Adobe ID。
 
-如需Adobe ID的相關資訊，請參閱[管理Adobe身分型別](https://helpx.adobe.com/business/enterprise/set-up-your-organization/identity.html)，以取得有關如何使用所提供的其中一種身分型別來取得Adobe ID的詳細說明。
+如需Adobe ID的相關資訊，請參閱[管理Adobe身分型別](https://helpx.adobe.com/tw/business/enterprise/set-up-your-organization/identity.html)，以取得有關如何使用所提供的其中一種身分型別來取得Adobe ID的詳細說明。
 
 ### 使用者和角色 {#users-and-roles}
 
