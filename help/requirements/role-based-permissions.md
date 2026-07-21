@@ -3,23 +3,19 @@ title: 角色型權限
 description: 了解 Cloud Manager 預先設定的角色型權限以管理對您的雲端資源的存取。
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 TQID: https://experienceleague.adobe.com/JXI9QGaexNJga8o80oLNo7allavc1x021DWmef-AkTc
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: e94834c5e13825a468ef5344e77024c4fe4a29e6
 workflow-type: tm+mt
-source-wordcount: 592
-ht-degree: 99%
+source-wordcount: 596
+ht-degree: 85%
 
 ---
 
 # 角色型權限 {#role-based-permissions}
 
-[!UICONTROL Cloud Manager] 具有擁有適當權限的預先設定的角色。 例如，開發人員會開發程式碼，並擁有將程式碼推送到 Git 存放庫的權限。 企業所有者擁有不同的權限，讓他們能夠定義關鍵績效指標 (KPI) 及核准部署。
+[!UICONTROL Cloud Manager]包含預先設定的角色，並具有適當的許可權。 例如，軟體開發人員會撰寫程式碼，並有權將程式碼推送到Git存放庫。 業務潛在客戶具有不同的許可權，可讓他們定義關鍵績效指標(KPI)並核准部署。
 
 >[!NOTE]
 >
@@ -29,7 +25,7 @@ ht-degree: 99%
 
 ## 使用者角色 {#user-roles}
 
-[!UICONTROL Cloud Manager] 的角色管理可使用 [Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html) 完成。 [!UICONTROL Cloud Manager] 的任何使用者都必須是客戶的 IMS 組織成員，並擁有 Adobe Managed Services 產品內容。 透過在 Admin Console 中將使用者新增到 [!UICONTROL Cloud Manager] 產品設定檔，可提供特定的角色會籍。
+[!UICONTROL Cloud Manager] 的角色管理可使用 [Admin Console](https://helpx.adobe.com/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html) 完成。 [!UICONTROL Cloud Manager] 的任何使用者都必須是客戶的 IMS 組織成員，並擁有 Adobe Managed Services 產品內容。 您可以在Admin Console中將使用者新增至[!UICONTROL Cloud Manager]產品設定檔，以提供特定的角色會籍。
 
 若要了解更多關於如何設定角色，請參閱「[設定使用者和角色](/help/requirements/users-and-roles.md)」。
 
@@ -46,7 +42,7 @@ ht-degree: 99%
 
 ## 使用者權限 {#user-permissions}
 
-每個角色都有其特定、相關聯的預先設定權限。 下表列出可用權限，以及可執行這些權限的角色。
+每個角色都有其特定、相關聯的預先設定權限。 下表列出可用的許可權以及可執行這些許可權的角色。
 
 | 權限 | 說明 | 業務負責人 | 部署管理員 | 方案管理員 | 開發人員 | CSE |
 | --- | --- | --- | --- | --- | --- | --- |
