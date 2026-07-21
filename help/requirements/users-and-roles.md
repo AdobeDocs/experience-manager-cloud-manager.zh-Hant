@@ -3,25 +3,21 @@ title: 新增使用者和角色
 description: 了解如何使用 Admin Console 新增使用者和角色，並建立設定檔。
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 TQID: https://experienceleague.adobe.com/95vfyk6-SMg7GFaCVWkiaaGObo603DJqvExEgPFrwqw
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 130406286e65ad0e0651451766ca740f3458a9c1
 workflow-type: tm+mt
-source-wordcount: 796
-ht-degree: 96%
+source-wordcount: 797
+ht-degree: 80%
 
 ---
 
 # 新增使用者和角色 {#add-users-and-roles}
 
-[!UICONTROL Cloud Manager] 中的許多功能都需要特定權限才能使用。 例如，僅允許某些使用者為方案設定關鍵績效指標 (KPI)。 這些權限在邏輯上會按角色分組。
+[!UICONTROL Cloud Manager] 中的許多功能都需要特定權限才能使用。 例如，僅允許授權使用者為方案設定關鍵績效指標(KPI)。 這些權限在邏輯上會按角色分組。
 
-[!UICONTROL Cloud Manager] 目前為管控特定功能可用性的使用者定義四種角色：
+[!UICONTROL Cloud Manager]為使用者定義了四個角色，這些角色控制特定功能的可用性：
 
 * 企業所有者
 * 方案管理員
@@ -51,9 +47,9 @@ ht-degree: 96%
 
 ## 使用Admin Console建立產品設定檔 {#using-admin-console-to-create-a-profile}
 
-從 Admin Console 管理 [!UICONTROL Cloud Manager] 角色。 透過將使用者新增到 [!UICONTROL Cloud Manager] 產品設定檔，可提供特定的角色會籍。
+從 Admin Console 管理 [!UICONTROL Cloud Manager] 角色。 將使用者新增至[!UICONTROL Cloud Manager]產品設定檔可提供特定的角色會籍。
 
-Admin Console 是在整個組織中管理 Adobe 權益的中心位置。 若要了解關於 Adobe Admin Console 的更多資訊，請參閱「[Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)」。
+Admin Console 是在整個組織中管理 Adobe 權益的中心位置。 若要了解關於 Adobe Admin Console 的更多資訊，請參閱「[Admin Console](https://helpx.adobe.com/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html)」。
 
 管理員必須在 [!UICONTROL AEM Managed Services] 產品內容下建立新產品設定檔，以便為 [!UICONTROL Cloud Manager] 使用者指派基於角色的權限，對應於四個 [!UICONTROL Cloud Manager] 角色。
 
@@ -87,11 +83,11 @@ CQDOC-22790
 
    ![新設定檔](/help/assets/admin-console-product-profiles.png)
 
-1. 提供資訊以設定 [!UICONTROL Cloud Manager] 的新角色。
+1. 若要設定[!UICONTROL Cloud Manager]的新角色，請提供資訊。
 
    * **設定檔名稱** - 此&#x200B;**設定檔名稱** 可以為任何值，但為避免混淆，建議使用&#x200B;**建議的設定檔名稱**&#x200B;欄中的值。
    * **顯示名稱** - 此&#x200B;**顯示名稱**&#x200B;必須是由[!UICONTROL Cloud Manager] 定義的技術值 (請參閱下表)。
-   * **權限群組** - 您可以為設定檔選擇一個權限群組 (並不一定可提供)。
+   * **許可權群組** — 選擇設定檔的許可權群組（並非總是可用）。
 
 <!-- 
 CQDOC-22790
@@ -131,12 +127,12 @@ CQDOC-22790
 
 1. 在「**編輯產品和使用者群組**」對話框中，按一下![「新增」圖示 (加號)](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)，並選取要指派給使用者的設定檔。
 
-   * 如果使用者已指派角色，則此![「新增」圖示 (加號)](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)按鈕會變成編輯按鈕 (鉛筆)，但使用方式相同。
+   * 如果使用者已經指派給角色，![新增圖示，加上](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)按鈕是編輯按鈕（鉛筆），但作用相同。
 
    ![編輯產品和使用者群組](/help/assets/admin-console-edit-products-and-user-groups.png)
 
 1. 按一下&#x200B;**儲存**，即可將設定檔儲存給使用者。
 
-重複相同的步驟即可將設定檔指派給使用者群組，但需從左側導覽面板選取&#x200B;**使用者群組** (位於&#x200B;**使用者**&#x200B;索引標籤上)。 按一下使用者群組並選取「**已指派的產品設定檔**」，然後按一下「**指派產品設定檔**」來指派設定檔。
+重複相同的步驟即可將設定檔指派給使用者群組，但需從左側導覽面板選取&#x200B;**使用者群組** (位於&#x200B;**使用者**&#x200B;索引標籤上)。 按一下使用者群組並選取&#x200B;**指派的產品設定檔**，然後按一下&#x200B;**指派產品設定檔**&#x200B;以指派設定檔。
 
 ![將設定檔指派至群組](/help/assets/admin-console-edit-user-groups.png)
