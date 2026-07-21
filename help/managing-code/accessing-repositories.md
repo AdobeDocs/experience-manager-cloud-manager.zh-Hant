@@ -8,10 +8,10 @@ product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: c1c7a8a36bd770401393fe7e2c62b306c1a2573d
 workflow-type: tm+mt
-source-wordcount: 403
-ht-degree: 100%
+source-wordcount: 400
+ht-degree: 72%
 
 ---
 
@@ -21,14 +21,14 @@ ht-degree: 100%
 
 ## 從概觀頁面存取存放庫資訊 {#overview-page}
 
-Cloud Manager 可以使用&#x200B;**管道**&#x200B;卡上的&#x200B;**存取存放庫資訊**，輕鬆擷取 Adobe 託管存放庫的存放庫存取資訊。
+透過Cloud Manager，您可以使用&#x200B;**管道**&#x200B;卡片中的&#x200B;**存取存放庫資訊**，擷取Adobe管理的存放庫存取資訊。
 
 透過&#x200B;**存放庫資訊**&#x200B;對話框，您可以查看 Adobe 託管存放庫的以下存取資訊：
 
 * Git 使用者名稱。
 * Git 密碼。
 * Cloud Manager Git 存放庫的 URL。
-* 預先建立的 Git 指令，可快速新增遠端連線至 Git 存放庫並推送程式碼。
+* 預先建立的Git命令，可將遠端新增到您的Git存放庫和推送程式碼。
 
   ![存放庫資訊視窗](assets/repository-info.png)
 
@@ -44,7 +44,7 @@ Cloud Manager 不會提供[私人存放庫](/help/managing-code/private-reposito
 
    ![管道卡上的存取存放庫資訊](/help/managing-code/assets/pipelines-card2.png)
 
-1. 若要存取密碼，必須產生新密碼。 在&#x200B;**存放庫資訊**&#x200B;對話框中，選取「**產生密碼**」。
+1. 若要存取密碼，您必須產生新密碼。 在&#x200B;**存放庫資訊**&#x200B;對話框中，選取「**產生密碼**」。
 
 1. 在確認對話框中，選取「**產生密碼**」。
 
@@ -52,11 +52,11 @@ Cloud Manager 不會提供[私人存放庫](/help/managing-code/private-reposito
 
    * 產生密碼後，先前的密碼便會失效。
    * Cloud Manager 不會儲存密碼。 您有責任以安全方式儲存密碼。
-   * 由於 Cloud Manager 不會儲存密碼，因此如果遺失密碼，您就必須重新產生新密碼。
+   * 由於Cloud Manager不會儲存密碼，因此如果您遺失密碼，則必須產生新密碼。
 
    ![複製存放庫資訊對話框中的密碼](/help/managing-code/assets/repository-copy-password.png)
 
-若使用這些憑證，您可以複製存放庫的本機副本，並在該本機存放庫中進行變更，且在準備好後可以將任何程式碼變更提交回 Cloud Manager 中的遠端程式碼存放庫。
+使用這些認證，您可以複製存放庫的本機副本、在本機存放庫中進行變更，並在準備就緒後將任何程式碼變更提交回Cloud Manager中的遠端程式碼存放庫。
 
 ## 從存放庫視窗存取存放庫資訊 {#repositories-window}
 
@@ -66,4 +66,4 @@ Cloud Manager 不會提供[私人存放庫](/help/managing-code/private-reposito
 
 您可以隨時撤銷存取密碼。
 
-若要如此做，請[為此請求建立支援服務單](https://experienceleague.adobe.com/zh-hant?support-solution=Experience+Manager&support-tab=home#support)。 此服務單會以高優先性處理，且通常會在一天內撤銷。
+若要如此做，請[為此請求建立支援服務單](https://experienceleague.adobe.com/zh-hant?support-solution=Experience+Manager&support-tab=home#support)。 票證會指派給高優先順序，通常在一天內解決。
