@@ -21,6 +21,6 @@ ht-degree: 64%
 
 請聯絡您的 Adobe Managed Services 客戶成功工程師 (CSE)，針對 [!UICONTROL Cloud Manager &#x200B;] 尋求協助。 他們可以通知您他們是否能解決您的問題，或者您是否需要向Adobe客戶服務提交支援票證。
 
-存取「[企業支援](https://experienceleague.adobe.com/?support-tab=home#support)」以建立支援票證。
+存取「[企業支援](https://experienceleague.adobe.com/zh-hant?support-tab=home#support)」以建立支援票證。
 
-請參閱「[存取 AEM 支援入口網站](https://helpx.adobe.com/business/enterprise/get-help/support-and-expert-services.html)」，取得透過 Adobe 客戶服務建立支援票證的詳細資訊。
+請參閱「[存取 AEM 支援入口網站](https://helpx.adobe.com/tw/business/enterprise/get-help/support-and-expert-services.html)」，取得透過 Adobe 客戶服務建立支援票證的詳細資訊。
