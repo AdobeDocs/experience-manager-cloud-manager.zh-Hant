@@ -3,33 +3,29 @@ title: 重要概念
 description: 像所有強大的工具一樣，Cloud Manager 包含了許多概念和術語。 本文件會概述您開始使用 Cloud Manager 時最重要的一些內容。
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
 TQID: https://experienceleague.adobe.com/usnXqDujeZ04U5hOtiI76aemlj-ceToAOtAYS9U0UuM
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 628eceafe63153d64151937df85937135bdc8e7b
 workflow-type: tm+mt
-source-wordcount: 431
-ht-degree: 95%
+source-wordcount: 421
+ht-degree: 60%
 
 ---
 
 # 重要概念 {#key-concepts}
 
-像所有強大的工具一樣，Cloud Manager 包含了許多概念和術語。 本文件會概述您開始使用 Cloud Manager 時最重要的一些內容。
+Cloud Manager包含許多概念和術語。 本文會概述您開始使用Cloud Manager時最重要的一些概念。
 
 ## 應用程式 {#application}
 
-應用程式是由客戶建立的一組自訂項目和設定，根據其特定使用案例和需求來調整基礎的[解決方案](#solution) (例如 AEM Sites 或 AEM Assets)。 應用程式為一種邏輯單位，可能包含多個[成品](#artifact)。
+應用程式是由客戶建立的一組自訂項目和設定，根據其特定使用案例和需求來調整基礎的[解決方案](#solution) (例如 AEM Sites 或 AEM Assets)。 應用程式是包含多個[成品](#artifact)的邏輯單位。
 
 一個應用程式範例是虛構的 [WKND 生活方式應用程式。](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)
 
 ## 成品 {#artifact}
 
-成品是可部署的單位，而且是將原始程式碼轉換為單一單位的某些建置程序的結果。 例如，.zip 檔案就包含了原始程式碼。
+成品是可部署的單位，而且是將原始程式碼轉換為單一單位的建置流程的結果。 例如，.zip 檔案就包含了原始程式碼。
 
 ## 成品存放庫 {#artifact-repository}
 
@@ -49,19 +45,19 @@ Git 存放庫是儲存客戶特定原始程式碼的位置，並可[使用 Git](
 
 ## 組織 {#organization}
 
-組織指代表企業客戶的 Adobe&#x200B; 建構。 一家公司可能會有多個組織，具體取決於這些組織在Adobe的Identity Management系統(IMS)中的布建方式。
+組織指代表企業客戶的 Adobe&#x200B; 建構。 視在Adobe的Identity Management系統(IMS)中的布建方式而定，公司可以有多個組織。
 
 ## 管道 {#pipeline}
 
-管道是指一組依照順序進行或「執行」的部署步驟。
+管道是一組按順序執行的部署步驟。
 
 ## 產品 {#product}
 
-產品指獲組織授權的[解決方案](#solution)中的一組特定功能。 組織內的不同[方案](#program)可能有權使用不同的產品集，例如 AEM Sites、AEM Assets 或 AEM Forms。
+產品指獲組織授權的[解決方案](#solution)中的一組特定功能。 組織內的不同[方案](#program)有權使用不同的產品集，例如AEM Sites、AEM Assets或AEM Forms。
 
-## 計劃 {#program}
+## 方案 {#program}
 
-方案指一組支援客戶倡議邏輯分組的環境，通常會對應購買的服務等級協議 (SLA)。 每個方案只會有一個生產環境，並可能有許多非生產環境。
+方案指一組支援客戶方案邏輯分組的環境，通常會對應到已購買的service level agreement (SLA)。 每個計畫只會有一個生產環境和許多非生產環境。
 
 ## 解決方案 {#solution}
 
@@ -69,4 +65,4 @@ Git 存放庫是儲存客戶特定原始程式碼的位置，並可[使用 Git](
 
 ## 步驟 {#step}
 
-步驟指已設定的指令集，會完成某些工作單位，是[管道](#pipeline)建置要素。
+步驟是已設定的指令集，會完成作為[管道](#pipeline)元件的某些工作單位。
