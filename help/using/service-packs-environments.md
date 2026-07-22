@@ -15,10 +15,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8964aad406d3e7fc5b911b98f928ad0427511230
+source-git-commit: b4846046c6c410642d3e23f2cc2c002a6d53b3b7
 workflow-type: tm+mt
-source-wordcount: 468
-ht-degree: 94%
+source-wordcount: 455
+ht-degree: 91%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 94%
 **若要追蹤 Service Pack 更新：**
 
 1. 從 Cloud Manager 儀表板導覽至「活動」頁面。
-1. 搜尋 Service Pack 安裝項目。
+1. 找到Service Pack安裝專案。
 
    ![Service Pack 安裝](/help/using/assets/service-pack-installation.png)
 
@@ -95,13 +95,13 @@ ht-degree: 94%
 
    ![拒絕或核准 Service Pack 更新](/help/using/assets/service-pack-reject-approve.png)
 
-1. 執行下列其中一項：
+1. 執行下列任一項作業：
 
    * 若要完成更新，按一下「**核准**」。
 
    ![核准 Service Pack](/help/using/assets/service-pack-approve.png)
 
-   * 若要取消更新，按一下「**拒絕**」。
-如此將會取消 Service Pack 安裝，且不套用任何變更。
+   * 若要取消更新，請按一下&#x200B;**拒絕**。
+     Service Pack安裝已取消，且不會套用任何變更。
 
    ![拒絕 Service Pack](/help/using/assets/service-pack-reject.png)
