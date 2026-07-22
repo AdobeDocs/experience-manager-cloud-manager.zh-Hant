@@ -118,7 +118,7 @@ Cloud Manager 有一組預先定義的角色，用於管理 Cloud Manager 各項
 
 1. 按一下「**新增使用者**」，將使用者指派至含有自訂權限的新產品設定檔。
 
-請參閱「**將使用者和使用者群組新增至產品設定檔**」的內容，其載於「[管理企業使用者的產品設定檔](https://helpx.adobe.com/business/enterprise/manage-products-and-entitlements/manage-products-and-product-profiles/manage-product-profiles.html)」文件中，深入了解如何使用 Admin Console。
+請參閱「**將使用者和使用者群組新增至產品設定檔**」的內容，其載於「[管理企業使用者的產品設定檔](https://helpx.adobe.com/tw/business/enterprise/manage-products-and-entitlements/manage-products-and-product-profiles/manage-product-profiles.html)」文件中，深入了解如何使用 Admin Console。
 
 ## 可設定的權限 {#configurable-permissions}
 
