@@ -3,19 +3,14 @@ title: 管理環境
 description: 了解如何使用 Cloud Manager 來管理您的環境。
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
 TQID: https://experienceleague.adobe.com/Dz3Z5i-gSNSorc7Na74RKgm3e0P9b-3vjVRdJvu6a0c
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 0dde660205ad28bc5924a5cc14404c48a0533ceb
 workflow-type: tm+mt
-source-wordcount: 275
-ht-degree: 100%
+source-wordcount: 261
+ht-degree: 57%
 
 ---
 
@@ -35,12 +30,12 @@ ht-degree: 100%
 
 此&#x200B;**環境**&#x200B;圖磚會顯示在您的方案中佈建的生產和中繼環境以及狀態。
 
-此狀態指依據以下優先順序跨越環境中的節點彙總的電源狀態。
+狀態是依序列出的所有環境節點的彙總電源狀態。
 
 * 綠色 - 所有節點運作中
-* 紅色 - 一或更多節點已停止。
-* 藍色 - 一或更多節點將啟動。
-* 黃色 - 一或更多節點無法提供電源狀態。
+* 紅色 — 一或多個節點已停止。
+* 藍色 — 一個或多個節點正在啟動。
+* 黃色 — 一或多個節點的電源狀態無法使用。
 
 ![環境圖磚](/help/assets/Environments-card-new.png)
 
@@ -48,7 +43,7 @@ ht-degree: 100%
 
 在「**環境**」圖磚上，按一下任何環境列，即可顯示「**環境**」畫面。
 
-「**環境**」畫面會顯示程式中的各個生產和中繼環境。 每張卡片的上方都會顯示環境名稱。 卡片會包括環境中的節點表以及 CPU 的 T 恤尺寸、儲存空間、區域和狀態。
+**環境**&#x200B;畫面會顯示您程式中的每個生產和中繼環境。 環境名稱會出現在每張卡片的上方。 卡片會包含環境中的節點表以及CPU的大小、儲存空間、地區和狀態。
 
 >[!NOTE]
 >
@@ -56,7 +51,7 @@ ht-degree: 100%
 
 * 綠色 - 運作中
 * 紅色 - 已停止
-* 藍色 - 即將啟動
+* 藍色 — 正在啟動
 * 黃色 - 無法提供
 
 ![「環境」索引標籤](/help/assets/Environments-tab.png)
@@ -67,11 +62,11 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->透過客戶成功工程師請求提供您的環境記錄。
+>透過您的客戶成功代表要求您的環境記錄。
 
 ## 教學課程影片 {#video-tutorial}
 
-此影片會概觀由 AEM 編寫、發佈以及 Dispatcher 執行個體組成的 Cloud Manager 環境。
+本影片介紹Cloud Manager環境，該環境由AEM編寫、發佈和Dispatcher執行個體組成。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318/)
 
