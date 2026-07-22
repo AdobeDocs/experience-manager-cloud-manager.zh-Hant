@@ -11,10 +11,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: acd33650c938d49bac5c319f8c938202fe543bbd
+source-git-commit: 3b9ef92a96dab9c1f4b93466d8a2d15185b5864f
 workflow-type: tm+mt
-source-wordcount: 391
-ht-degree: 14%
+source-wordcount: 390
+ht-degree: 10%
 
 ---
 
@@ -47,16 +47,16 @@ ht-degree: 14%
 
   如需詳細資訊，請參閱下列內容：
 
-   * [關於在生產管道中使用Smart Build](/help/using/production-pipelines.md#about-smart-build)和[關於在非生產管道中使用Smart Build](/help/using/non-production-pipelines.md#about-smart-build)
-   * [新增生產管道](/help/using/production-pipelines.md##adding-production-pipeline)和[新增非生產管道](/help/using/non-production-pipelines.md#add-non-production-pipeline)。
+  * [關於在生產管道中使用Smart Build](/help/using/production-pipelines.md#about-smart-build)和[關於在非生產管道中使用Smart Build](/help/using/non-production-pipelines.md#about-smart-build)
+  * [新增生產管道](/help/using/production-pipelines.md#adding-production-pipeline)和[新增非生產管道](/help/using/non-production-pipelines.md#add-non-production-pipeline)。
 
 ## Beta 版方案 {#beta-program}
 
-參與 Cloud Manager 的 Beta 版方案享有獨家存取權，在即將推出的功能正式發佈之前搶先體驗。
+若要在即將發行的功能正式發行前以獨家方式存取這些功能，請參與Cloud Manager的Beta版計畫。
 
 >[!IMPORTANT]
 >
->Beta發行版本包含瑕疵，並「按原樣」提供，並無任何保固。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援（透過Adobe支援服務或其他方式）測試版。 客戶自行承擔使用測試版的風險，不應仰賴測試版的正確功能或效能，或任何隨附的檔案或資料。 Beta版中的功能和API可能會有所變更，恕不另行通知。 任何使用測試版的風險完全由客戶自行承擔。
+>Beta發行版本包含瑕疵，並「按原樣」提供，並無任何保固。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援（透過Adobe支援服務或其他方式）測試版。 客戶自行承擔使用Beta版的風險。 請勿仰賴測試版正確運作或效能，或仰賴任何隨附的檔案或材料。 Beta版中的功能和API可能會有所變更，恕不另行通知。 任何使用測試版的風險完全由客戶自行承擔。
 
 目前提供下列Beta版計畫機會：
 

@@ -12,10 +12,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: 845c182685d59844a2349c90d176d3e7c8a594cf
 workflow-type: tm+mt
-source-wordcount: 1452
-ht-degree: 99%
+source-wordcount: 1435
+ht-degree: 84%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 99%
 
 目前，真實資料對於測試、驗證和達成使用者接受度均很重要。 您可以使用內容複製功能，把 AMS 託管的 AEM 6.x 生產環境的內容複製到中繼或開發環境中。 此工作流程支援各種測試場景。
 
-要複製的內容由內容集來定義。 內容集包含具有要複製之可變內容的 JCR 路徑清單。 內容從來源環境移動到目標環境。 所有過程都在同一個 Cloud Manager 方案中完成。
+要複製的內容由內容集來定義。 內容集包含具有要複製之可變內容的 JCR 路徑清單。 內容從來源環境移動到目標環境。 此作業會在相同的Cloud Manager程式中執行。
 
 內容集中允許使用以下路徑：
 
@@ -39,7 +39,7 @@ ht-degree: 99%
 /var/commerce/**
 ```
 
-複製內容時，來源環境是真實的來源。
+複製內容時，來源環境是主要參考。
 
 如果您在目標環境中編輯內容，於路徑符合的情況下，來源內容會將其覆蓋。
 
@@ -51,7 +51,7 @@ ht-degree: 99%
 
 ## 建立內容集 {#create-content-set}
 
-在複製任何內容之前，必須定義一個內容集。 定義後，內容集就可以重複使用來複製內容。 請依照下列步驟，建立新的內容集。
+在複製任何內容之前，必須定義一個內容集。 定義後，內容集就可以重複使用來複製內容。
 
 **若要建立內容集：**
 
@@ -59,7 +59,7 @@ ht-degree: 99%
 
 1. 在頁面左上角，按一下![顯示選單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以開啟左側選單。
 
-1. 在左側選單的「**服務**」頁面下方，按一下![方塊圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg)「**內容集**」。
+1. 從左側功能表的&#x200B;**服務**&#x200B;下方，按一下![方塊圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) **內容集**。
 
 1. 在頁面的右上角附近，按一下「**新增內容集**」。
 
@@ -75,16 +75,16 @@ ht-degree: 99%
 
 1. 按一下![新增資料夾圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg)**「新增路徑」**&#x200B;來新增 (或包含) 內容集的路徑。
 
-1. (選用) 如有必要，請重複前兩個步驟，並視需要新增其他路徑 (最多 50 個)。 否則，請繼續下一步。
+1. （選用）如有需要，請重複前兩個步驟，新增其他路徑（最多50個）。 否則，請繼續下一步。
 
    ![新增路徑至內容集](/help/assets/add-content-set-paths.png)
 
-1. (選用) 若要縮小內容集的範圍，您可以選擇性指定已包含內容路徑中應排除的子路徑。
+1. （選用）若要調整您的內容集，您可以選擇在應排除的已包含內容路徑中指定子路徑。
 
-   1. 在您要限制的已包含內容路徑的右側，按一下![刪除資料夾圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg)。
+   1. 在您要排除的包含內容路徑右側，按一下![資料夾刪除圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg)。
    1. 在文字欄位中，輸入在對話框中顯示的根路徑之相對路徑。
    1. 按一下![刪除資料夾圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderDelete_18_N.svg)「**排除路徑**」。
-   1. 如有必要，請重複步驟i。 至iii。 以新增更多排除路徑；沒有限制。 否則，請繼續下一步。
+   1. 重複步驟i、ii和iii以新增更多排除的路徑；沒有限制。 否則，請繼續下一步。
 
    ![排除路徑](/help/assets/add-content-set-paths-excluded.png)
 
@@ -99,7 +99,7 @@ ht-degree: 99%
 
 ## 編輯或刪除內容集 {#edit-content-set}
 
-編輯內容集時，您可能需要展開設定的路徑以顯示已排除的子路徑。
+若要顯示排除的子路徑，請展開已設定的路徑。
 
 **若要編輯或刪除內容集：**
 
@@ -117,7 +117,7 @@ ht-degree: 99%
 
 建立內容集後，您可以使用它來複製內容。
 
-如果符合以下任一條件，則您可以無法選擇該環境：
+如果符合下列任一條件，環境便無法供選取：
 
 * 使用者缺乏所需的權限。
 * 環境中有正在執行的管道或複製內容作業。
@@ -143,8 +143,8 @@ ht-degree: 99%
 
 1. (選用) 執行以下任一操作：
 
-   1. 若要&#x200B;*保留*&#x200B;目標環境中f已排除的路徑，請勾選 **`Do not delete exclude paths from destination`**。 此設定會使內容集中指定的已排除路徑保持不變。
-   1. 若要&#x200B;*移除*&#x200B;目標環境中的已排除路徑，請取消勾選 **`Do not delete exclude paths from destination`**。 此設定將刪除內容集中指定的已排除路徑。
+   1. 若要&#x200B;*保留*&#x200B;目標環境中f已排除的路徑，請勾選 **`Do not delete excluded paths from destination`**。 此設定會使內容集中指定的已排除路徑保持不變。
+   1. 若要&#x200B;*移除*&#x200B;目標環境中的已排除路徑，請取消勾選 **`Do not delete excluded paths from destination`**。 此設定將刪除內容集中指定的已排除路徑。
    1. 若要將路徑的版本歷史記錄從來源環境複製到目標環境，請勾選「**複製版本**」。 *不*&#x200B;複製版本歷史記錄時，內容複製程序會大幅加快。
 
 1. 按一下「**複製**」。 複製程序的狀態會反映在所選內容集的控制台中。
@@ -159,7 +159,7 @@ ht-degree: 99%
 
 1. 在頁面左上角，按一下![顯示選單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以開啟左側選單。
 
-1. 在左側選單的「**服務**」下，按一下![歷史記錄圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg)「**複製內容活動**」。
+1. 從左側功能表的&#x200B;**服務**&#x200B;下方，按一下![歷程記錄圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) **複製內容活動**。
 
    ![內容複製活動](/help/assets/copy-content-activity.png)
 
@@ -174,15 +174,15 @@ ht-degree: 99%
 ## 內容複製的限制 {#limitations}
 
 * 無法將較低環境的內容複製到較高環境。
-* 內容複製僅能於同一層級內執行。 也就是「作者對作者」或「發佈對發佈」。
+* 內容複製僅能於同一層級內執行。 具體而言，這表示作者對作者或發佈對發佈。
 * 無法跨方案及跨區域進行內容複製。
-* 唯有在來源和目標環境位於相同雲端提供者及區域時，才能對基於雲端資料存放區的拓撲執行內容複製。
+* 當來源和目的地環境位於相同的雲端提供者及相同的區域時，才能執行雲端資料存放區型拓撲的內容複製。
 * 無法於同一環境中執行並行的內容複製作業。
 * 如果在目標或來源環境 (例如 CI/CD 管道) 上有任何作用中的作業正在執行中，則無法執行內容複製。
 * 內容複製功能不應用作原地複製或鏡像工具，因為它無法追蹤來源上被移動或刪除的內容。
 * 內容複製一旦開始，就無法暫停或取消。
-* 內容複製會將資產及 Dynamic Media 中繼資料從高階環境複製到選取的低階環境。 接著，必須在低階環境中透過 [DAM 流程資產工作流程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/assets/using/assets-workflow)對已複製的資產進行再處理，才能使用各自的 Dynamic Media 設定。
-* 不支援[啟用資產大小超過 2 GB 的 Dynamic Media 設定](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)。
+* 內容複製會將資產及 Dynamic Media 中繼資料從高階環境複製到選取的低階環境。 複製的資產隨後需要在較低環境使用[DAM處理資產工作流程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/assets/using/assets-workflow)重新處理。 使用個別Dynamic Media設定需要此重新處理。
+* [不支援資產大小大於2 GB的Dynamic Media設定](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)。
 * 目標環境的區域必須與來源環境的區域相同，或者是來源環境區域的子集。
 
 ## 內容複製的已知問題 {#known-issues}

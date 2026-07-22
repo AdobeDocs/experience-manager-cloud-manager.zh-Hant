@@ -10,16 +10,16 @@ feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: f6d27e47bd3d0c468b2382901e47094cce51390d
 workflow-type: tm+mt
-source-wordcount: 1391
-ht-degree: 97%
+source-wordcount: 1407
+ht-degree: 78%
 
 ---
 
 # 自訂權限 {#custom-permissions}
 
-了解如何使用自訂權限建立新的自訂權限設定檔並內含可設定的權限，以便限制 Cloud Manager 使用者對方案、管道和環境的存取
+瞭解如何使用自訂許可權來建立新的自訂許可權設定檔，並使用可設定的許可權來限制對Cloud Manager使用者的程式、管道和環境的存取權。
 
 ## 簡介 {#introduction}
 
@@ -30,7 +30,7 @@ Cloud Manager 有一組預先定義的角色，用於管理 Cloud Manager 各項
 * 部署管理員
 * 開發人員
 
-自訂權限可讓使用者建立新的自訂權限設定檔並內含可設定的權限，以便限制 Cloud Manager 使用者對方案、管道和環境的存取。
+自訂許可權可讓使用者以可設定的許可權建立新的自訂許可權設定檔，以限制Cloud Manager使用者對計畫、管道和環境的存取權。
 
 >[!TIP]
 >
@@ -44,21 +44,23 @@ Cloud Manager 有一組預先定義的角色，用於管理 Cloud Manager 各項
 1. [將自訂權限指派到新的產品設定檔](#assign-permissions)。
 1. [將使用者指派到新的產品設定檔](#assign-users)。
 
-本節會詳細介紹這些步驟。 在建立自己的自訂權限時，可參考「[詞彙](#terms)」和「[可設定的權限](#configurable-permissions)」小節的實用內容。
+本節會詳細介紹這些步驟。 在建立您自己的自訂許可權時，請參閱[條款](#terms)和[可設定的許可權](#configurable-permissions)區段。
 
 >[!NOTE]
 >
->您必須在 Admin Console 中擁有產品管理員權限，才能建立新的設定檔及管理 Cloud Manager 權限。
+>若要為Cloud Manager建立新設定檔和管理許可權，您必須在Admin Console中擁有產品管理員許可權。
 
 ### 建立新的產品設定檔 {#create}
 
 先建立一個新的產品設定檔，讓您可以對其指派自訂權限。
 
+**若要建立新的產品設定檔：**
+
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager。
 
 1. 選取產品 **AEM Managed Services**。
 
-1. 搜尋名稱與模式 `*-cloud-manager` 相符的執行個體，然後點選或按一下以管理使用者和權限。
+1. 搜尋名稱符合模式`*-cloud-manager`的執行個體，並選取它以管理使用者和許可權。
 
 1. 您會被重新導向至 Admin Console 的「**產品**」標籤，您可以在那裡管理 Cloud Manager 的使用者和權限。 在 Admin Console 中，按一下「**新增設定檔**」。
 
@@ -79,7 +81,9 @@ Cloud Manager 有一組預先定義的角色，用於管理 Cloud Manager 各項
 
 現在您有新的產品設定檔，可以對其指派自訂權限。
 
-1. 在 Admin Console 中，按一下[您剛建立的新產品設定檔](#create)名稱。
+**若要指派自訂許可權給新的產品設定檔：**
+
+1. 在Admin Console中，按一下[新產品設定檔](#create)的名稱。
 
 1. 在開啟的視窗中，選取&#x200B;**權限**&#x200B;標籤可檢視可編輯的權限清單。
 
@@ -106,13 +110,15 @@ Cloud Manager 有一組預先定義的角色，用於管理 Cloud Manager 各項
 
 現在您可以將使用者指派至您建立的含有自訂權限的新產品設定檔。
 
-1. 在 Admin Console 中，按一下[您剛指派自訂權限的新產品設定檔](#assign-permissions)名稱。
+**若要將使用者指派給新的產品設定檔：**
+
+1. 在Admin Console中，按一下您指派自訂許可權的[新產品設定檔名稱](#assign-permissions)。
 
 1. 在開啟的視窗中，選取&#x200B;**使用者**&#x200B;標籤。
 
 1. 按一下「**新增使用者**」，將使用者指派至含有自訂權限的新產品設定檔。
 
-請參閱「**將使用者和使用者群組新增至產品設定檔**」的內容，其載於「[管理企業使用者的產品設定檔](https://helpx.adobe.com/tw/enterprise/using/manage-product-profiles.html)」文件中，深入了解如何使用 Admin Console。
+請參閱「**將使用者和使用者群組新增至產品設定檔**」的內容，其載於「[管理企業使用者的產品設定檔](https://helpx.adobe.com/tw/business/enterprise/manage-products-and-entitlements/manage-products-and-product-profiles/manage-product-profiles.html)」文件中，深入了解如何使用 Admin Console。
 
 ## 可設定的權限 {#configurable-permissions}
 
@@ -141,7 +147,7 @@ Cloud Manager 有一組預先定義的角色，用於管理 Cloud Manager 各項
 
 組織層級權限一律適用於組織內的所有方案。
 
-**存放庫資訊存取**&#x200B;便是 Cloud Manager 其中一種組織層級權限。 此權限允許使用者產生使用者名稱、密碼和存放庫 URL，以利存取客戶專案並為專案貢獻內容。 雖然組織內所有存放庫採用的使用者名稱及密碼皆是相同的，但每個方案都有唯一的存放庫 URL。
+**存放庫資訊存取**&#x200B;便是 Cloud Manager 其中一種組織層級權限。 此權限允許使用者產生使用者名稱、密碼和存放庫 URL，以利存取客戶專案並為專案貢獻內容。 雖然組織中的所有存放庫中的使用者名稱和密碼相同，但每個方案都有唯一的存放庫URL。
 
 如需詳細資訊請參閱「[原始程式碼存放庫](/help/requirements/source-code-repository.md)」。
 
@@ -168,15 +174,15 @@ Cloud Manager 有一組預先定義的角色，用於管理 Cloud Manager 各項
 
 ## 限制 {#limitations}
 
-使用自訂權限時，請記住以下限制：
+使用自訂許可權時，請考量下列限制：
 
 * [只有一小組權限](#configurable-permissions)可用於建立自訂設定檔。
-* 在Cloud Manager中建立的方案、環境、管道等資源，可能需要兩分鐘才能在Admin Console中顯示許可權設定。
-* 若發生自訂權限服務無法回應的罕見情境時，預先定義的設定檔仍然可用，且預先定義的設定檔中的使用者仍具有適當存取權。
+* 在Cloud Manager中建立的程式、環境和管道等資源需要兩分鐘時間才能在Admin Console中顯示許可權設定。
+* 如果自訂許可權服務無法回應，預先定義的設定檔仍可使用，且預先定義的設定檔中的使用者仍具有適當存取權。
 
 ## 常見問題 {#faq}
 
-### 哪些權限設定檔是預先定義的權限設定檔？
+### 哪些許可權設定檔是預先定義的？
 
 * 企業所有者
 * 方案管理員
@@ -185,13 +191,13 @@ Cloud Manager 有一組預先定義的角色，用於管理 Cloud Manager 各項
 
 如需深入了解預先定義的角色，請參閱[角色型權限](/help/requirements/role-based-permissions.md)。
 
-### 引入自訂設定檔後，預先定義的權限設定檔會發生什麼情況？
+### 引進自訂設定檔時，預先定義的許可權設定檔會發生什麼事？
 
 預設之產品設定檔和 Cloud Manager 角色的運作方式不會改變。
 
 ### 我可以編輯預先定義的權限設定檔嗎？
 
-不可以，預設設定檔不可編輯。 您無法在預設的權限設定檔中新增或移除權限。 您只能在預先定義的設定檔中新增或移除使用者。
+不可以，預設設定檔不可編輯。 您無法從預設許可權設定檔新增或移除許可權。 您只能在預先定義的設定檔中新增或移除使用者。
 
 ### 由於現在可以使用自訂設定檔，我是否應該刪除預先定義的權限設定檔？
 
@@ -199,7 +205,7 @@ Cloud Manager 有一組預先定義的角色，用於管理 Cloud Manager 各項
 
 ### 我可以將使用者新增至多個權限設定檔嗎？
 
-可以，一個使用者可以屬於多個設定檔，包括預先定義和自訂權限設定檔。 當使用者被指派至多個設定檔時，該使用者可使用所有被指派權限設定檔的合併權限。
+可以。 使用者可以屬於多個設定檔，包括預先定義和自訂許可權設定檔。 當使用者被指派至多個設定檔時，該使用者可使用所有被指派權限設定檔的合併權限。
 
 ### 如果使用者擁有編輯環境/管道的權限，但無權存取包含該環境/管道的方案，會發生什麼情況？
 
