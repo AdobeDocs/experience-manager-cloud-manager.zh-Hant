@@ -3,20 +3,14 @@ title: 監視環境
 description: 了解如何在 Cloud Manager 中監視環境。
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
 TQID: https://experienceleague.adobe.com/1WlZ7i3267CTPVQrvLi9FlzJuTjzSzpghePEMlSygjY
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 59ab2b4824e516576d0905376b80c37edc49e53d
 workflow-type: tm+mt
-source-wordcount: 873
-ht-degree: 75%
+source-wordcount: 843
+ht-degree: 58%
 
 ---
 
@@ -32,7 +26,7 @@ ht-degree: 75%
 
 如果量度超越其嚴重臨界值，即被視為處於嚴重狀態。
 
-Adobe Managed Services 會設定臨界值，您可以在 [!UICONTROL Cloud Manager] 中檢視該資訊。 在大多數情況下，客戶之間會保持一致的臨界值，但在某些情況下，Adobe Managed Services 會針對特定的客戶需求編輯臨界值。 如有任何關於臨界值的問題，請直接向您的客戶成功工程師 (CSE) 洽詢。
+Adobe Managed Services 會設定臨界值，您可以在 [!UICONTROL Cloud Manager] 中檢視該資訊。 通常，客戶之間的臨界值會保持一致，但在某些情況下，Adobe Managed Services會編輯臨界值以符合特定客戶需求。 如有任何關於臨界值的問題，請直接向您的客戶成功工程師 (CSE) 洽詢。
 
 ## 存取系統監視 {#accessing-system-monitoring}
 
@@ -54,7 +48,7 @@ Adobe Managed Services 會設定臨界值，您可以在 [!UICONTROL Cloud Manag
 * 網路
 * 應用程式
 
-每個類別中的狀態是個別量度的摘要。 如果某個類別中的任何量度處於嚴重狀態，則概觀頁面上的整個類別都會處於嚴重狀態。 在環境層級和執行個體層級可檢視相同的摘要。
+每個類別中的狀態是個別量度的摘要。 如果某個類別中的任何量度達到關鍵狀態，概觀頁面上的整個類別都至關重要。 在環境或執行個體層級可檢視相同的摘要。
 
 ![系統監視概觀](/help/assets/System-Monitoring-Reports.png)
 
@@ -70,12 +64,12 @@ Adobe Managed Services 會設定臨界值，您可以在 [!UICONTROL Cloud Manag
 
 左側的導覽會顯示目前所選類別中的可用量度，其中包含目前所選環境和執行個體的資料。
 
-一張獨立的圖表顯示狀態，以及一張圖表顯示隨時間變化的資料及其臨界值。 如果顯示多個執行個體，則每個執行個體的資料會依個別系列顯示。
+一張獨立的圖表顯示狀態，以及一張圖表顯示隨時間變化的資料及其臨界值。 如果顯示多個執行個體，則每個執行個體的資料都會顯示在單獨的系列中。
 
 ![量度圖表](/help/assets/Monitoring_Graphs1.png)
 
-按一下圖例中的系列，即可將圖表上的個別系列隱藏。
-例如，如果您按一下警告臨界值系列，只會看到嚴重臨界值。
+按一下圖例中的數列，即可從圖表的檢視中移除個別數列。
+例如，如果按一下警告臨界值系列，您只會看到關鍵臨界值。
 
 ![修改圖表](/help/assets/Monitoring_Graphs2.png)
 
@@ -84,7 +78,7 @@ Adobe Managed Services 會設定臨界值，您可以在 [!UICONTROL Cloud Manag
 #### 主機 {#host}
 
 * **`Load Per Core`**： CPU正在執行的處理序數目。 或者，在一分鐘 (load1)、五分鐘 (load5) 和十五分鐘 (load15) 期間平均處於等待狀態的佇列程序數。
-* **P`rocess Count`**：目前開啟的處理序數目。
+* **`Process Count`**：目前開啟的處理序數目。
 * **`User Count`**：具有使用中殼層工作階段的使用者數目。
 * **`Memory Usage`**：目前已配置的系統記憶體的百分比。
 * **`JVM Memory`**：已配置之Java棧積的大小（以MB為單位）。
@@ -96,14 +90,14 @@ Adobe Managed Services 會設定臨界值，您可以在 [!UICONTROL Cloud Manag
 
 #### 儲存空間 {#storage}
 
-* **`Disk Space`**：主機上每個掛接點已使用的磁碟空間（以MB為單位）。 每個掛接點都有不同的量度。 至少會有 `/` 和 `/mnt` 的量度，但如要更多掛接點量度，可能需視特定執行個體設定而定。
+* **`Disk Space`**：主機上每個掛接點已使用的磁碟空間（以MB為單位）。 每個掛接點都有不同的量度。 至少有`/`和`/mnt`的量度，但根據特定執行個體組態，可以使用額外的掛接點量度。
 * **`Folder Size`**
 * **`AEM Segment Store`**： AEM區段存放區已使用的磁碟空間（以GB為單位）。
 
 #### 應用程式 {#application}
 
 * **`Replication Agent`**：測試復寫事件所需的時間（以秒為單位）
-   * 每個複寫代理程式都有單獨的量度。
+  * 每個複寫代理程式都有單獨的量度。
 * **`Dispatcher Flush`**：目前在Dispatcher排清佇列中的專案數
 
 ## SLA 報告 {#sla-reporting}
@@ -114,7 +108,7 @@ Adobe Managed Services 會設定臨界值，您可以在 [!UICONTROL Cloud Manag
 
 ![SLA 2018 圖表](/help/assets/SLA-Reports-one.png)
 
-和系統監視圖一樣，將資料點翻轉會顯示該月的特定值。
+和系統監檢視表一樣，將滑鼠游標停留在資料點上會顯示該月的特定值。
 
 ![資料點翻轉](/help/assets/SLA-Reports-two.png)
 
@@ -125,14 +119,14 @@ Adobe Managed Services 會設定臨界值，您可以在 [!UICONTROL Cloud Manag
 ## SLA 量度 {#sla-metrics}
 
 * **`Author Contract`**：您與Adobe Managed Services的合約中為製作層級定義的SLA。
-* **`AMS Author SLA`**：測量到的生產製作層級運作時間，因廠商或Adobe引起的客製化事件。
+* **`AMS Author SLA`**：測量到的生產製作層級運作時間，因廠商或Adobe引起的保理事件。
 * **`Author SLA`**：測量出的製作層級運作時間，忽略已排程的停工期，例如維護期。
 * **`End User Contract`**：您和Adobe Managed Services的合約中為發佈層級定義的SLA。
-* **`AMS End User SLA`**：測量到的生產發佈層級運作時間，因廠商或Adobe引起的客製化事件。
+* **`AMS End User SLA`**：測量到的生產發佈層級運作時間，因廠商或Adobe造成客製化事件。
 * **`End User SLA`**：測量到的發佈層級運作時間，忽略已排程的停工期，例如維護期。
 
 ## 教學課程影片 {#video-tutorial}
 
-本影片概觀如何使用 Cloud Manager Reports 產生的圖表來檢視您的方案環境。
+本影片提供使用Cloud Manager Reports產生的圖表來監視您的方案環境的概觀。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26315/)
