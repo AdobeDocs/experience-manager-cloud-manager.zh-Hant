@@ -21,7 +21,7 @@ topic_v2:
 source-git-commit: ee4f497a8bb5fb2d37fd8283721ebc9891f9053a
 workflow-type: tm+mt
 source-wordcount: 1266
-ht-degree: 69%
+ht-degree: 71%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 69%
 >[!CONTEXTUALHELP]
 >id="aemcloud_cloudmanager_introduction"
 >title="用於 AMS 的 Cloud Manager 的簡介"
->abstract="它可讓組織使用CI/CD架構在雲端中自行管理Adobe Experience Manager。 此架構可協助團隊快速自訂或更新，而不會影響效能或安全性。"
+>abstract="它可讓組織使用 CI/CD 框架，在雲端中自行管理 Adobe Experience Manager。 此框架可協助團隊快速自訂或更新，而不會影響效能或安全性。"
 >additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/cloud-manager/programs#cloud-manager" text="建立方案"
 >additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/cloud-manager/environments#cloud-manager" text="建立環境"
 
