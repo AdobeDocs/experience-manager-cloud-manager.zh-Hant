@@ -3,16 +3,12 @@ title: 導覽 Cloud Manager UI
 description: 了解 Cloud Manager UI 的組織方式以及如何導覽此 UI 來管理您的方案和環境。
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
 TQID: https://experienceleague.adobe.com/qTv4G7eSJahDusX68iNXzcw64Aq8xxP6SRAtn-SB0t4
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: dac18093bc590afbd33e358582b3f1c703ce23e1
 workflow-type: tm+mt
-source-wordcount: 1641
+source-wordcount: 1640
 ht-degree: 35%
 
 ---
@@ -59,7 +55,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 | ![Adobe紅白圖示](/help/getting-started/assets/AdobeLogoWhiteOnRed.svg) Cloud Manager | 按一下以開啟Cloud Manager的&#x200B;**我的程式**&#x200B;主控台，無論您身在Cloud Manager何處。 |
 | *`Name of selected organization`* | 組織選擇器會顯示您目前登入的組織（在此範例中為&#x200B;*Foundation Internal*）。 如果您的Adobe ID與多個組織相關聯，請按一下以切換至其他組織。 |
 | ![意見回饋圖示](/help/getting-started/assets/AppComment.svg)意見 | 按一下「 」，向Adobe提供有關Cloud Manager的意見回饋。 |
-| ![AI助理圖示](/help/getting-started/assets/AIChat.svg) | AI Assistant提供對話式介面，旨在簡化為AEM相關查詢尋找答案的程式。 檢視[AI小幫手](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/ai-in-aem/ai-assistant/ai-assistant-in-aem#) |
+| ![AI助理圖示](/help/getting-started/assets/AIChat.svg) | AI Assistant提供對話式介面，旨在簡化為AEM相關查詢尋找答案的程式。 檢視[AI小幫手](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-in-aem/ai-assistant/ai-assistant-in-aem#) |
 | ![說明圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | 按一下以提供學習與支援資源的快速存取權。 |
 | ![白鈴圖示](/help/getting-started/assets/Bell.svg) | 按一下以檢視目前指派的不完整[通知數目](/help/using/notifications.md) |
 | ![應用程式圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | 按一下以在AEM首頁和AEM解決方案之間快速移動 |
@@ -104,16 +100,16 @@ call-to-action和統計資料區段提供您組織的彙總資料。 例如，�
 
 「我的方案」控制台的主要內容為「**我的方案**」區段，該區段會以個別卡片的形式列出您的方案。 按一下卡片即可存取該方案的「**方案概觀**」頁面，了解有關該方案的詳細資訊。
 
-根據您的許可權，您可能無法選取某些程式。
+根據您的許可權，您無法選取某些程式。
 
 您可以使用下列排序選項來快速尋找您想要的程式：
 
 ![排序選項](/help/getting-started/assets/cloud-manager-my-programs-sorting.png)
 
 * 排序方式：
-   * 建立日期
-   * 方案名稱
-   * 狀態
+  * 建立日期
+  * 方案名稱
+  * 狀態
 * ![向下排序圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) / ![向上排序圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg)分別向上或向下排序程式。
 * ![傳統格線檢檢視示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ClassicGridView_18_N.svg) / ![文字專案符號圖示或清單](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TextBulleted_18_N.svg)分別以格線表單或清單表單檢視程式。
 
@@ -126,8 +122,8 @@ call-to-action和統計資料區段提供您組織的彙總資料。 例如，�
 * 程式影像 (若已設定)
 * 程式名稱（在上述範例中，*WKND Magazine*）
 * 服務類型：
-   * 適用於 AMS 方案的 **Experience Manager**
-   * 適用於 [AEM as a Cloud Service 方案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/home)的 **Experience Manager Cloud**
+  * 適用於 AMS 方案的 **Experience Manager**
+  * 適用於 [AEM as a Cloud Service 方案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/home)的 **Experience Manager Cloud**
 * 狀態（在上述範例中，*就緒*）
 * 設定的解決方案:
 * 建立日期

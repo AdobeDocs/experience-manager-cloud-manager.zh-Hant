@@ -3,14 +3,10 @@ title: 首次登入
 description: 如果您已經設定好一般設定，而且準備好要第一次使用 Cloud Manager，依照本頁面的說明進行。
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 TQID: https://experienceleague.adobe.com/2fA-qKPKPhxCCRzxWC5pujXWQCa9vcP8tJtnSXSdipU
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: dac18093bc590afbd33e358582b3f1c703ce23e1
 workflow-type: tm+mt
 source-wordcount: 294
 ht-degree: 30%
@@ -27,7 +23,7 @@ ht-degree: 30%
 
 ## 第一次登入 {#logging-in-for-the-first-time}
 
-1. 在[experience.adobe.com](https://experience.adobe.com/experiencemanager)登入Cloud Manager。 若要進一步瞭解，請參閱[關於Adobe Experience Hub](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/experience-hub/experience-hub)
+1. 在[experience.adobe.com](https://experience.adobe.com/experiencemanager)登入Cloud Manager。 若要進一步瞭解，請參閱[關於Adobe Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 1. 在左側面板中，按一下「**Cloud Manager**」。
 
    Experience Manager左側面板中的![Cloud Manager](/help/getting-started/assets/cloud-manager-experiencemanager.png)
@@ -59,4 +55,4 @@ Cloud Manager提供方案活動的整合檢視。 它列出所有 CI/CD 管道�
 
 >[!NOTE]
 >
->預設情況下，有權存取 AEM 環境的使用者也擁有 Cloud Manager 使用者角色。 此角色不會授予使用者方案詳細資料檢視的存取權。 僅具有Cloud Manager使用者角色的使用者可以使用方案選單選項導覽至AEM環境作者URL （如果環境存在）。 這些使用者如果想要取得方案層級的存取權，必須聯絡其管理員。
+>預設情況下，有權存取 AEM 環境的使用者也擁有 Cloud Manager 使用者角色。 此角色不提供使用者對方案詳細資料檢視的存取權。 僅具有Cloud Manager使用者角色的使用者可以使用方案選單選項導覽至AEM環境作者URL （如果環境存在）。 這些使用者如果想要取得方案層級的存取權，必須聯絡其管理員。
