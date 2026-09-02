@@ -8,7 +8,7 @@ product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+source-git-commit: 4381c51e54aaf1286b69c149dbf57c77bcd9a8bd
 workflow-type: tm+mt
 source-wordcount: 1411
 ht-degree: 65%
@@ -25,14 +25,14 @@ ht-degree: 65%
 
 * 必須使用 Apache Maven 建置專案。
 * 在 Git 存放庫的根目錄中必須有一個 `pom.xml` 檔案。
-   * 此`pom.xml`檔案可參照的子模組（這些子模組又包含其他子模組）數量視需要而定。
-   * 您可在您的 `pom.xml` 檔案中新增對其他 Maven 成品存放庫的參照。
-   * 設定後，可支援對[受密碼保護的成品存放庫](#password-protected-maven-repositories)的存取權。 但是，不支援對受網路保護的成品存放庫的存取權。
+  * 此`pom.xml`檔案可參照的子模組（這些子模組又包含其他子模組）數量視需要而定。
+  * 您可在您的 `pom.xml` 檔案中新增對其他 Maven 成品存放庫的參照。
+  * 設定後，可支援對[受密碼保護的成品存放庫](#password-protected-maven-repositories)的存取權。 但是，不支援對受網路保護的成品存放庫的存取權。
 * Cloud Manager透過掃描在名為`target`的目錄中所包含的內容套件.zip檔案來探索可部署的內容套件。
-   * 任何數量的子模組都會產生內容套件。
+  * 任何數量的子模組都會產生內容套件。
 * Cloud Manager透過掃描在名為`conf`和`conf.d`的`target`的子目錄中所包含的`zip`檔案，來發現可部署的Dispatcher成品。
 * 如果有超過一個內容套件，則不保證套件部署的排序。
-   * 如果需要特定的順序，可以使用內容套件相依性來定義順序。
+  * 如果需要特定的順序，可以使用內容套件相依性來定義順序。
 * 套件可從部署中[略過](#skipping-content-packages)。
 
 ## 在 Cloud Manager 中啟動 Maven 設定檔 {#activating-maven-profiles-in-cloud-manager}
@@ -115,7 +115,7 @@ ht-degree: 65%
 
 ## 受密碼保護的 Maven 存放庫支援 {#password-protected-maven-repositories}
 
-應謹慎使用來自受密碼保護的Maven存放庫的成品，因為以這種方式部署的程式碼不完全受限於Cloud Manager品質標準所強制執行的品質檢查。 Adobe也建議您部署Java原始程式碼和整個專案的原始程式碼以及二進位。
+對於來自受密碼保護的Maven存放庫的成品，應謹慎使用，因為以這種方式部署的程式碼不會完全受到Cloud Manager品質標準所強制執行的品質檢查的約束。 Adobe也建議您部署Java原始程式碼和整個專案的原始程式碼以及二進位。
 
 >[!TIP]
 >
@@ -339,7 +339,7 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 
 * 無論認可雜湊是否相同，都不會在不同的方案中重複使用組建成品。
 * 即使分支和/或管道不同，在相同計畫中會重新使用組建成品。
-* [Maven版本處理](/help/managing-code/maven-project-version.md)只有在生產管道中才會取代專案版本。 如果開發和生產管道使用相同的認可，並且開發管道先執行，則版本會部署到中繼和生產環境且不會變更。 但在這種情況下，仍會建立標記。
+* [Maven版本處理](/help/managing-code/maven-project-version.md)只有在生產管道中才會取代專案版本。 如果相同的認可同時用於開發和生產管道，且先執行開發管道，則會將版本部署到中繼和生產環境，且不會變更。 但在這種情況下，仍會建立標記。
 * 如果未成功擷取已儲存的成品，則執行建置步驟，如同未儲存任何成品一樣。
 * 當 Cloud Manager 決定重複使用之前建立的建置成品時，不會考慮 `CM_DISABLE_BUILD_REUSE` 以外的管道變數。
 

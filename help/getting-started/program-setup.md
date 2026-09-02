@@ -10,10 +10,10 @@ feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+source-git-commit: 4381c51e54aaf1286b69c149dbf57c77bcd9a8bd
 workflow-type: tm+mt
-source-wordcount: 549
-ht-degree: 65%
+source-wordcount: 548
+ht-degree: 60%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 65%
 
 ## 切換不同方案 {#swithing-programs}
 
-在處理一個方案時，您可以快速切換到另一個方案，而無需返回 Cloud Manager 概觀頁面。
+在處理一個方案時，您可以切換至另一個方案，而無需返回Cloud Manager概觀頁面。
 
 使用動作列切換到另一個方案、編輯目前的方案或新增方案。
 
@@ -91,11 +91,11 @@ ht-degree: 65%
 
 根據在中繼環境中執行的測試來測量網站 KPI。 通常，這些KPI會根據中繼環境的功能進行調整。
 
-例如，某個使用者期望在其生產環境中每分鐘平均有1000次頁面檢視，並在生產環境中有四個Dispatcher/發佈伺服器，因此將此情況降至每分鐘250次頁面檢視。 此案例假設他們的中繼環境僅包含單一Dispatcher/發佈伺服器配對。
+例如，一個團隊期望在其生產環境中每分鐘平均有1000次頁面檢視，並在生產環境中有四個Dispatcher/發佈伺服器，則將此情境調整為每分鐘250次頁面檢視。 此案例假設他們的中繼環境僅包含單一Dispatcher/發佈伺服器配對。
 
 資產效能測試包含在 30 分鐘內重複上傳資產。 在整個測試過程中會測量每項資產的處理時間以及各種系統層級量度。
 
-您為生產環境設定了內容傳遞網路(CDN)，例如Akamai或CloudFront。 由於[!UICONTROL Cloud Manager]直接針對中繼環境進行測試，因此KPI僅反映預期會通過CDN的流量。 也就是會有快取遺漏的情形。 一般來說，此流量是總生產流量的一個相對較小的子集。
+您為生產環境設定了內容傳遞網路(CDN)，例如Akamai或CloudFront。 由於[!UICONTROL Cloud Manager]直接針對中繼環境進行測試，因此KPI僅反映預期會通過CDN的流量。 這指的是快取遺漏。 一般來說，此流量是總生產流量的一個相對較小的子集。
 
 ## 影片概觀 {#video}
 

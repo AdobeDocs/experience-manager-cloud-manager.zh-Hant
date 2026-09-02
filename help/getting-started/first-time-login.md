@@ -10,7 +10,7 @@ feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
+source-git-commit: dac18093bc590afbd33e358582b3f1c703ce23e1
 workflow-type: tm+mt
 source-wordcount: 294
 ht-degree: 30%
@@ -59,4 +59,4 @@ Cloud Manager提供方案活動的整合檢視。 它列出所有 CI/CD 管道�
 
 >[!NOTE]
 >
->預設情況下，有權存取 AEM 環境的使用者也擁有 Cloud Manager 使用者角色。 此角色不會授予使用者方案詳細資料檢視的存取權。 僅具有Cloud Manager使用者角色的使用者可以使用方案選單選項導覽至AEM環境作者URL （如果環境存在）。 這些使用者如果想要取得方案層級的存取權，必須聯絡其管理員。
+>預設情況下，有權存取 AEM 環境的使用者也擁有 Cloud Manager 使用者角色。 此角色不提供使用者對方案詳細資料檢視的存取權。 僅具有Cloud Manager使用者角色的使用者可以使用方案選單選項導覽至AEM環境作者URL （如果環境存在）。 這些使用者如果想要取得方案層級的存取權，必須聯絡其管理員。
