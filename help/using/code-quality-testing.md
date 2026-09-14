@@ -5,25 +5,33 @@ exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 TQID: https://experienceleague.adobe.com/gAO8BdTx9-Sq8evIuI3hIaHIUixk-IulQagCI-Jssrc
 product_v2:
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
+    internal-label: Environments
   - id: ff09c71c-26a9-449a-85f8-2aeb8ce96100
+    internal-label: Implementation
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 source-git-commit: 7cd0317c081cdfdefb61b1c953fca179cd25eb1a
 workflow-type: tm+mt
-source-wordcount: 2880
+source-wordcount: '2880'
 ht-degree: 82%
-
 ---
-
 # 程式碼品質測試 {#code-quality-testing}
 
 了解管道程式碼品質測試如何運作及如何提高部署品質。
@@ -32,7 +40,7 @@ ht-degree: 82%
 
 在管道執行期間，軟體會擷取許多指標。 然後，將這些指標與企業主定義的關鍵績效指標 (KPI) 進行比較。 或者，將這些與 Adobe Managed Services 制定的標準進行比較。
 
-這些結果會使用三層級評等系統報告。
+這些結果會以三層級評等系統呈現。
 
 ## 三層級評等 {#three-tiered-ratings}
 
@@ -42,7 +50,7 @@ ht-degree: 82%
 * 效能測試
 * 安全測試
 
-對於這些閘道中的每一個，閘道識別的問題都有一個三層結構。
+對於每個閘道，其識別的問題都有三層級結構。
 
 * **嚴重** - 會導致管道立即失敗的問題。
 * **重要** - 會導致管道進入暫停狀態的問題。 部署負責人、專案負責人或企業負責人可以覆寫問題。 如果他們這樣做，管道就會如預期進行。 或者，他們可以接受這些問題，導致管道因失敗而停止。 重要失敗的覆寫受限於[逾時](/help/using/code-deployment.md#timeouts)。
@@ -54,13 +62,13 @@ ht-degree: 82%
 
 ## 程式碼品質測試 {#code-quality-testing-step}
 
-此測試步驟會評估應用程式程式碼的品質，這也是程式碼品質管道的主要目的。 在所有生產和非生產管道中的建置步驟之後立即執行。 若要了解更多詳細資訊，請前往[設定非生產管道](/help/using/non-production-pipelines.md)。
+此測試步驟會評估應用程式程式碼的品質，這也是僅限程式碼品質管道的主要目的。 在所有生產和非生產管道中的建置步驟之後立即執行。 若要了解更多詳細資訊，請前往[設定非生產管道](/help/using/non-production-pipelines.md)。
 
 程式碼品質測試會掃描原始程式碼以確保其符合特定的品質標準。
 
 軟體會使用 SonarQube 分析、使用 OakPAL 的內容套件層級檢查和使用 Dispatcher 最佳化工具的 Dispatcher 驗證的組合來實施。
 
-有超過 100 條規則結合通用 Java 規則和 AEM 特定規則。 部分 AEM 特定規則是根據 AEM 工程團隊的最佳做法來建立，並稱為[自訂程式碼品質規則](/help/using/custom-code-quality-rules.md)。
+有超過 100 條規則，結合了通用 Java 規則和 AEM 特定規則。 部分 AEM 特定規則是根據 AEM 工程團隊的最佳做法來建立，並稱為[自訂程式碼品質規則](/help/using/custom-code-quality-rules.md)。
 
 你可以[使用此連結](/help/assets/CodeQuality-rules-latest-AMS.xlsx)下載目前完整的規則清單。
 
@@ -102,7 +110,7 @@ ht-degree: 82%
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-SonarQube 會接著提出阻斷式漏洞。 但在查看程式碼後，您會發現這個問題並非漏洞，然後可以使用適當的規則 ID 標註程式碼。
+SonarQube 接著會標示出阻斷層級漏洞。 但在查看程式碼後，您會發現這個問題並非漏洞，然後可以使用適當的規則 ID 標註程式碼。
 
 ```java
 @SuppressWarnings("squid:S2068")
@@ -121,13 +129,13 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 >[!NOTE]
 >
->最佳實務是讓 `@SuppressWarnings` 註解盡可能具體。 也就是僅註釋導致問題的特定陳述式或區塊。 但是，可以在類別層級註釋。 這樣做可以更廣泛地禁止警告。
+>最佳實務是讓 `@SuppressWarnings` 註解盡可能具體。 也就是僅註釋導致問題的特定陳述式或區塊。 但是，也可以在類別層級加上註解。 這樣做可以更廣泛地禁止警告。
 
 ## 安全測試 {#security-testing}
 
 [!UICONTROL Cloud Manager] 會在部署後在中繼環境上執行現有 AEM 安全性的健康情況檢查並透過 UI 報告狀態。 該結果會由環境中的所有 AEM 執行個體彙總而成。
 
-上述相同的健康情況檢查可隨時透過 Web 控制台或操作儀表板執行。
+上述相同的健康情況檢查可隨時透過網頁控制台或操作儀表板執行。
 
 如果任何執行個體報告指定的健康狀態檢查失敗，則整個環境將無法通過該健康狀態檢查。 和程式碼品質和效能測試一樣，這些健康情況檢查會被歸類並使用三層級閘道系統進行報告。 唯一的區別是安全性測試沒有臨界值。 所有的健康情況檢查結果都會是成功或失敗。
 
@@ -135,7 +143,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 | 名稱 | 健康情況檢查實作 | 類別 |
 |---|---|---|
-| 還原序列化防火牆附加 API 整備處於可接受的狀態。 | [還原序列化防火牆附加 API 整備](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | 嚴重 |
+| 反序列化防火牆附加 API 的整備狀態可接受。 | [還原序列化防火牆附加 API 整備](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | 嚴重 |
 | 還原序列化防火牆可正常運作。 | [還原序列化防火牆正常運作](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | 嚴重 |
 | 載入還原序列化防火牆。 | [還原序列化防火牆已載入](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | 嚴重 |
 | `AuthorizableNodeName` 實作不會在節點名稱/路徑中揭露可授權 ID。 | [可授權節點名稱產生](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/security/security-checklist#security) | 嚴重 |
@@ -146,8 +154,8 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | 已正確設定 SSL。 | SSL 設定 | 嚴重 |
 | 未找到明顯不安全的使用者設定檔原則。 | 使用者設定檔預設存取 | 嚴重 |
 | `Sling`反向連結篩選器已設定為防止CSRF攻擊。 | [Sling 查閱者篩選器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/security/security-checklist#security) | 重要 |
-| 已正確設定 Adobe Granite HTML 資料庫管理員。 | CQ HTML 資料庫管理員組態 | 重要 |
-| 已停用 CRXDE 支援套裝。 | CRXDE 支援 | 重要 |
+| 已正確設定 Adobe Granite HTML 資料庫管理員。 | CQ HTML 程式庫管理員組態 | 重要 |
+| 已停用 CRXDE 支援組合包。 | CRXDE 支援 | 重要 |
 | `Sling` DavEx組合與servlet已停用。 | DavEx 健康情況檢查 | 重要 |
 | 未安裝樣本內容。 | 範例內容套件 | 重要 |
 | 已停用 WCM 請求篩選器和 WCM 偵錯篩選器。 | [WCM 篩選器設定](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/deploying/configuring/osgi-configuration-settings#configuring) | 重要 |
@@ -159,7 +167,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 ### AEM Sites {#aem-sites}
 
-Cloud Manager 會執行 AEM Sites 的效能測試。 效能測試會透過建立虛擬使用者（容器）來執行30分鐘，這些虛擬使用者（容器）會模擬實際使用者來存取中繼環境中的頁面以模擬流量。 這些頁面是使用編目程式找到的。
+Cloud Manager 會執行 AEM Sites 的效能測試。 效能測試會透過建立虛擬使用者（容器）來執行30分鐘，這些虛擬使用者（容器）會模擬實際使用者來存取中繼環境中的頁面以模擬流量。 這些頁面是使用爬蟲找到的。
 
 #### 虛擬使用者 {#virtual-users}
 
@@ -169,12 +177,12 @@ Cloud Manager會根據&#x200B;**企業所有者**&#x200B;角色所設定的KPI �
 
 #### 編目程式 {#crawler}
 
-在 30 分鐘測試期開始之前，Cloud Manager 使用客戶成功工程師設定的一組一或多個 seed URL 來耙梳中繼環境。 從這些 URL 開始，請檢查每個頁面的 HTML，並以廣度優先方式點選所有連結。
+在 30 分鐘測試期開始之前，Cloud Manager 使用客戶成功工程師設定的一組一或多個 seed URL 來耙梳中繼環境。 從這些 URL 開始，系統會檢查每個頁面的 HTML，並以廣度優先方式逐一訪查連結。
 
 * 預設情況下，此耙梳流程的上限為 5000 個頁面。
 * 透過設定[管道變數](/help/getting-started/build-environment.md#pipeline-variables)`CM_PERF_TEST_CRAWLER_MAX_PAGES`，可覆寫要測試的最大頁數。
   * 允許值為 `2000` - `7000`。
-* 來自編目程式的請求固定逾時時間為 10 秒。
+* 來自爬蟲的請求固定逾時時間為 10 秒。
 
 #### 用於測試的頁面集 {#page-sets}
 
@@ -211,7 +219,7 @@ Cloud Manager 會在中繼發佈伺服器上以預設的未經驗證使用者的
 | 量度 | 類別 | 失敗臨界值 |
 |---|---|---|
 | 頁面請求錯誤率 | 嚴重 | >= 2% |
-| CPU 使用情況 | 嚴重 | >= 80% |
+| CPU 使用率 | 嚴重 | >= 80% |
 | 磁碟 IO 等候時間 | 嚴重 | >= 50% |
 | 第 95 百分位數的回應時間 | 重要 | >= 方案層級 KPI |
 | 尖峰回應時間 | 重要 | >= 18 秒 |
@@ -232,7 +240,7 @@ Cloud Manager 會在中繼發佈伺服器上以預設的未經驗證使用者的
 
 可將使用者名稱和密碼指定為名為 `CM_PERF_TEST_BASIC_USERNAME` 和 `CM_PERF_TEST_BASIC_PASSWORD` 的管道變數。
 
-使用者名稱儲存在 `string` 變數中，且密碼儲存在 `secretString` 變數中。 如果已指定這兩項變數，則來自效能測試編目程式和測試虛擬使用者的每個請求都包含這些 HTTP 基本驗證的憑證。
+使用者名稱儲存在 `string` 變數中，且密碼儲存在 `secretString` 變數中。 如果已指定這兩項變數，則來自效能測試爬蟲和測試虛擬使用者的每個請求都包含這些 HTTP 基本驗證的憑證。
 
 若要使用 Cloud Manager CLI 設定這些變數，請執行：
 
@@ -266,7 +274,7 @@ Cloud Manager 每 30 分鐘會重複上傳資產，以執行 AEM Assets 方案�
 
 #### 測試和報告 {#testing-and-reporting}
 
-Cloud Manager會使用CSE設定的使用者名稱和密碼在作者執行個體上建立資料夾。 然後使用開放原始程式碼資料庫將資產上傳到檔案夾。 資產測試步驟執行的測試會使用[開放原始程式碼](https://github.com/adobe/toughday2)資料庫編寫。 在 30 分鐘的測試期間內會對每個資產的處理時間以及各種系統層級量度進行測量。 此功能可上傳影像和 PDF 文件。
+Cloud Manager會使用CSE設定的使用者名稱和密碼在作者執行個體上建立資料夾。 然後使用開放原始碼程式庫將資產上傳到資料夾。 資產測試步驟執行的測試會使用[開放原始程式碼](https://github.com/adobe/toughday2)資料庫編寫。 在 30 分鐘的測試期間內會對每個資產的處理時間以及各種系統層級量度進行測量。 此功能可上傳影像和 PDF 文件。
 
 >[!TIP]
 >
@@ -314,7 +322,7 @@ Cloud Manager會使用CSE設定的使用者名稱和密碼在作者執行個體�
 
 對於產生數十個嵌入套件的專案，已證明此最佳化將在每次管道執行中節省10分鐘以上的時間。
 
-當「全」內容套件包含已略過的內容套件和 OSGi 套裝的組合時，可能會出現一種特殊情況。 例如，如果`myco-all-1.0.0-SNAPSHOT.zip`包含兩個內巢狀件和OSGi套裝，則會建構出一個全新、最小的內容套件，且僅包含OSGi套裝。 此套件一律名為 `cloudmanager-synthetic-jar-package`，而且會將所包含的套裝放在 `/apps/cloudmanager-synthetic-installer/install` 中。
+當「全」內容套件包含已略過的內容套件和 OSGi 套件的組合時，可能會出現一種特殊情況。 例如，如果`myco-all-1.0.0-SNAPSHOT.zip`包含兩個內巢狀件和OSGi套裝，則會建構出一個全新、最小的內容套件，且僅包含OSGi套裝。 此套件一律名為 `cloudmanager-synthetic-jar-package`，而且會將所包含的套裝放在 `/apps/cloudmanager-synthetic-installer/install` 中。
 
 >[!NOTE]
 >
