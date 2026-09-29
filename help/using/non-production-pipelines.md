@@ -5,16 +5,17 @@ exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 TQID: https://experienceleague.adobe.com/Dj7SjKdao6RU-cIS7D1AQxg5qpKrJMTcYQJBfiqc-Gg
 product_v2:
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 38a0aa1ab543c976c8e7526ac2ba78d06c9b06d6
+    internal-label: Admin
+source-git-commit: caa4dcd788a1d80a5957a8ecc7c6e4c99a881aee
 workflow-type: tm+mt
-source-wordcount: 2070
+source-wordcount: '2070'
 ht-degree: 20%
-
 ---
-
 # 新增非生產管道 {#configuring-non-production-pipelines}
 
 了解如何使用 Cloud Manager 建立和設定非生產管道以部署程式碼。 如需管道在Cloud Manager中運作方式的更多概念性概觀，請參閱[CI/CD管道](/help/overview/ci-cd-pipelines.md)。
@@ -26,7 +27,7 @@ ht-degree: 20%
 * **生產管道** — 生產管道是一個專門建置的管道，由一系列精心安排的步驟組成，以將原始程式碼部署到生產環境。
 * **非生產管道** - 非生產管道主要用於執行程式碼品質掃描或將原始程式碼部署到開發環境中。
 
-本文件會專注於非生產管道。 如需有關如何設定生產管道的詳細資訊，請參閱文件[設定生產管道](/help/using/production-pipelines.md)。
+本文件著重於非生產管道。 如需有關如何設定生產管道的詳細資訊，請參閱文件[設定生產管道](/help/using/production-pipelines.md)。
 
 有兩種類型的非生產管道：
 
@@ -98,7 +99,7 @@ ht-degree: 20%
 | 章節 | 選項 | 說明 |
 | --- | --- | --- |
 | **Source代碼** | **存放庫** | 從下拉式清單中，選擇管道用作其來源的Git存放庫。 Cloud Manager會從您在此選擇的存放庫建置程式碼。 |
-|   | **Git分支** | 從下拉式清單中，選擇管道應建置的來源（所選存放庫）分支。 預設為 `main`。 管道使用所選分支作為構建和部署的來源。 如有必要，請按一下[重新整理]&#x200B;**&#x200B;**&#x200B;來更新所選存放庫的可用分支清單。 如果最近建立的分支未出現在清單中，請使用此選項。 |
+|   | **Git分支** | 從下拉式清單中，選擇管道應建置的來源（所選存放庫）分支。 預設為 `main`。 管道使用所選分支作為構建和部署的來源。 如有必要，請按一下[重新整理]****&#x200B;來更新所選存放庫的可用分支清單。 如果最近建立的分支未出現在清單中，請使用此選項。 |
 |   | **建置策略** | <ul><li>**完整組建** — 每次都會建置存放庫中的所有模組<li>**智慧型組建** — 僅建置自上次認可後已變更的模組。<br>進一步瞭解[在非生產管道中使用Smart Build](#about-smart-build)。</li></ol> |
 |   | **忽略Web層組態**&#x200B;核取方塊 | 選取此選項可跳過在完整棧疊計畫碼管道中部署Web層設定。 取消選取此選項以部署網頁層級設定以及管道的程式碼。 |
 | **管道** | **體驗稽核**&#x200B;核取方塊 | 選取此選項可在管道中包含體驗稽核步驟。 啟用後，管道會在Source程式碼索引標籤之後包含體驗稽核步驟。 |
@@ -116,7 +117,7 @@ ht-degree: 20%
 | 章節 | 選項 | 說明 |
 | --- | --- | --- |
 | **Source代碼** | **存放庫** | 從下拉式清單中，選取包含網頁層設定的Git存放庫。 |
-|   | **Git分支** | 在選擇的存放庫中選取Cloud Manager用於部署的分支。 如有必要，請按一下[重新整理]&#x200B;**&#x200B;**&#x200B;來更新所選存放庫的可用分支清單。 如果最近建立的分支未出現在清單中，請使用此選項。 |
+|   | **Git分支** | 在選擇的存放庫中選取Cloud Manager用於部署的分支。 如有必要，請按一下[重新整理]****&#x200B;來更新所選存放庫的可用分支清單。 如果最近建立的分支未出現在清單中，請使用此選項。 |
 |   | **代碼位置** | 在選取的存放庫中輸入包含要部署的Web層設定的路徑。 預設位置是存放庫根目錄(`/`)。 |
 
 >[!NOTE]
@@ -125,7 +126,7 @@ ht-degree: 20%
 
 >[!ENDTABS]
 
-1. 按一下&#x200B;**儲存**。
+1. 按一下「**儲存**」。
 
 ## 在您的非生產管道中使用智慧型建置{#about-smart-build}
 
@@ -245,6 +246,6 @@ Smart Build提供可讓您停用特定模組快取的精細控制項。 此功�
 
 ## 教學課程影片 {#video-tutorial}
 
-本影片將概觀管道建立流程，而本文件中有詳細說明。
+本影片提供管道建立流程的概觀，本文件中有詳細說明。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316/)
