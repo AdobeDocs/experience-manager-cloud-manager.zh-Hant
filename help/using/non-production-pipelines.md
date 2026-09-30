@@ -5,16 +5,17 @@ exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 TQID: https://experienceleague.adobe.com/Dj7SjKdao6RU-cIS7D1AQxg5qpKrJMTcYQJBfiqc-Gg
 product_v2:
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 38a0aa1ab543c976c8e7526ac2ba78d06c9b06d6
+    internal-label: Admin
+source-git-commit: caa4dcd788a1d80a5957a8ecc7c6e4c99a881aee
 workflow-type: tm+mt
-source-wordcount: 2070
+source-wordcount: '2070'
 ht-degree: 20%
-
 ---
-
 # 新增非生產管道 {#configuring-non-production-pipelines}
 
 了解如何使用 Cloud Manager 建立和設定非生產管道以部署程式碼。 如需管道在Cloud Manager中運作方式的更多概念性概觀，請參閱[CI/CD管道](/help/overview/ci-cd-pipelines.md)。
@@ -26,7 +27,7 @@ ht-degree: 20%
 * **生產管道** — 生產管道是一個專門建置的管道，由一系列精心安排的步驟組成，以將原始程式碼部署到生產環境。
 * **非生產管道** - 非生產管道主要用於執行程式碼品質掃描或將原始程式碼部署到開發環境中。
 
-本文件會專注於非生產管道。 如需有關如何設定生產管道的詳細資訊，請參閱文件[設定生產管道](/help/using/production-pipelines.md)。
+本文件著重於非生產管道。 如需有關如何設定生產管道的詳細資訊，請參閱文件[設定生產管道](/help/using/production-pipelines.md)。
 
 有兩種類型的非生產管道：
 
@@ -125,7 +126,7 @@ ht-degree: 20%
 
 >[!ENDTABS]
 
-1. 按一下&#x200B;**儲存**。
+1. 按一下「**儲存**」。
 
 ## 在您的非生產管道中使用智慧型建置{#about-smart-build}
 
@@ -245,6 +246,6 @@ Smart Build提供可讓您停用特定模組快取的精細控制項。 此功�
 
 ## 教學課程影片 {#video-tutorial}
 
-本影片將概觀管道建立流程，而本文件中有詳細說明。
+本影片提供管道建立流程的概觀，本文件中有詳細說明。
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316/)

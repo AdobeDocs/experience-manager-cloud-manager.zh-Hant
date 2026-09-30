@@ -2,13 +2,16 @@
 title: GitHub 檢查附註
 description: 了解 GitHub 檢查如何為您的私人存放庫加上 PR 附註，以便為您提供有用的意見回饋。
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 147eec6368875aabb252d759909c0309a82ef3db
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
+source-git-commit: 26e8d7835883cd6a64913b3b4e3619041af63bf5
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 32%
-
 ---
-
 
 # GitHub 檢查附註 {#github-annotations}
 

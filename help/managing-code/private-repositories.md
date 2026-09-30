@@ -3,21 +3,29 @@ title: 在 Cloud Manager 中新增私人存放庫
 description: 了解如何設定 Cloud Manager 與您自己的私人 GitHub 存放庫搭配使用。
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-TQID: https://experienceleague.adobe.com/YQUazTRNh7C31piqZwe-1zAkRWIqt9fVY6jTD5T3ZpI
+TQID: 'https://experienceleague.adobe.com/YQUazTRNh7C31piqZwe-1zAkRWIqt9fVY6jTD5T3ZpI'
 product_v2:
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 32dc7aaf4c228d9aee1adedab3f52375f1807bb5
+    internal-label: Security
+source-git-commit: 26e8d7835883cd6a64913b3b4e3619041af63bf5
 workflow-type: tm+mt
-source-wordcount: 837
+source-wordcount: '837'
 ht-degree: 79%
-
 ---
-
 # 在 Cloud Manager 中新增私人存放庫 {#private-repositories}
 
 了解如何設定 Cloud Manager 以搭配使用您自己的私人 GitHub 存放庫。
@@ -73,7 +81,7 @@ Cloud Manager現在已使用您的GitHub存放庫設定，但仍需要授權才�
 
    GitHub組織的所有者必須安裝位於`https://github.com/apps/cloud-manager-for-aem`的應用程式，並提供存放庫的存取權。 詳情請參閱 GitHub 的文件。
 
-1. 為了提高安全性，請在存放庫的預設分支中建立密碼檔案。 按一下&#x200B;**產生**。
+1. 為了提高安全性，請在存放庫的預設分支中建立秘密檔案。 按一下&#x200B;**產生**。
 
 1. 按一下&#x200B;**確認**，確認產生密碼檔案。
 
@@ -81,7 +89,7 @@ Cloud Manager現在已使用您的GitHub存放庫設定，但仍需要授權才�
 
 1. 回到「**私人存放庫所有權驗證**」對話框內，Cloud Manager 已產生「**密碼檔案內容**」欄位中的內容。 複製該欄位中的內容。
 
-   機密檔案的內容只會顯示一次。 如果您在關閉此視窗之前未複製內容，則必須重新產生密碼。
+   機密檔案的內容只會顯示一次。 如果您在關閉此視窗之前未複製內容，則必須重新產生秘密。
 
    ![複製密碼檔案內容](/help/assets/repositories/new-secret.png)
 
@@ -89,7 +97,7 @@ Cloud Manager現在已使用您的GitHub存放庫設定，但仍需要授權才�
 
 1. 安裝好應用程式且存放庫中已有密碼檔案之後，您可以按一下「**驗證**」(在「**私人存放庫所有權驗證**」對話框中)。
 
-可以依照任何順序安裝應用程式及產生密碼檔案。 不過，必須先完成這兩個步驟才能進行驗證。
+可以依照任何順序安裝應用程式及產生秘密檔案。 不過，必須先完成這兩個步驟才能進行驗證。
 
 在驗證之前，存放庫會以紅色圖示列出，表示其尚未驗證且不能使用。
 

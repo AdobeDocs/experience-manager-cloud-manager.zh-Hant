@@ -2,26 +2,42 @@
 title: 組建環境
 description: 了解 Cloud Manager 使用者用於建置和測試程式碼的專用組建環境。
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-TQID: https://experienceleague.adobe.com/AdGVWjyF0DXEX7jH5S39JQ506oVnNYGtYqAWNHcQeP8
+autotag-review: '2026-09-28T18:27:41.054Z'
+TQID: 'https://experienceleague.adobe.com/DNcpDvFCu798nnK81kUEN8JmIv8DP72cas0YaVKPw40'
 product_v2:
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
+    internal-label: Environments
+  - id: 143cda9c-8952-5316-be5f-2cd421ad8ecc
+    internal-label: Dispatcher
+  - id: 2741637d-a621-529a-b21b-bfe9be07a9c8
+    internal-label: Dispatcher
+  - id: 2e0e1a8a-56e7-5bd5-b805-f35a7c0c2ca7
+    internal-label: Projects
+  - id: 5be0fc8f-1cff-5c3e-bb92-2903a56a3de6
+    internal-label: Migration
+  - id: d54b7e32-ec14-504f-8821-22c27fbf278b
+    internal-label: Production
 subfeature_v2:
   - id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
+    internal-label: Cloud Manager APIs
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+    internal-label: Security
+source-git-commit: 9b75e449f463ef5512ed4e42c4f749852d8c945a
 workflow-type: tm+mt
-source-wordcount: 1205
+source-wordcount: '1205'
 ht-degree: 50%
-
 ---
-
 # 建置環境 {#build-environment}
 
 瞭解Cloud Manager用來建置和測試程式碼的專用組建環境。
@@ -32,23 +48,23 @@ Cloud Manager 的建置環境有下列屬性。
 
 * 建置環境以 Linux 為基礎，衍生自 Ubuntu 22.04。
 * 已安裝 Apache Maven 3.9.4。
-   * Adobe 建議使用者[更新其 Maven 存放庫以使用 HTTPS 而非 HTTP](#https-maven)。
+  * Adobe 建議使用者[更新其 Maven 存放庫以使用 HTTPS 而非 HTTP](#https-maven)。
 * 已安裝的 Java 版本為 Oracle JDK 8u401 和 Oracle JDK 11.0.22。
-   * `/usr/lib/jvm/jdk1.8.0_401`
-   * `/usr/lib/jvm/jdk-11.0.22`
+  * `/usr/lib/jvm/jdk1.8.0_401`
+  * `/usr/lib/jvm/jdk-11.0.22`
 * 在預設的情況下，`JAVA_HOME` 環境變數設定為 `/usr/lib/jvm/jdk1.8.0_401`，其中包含 Oracle JDK 8u401。 如需詳細資訊，請參閱[備用Maven執行JDK版本](#alternate-maven)區段。
 * 已安裝其他必要的系統套件。
-   * `bzip2`
-   * `unzip`
-   * `libpng`
-   * `imagemagick`
-   * `graphicsmagick`
+  * `bzip2`
+  * `unzip`
+  * `libpng`
+  * `imagemagick`
+  * `graphicsmagick`
 * 在建置時間安裝其他套件，如[安裝其他系統套件](#installing-additional-system-packages)一節中所述。
 * 每個組建都是在新環境中完成的。 組建容器在執行之間不會儲存資料。
 * Maven使用下列三個命令執行：
-   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
-   * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
-   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
+  * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
+  * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
+  * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * 在系統層級使用 `settings.xml` 檔案設定 Maven，其會利用名為 `adobe-public` 的設定檔自動納入公共 Adobe 成品存放庫。 如需更多詳細資訊，請參閱 [Adobe 公共 Maven 存放庫](https://repo1.maven.org/)。
 * Node.js 18 可用於[前端管道](/help/overview/ci-cd-pipelines.md)。
 
@@ -164,7 +180,7 @@ The currently available vendor/version combinations are:
 | `CM_PIPELINE_NAME` | 管道名稱 |
 | `CM_PROGRAM_ID` | 數值的方案識別碼 |
 | `CM_PROGRAM_NAME` | 方案名稱 |
-| `ARTIFACTS_VERSION` | 對於中繼或生產管道，由 Cloud Manager 產生的綜合版本 |
+| `ARTIFACTS_VERSION` | 對於中繼或生產管道，由 Cloud Manager 產生的合成版本 |
 
 ### 標準環境變數可用性 {#availability}
 
@@ -200,7 +216,7 @@ Cloud Manager 讓這些變數能夠經由 Cloud Manager API 或 Cloud Manager CL
 $ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test
 ```
 
-可以使用類似下列的命令提供目前的變數清單。
+可以使用類似下列的命令列出目前的變數。
 
 ```shell
 $ aio cloudmanager:list-pipeline-variables PIPELINEID
@@ -209,7 +225,7 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 變數必須遵守某些限制。
 
 * 變數名稱只能包含英數字元和底線(`_`)。
-   * 按照慣例，這些名稱都是大寫。
+  * 按照慣例，這些名稱都是大寫。
 * 每個管道限制為 200 個變數。
 * 每個名稱的長度都必須少於 100 個字元。
 * 每個字串值都必須少於 2048 個字元。
@@ -290,4 +306,4 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 
 >[!NOTE]
 >
->以這種方式安裝系統套件不會將其安裝在用於執行 Adobe&#x200B; Experience Manager 的執行階段環境中。 如果您需要在AEM環境中安裝系統套件，請聯絡您的Adobe代表。
+>以這種方式安裝系統套件不會將其安裝在用於執行 Adobe Experience Manager 的執行階段環境中。 如果您需要在AEM環境中安裝系統套件，請聯絡您的Adobe代表。
