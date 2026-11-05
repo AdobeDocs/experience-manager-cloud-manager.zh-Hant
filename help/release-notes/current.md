@@ -1,6 +1,6 @@
 ---
-title: Cloud Manager 2026.10.0版發行說明
-description: 瞭解關於Adobe Managed Services中的Cloud Manager 2026.10.0版。
+title: Cloud Manager 2026.11.0版發行說明
+description: 瞭解關於Adobe Managed Services中的Cloud Manager 2026.11.0版。
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 TQID: 'https://experienceleague.adobe.com/4zfTpSYuFwrJZ-oeL1SObT14v2Rd--Z1hKn5JllHAro'
@@ -21,34 +21,34 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 14893646d1f46cf53a9b5e40123a28613fdb9f6d
+source-git-commit: 772379fc5c641fcde07165a2beb2d49e964b481d
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 9%
 ---
 
-# Adobe Managed Services中Cloud Manager 2026.10.0的發行說明 {#release-notes}
+# Adobe Managed Services中Cloud Manager 2026.11.0的發行說明 {#release-notes}
 
 <!-- add "hold: true" to metadata above to be able to commit/merge to Main WITHOUT Publishig -->
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-瞭解關於Adobe Managed Services中[!UICONTROL Cloud Manager] 2026.10.0版的資訊。
+瞭解關於Adobe Managed Services中[!UICONTROL Cloud Manager] 2026.11.0版的資訊。
 
 另請參閱 [Adobe Experience Manager as a Cloud Service 最新發行說明](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/release-notes/home)。
 
 ## 發行日期 {#release-date}
 
-[!UICONTROL Cloud Manager] 2026.10.0的發行日期為2026年10月1日星期四。
+[!UICONTROL Cloud Manager] 2026.11.0的發行日期為2026年11月5日星期四。
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-下一個預計發行日期為2026年11月5日星期四。
+下一個預計發行日期為2026年12月3日星期四。
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
 ## 新功能 {#new-features}
 
-2026年10月Cloud Manager的AMS版本沒有重要的新功能。
+2026年11月Cloud Manager的AMS版本沒有重要的新功能。
 
 
 ## Beta 版方案 {#beta-program}
@@ -70,7 +70,7 @@ Cloud Manager現在支援AMS程式的專用Web層級管道，讓團隊可部署D
 
 ## 錯誤修正 {#bug-fixes}
 
-* 部署後安全性測試間歇性失敗。 在Adobe Managed Services程式上，部署後安全性測試的SSL設定檢查在許多程式中會斷斷續續地失敗，然後在重試時通過，導致不必要的管道失敗。 檢查已穩定，因此不會再意外失敗。 (CMGR-79870)
+* 部署後安全性測試間歇性失敗。 在Adobe Managed Services程式上，部署後安全性測試的SSL設定檢查在許多程式中會斷斷續續地失敗，然後在重試時通過，導致不必要的管道失敗。 檢查已更新，因此不再失敗。 (CMGR-79870)
 
 <!--
 Known Issues {#known-issues}
