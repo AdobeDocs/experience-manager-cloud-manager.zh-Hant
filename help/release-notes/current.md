@@ -21,10 +21,10 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 772379fc5c641fcde07165a2beb2d49e964b481d
+source-git-commit: b48085c8209c0802f6f2d321865bd1a1ee786139
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 9%
+source-wordcount: '324'
+ht-degree: 10%
 ---
 
 # Adobe Managed Services中Cloud Manager 2026.11.0的發行說明 {#release-notes}
@@ -48,29 +48,37 @@ ht-degree: 9%
 
 ## 新功能 {#new-features}
 
-2026年11月Cloud Manager的AMS版本沒有重要的新功能。
+### AEM Managed Services的Web層管道 {#web-tier-pipelines}
 
+Cloud Manager現在支援AMS程式的專用Web層級管道，讓團隊可部署Dispatcher和Web層設定，而不受完整棧疊部署的影響。 如此可加快網頁層級變更的疊代，同時減少不必要的完整管道執行。
+
+設定Web層管道時，完整棧疊管道會自動跳過該環境的Web層部署，以防止部署衝突。 移除網頁層級管道會自動復原預設部署行為。<!-- CMGR-27553 -->
+
+請參閱[Web層設定管道](/help/overview/ci-cd-pipelines.md#web-tier-config-pipelines)。
 
 ## Beta 版方案 {#beta-program}
 
-若要在即將發行的功能正式發行前以獨家方式存取這些功能，請參與Cloud Manager的Beta版計畫。
+目前沒有可用的測試版計畫機會。
+
+<!--
+To get exclusive access to upcoming features before their general release, participate in Cloud Manager's beta programs.
 
 >[!IMPORTANT]
 >
->Beta版本包含問題，且不含任何保固。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援（透過Adobe支援服務或其他方式）測試版。 客戶自行承擔使用Beta版的風險。 請勿仰賴測試版正確運作或效能，或仰賴任何隨附的檔案或材料。 Beta版中的功能和API可能會有所變更，恕不另行通知。 任何使用測試版的風險完全由客戶自行承擔。
+>Beta releases contain issues and are provided without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify or otherwise support (through Adobe Support Services or otherwise) the beta releases. Customers use beta releases at their own risk. Do not rely on the correct functioning or performance of beta releases, or on any accompanying documentation or materials. Features and APIs in beta are subject to change without notice. Any use of the beta releases is entirely at the customer's own risk.
 
-目前提供下列Beta版計畫機會：
-
-### AEM Managed Services的Web層管道 {#web-tier-pipelines}
-
-Cloud Manager現在支援AMS程式的專用Web層級管道，讓團隊可部署Dispatcher和Web層設定，而不受完整棧疊部署的影響。 如此可加快網頁層級變更的疊代，同時減少不必要的完整管道執行。 設定Web層管道時，完整棧疊管道會自動跳過該環境的Web層部署，以防止部署衝突。 移除網頁層級管道會自動復原預設部署行為。
-
-若要加入Beta，請聯絡您的Adobe客戶成功工程師以瞭解更多資訊。
-
+The following beta program opportunity is currently available:
+-->
 
 ## 錯誤修正 {#bug-fixes}
 
-* 部署後安全性測試間歇性失敗。 在Adobe Managed Services程式上，部署後安全性測試的SSL設定檢查在許多程式中會斷斷續續地失敗，然後在重試時通過，導致不必要的管道失敗。 檢查已更新，因此不再失敗。 (CMGR-79870)
+
+* 程式碼品質掃描在大型專案上失敗。 計畫碼品質(SonarQube)掃描會產生多GB的偵錯記錄，並在掃描某些套件式程式庫（導致組建失敗）時終止。 已更正掃描，因此會在受影響的專案上正常完成。 (CMGR-80025)
+
+* 網站使用CSV匯出會顯示月份標籤移動一個月。 在「授權>網站使用詳細資訊」頁面上，CSV匯出會針對UTC之後時區的使用者，顯示一個月前已移動的標籤。 現在，無論使用者的時區為何，匯出都會顯示正確的月份標籤。 (CMGR-80903)
+
+* 重複使用存取權杖名稱不再覆寫現有的權杖。 在程式中重複使用現有的存取權杖名稱會覆寫共用權杖並建立重複的存取密碼。 Cloud Manager現在可以正確處理權杖名稱重複使用，防止意外覆寫和重複。 (CMGR-81236)
+
 
 <!--
 Known Issues {#known-issues}
